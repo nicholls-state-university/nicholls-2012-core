@@ -74,7 +74,7 @@ END- CSS Reset
 /* START defaults */
 
 body {
-	font-family: "Trebuchet MS", Arial, sans serif;
+	font-family: Arial, sans serif;
 	font-size: 68.8%;
 	color: #000000;
 	width: 100%;
@@ -168,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: "Trebuchet MS", Arial, sans serif;
 	font-weight: 600;
 	line-height: 1.1em;
-    margin: .2em 0 .4em 0;
+    margin: .4em 0;
 }
 
 h1 {
@@ -234,6 +234,7 @@ h6 {
 	margin: 0 auto 0 auto;
 	text-align: left;
 	background: #fff;
+	border-top: 1px solid #afafaf;
 }
 
 .container- {
@@ -257,7 +258,7 @@ body.widgets-primary-active .container- {
 	padding: 3em 0 0 0;
 	clear: both;
 	text-align: center;
-	border-top: 1px solid #000;
+	border-top: 1px solid #afafaf;
 }
 
 /* END Layout */
@@ -414,9 +415,6 @@ body.widgets-primary-active .container- {
 	display: none;
 }
 
-
-
-
 /* START - Nicholls Header */
 
 .header-nicholls-wrapper- {
@@ -441,14 +439,12 @@ body.widgets-primary-active .container- {
 
 .header-nicholls- .logo-container- {
     height: 5em;
-    text-align: center;
     padding: 2em 0 1em 0;
 }
 
 .header-nicholls- .info-primary-  ul {
 	list-style-type: none;
 	clear: both;
-	margin: 0 0 0 1.5em;
 }
 
 .header-nicholls- .info-primary- ul li {
