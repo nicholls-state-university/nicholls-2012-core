@@ -36,9 +36,6 @@ function nicholls_get_menu_from_class( menu_class ) {
 }
 
 jQuery(document).ready( function() {
-		
-	var thewindowwidth = jQuery(window).width();
-	the_resize(thewindowwidth);
 	
 	// Set Transparency
 	jQuery('.header-').addClass('transparent-black-50');
@@ -63,6 +60,13 @@ jQuery(document).ready( function() {
 		jQuery('.logo-container-').pngFix( { blankgif:'./images/blank.gif' } );
 		jQuery('.header-').pngFix( { blankgif:'./images/blank.gif' } );		
 	}
+	
+	if( jQuery.browser.msie && parseFloat( jQuery.browser.version ) < 7) {
+		jQuery('body').addClass('msie-depreciated');
+	}
+	
+	var thewindowwidth = jQuery(window).width();
+	if ( jQuery.browser.msie6 != true )the_resize(thewindowwidth);
 
 });
 
