@@ -244,10 +244,13 @@ h6 {
 }
 
 body.widgets-primary-active .container- {
-	width: 66em;	
+	width: 66em;
+	padding-left: .8em;
+	border-left: 1px solid #afafaf
 }
 
 .content- {
+	width: 100%;
 	padding: .2em 0 0 0;
     font-size: 110%;	
 }
@@ -431,10 +434,10 @@ body.widgets-primary-active .container- {
 }
 
 .header-nicholls- .info-primary- {
-    width: 20.4em;
-    height: 14em;    
+    width: 19.6em;
+    height: 14em;
+    padding-left: .8em;
     float: left;
-    background: #fff;    
 }
 
 .header-nicholls- .logo-container- {
@@ -466,17 +469,16 @@ body.widgets-primary-active .container- {
 
 .header-nicholls- .info-primary- .info-contact {
 	font-size: 130%;
-	padding-left: .4em;
 }
 
 .header-nicholls- .info-primary- .info-programs {
 	padding-bottom: .4em;
-	padding-left: 1.4em;	
+	padding-left: .4em;	
 }
 
 .header-nicholls- .info-primary- .info-request {
 	padding-bottom: .4em;
-	padding-left: 1.4em;	
+	padding-left: .4em;	
 }
 
 /* END - Nicholls Header */
@@ -535,7 +537,7 @@ body.widgets-primary-active .container- {
 	font-weight: 400;
 	padding: .4em 0;
 	margin: .4em 0;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #afafaf;
 }
 
 .widgets- li.widget {
@@ -556,9 +558,8 @@ body.widgets-primary-active .container- {
 
 .widgets-primary- {
 	float: left;
-    width: 20em;
+    width: 19.6em;
 	padding: 0 .4em 0 0;
-	border-right: 1px solid #ccc;
 }
 
 .widgets-primary- li.widget {
