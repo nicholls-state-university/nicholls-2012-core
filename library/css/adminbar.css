@@ -15,8 +15,6 @@ body {
 		position: relative;
 		padding: 0;
 		width: 100%;
-		min-width: 960px;
-		max-width: 1250px;
 		margin: 0 auto;
 		background: url( ../images/adminbar/60pc_black.png );
 		height: 25px;
