@@ -66,7 +66,7 @@ jQuery(document).ready( function() {
 	}
 	
 	var thewindowwidth = jQuery(window).width();
-	if ( jQuery.browser.msie6 != true )the_resize(thewindowwidth);
+	if ( jQuery.browser.msie6 != true ) the_resize(thewindowwidth);
 
 });
 
@@ -75,7 +75,7 @@ jQuery(function() {
 	// Set classes for windo resizing.
 	jQuery(window).resize(function() {
 		var thewindowwidth = jQuery(window).width();
-		the_resize(thewindowwidth);
+		if ( jQuery.browser.msie6 != true ) the_resize(thewindowwidth);
 	});
 	
 	// Load Nicholls menus via ajax
@@ -83,6 +83,7 @@ jQuery(function() {
 	
 		jQuery('#footer').append( '<div id="nicholls-menu-loader"></div>' );
 		
+		/*
 		jQuery('#nicholls-menu-list').children().each( function() {
 			// We stop if the item has no menu. Using the .each() using 'return true' is like 'continue'
 			if ( jQuery(this).hasClass('nicholls-menu-no' ) ) return true;
@@ -103,7 +104,7 @@ jQuery(function() {
 			});
 			
 		});
-			
+		*/	
 	
 	}
 	nicholls_menu_loader();

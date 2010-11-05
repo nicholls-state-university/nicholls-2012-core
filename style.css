@@ -313,15 +313,25 @@ body.widgets-primary-active .container- {
 }
 
 .menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- input {
-	background: #666;
 	border: 1px solid #999;
-	color: #fff;
+	margin: .3em 0 0 0;
+	padding: .2em;
+	font-size: 90%;
 }
 
-.menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- input:hover, .menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- input:active {
-	background: #666;
-	border: 1px solid #ccc;
-	color: #fff;
+.menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- .button-search- {
+	background: #ccc;
+	border: 1px solid #999;
+	margin: .3em 0 0 0;
+	padding: .2em;
+	font-size: 90%;
+}
+
+.menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- input:hover,
+.menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- input:active,
+.menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- .button-search-:hover,
+.menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- .button-search-:active {
+	border: 1px solid #000;
 }
 
 .nicholls-menu-item a {
@@ -438,6 +448,7 @@ body.widgets-primary-active .container- {
     height: 14em;
     padding-left: .8em;
     float: left;
+    background: #fff;
 }
 
 .header-nicholls- .logo-container- {
@@ -851,7 +862,7 @@ body.screen-narrow .header-nicholls- .info-primary- {
 }
 
 body.screen-narrow .header- {
-	width: 52em;
+	width: 51.2em;
 }
 
 body.screen-narrow .container- {
