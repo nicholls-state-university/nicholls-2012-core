@@ -1,8 +1,8 @@
 <?php
 
 // Define theme core file location and uri
-define( NICHOLLS_CORE_DIR, WP_CONTENT_DIR . '/themes/nicholls-2011-core' );
-define( NICHOLLS_CORE_URL, WP_CONTENT_URL . '/themes/nicholls-2011-core' );
+define( NICHOLLS_CORE_DIR, get_stylesheet_dir() );
+define( NICHOLLS_CORE_URL, content_url() . '/themes/nicholls-2011-core' );
 
 // Include core functions, actions, and filters.
 require_once( NICHOLLS_CORE_DIR . '/library/php/functions.php' );
@@ -18,6 +18,9 @@ require_once( NICHOLLS_CORE_DIR . '/library/php/shortcode-shortcode.php' );
 
 // Include widgets
 require_once( NICHOLLS_CORE_DIR . '/library/php/widget-nicholls-department-info.php' );
+
+// Include plugins
+require_once( NICHOLLS_CORE_DIR . '/library/php/plugin-mega-menu.php' );
 
 /**
 * Conditional includes for fuctions and classes in WordPress admin panels

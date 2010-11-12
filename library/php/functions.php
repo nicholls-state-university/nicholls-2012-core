@@ -9,6 +9,51 @@
 */
 
 /**
+* Nicholls Core Admin Settings 
+*
+* Function used for an array to describe the options held in nicholls_core_theme_options
+*
+* @since 0.4
+*/
+function nicholls_core_admin_get_setting_config() {
+
+	$setting[0] = array(
+		'name' => 'address_location',
+		'description' => 'Office Location and Building'
+	);
+	$setting[1] = array(
+		'name' => 'address_mailing',
+		'description' => 'Office Mailing Address'
+	);
+	$setting[2] = array(
+		'name' => 'address_cityzip',
+		'description' => 'Office Mailing City, State, and Zip Code'
+	);
+	$setting[3] = array(
+		'name' => 'phone',
+		'description' => 'Office Phone Number'
+	);
+	$setting[4] = array(
+		'name' => 'fax',
+		'description' => 'Office Fax Number'
+	);
+	$setting[5] = array(
+		'name' => 'email_name',
+		'description' => 'Office Contact Email Display Name'
+	);
+	$setting[6] = array(
+		'name' => 'email_address',
+		'description' => 'Office Contact Email Address'
+	);
+	$setting[7] = array(
+		'name' => 'note',
+		'description' => 'Office Hours or Short Note'
+	);
+	
+	return $setting;
+}
+
+/**
 * Get the root URL for this Nicholls site.
 *
 * @since 0.4
@@ -333,4 +378,32 @@ function nicholls_core_header() {
 
 }
 
+function nicholls_core_debug_info() {
+
+	echo "<!--\n";
+	
+	echo "\n plugin_basename " . plugin_basename();
+	echo "\n site_url " . site_url();
+	echo "\n admin_url " . admin_url();
+	echo "\n content_url " . content_url();
+	echo "\n plugins_url " . plugins_url();
+	echo "\n includes_url " . includes_url();
+	echo "\n home_url " . home_url();
+	echo "\n get_site_url " . get_site_url();
+	echo "\n get_home_url " . get_home_url();
+	echo "\n get_admin_url " . get_admin_url();
+	echo "\n network_site_url " . network_site_url();
+	echo "\n network_home_url " . network_home_url();
+	echo "\n network_admin_url " . network_admin_url();
+	echo "\n get_stylesheet_directory " . get_stylesheet_directory();
+	echo "\n get_stylesheet_directory_uri " . get_stylesheet_directory_uri();
+	echo "\n get_template_directory " . get_template_directory();
+	echo "\n get_template_directory_uri " . get_template_directory_uri();
+	
+	echo "\n-->";
+
+
+}
+
+nicholls_core_debug_info();
 ?>
