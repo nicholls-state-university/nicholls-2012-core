@@ -78,8 +78,6 @@ body {
 	font-size: 68.8%;
 	color: #000000;
 	width: 100%;
-	background: transparent url( 'library/images/backgrounds/bg-page-grey-pattern.jpg' ) 0px -1px repeat-x;
-	
 }
 
 /* Interactive HTML Styles */
@@ -272,13 +270,14 @@ body.widgets-primary-active .container- {
 	width: 100%;
 	text-align: left;
 	clear: both;
+	background: transparent url( 'library/images/backgrounds/bg-nicholls-menu.png' ) 0px -1px repeat-x;		
 }
 
 .menu-primary- {
 	width: 87.2em;
 	height: 2.4em;
 	background: transparent url( 'library/images/backgrounds/bg-nicholls-menu.png' ) repeat-x;
-	margin: .5em auto 0 auto;	
+	margin: 0 auto 0 auto;	
 }
 
 .menu-primary- .nicholls-menu-list- {
@@ -297,10 +296,10 @@ body.widgets-primary-active .container- {
 }
 
 .menu-primary- .nicholls-menu-list- .nicholls-menu-home- a {
-	display: block;
-	background: transparent url( 'library/images/nicholls-icons.png' ) -16px -4px no-repeat;
+	display: block;	
 	width: 2em;
-	height: 1.8em;
+	height: 1.6em;
+	background: transparent url( 'library/images/nicholls-icons.png' ) -16px -6px no-repeat;	
 }
 
 .menu-primary- .nicholls-menu-list- .nicholls-menu-home- a span {
