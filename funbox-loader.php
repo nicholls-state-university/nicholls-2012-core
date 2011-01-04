@@ -32,9 +32,6 @@ function ftf_defaut_init_actions() {
 	// Stylesheet CSS
 	add_action( 'ftf_wp_head_before', 'ftf_head_link_stylesheet' );
 
-	// Feeds
-	add_action( 'ftf_header_init', 'ftf_head_automatic_feeds' );
-
 	// Links
 	add_action( 'ftf_wp_head_before', 'ftf_head_link_pingback' );
 	add_action( 'ftf_wp_head_before', 'ftf_head_link_breadcrumb' );
@@ -56,12 +53,15 @@ function ftf_defaut_init_actions() {
 	add_action( 'ftf_template_loop_post_end', 'ftf_layout_post_close' );		
 	add_action( 'ftf_template_loop_content_start', 'ftf_layout_element_open_class_only' );
 	add_action( 'ftf_template_loop_content_end', 'ftf_layout_element_close' );
+	
+	// BuddyPress Stylesheet NOTE: BP Template Pack Plugin must turn off CSS.
+	add_action( 'ftf_wp_head_before', 'nicholls_bp_stylesheet' );
 
 	// ISSUE: BuddyPress WPMU adminbar CSS needs to be loaded properly
 	if ( is_user_logged_in() ) 
 		add_action( 'ftf_wp_head_before', 'nicholls_bp_adminbar_stylesheet' );
 	else
-		define( BP_DISABLE_ADMIN_BAR, true );
+		define( 'BP_DISABLE_ADMIN_BAR', true );
 		
 	// Website Title
 	add_action( 'ftf_header', 'ftf_default_title' );
@@ -111,9 +111,6 @@ function ftf_defaut_init_actions() {
 	
 	// Put an edit link for pages since we don't show meta
 	if ( is_page() ) add_action( 'ftf_template_loop_content_end', 'ftf_post_meta_edit' );		
-
-	// Comments? We'll only add to the single post template using an action
-	if ( is_single() ) add_action( 'ftf_template_single_end', 'ftf_comments_template_separate' );
 		
 	if ( is_attachment() ) {
 
@@ -137,8 +134,6 @@ function ftf_defaut_init_actions() {
 		add_action( 'ftf_template_attachment_end', 'ftf_comments_template_separate' );
 		// Image template content
 		add_action( 'ftf_template_loop_content_image_start', 'ftf_image_content' );
-		// Image template comments
-		add_action( 'ftf_template_image_end', 'ftf_comments_template_separate' );
 	}	
 
 	// 404 Not Found page.
@@ -159,13 +154,22 @@ function ftf_defaut_init_actions() {
 		add_action( 'ftf_wp_head_before', 'ftf_enqueue_script_comment_reply' );
 		// Comment Layout
 		add_action( 'ftf_template_comments_start', 'ftf_layout_element_open' );
-		add_action( 'ftf_template_comments_start', 'ftf_layout_element_close' );
+		add_action( 'ftf_template_comments_end', 'ftf_layout_element_close' );
 		// Comment Navigation
 		add_action( 'ftf_template_comments_comments_list_start', 'ftf_comment_navigation_box_above' );
 		// Standard Mixed Comments and Pings
 		add_action( 'ftf_template_comments_comments_list', 'ftf_comment_list_default' );
 		// Comment Navigation
 		add_action( 'ftf_template_comments_comments_list_end', 'ftf_comment_navigation_box_below' );
+
+		// Comments? We'll only add to the single post template using an action
+		if ( is_single() ) add_action( 'ftf_template_single_end', 'ftf_comments_template_separate' );
+
+		// Comments? We'll only add to the single post template using an action
+		if ( is_page() ) add_action( 'ftf_template_page_end', 'ftf_comments_template_separate' );
+
+		// Image template comments
+		if ( is_attachment() ) add_action( 'ftf_template_image_end', 'ftf_comments_template_separate' );
 	}
 	
 	// Stats for WordPress queries and render time
@@ -188,8 +192,7 @@ add_action( 'ftf_loaded', 'ftf_nav_menus_default_setup' );
 *
 * @since 1.0
 */
-function ftf_default_filters() {
-
+function ftf_default_init_filters() {
 	// Filter Header display tag
 	add_filter( 'ftf_default_title', 'ftf_header_title_filter' );
 
@@ -210,10 +213,13 @@ function ftf_default_filters() {
 	// Filter entry for posts and pages
 	add_filter( 'ftf_entry_content_class', 'ftf_entry_class_filter' );
 
-	// Filter Comment Classes
-	add_filter( 'comment_class', 'ftf_comment_class_filter' );
+	// Filter Comment Classes - ISSUE must get all the arguments mark non-users
+	add_filter( 'comment_class', 'ftf_comment_class_filter', 10, 4 );
+
+	// The default filters get... an action. 
+	do_action( 'ftf_defaut_filters' );	
 }
 // Funbox Them Centric Default FIlters
-add_action( 'ftf_init', 'ftf_default_filters' );
+add_action( 'ftf_init', 'ftf_default_init_filters' );
 
 ?>

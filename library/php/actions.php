@@ -76,6 +76,22 @@ function nicholls_core_stylesheets() {
 }
 
 /**
+* Nicholls BuddyPress CSS Stylesheet
+*
+* Load the core stylesheet CSS
+*
+* ISSUE: Need to load this properly!!
+*/
+function nicholls_bp_stylesheet() {
+	// Stylesheet
+	ftf_write_link_tag( array( 
+		'rel' => 'stylesheet',
+		'type' => 'text/css',
+		'href' => NICHOLLS_CORE_URL . '/library/css/bp.css'
+	) );	
+}
+
+/**
 * Nicholls Adminbar CSS Stylesheet
 *
 * Load the core stylesheet CSS
