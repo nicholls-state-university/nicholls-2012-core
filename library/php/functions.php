@@ -144,37 +144,39 @@ function nicholls_get_logo( $logo_style, $logo_size, $link = false, $return = tr
 // The main top menu
 function nicholls_top_menu() {
 
+	$url_nicholls_home = 'http://www.nicholls.edu';
+	
 	$nicholls_menu_items = array( 
 		0 => array(
 			'name' => 'nicholls-menu-home',
 			'contents' => 'Home',
-			'link' => get_nicholls_core_url()
+			'link' => $url_nicholls_home
 		),	
 		1 => array(
 			'name' => 'nicholls-menu-about',
 			'contents' => 'About Nicholls',
-			'link' => get_nicholls_core_url() . '/about/'
+			'link' => $url_nicholls_home . '/about'
 		),	
 		2 => array(
 			'name' => 'nicholls-menu-future',
 			'contents' => 'Future Students',
-			'link' => get_nicholls_core_url() . '/future-students'
+			'link' => $url_nicholls_home . '/future-students'
 		),		
 		3 => array(
 			'name' => 'nicholls-menu-current',
 			'contents' => 'Current Students',
-			'link' => get_nicholls_core_url() . '/current-students'
+			'link' => $url_nicholls_home . '/current-students'
 			
 		),
 		4 => array(
 			'name' => 'nicholls-menu-administration',
 			'contents' => 'Administration & Faculty',
-			'link' => get_nicholls_core_url() . '/faculty-staff'
+			'link' => $url_nicholls_home . '/faculty-staff'
 		),
 		5 => array(
 			'name' => 'nicholls-menu-friends',
 			'contents' => 'Alumni, Donors, & Friends',
-			'link' => get_nicholls_core_url() . '/alumni-donors-friends'
+			'link' => $url_nicholls_home . '/alumni-donors-friends'
 		),
 		6 => array(
 			'name' => 'nicholls-menu-search',
@@ -405,5 +407,4 @@ function nicholls_core_debug_info() {
 
 }
 
-nicholls_core_debug_info();
 ?>
