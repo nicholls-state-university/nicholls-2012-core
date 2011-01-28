@@ -67,12 +67,14 @@ function nicholls_core_stylesheets() {
 
 	// Nicholls Menu CSS Stylesheet
 	// ISSUE: Need to load this properly!!
+/* 	
 	ftf_write_link_tag( array( 
 		'rel' => 'stylesheet',
 		'type' => 'text/css',
 		'href' => get_bloginfo( 'url' ) . '/site-tools/menus/css/'
 	) );
-	
+*/
+
 }
 
 /**
