@@ -77,13 +77,12 @@ jQuery(function() {
 		var thewindowwidth = jQuery(window).width();
 		if ( jQuery.browser.msie6 != true ) the_resize(thewindowwidth);
 	});
-	
+/*	
 	// Load Nicholls menus via ajax
 	function nicholls_menu_loader() {
 	
 		jQuery('#footer').append( '<div id="nicholls-menu-loader"></div>' );
 		
-		/*
 		jQuery('#nicholls-menu-list').children().each( function() {
 			// We stop if the item has no menu. Using the .each() using 'return true' is like 'continue'
 			if ( jQuery(this).hasClass('nicholls-menu-no' ) ) return true;
@@ -104,10 +103,9 @@ jQuery(function() {
 			});
 			
 		});
-		*/	
 	
 	}
-	nicholls_menu_loader();
+    nicholls_menu_loader();
 
 	var hideDelay = 200;
 	var hideTimer = null;
@@ -177,5 +175,6 @@ jQuery(function() {
 	
 	// Hide on click
 	jQuery('.nicholls-menu-item-link').click( hideFunction );
+*/
 });
 
