@@ -77,7 +77,7 @@ jQuery(function() {
 		var thewindowwidth = jQuery(window).width();
 		if ( jQuery.browser.msie6 != true ) the_resize(thewindowwidth);
 	});
-/*	
+
 	// Load Nicholls menus via ajax
 	function nicholls_menu_loader() {
 	
@@ -91,17 +91,10 @@ jQuery(function() {
 			var menu_load_id = jQuery(this).attr('id');
 
 			// Perorm all the heavy lifting ajax because menu_load_id should be clean by now
-			jQuery.ajax({
-				url:'http://webmanager.nicholls.edu/nicholls_test/site-tools/menus/'+menu_load_id+'/',
-				method:'GET',
-				success: function( data ) {
-					jQuery('#nicholls-menu-content').append( '<div id="'+menu_load_id+'-contents" class="nicholls-menu-contents">'+data+'</div>' );
-				},
-				error:function() {
-					jQuery('#nicholls-sitebox').html('Sorry! There was a problem loading content!');
-				}
-			});
-			
+			var menu_data = jQuery( '#'+menu_load_id+'-source' ).html();
+
+			jQuery('#nicholls-menu-content').append( '<div id="'+menu_load_id+'-contents" class="nicholls-menu-contents">'+menu_data+'</div>' );
+		
 		});
 	
 	}
@@ -175,6 +168,6 @@ jQuery(function() {
 	
 	// Hide on click
 	jQuery('.nicholls-menu-item-link').click( hideFunction );
-*/
+
 });
 

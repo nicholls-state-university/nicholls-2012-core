@@ -78,6 +78,36 @@ function nicholls_core_stylesheets() {
 }
 
 /**
+* Nicholls Core Stylesheet Setup
+*
+* Used to setup the CSS Style sheet link for wp_head(). 
+*
+* @since 1.0
+*/
+function nicholls_setup_stylesheet_core() {
+    if ( !is_admin() ) {
+		$theme  = get_theme( get_current_theme() );
+		wp_register_style( 'nicholls-style-core', NICHOLLS_CORE_URL . '/style.css', false, $theme['Version'] );
+		wp_enqueue_style( 'nicholls-style-core' );
+    }
+ }
+ 
+ /**
+* Nicholls Stylesheet Setup
+*
+* Used to setup the CSS Style sheet link for wp_head(). Needs to be called early and usuall in funbox-loader.php
+*
+* @since 1.0
+*/
+function nicholls_setup_stylesheet() {
+    if ( !is_admin() ) {
+		$theme  = get_theme( get_current_theme() );
+		wp_register_style( 'nicholls-style', get_stylesheet_uri(), false, $theme['Version'] );
+		wp_enqueue_style( 'nicholls-style' );
+    }
+ }
+
+/**
 * Nicholls BuddyPress CSS Stylesheet
 *
 * Load the core stylesheet CSS
@@ -85,12 +115,11 @@ function nicholls_core_stylesheets() {
 * ISSUE: Need to load this properly!!
 */
 function nicholls_bp_stylesheet() {
-	// Stylesheet
-	ftf_write_link_tag( array( 
-		'rel' => 'stylesheet',
-		'type' => 'text/css',
-		'href' => NICHOLLS_CORE_URL . '/library/css/bp.css'
-	) );	
+    if ( !is_admin() ) {
+		$theme  = get_theme( get_current_theme() );
+		wp_register_style( 'nicholls-style-bp', NICHOLLS_CORE_URL . '/library/css/bp.css', false, $theme['Version'] );
+		wp_enqueue_style( 'nicholls-style-bp' );
+    }
 }
 
 /**

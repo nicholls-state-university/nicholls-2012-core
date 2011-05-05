@@ -1,5 +1,19 @@
 <?php
 
+/*
+* Funbox Theme Support Filter
+*
+* Since this may be delpolyed on WordPress sites lacking some theme support features.
+*
+* @since 1.0
+*/
+function ftf_theme_support_filter( $features ) {
+	// Set and filter WordPress theme support features
+	$features['post-formats'] = false;
+	$features['custom-background'] = false;	
+	return $features;
+}
+add_filter( 'ftf_theme_support', 'ftf_theme_support_filter' );
 
 /*
 * Funbox Shut Up Theme Default Actions
@@ -13,9 +27,9 @@
 */
 function ftf_defaut_init_actions() {
 
-	// Enqueue some javascript
-	add_action( 'ftf_wp_head_before', 'nicholls_enqueue_javascript' );
-
+	// Setup Stylesheet CSS
+	ftf_setup_stylesheet();
+	
 	// Doctype
 	add_action( 'ftf_header_init', 'ftf_doctype' );
 
@@ -26,11 +40,6 @@ function ftf_defaut_init_actions() {
 	add_action( 'ftf_wp_head_before', 'ftf_head_meta_author' );
 	add_action( 'ftf_wp_head_before', 'ftf_head_meta_copyright' );
 	add_action( 'ftf_wp_head_before', 'ftf_head_meta_revised' );
-
-	// Nicholls Core Stylesheet CSS
-	add_action( 'ftf_wp_head_before', 'nicholls_core_stylesheets' );
-	// Stylesheet CSS
-	add_action( 'ftf_wp_head_before', 'ftf_head_link_stylesheet' );
 
 	// Links
 	add_action( 'ftf_wp_head_before', 'ftf_head_link_pingback' );
@@ -58,11 +67,14 @@ function ftf_defaut_init_actions() {
 	add_action( 'ftf_wp_head_before', 'nicholls_bp_stylesheet' );
 
 	// ISSUE: BuddyPress WPMU adminbar CSS needs to be loaded properly
+	if ( !is_user_logged_in() ) wp_dequeue_style( 'bp-admin-bar' );
+
+/*		
 	if ( is_user_logged_in() ) 
 		add_action( 'ftf_wp_head_before', 'nicholls_bp_adminbar_stylesheet' );
 	else
 		define( 'BP_DISABLE_ADMIN_BAR', true );
-		
+*/		
 	// Website Title
 	add_action( 'ftf_header', 'ftf_default_title' );
 

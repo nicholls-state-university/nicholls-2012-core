@@ -307,22 +307,22 @@ body.widgets-primary-active .container- {
 }
 
 .menu-primary- .nicholls-menu-list- .nicholls-menu-search- {
-	margin: 0;
+	margin: 0 0 0 2em;
 	padding: 0;
 }
 
 .menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- input {
 	border: 1px solid #999;
-	margin: .3em 0 0 0;
-	padding: .2em;
+	margin: .2em 0 0 0;
+	padding: .1em;
 	font-size: 90%;
 }
 
 .menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- .button-search- {
 	background: #ccc;
 	border: 1px solid #999;
-	margin: .3em 0 0 0;
-	padding: .2em;
+	margin: .2em 0 0 0;
+	padding: .1em;
 	font-size: 90%;
 }
 
@@ -353,6 +353,10 @@ body.widgets-primary-active .container- {
 
 /* END - Nicholls Primary Menu */
 
+#nicholls-menu-sources, #nicholls-menu-sources div {
+	display: none !important;
+}
+
 .nicholls-menu-content-wrapper- {
 	position: relative;
 	display: none;		
@@ -369,15 +373,28 @@ body.widgets-primary-active .container- {
 	width: 84em;
 	height: 33.4em;
 	z-index: 1001;
-	background: #fff url( 'library/images/nicholls-menu-pointer-down.png' ) no-repeat;	
+	background: url( 'library/images/nicholls-menu-pointer-down.png' ) no-repeat;	
 	margin: 0 0 0 2em;
-	border-left: 1px solid #cc3333;
-	border-right: 1px solid #cc3333;
-	
 }
 
 .nicholls-menu-about-container {
 	background-position: 5em 0em;
+}
+
+.nicholls-menu-future-container {
+	background-position: 15em 0em;
+}
+
+.nicholls-menu-current-container {
+	background-position: 26em 0em;
+}
+
+.nicholls-menu-administration-container {
+	background-position: 39em 0em;
+}
+
+.nicholls-menu-friends-container {
+	background-position: 54em 0em;
 }
 
 .nicholls-menu-content- {
@@ -386,7 +403,10 @@ body.widgets-primary-active .container- {
 	width: 100%;
 	height: 32em;
 	background: #fff;
-	border-bottom: 2px solid #cc3333;
+	border: 1px solid #cc3333;
+	-moz-box-shadow: 2px 2px 6px #666;
+	-webkit-box-shadow: 2px 2px 6px #666;
+	box-shadow: 2px 2px 6px #666;	
 	z-index: 1002;	
 }
 
@@ -501,7 +521,6 @@ body.widgets-primary-active .container- {
 	float: right;
 	margin: 8.2em 0 0 0;
 	color: #fff;
-	background: #000;
 }
 
 .header- .blog-title- {
@@ -830,13 +849,93 @@ form input:focus, form textarea:focus {
 
 .transparent-black-50 {
     background: transparent url( 'library/images/backgrounds/bg-transparent-black-50.png' );
-
 }
 
 /* END - Custom Classes */
 
 
 /* START - Plugin Styles */
+
+/* START - Contact Form 7 - 2011 */
+
+div.wpcf7 {
+	width: 100%;
+}
+
+div.form-wrapper {
+	position: relative;
+	width: 100%;
+	padding: .2em;
+}
+
+div.form-container {
+	position: relative;
+	width: 100%;
+	padding: .2em;
+	margin: 0 auto 0 auto;
+}
+
+div.form-container form {
+	margin: 0;
+	padding: 0;
+}
+
+div.form-container h3, div.form-container h4 {
+	clear: both;
+}
+
+div.form-container .form-row {
+	width: 100%;
+	clear: both;
+}
+
+div.form-container .form-note {
+	padding: .2em;
+	clear: both;
+}
+
+div.form-container .form-label, div.form-container label {
+	display: block;
+	float: left;
+	padding: .6em .4em .2em .2em;
+	width: 39%;
+	text-align: right;
+	font-weight: bold;
+}
+
+div.form-container .form-input, div.form-container .form-element {
+	display: block;
+	position: relative;
+	width: 59%;
+	margin: 0 0 0 15.4em;
+	padding: .4em 0 .4em 0;
+}
+
+div.form-container .wpcf7-list-item {
+	display: block;
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.wpcf7-checkbox input {
+	display: block;
+	float: left;
+}
+
+.wpcf7-checkbox .wpcf7-list-item-label {
+	display: block;
+	margin: .2em 0 .2em .2em;
+	float: left;
+	width: 18em;
+}
+
+.form-input .your-message textarea {
+	width: 20em;
+}
+
+/* END - Contact Form 7 - 2009 */
+
 /* END - Plugin Styles */
 
 /* START Hidden Elements */

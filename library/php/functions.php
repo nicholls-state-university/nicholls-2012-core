@@ -170,12 +170,12 @@ function nicholls_top_menu() {
 		),
 		4 => array(
 			'name' => 'nicholls-menu-administration',
-			'contents' => 'Administration & Faculty',
+			'contents' => 'Administration &amp; Faculty',
 			'link' => $url_nicholls_home . '/faculty-staff'
 		),
 		5 => array(
 			'name' => 'nicholls-menu-friends',
-			'contents' => 'Alumni, Donors, & Friends',
+			'contents' => 'Alumni, Donors, &amp; Friends',
 			'link' => $url_nicholls_home . '/alumni-donors-friends'
 		),
 		6 => array(
