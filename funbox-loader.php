@@ -16,6 +16,25 @@ function ftf_theme_support_filter( $features ) {
 add_filter( 'ftf_theme_support', 'ftf_theme_support_filter' );
 
 /*
+* Funbox Theme Custom Header Filter
+*
+* Modify the custom header background Funbox settings.
+*
+* @since 1.0
+*/
+function ftf_theme_custom_header_filter( $custom_header ) {
+	// Set and filter WordPress theme support features
+	$custom_header['no_header_text'] = false;
+	$custom_header['css_name'] = '.header-nicholls-';
+	$custom_header['header_image'] = NICHOLLS_CORE_URL . '/library/images/backgrounds/bg-1.jpg';
+	$custom_header['header_image_width'] = 962;
+	$custom_header['header_image_width'] = 158;
+	$custom_header['css_position_x'] = right;
+	return $custom_header;
+}
+add_filter( 'ftf_custom_header', 'ftf_theme_custom_header_filter' );
+
+/*
 * Funbox Shut Up Theme Default Actions
 *
 * Default actions for the Funbox Theme Framework are added by the ftf_init
@@ -27,8 +46,28 @@ add_filter( 'ftf_theme_support', 'ftf_theme_support_filter' );
 */
 function ftf_defaut_init_actions() {
 
-	// Setup Stylesheet CSS
-	ftf_setup_stylesheet();
+	// Remove BP admin bar to start
+	wp_dequeue_style( 'bp-admin-bar' );
+	
+	// Nicholls Core Stylesheet CSS
+	nicholls_setup_stylesheet_core();
+	// Setup Nicholls This Theme Stylesheet CSS
+	nicholls_setup_stylesheet();
+	// Setup Nicholls BuddyPress Stylesheet CSS
+	nicholls_bp_stylesheet();
+	
+	// Nicholls Core JavaScript
+	nicholls_enqueue_javascript();
+	
+	// ISSUE: BuddyPress WPMU adminbar CSS needs to be loaded properly
+	if ( is_user_logged_in() ) wp_enqueue_style( 'bp-admin-bar' );
+
+/*		
+	if ( is_user_logged_in() ) 
+		add_action( 'ftf_wp_head_before', 'nicholls_bp_adminbar_stylesheet' );
+	else
+		define( 'BP_DISABLE_ADMIN_BAR', true );
+*/			
 	
 	// Doctype
 	add_action( 'ftf_header_init', 'ftf_doctype' );
@@ -62,26 +101,14 @@ function ftf_defaut_init_actions() {
 	add_action( 'ftf_template_loop_post_end', 'ftf_layout_post_close' );		
 	add_action( 'ftf_template_loop_content_start', 'ftf_layout_element_open_class_only' );
 	add_action( 'ftf_template_loop_content_end', 'ftf_layout_element_close' );
-	
-	// BuddyPress Stylesheet NOTE: BP Template Pack Plugin must turn off CSS.
-	add_action( 'ftf_wp_head_before', 'nicholls_bp_stylesheet' );
 
-	// ISSUE: BuddyPress WPMU adminbar CSS needs to be loaded properly
-	if ( !is_user_logged_in() ) wp_dequeue_style( 'bp-admin-bar' );
-
-/*		
-	if ( is_user_logged_in() ) 
-		add_action( 'ftf_wp_head_before', 'nicholls_bp_adminbar_stylesheet' );
-	else
-		define( 'BP_DISABLE_ADMIN_BAR', true );
-*/		
 	// Website Title
 	add_action( 'ftf_header', 'ftf_default_title' );
 
 	// Website Description
 	add_action( 'ftf_header', 'ftf_default_description' );
 	
-	// Add Accessiblity and Menu before nicholls-header
+	// Add Accessiblity and Menu before nicholls-header if not home
 	add_action( 'nicholls_header_start', 'ftf_access_menu' );
 	
 	// Nicholls Primary Menu
@@ -91,7 +118,7 @@ function ftf_defaut_init_actions() {
 	add_action( 'nicholls_header_start', 'nicholls_layout_wrapper_element_open' );	
 	add_action( 'nicholls_header_end', 'nicholls_layout_wrapper_element_close' );
 	add_action( 'nicholls_header_start', 'ftf_layout_element_open' );	
-	add_action( 'nicholls_header_end', 'ftf_layout_element_close' );	
+	add_action( 'nicholls_header_end', 'ftf_layout_element_close' );
 
 	// Nicholls Logo Primary Info and Links
 	add_action( 'nicholls_header_start', 'nicholls_core_header' );	
@@ -186,6 +213,9 @@ function ftf_defaut_init_actions() {
 	
 	// Stats for WordPress queries and render time
 	add_action( 'ftf_footer', 'ftf_stats' );
+	
+	// Nicholls MegaMenu
+	add_action( 'ftf_footer', 'nicholls_megamenu_load' );
 
 	// The default actions get... an action. 
 	do_action( 'ftf_defaut_actions' );
@@ -233,5 +263,16 @@ function ftf_default_init_filters() {
 }
 // Funbox Them Centric Default FIlters
 add_action( 'ftf_init', 'ftf_default_init_filters' );
+
+/*
+* Nicholls Mega Menu
+*
+* Loader and stuff for megamenus
+*
+* @since 1.0
+*/
+function nicholls_megamenu_load() {
+	load_template( NICHOLLS_CORE_DIR . '/megamenu/megamenu-template.php' );
+}
 
 ?>
