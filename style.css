@@ -244,7 +244,7 @@ h6 {
 body.widgets-primary-active .container- {
 	width: 66em;
 	padding-left: .8em;
-	border-left: 1px solid #afafaf
+	border-left: 1px solid #e0e0e0
 }
 
 .content- {
@@ -670,7 +670,7 @@ body.widgets-primary-active .container- {
 	font-size: 90%;
 	border-top: 1px solid #AFAFAF;
 	color: #222;
-	background: #efefef;
+	background: #e0e0e0;
 	clear: both;
 }
 
@@ -709,7 +709,7 @@ body.widgets-primary-active .container- {
 	font-size: 76%;
 	text-align: center;
 	line-height: 1.2em;
-	border-top: 1px solid #EFEFEF;
+	border-top: 1px solid #e0e0e0;
 }
 
 /* END WordPress Image / Gallery Styles */
@@ -751,7 +751,7 @@ ol.commentlist {
 	list-style-type: none;
 	margin: 0 0 2em 0;
 	padding: .2em 0 0 0;
-	border-top: 1px solid #AFAFAF;
+	border-top: 1px solid #e0e0e0;
 }
 
 /* END Comment Styles */
