@@ -10,7 +10,7 @@
 function ftf_theme_support_filter( $features ) {
 	// Set and filter WordPress theme support features
 	$features['post-formats'] = false;
-	$features['custom-background'] = false;	
+	$features['custom-background'] = false;
 	return $features;
 }
 add_filter( 'ftf_theme_support', 'ftf_theme_support_filter' );
@@ -18,7 +18,7 @@ add_filter( 'ftf_theme_support', 'ftf_theme_support_filter' );
 /*
 * Funbox Theme Custom Header Filter
 *
-* Modify the custom header background Funbox settings.
+* Modifies the output for custom header css.
 *
 * @since 1.0
 */
@@ -56,21 +56,17 @@ function ftf_defaut_init_actions() {
 	// Setup Nicholls BuddyPress Stylesheet CSS
 	nicholls_bp_stylesheet();
 	
+	// ISSUE: BuddyPress WPMU adminbar CSS needs to be loaded properly
+	if ( is_user_logged_in() ) wp_enqueue_style( 'bp-admin-bar' );	
+	
 	// Nicholls Core JavaScript
 	nicholls_enqueue_javascript();
 	
-	// ISSUE: BuddyPress WPMU adminbar CSS needs to be loaded properly
-	if ( is_user_logged_in() ) wp_enqueue_style( 'bp-admin-bar' );
-
-/*		
-	if ( is_user_logged_in() ) 
-		add_action( 'ftf_wp_head_before', 'nicholls_bp_adminbar_stylesheet' );
-	else
-		define( 'BP_DISABLE_ADMIN_BAR', true );
-*/			
-	
 	// Doctype
 	add_action( 'ftf_header_init', 'ftf_doctype' );
+	
+	// Nicholls Favicon
+	add_action( 'ftf_wp_head_before', 'nicholls_favicon' );
 
 	// Head Meta
 	add_action( 'ftf_wp_head_before', 'ftf_head_meta_content_type' );
@@ -127,7 +123,10 @@ function ftf_defaut_init_actions() {
 	add_action( 'ftf_container_end', 'ftf_default_widget_sidebar' );
 
 	// Default Footer Content
-	add_action( 'ftf_footer', 'ftf_footer_default' );	
+	add_action( 'ftf_footer', 'ftf_footer_default' );
+	
+	// Entry title
+	add_action( 'ftf_template_loop_entry_title', 'ftf_entry_title' );	
 		
 	// For all archives we put a page title, for author and categories we put desicription meta if available
 	if ( is_archive() ) {
@@ -210,9 +209,6 @@ function ftf_defaut_init_actions() {
 		// Image template comments
 		if ( is_attachment() ) add_action( 'ftf_template_image_end', 'ftf_comments_template_separate' );
 	}
-	
-	// Stats for WordPress queries and render time
-	add_action( 'ftf_footer', 'ftf_stats' );
 	
 	// Nicholls MegaMenu
 	add_action( 'ftf_footer', 'nicholls_megamenu_load' );

@@ -18,7 +18,7 @@ require_once( NICHOLLS_CORE_DIR . '/library/php/shortcode-shortcode.php' );
 
 // Include widgets
 require_once( NICHOLLS_CORE_DIR . '/library/php/widget-nicholls-department-info.php' );
-require_once( NICHOLLS_CORE_DIR . '/library/php/widget-multisite-posts.php' );
+if ( is_multisite() ) require_once( NICHOLLS_CORE_DIR . '/library/php/widget-multisite-posts.php' );
 
 /**
 * Conditional includes for fuctions and classes in WordPress admin panels

@@ -20,11 +20,11 @@ function column_shortcode( $atts, $content = null ) {
 		// ...etc
 	), $atts ) );
 	
-	$content = do_shortcode($content);
+	$content = column_clean_shortcode_content( $content );
 	
 	$column_defaults = array(
 	   'tag' => 'div',
-	   'tag_content' => do_shortcode($content),
+	   'tag_content' => $content,
 	   'class' => $class,
 	   'return' => true
 	);
@@ -55,5 +55,25 @@ function end_column_shortcode(){
 	return '<div class="clear"></div>';
 }
 add_shortcode('column_clear', 'end_column_shortcode');
+
+// cleaning function from http://donalmacarthur.com/articles/cleaning-up-wordpress-shortcode-formatting/
+function column_clean_shortcode_content( $content ) {
+
+    /* Parse nested shortcodes and add formatting. */
+    $content = trim( wpautop( do_shortcode( $content ) ) );
+
+    /* Remove '</p>' from the start of the string. */
+    if ( substr( $content, 0, 4 ) == '</p>' )
+        $content = substr( $content, 4 );
+
+    /* Remove '<p>' from the end of the string. */
+    if ( substr( $content, -3, 3 ) == '<p>' )
+        $content = substr( $content, 0, -3 );
+
+    /* Remove any instances of '<p></p>'. */
+    $content = str_replace( array( '<p></p>' ), '', $content );
+
+    return $content;
+}
 
 ?>

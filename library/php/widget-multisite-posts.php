@@ -62,9 +62,9 @@ class WP_Widget_Multisite_Posts extends WP_Widget {
 	
 		// Set the temporary variables so we can restore them later
 		$more_temp = $more;
-		$temp_query = wp_clone( $wp_query );
+		$temp_query = ftf_clone( $wp_query );
 		$temp_posts = $posts;
-		$temp_post = wp_clone( $post );
+		$temp_post = ftf_clone( $post );
 		
 		switch_to_blog( $blog_id );
 	
@@ -149,9 +149,9 @@ class WP_Widget_Multisite_Posts extends WP_Widget {
 	
 		// Reset the temporary variables so we can restore them later
 		$more = $more_temp;
-		$wp_query = wp_clone( $temp_query );
+		$wp_query = ftf_clone( $temp_query );
 		$posts = $temp_posts;
-		$post = wp_clone( $temp_post );
+		$post = ftf_clone( $temp_post );
 		
 		wp_reset_query();
 		wp_reset_postdata();

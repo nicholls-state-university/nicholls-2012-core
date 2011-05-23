@@ -51,33 +51,6 @@ function nicholls_layout_wrapper_element_close( $element = '' ) {
 }
 
 /**
-* Nicholls Core CSS Stylesheet
-*
-* Load the core stylesheet CSS
-*
-*/
-function nicholls_core_stylesheets() {
-	// Stylesheet
-	ftf_write_link_tag( array( 
-		'rel' => 'stylesheet',
-		'type' => 'text/css',
-		'href' => NICHOLLS_CORE_URL . '/style.css'
-	) );
-
-
-	// Nicholls Menu CSS Stylesheet
-	// ISSUE: Need to load this properly!!
-/* 	
-	ftf_write_link_tag( array( 
-		'rel' => 'stylesheet',
-		'type' => 'text/css',
-		'href' => get_bloginfo( 'url' ) . '/site-tools/menus/css/'
-	) );
-*/
-
-}
-
-/**
 * Nicholls Core Stylesheet Setup
 *
 * Used to setup the CSS Style sheet link for wp_head(). 
@@ -112,7 +85,6 @@ function nicholls_setup_stylesheet() {
 *
 * Load the core stylesheet CSS
 *
-* ISSUE: Need to load this properly!!
 */
 function nicholls_bp_stylesheet() {
     if ( !is_admin() ) {
@@ -120,22 +92,6 @@ function nicholls_bp_stylesheet() {
 		wp_register_style( 'nicholls-style-bp', NICHOLLS_CORE_URL . '/library/css/bp.css', false, $theme['Version'] );
 		wp_enqueue_style( 'nicholls-style-bp' );
     }
-}
-
-/**
-* Nicholls Adminbar CSS Stylesheet
-*
-* Load the core stylesheet CSS
-*
-* ISSUE: Need to load this properly!!
-*/
-function nicholls_bp_adminbar_stylesheet() {
-	// Stylesheet
-	ftf_write_link_tag( array( 
-		'rel' => 'stylesheet',
-		'type' => 'text/css',
-		'href' => NICHOLLS_CORE_URL . '/library/css/adminbar.css'
-	) );	
 }
 
 // Use action to enqueue javascript

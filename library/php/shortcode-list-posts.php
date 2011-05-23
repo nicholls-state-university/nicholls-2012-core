@@ -1,5 +1,4 @@
 <?php
-
 /**
 * Custom Query Shortcode
 *
