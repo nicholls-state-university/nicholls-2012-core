@@ -21,9 +21,13 @@ require_once( NICHOLLS_CORE_DIR . '/library/php/widget-nicholls-department-info.
 if ( is_multisite() ) require_once( NICHOLLS_CORE_DIR . '/library/php/widget-multisite-posts.php' );
 
 /**
-* Conditional includes for fuctions and classes in WordPress admin panels
-* Set $nicholls_webmanager primary object instance
-* @global object $nicholls_webmanager 
+* Conditional includes for specific WordPress and plugin settings
+*/
+define( 'BP_USE_WP_ADMIN_BAR', true );
+if ( !is_user_logged_in() ) define( 'BP_DISABLE_ADMIN_BAR', true );
+
+/**
+* Conditional includes for fuctions and classes in WordPress admin panels 
 */
 if ( is_admin() ) {
 	require_once( NICHOLLS_CORE_DIR . '/library/php/admin.php' );

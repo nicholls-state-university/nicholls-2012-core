@@ -377,26 +377,6 @@ body.widgets-primary-active .container- {
 	margin: 0 0 0 2em;
 }
 
-.nicholls-menu-about-container {
-	background-position: 5em 0em;
-}
-
-.nicholls-menu-future-container {
-	background-position: 15em 0em;
-}
-
-.nicholls-menu-current-container {
-	background-position: 26em 0em;
-}
-
-.nicholls-menu-administration-container {
-	background-position: 39em 0em;
-}
-
-.nicholls-menu-friends-container {
-	background-position: 54em 0em;
-}
-
 .nicholls-menu-content- {
 	position: absolute;
 	top: 1.2em;
@@ -410,41 +390,67 @@ body.widgets-primary-active .container- {
 	z-index: 1002;	
 }
 
-.nicholls-menu-contents { 
-	padding: .4em;
+.nicholls-menu-about-container {
+	background-position: 5em 0em;
 }
 
-.nicholls-menu-contents .column{
+.nicholls-menu-about-container .nicholls-menu-content- {
+	background: #fff url( 'library/images/backgrounds/backgrounds-menus-1.jpg' ) top right no-repeat;
+}
+
+.nicholls-menu-future-container {
+	background-position: 15em 0em;
+}
+
+
+.nicholls-menu-current-container {
+	background-position: 26em 0em;
+}
+
+.nicholls-menu-administration-container {
+	background-position: 39em 0em;
+}
+
+.nicholls-menu-friends-container {
+	background-position: 54em 0em;
+}
+
+.nicholls-menu-contents .nicholls-menu-title- { 
+	margin: 0;
+	padding: .2em .5em;
+	font-weight: 800;
+	color: #cc3333;
+	background: #000;
+}
+
+.nicholls-menu-contents .column- {
 	float: left;
 	width: 16em; /*width of each menu column*/
-	margin-right: .4em;
+	margin: .4em .4em 0 .6em;
+	font-size: 105%;
 }
 
-.nicholls-menu-contents .column ul {
+.nicholls-menu-contents .column- ul {
 	margin: 0 0 0 .5em;
 	padding: 0;
 	list-style-type: none;
 }
 
-.nicholls-menu-contents .column ul li {
+.nicholls-menu-contents .column- ul li {
 	padding-bottom: .4em;
 }
 
-.nicholls-menu-contents .column h2, .nicholls-menu-contents .column h3. .nicholls-menu-contents .column h4 {
+.nicholls-menu-contents .column- h2, .nicholls-menu-contents .column- h3. .nicholls-menu-contents .column- h4 {
 	color: #cc3333;
 	margin: .2em 0 .4em 0;
 }
 
-.nicholls-menu-contents .column ul li a {
+.nicholls-menu-contents .column- ul li a {
 	text-decoration: none;
 }
 
-.nicholls-menu-contents .column ul li a:hover {
+.nicholls-menu-contents .column- ul li a:hover {
 	color: red;
-}
-
-.nicholls-mega-menu-future- {
-	display: none;
 }
 
 /* START - Nicholls Header */

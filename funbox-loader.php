@@ -23,7 +23,7 @@ function ftf_defaut_init_actions() {
 	nicholls_bp_stylesheet();
 	
 	// ISSUE: BuddyPress WPMU adminbar CSS needs to be loaded properly
-	if ( is_user_logged_in() ) wp_enqueue_style( 'bp-admin-bar' );	
+	if ( is_user_logged_in() ) wp_enqueue_style( 'bp-admin-bar' );
 	
 	// Nicholls Core JavaScript
 	nicholls_enqueue_javascript();
@@ -89,7 +89,6 @@ function ftf_defaut_init_actions() {
 	add_action( 'ftf_container_end', 'ftf_default_widget_sidebar' );
 
 	// Default Footer Content
-	add_action( 'ftf_footer', 'ftf_footer_default' );
 	
 	// Entry title
 	add_action( 'ftf_template_loop_entry_title', 'ftf_entry_title' );	
