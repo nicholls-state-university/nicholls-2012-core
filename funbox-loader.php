@@ -3,14 +3,14 @@
 /*
 * Funbox Shut Up Theme Default Actions
 *
-* Default actions for the Funbox Theme Framework are added by the ftf_init
+* Default actions for the Funbox Theme Framework are added by the fnbx_init
 * located in the funbox/header.php file
 * This allows child themes to override the entire group of of actions or 
 * modify the actions individually.
 *
 * @since 1.0
 */
-function ftf_defaut_init_actions() {
+function fnbx_defaut_init_actions() {
 
 	// Remove BP admin bar to start
 	wp_dequeue_style( 'bp-admin-bar' );
@@ -29,49 +29,49 @@ function ftf_defaut_init_actions() {
 	nicholls_enqueue_javascript();
 	
 	// Doctype
-	add_action( 'ftf_header_init', 'ftf_doctype' );
+	add_action( 'fnbx_header_init', 'fnbx_doctype' );
 	
 	// Nicholls Favicon
-	add_action( 'ftf_wp_head_before', 'nicholls_favicon' );
+	add_action( 'fnbx_wp_head_before', 'nicholls_favicon' );
 
 	// Head Meta
-	add_action( 'ftf_wp_head_before', 'ftf_head_meta_content_type' );
-	add_action( 'ftf_wp_head_before', 'ftf_head_meta_template' );
-	add_action( 'ftf_wp_head_before', 'ftf_head_meta_robots' );
-	add_action( 'ftf_wp_head_before', 'ftf_head_meta_author' );
-	add_action( 'ftf_wp_head_before', 'ftf_head_meta_copyright' );
-	add_action( 'ftf_wp_head_before', 'ftf_head_meta_revised' );
+	add_action( 'fnbx_wp_head_before', 'fnbx_head_meta_content_type' );
+	add_action( 'fnbx_wp_head_before', 'fnbx_head_meta_template' );
+	add_action( 'fnbx_wp_head_before', 'fnbx_head_meta_robots' );
+	add_action( 'fnbx_wp_head_before', 'fnbx_head_meta_author' );
+	add_action( 'fnbx_wp_head_before', 'fnbx_head_meta_copyright' );
+	add_action( 'fnbx_wp_head_before', 'fnbx_head_meta_revised' );
 
 	// Links
-	add_action( 'ftf_wp_head_before', 'ftf_head_link_pingback' );
-	add_action( 'ftf_wp_head_before', 'ftf_head_link_breadcrumb' );
+	add_action( 'fnbx_wp_head_before', 'fnbx_head_link_pingback' );
+	add_action( 'fnbx_wp_head_before', 'fnbx_head_link_breadcrumb' );
 
 	// Layout - Main
-	add_action( 'ftf_wrapper_start', 'ftf_layout_element_open' );
-	add_action( 'ftf_wrapper_end', 'ftf_layout_element_close' );	
-	add_action( 'ftf_header_start', 'ftf_layout_element_open' );
-	add_action( 'ftf_header_end', 'ftf_layout_element_close' );
-	add_action( 'ftf_container_start', 'ftf_layout_element_open' );
-	add_action( 'ftf_container_end', 'ftf_layout_element_close' );	
-	add_action( 'ftf_content_start', 'ftf_layout_element_open' );
-	add_action( 'ftf_content_end', 'ftf_layout_element_close' );	
-	add_action( 'ftf_footer_start', 'ftf_layout_element_open' );
-	add_action( 'ftf_footer_end', 'ftf_layout_element_close' );
+	add_action( 'fnbx_wrapper_start', 'fnbx_layout_element_open' );
+	add_action( 'fnbx_wrapper_end', 'fnbx_layout_element_close' );	
+	add_action( 'fnbx_header_start', 'fnbx_layout_element_open' );
+	add_action( 'fnbx_header_end', 'fnbx_layout_element_close' );
+	add_action( 'fnbx_container_start', 'fnbx_layout_element_open' );
+	add_action( 'fnbx_container_end', 'fnbx_layout_element_close' );	
+	add_action( 'fnbx_content_start', 'fnbx_layout_element_open' );
+	add_action( 'fnbx_content_end', 'fnbx_layout_element_close' );	
+	add_action( 'fnbx_footer_start', 'fnbx_layout_element_open' );
+	add_action( 'fnbx_footer_end', 'fnbx_layout_element_close' );
 	
 	// Layout - Loop
-	add_action( 'ftf_template_loop_post_start', 'ftf_layout_post_open' );
-	add_action( 'ftf_template_loop_post_end', 'ftf_layout_post_close' );		
-	add_action( 'ftf_template_loop_content_start', 'ftf_layout_element_open_class_only' );
-	add_action( 'ftf_template_loop_content_end', 'ftf_layout_element_close' );
+	add_action( 'fnbx_template_loop_post_start', 'fnbx_layout_post_open' );
+	add_action( 'fnbx_template_loop_post_end', 'fnbx_layout_post_close' );		
+	add_action( 'fnbx_template_loop_content_start', 'fnbx_layout_element_open_class_only' );
+	add_action( 'fnbx_template_loop_content_end', 'fnbx_layout_element_close' );
 
 	// Website Title
-	add_action( 'ftf_header', 'ftf_default_title' );
+	add_action( 'fnbx_header', 'fnbx_default_title' );
 
 	// Website Description
-	add_action( 'ftf_header', 'ftf_default_description' );
+	add_action( 'fnbx_header', 'fnbx_default_description' );
 	
 	// Add Accessiblity and Menu before nicholls-header if not home
-	add_action( 'nicholls_header_start', 'ftf_access_menu' );
+	add_action( 'nicholls_header_start', 'fnbx_access_menu' );
 	
 	// Nicholls Primary Menu
 	add_action( 'nicholls_header_start', 'nicholls_top_menu' );	
@@ -79,51 +79,51 @@ function ftf_defaut_init_actions() {
 	// Nicholls Header - custom header.php - Layout
 	add_action( 'nicholls_header_start', 'nicholls_layout_wrapper_element_open' );	
 	add_action( 'nicholls_header_end', 'nicholls_layout_wrapper_element_close' );
-	add_action( 'nicholls_header_start', 'ftf_layout_element_open' );	
-	add_action( 'nicholls_header_end', 'ftf_layout_element_close' );
+	add_action( 'nicholls_header_start', 'fnbx_layout_element_open' );	
+	add_action( 'nicholls_header_end', 'fnbx_layout_element_close' );
 
 	// Nicholls Logo Primary Info and Links
 	add_action( 'nicholls_header_start', 'nicholls_core_header' );	
 
 	// Widget Sidebar Group
-	add_action( 'ftf_container_end', 'ftf_default_widget_sidebar' );
+	add_action( 'fnbx_container_end', 'fnbx_default_widget_sidebar' );
 
 	// Default Footer Content
 	
 	// Entry title
-	add_action( 'ftf_template_loop_entry_title', 'ftf_entry_title' );	
+	add_action( 'fnbx_template_loop_entry_title', 'fnbx_entry_title' );	
 		
 	// For all archives we put a page title, for author and categories we put desicription meta if available
 	if ( is_archive() ) {
 		// Loop template page title and description for some
-		add_action( 'ftf_template_loop_start', 'ftf_page_title_default' );
-		if ( is_author() || is_category() ) add_action( 'ftf_template_loop_start', 'ftf_page_description_default' );	
+		add_action( 'fnbx_template_loop_start', 'fnbx_page_title_default' );
+		if ( is_author() || is_category() ) add_action( 'fnbx_template_loop_start', 'fnbx_page_description_default' );	
 		// Loop template post thumbnail & content
-		add_action( 'ftf_template_loop_content_start', 'ftf_the_post_thumbnail' );
+		add_action( 'fnbx_template_loop_content_start', 'fnbx_the_post_thumbnail' );
 	}
 	
 	// Home example adding a post thumbnail
-	if ( is_home() ) add_action( 'ftf_template_loop_content_start', 'ftf_the_post_thumbnail' );
+	if ( is_home() ) add_action( 'fnbx_template_loop_content_start', 'fnbx_the_post_thumbnail' );
 
 	// Content meta do we want brief or verbose, we could also filter or change with language files.
 	if ( is_home() || ( is_archive() || is_search() ) ) 
-		add_action( 'ftf_template_loop_content_end', 'ftf_post_meta_brief' );
+		add_action( 'fnbx_template_loop_content_end', 'fnbx_post_meta_brief' );
 	// This should cover is_single, is_attachement, is_image
 	elseif ( !is_page() )
-		add_action( 'ftf_template_loop_content_end', 'ftf_post_meta_verbose' );		
+		add_action( 'fnbx_template_loop_content_end', 'fnbx_post_meta_verbose' );		
 	
 	// Put an edit link for pages since we don't show meta
-	if ( is_page() ) add_action( 'ftf_template_loop_content_end', 'ftf_post_meta_edit' );		
+	if ( is_page() ) add_action( 'fnbx_template_loop_content_end', 'fnbx_post_meta_edit' );		
 		
 	if ( is_attachment() ) {
 
 		// Attachment parent
-		add_action( 'ftf_template_loop_start', 'ftf_entry_parent_title' );
+		add_action( 'fnbx_template_loop_start', 'fnbx_entry_parent_title' );
 
 		/*
-		Example for using the global $ftf->template_part_name to set an action.
-		For the attachement.php template it will be ftf_template_loop_content_attachment_start
-		For the image.php template ftf_template_loop_content_image_start
+		Example for using the global $fnbx->template_part_name to set an action.
+		For the attachement.php template it will be fnbx_template_loop_content_attachment_start
+		For the image.php template fnbx_template_loop_content_image_start
 		
 		This will use specialized functions to pull the image or attachment to the top part of
 		the loop template. This can also be done by making a respective funbox-loop-image.php or
@@ -132,61 +132,61 @@ function ftf_defaut_init_actions() {
 		*/
 		
 		// Attachment template content
-		add_action( 'ftf_template_loop_content_attachment_start', 'ftf_attachment_content' );
+		add_action( 'fnbx_template_loop_content_attachment_start', 'fnbx_attachment_content' );
 		// Attachment template Comments
-		add_action( 'ftf_template_attachment_end', 'ftf_comments_template_separate' );
+		add_action( 'fnbx_template_attachment_end', 'fnbx_comments_template_separate' );
 		// Image template content
-		add_action( 'ftf_template_loop_content_image_start', 'ftf_image_content' );
+		add_action( 'fnbx_template_loop_content_image_start', 'fnbx_image_content' );
 	}	
 
 	// 404 Not Found page.
 	if ( is_404() ) {
 		// 404 template content (see: /library/php/404.php)
-		add_action( 'ftf_template_loop_content_404_end', 'ftf_search_form' );
-		add_action( 'ftf_template_loop_content_404_end', 'ftf_404_report' );
-		add_action( 'ftf_template_loop_content_404_end', 'ftf_404_pagelist' );
+		add_action( 'fnbx_template_loop_content_404_end', 'fnbx_search_form' );
+		add_action( 'fnbx_template_loop_content_404_end', 'fnbx_404_report' );
+		add_action( 'fnbx_template_loop_content_404_end', 'fnbx_404_pagelist' );
 		// 404 title shortcode replace filter (see: /library/php/404.php)
-		add_filter( 'ftf_entry_title_shortcode', 'ftf_404_title_shortcode_filter' );
+		add_filter( 'fnbx_entry_title_shortcode', 'fnbx_404_title_shortcode_filter' );
 		// 404 Post Class error filter (see: /library/php/404.php)
-		add_filter( 'ftf_post_class', 'ftf_404_post_class_filter' );
+		add_filter( 'fnbx_post_class', 'fnbx_404_post_class_filter' );
 	}
 
 	// Comments restricted to comment open, but could be switched on for other resons.
 	if ( comments_open() ) {	
 		// Comment Special Reply Javascripts for threaded comments
-		add_action( 'ftf_wp_head_before', 'ftf_enqueue_script_comment_reply' );
+		add_action( 'fnbx_wp_head_before', 'fnbx_enqueue_script_comment_reply' );
 		// Comment Layout
-		add_action( 'ftf_template_comments_start', 'ftf_layout_element_open' );
-		add_action( 'ftf_template_comments_end', 'ftf_layout_element_close' );
+		add_action( 'fnbx_template_comments_start', 'fnbx_layout_element_open' );
+		add_action( 'fnbx_template_comments_end', 'fnbx_layout_element_close' );
 		// Comment Navigation
-		add_action( 'ftf_template_comments_comments_list_start', 'ftf_comment_navigation_box_above' );
+		add_action( 'fnbx_template_comments_comments_list_start', 'fnbx_comment_navigation_box_above' );
 		// Standard Mixed Comments and Pings
-		add_action( 'ftf_template_comments_comments_list', 'ftf_comment_list_default' );
+		add_action( 'fnbx_template_comments_comments_list', 'fnbx_comment_list_default' );
 		// Comment Navigation
-		add_action( 'ftf_template_comments_comments_list_end', 'ftf_comment_navigation_box_below' );
+		add_action( 'fnbx_template_comments_comments_list_end', 'fnbx_comment_navigation_box_below' );
 
 		// Comments? We'll only add to the single post template using an action
-		if ( is_single() ) add_action( 'ftf_template_single_end', 'ftf_comments_template_separate' );
+		if ( is_single() ) add_action( 'fnbx_template_single_end', 'fnbx_comments_template_separate' );
 
 		// Comments? We'll only add to the single post template using an action
-		if ( is_page() ) add_action( 'ftf_template_page_end', 'ftf_comments_template_separate' );
+		if ( is_page() ) add_action( 'fnbx_template_page_end', 'fnbx_comments_template_separate' );
 
 		// Image template comments
-		if ( is_attachment() ) add_action( 'ftf_template_image_end', 'ftf_comments_template_separate' );
+		if ( is_attachment() ) add_action( 'fnbx_template_image_end', 'fnbx_comments_template_separate' );
 	}
 	
 	// Nicholls MegaMenu
-	add_action( 'ftf_footer', 'nicholls_megamenu_load' );
+	add_action( 'fnbx_footer', 'nicholls_megamenu_load' );
 
 	// The default actions get... an action. 
-	do_action( 'ftf_defaut_actions' );
+	do_action( 'fnbx_defaut_actions' );
 }
 // Default inits for funbox/header.php
-add_action( 'ftf_init', 'ftf_defaut_init_actions' );
+add_action( 'fnbx_init', 'fnbx_defaut_init_actions' );
 
 // Default init for adding post thumbnail & nav menu support to funbox/functions.php
-add_action( 'ftf_loaded', 'ftf_post_thumbnails_default_setup' );
-add_action( 'ftf_loaded', 'ftf_nav_menus_default_setup' );
+add_action( 'fnbx_loaded', 'fnbx_post_thumbnails_default_setup' );
+add_action( 'fnbx_loaded', 'fnbx_nav_menus_default_setup' );
 
 /**
 * Funbox Theme Centric Filters
@@ -195,35 +195,35 @@ add_action( 'ftf_loaded', 'ftf_nav_menus_default_setup' );
 *
 * @since 1.0
 */
-function ftf_default_init_filters() {
+function fnbx_default_init_filters() {
 	// Filter Header display tag
-	add_filter( 'ftf_default_title', 'ftf_header_title_filter' );
+	add_filter( 'fnbx_default_title', 'fnbx_header_title_filter' );
 
 	// Filter Main Titles
-	add_filter( 'ftf_entry_title', 'ftf_entry_title_filter' );
-	add_filter( 'ftf_entry_title', 'ftf_entry_title_filter' );
-	add_filter( 'ftf_entry_title_shortcode', 'ftf_entry_title_shortcode_filter' );
+	add_filter( 'fnbx_entry_title', 'fnbx_entry_title_filter' );
+	add_filter( 'fnbx_entry_title', 'fnbx_entry_title_filter' );
+	add_filter( 'fnbx_entry_title_shortcode', 'fnbx_entry_title_shortcode_filter' );
 
 	// Filter Post Classes
-	add_filter( 'body_class', 'ftf_body_class_filter' );
+	add_filter( 'body_class', 'fnbx_body_class_filter' );
 
 	// Filter Post Classes
-	add_filter( 'post_class', 'ftf_post_class_filter' );
+	add_filter( 'post_class', 'fnbx_post_class_filter' );
 
 	// Filter hfeed for non-pages
-	add_filter( 'ftf_content_class', 'ftf_hfeed_class_filter' );
+	add_filter( 'fnbx_content_class', 'fnbx_hfeed_class_filter' );
 
 	// Filter entry for posts and pages
-	add_filter( 'ftf_entry_content_class', 'ftf_entry_class_filter' );
+	add_filter( 'fnbx_entry_content_class', 'fnbx_entry_class_filter' );
 
 	// Filter Comment Classes - ISSUE must get all the arguments mark non-users
-	add_filter( 'comment_class', 'ftf_comment_class_filter', 10, 4 );
+	add_filter( 'comment_class', 'fnbx_comment_class_filter', 10, 4 );
 
 	// The default filters get... an action. 
-	do_action( 'ftf_defaut_filters' );	
+	do_action( 'fnbx_defaut_filters' );	
 }
 // Funbox Them Centric Default FIlters
-add_action( 'ftf_init', 'ftf_default_init_filters' );
+add_action( 'fnbx_init', 'fnbx_default_init_filters' );
 
 /*
 * Nicholls Mega Menu

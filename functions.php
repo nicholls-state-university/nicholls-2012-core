@@ -40,13 +40,13 @@ if ( is_admin() ) {
 *
 * @since 1.0
 */
-function ftf_theme_support_filter( $features ) {
+function fnbx_theme_support_filter( $features ) {
 	// Set and filter WordPress theme support features
 	$features['post-formats'] = false;
 	$features['custom-background'] = false;
 	return $features;
 }
-add_filter( 'ftf_theme_support', 'ftf_theme_support_filter' );
+add_filter( 'fnbx_theme_support', 'fnbx_theme_support_filter' );
 
 /*
 * Funbox Theme Custom Header Filter
@@ -55,7 +55,7 @@ add_filter( 'ftf_theme_support', 'ftf_theme_support_filter' );
 *
 * @since 1.0
 */
-function ftf_theme_custom_header_filter( $custom_header ) {
+function fnbx_theme_custom_header_filter( $custom_header ) {
 	// Set and filter WordPress theme support features
 	$custom_header['no_header_text'] = false;
 	$custom_header['css_name'] = '.header-nicholls-';
@@ -65,6 +65,6 @@ function ftf_theme_custom_header_filter( $custom_header ) {
 	$custom_header['css_position_x'] = right;
 	return $custom_header;
 }
-add_filter( 'ftf_custom_header', 'ftf_theme_custom_header_filter' );
+add_filter( 'fnbx_custom_header', 'fnbx_theme_custom_header_filter' );
 
 ?>

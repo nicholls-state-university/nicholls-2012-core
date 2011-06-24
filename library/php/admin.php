@@ -116,7 +116,7 @@ function nicholls_common_admin_settings_register() {
 }
 
 function nicholls_core_theme_admin_section_text() {
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'p',
 		'tag_content' => 'Contact information will be shown only if you have the Nicholls information widget in your sidebar.'
 	) );
@@ -125,7 +125,7 @@ function nicholls_core_theme_admin_section_text() {
 function nicholls_core_theme_admin_setting_string( $field_name ) {
 	$options = get_option('nicholls_core_theme_options');
 
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'input',
 		'tag_type' => 'single',
 		'name' => 'nicholls_core_theme_options['. $field_name . ']',
@@ -136,7 +136,7 @@ function nicholls_core_theme_admin_setting_string( $field_name ) {
 function nicholls_core_theme_admin_setting_text( $field_name ) {
 	$options = get_option('nicholls_core_theme_options');
 
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'textarea',
 		'name' => 'nicholls_core_theme_options['. $field_name . ']',
 		'tag_content' => $options[ $field_name ]
@@ -173,15 +173,15 @@ function nicholls_common_admin_message( $message = '', $return = false ) {
 		'return' => $return
 	);
 	
-	if ( $args_default['return'] == true ) return ftf_html_tag( $args_default );
+	if ( $args_default['return'] == true ) return fnbx_html_tag( $args_default );
 	
-	ftf_html_tag( $args_default );	
+	fnbx_html_tag( $args_default );	
 }
 
 
 
 function nicholls_common_admin() {
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'div',
 		'tag_type' => 'open',
 		'class' => 'wrap'
@@ -190,17 +190,17 @@ function nicholls_common_admin() {
 	if ( $_REQUEST['saved'] ) nicholls_common_admin_message( 'Settings saved.' );
 	if ( $_REQUEST['reset'] ) nicholls_common_admin_message( 'Settings reset.' );
 	
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'h2',
 		'tag_content' => 'Nicholls Theme Options'
 	) );
 	
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'p',
 		'tag_content' => 'Options for your Nicholls Department website.'
 	) );
 
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'form',
 		'tag_type' => 'open',
 		'action' => 'options.php',
@@ -211,13 +211,13 @@ function nicholls_common_admin() {
 	settings_fields('nicholls_core_theme_options');
 	do_settings_sections('nicholls_core_theme_admin');
 
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'p',
 		'tag_type' => 'open',
 		'class' => 'submit'
 	) );
 	
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'input',
 		'tag_type' => 'single',
 		'name' => 'Submit',
@@ -226,17 +226,17 @@ function nicholls_common_admin() {
 		'value' => esc_attr('Save Changes')
 	) );
 	
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'p',
 		'tag_type' => 'close',
 	) );	
 
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'form',
 		'tag_type' => 'close'
 	) );
 	
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'div',
 		'tag_type' => 'close',
 	) );

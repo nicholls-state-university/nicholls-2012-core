@@ -51,9 +51,9 @@ function custom_query_shortcode($atts) {
 	
 	// Set the temporary variables so we can restore them later
 	$more_temp = $more;
-	$temp_query = ftf_clone( $wp_query );
+	$temp_query = fnbx_clone( $wp_query );
 	$temp_posts = $posts;
-	$temp_post = ftf_clone( $post );
+	$temp_post = fnbx_clone( $post );
 		
 	$the_query_custom = new WP_Query( $qs_query_arr );
 	$more = $the_query_arr['qs_more'];
@@ -72,9 +72,9 @@ function custom_query_shortcode($atts) {
 	
 		if ( isset( $the_query_arr['qs_container_class'] ) ) $list_posts_container_defaults['class'] .= ' ' . $the_query_arr['qs_container_class'];
 	
-		$output = ftf_html_tag( $list_posts_container_defaults );
+		$output = fnbx_html_tag( $list_posts_container_defaults );
 	
-		$output .= ftf_html_tag( array(
+		$output .= fnbx_html_tag( array(
 			'tag_type' => 'open',
 			'tag' => 'ul',
 			'class' => 'list-posts-list',
@@ -101,11 +101,11 @@ function custom_query_shortcode($atts) {
 					else
 						$t_size = $the_query_arr['qs_thumbnail'];
 						
-					$thumbnail = ftf_get_the_post_thumbnail( $the_query_custom->post->ID, $t_size );
+					$thumbnail = fnbx_get_the_post_thumbnail( $the_query_custom->post->ID, $t_size );
 					
 				} else {
 
-					$thumbnail = ftf_get_the_post_thumbnail();
+					$thumbnail = fnbx_get_the_post_thumbnail();
 				}
 			}
 				
@@ -121,7 +121,7 @@ function custom_query_shortcode($atts) {
 				$this_content_length = intval( $the_query_arr['qs_content'] );
 				$this_content = substr( $this_content, 0 , $this_content_length );
 
-				$content = ftf_html_tag( array(
+				$content = fnbx_html_tag( array(
 					'tag' => 'div',
 					'class' => 'list-posts-item-content',
 					'tag_content' => $this_content . '...',
@@ -133,7 +133,7 @@ function custom_query_shortcode($atts) {
 			// Title
 			$temp_title = get_the_title( $the_query_custom->post->ID );
 			
-			$entry_title_link = ftf_html_tag( array(
+			$entry_title_link = fnbx_html_tag( array(
 				'tag' => 'a',
 				'class' => 'permalink',
 				'title' => $temp_title,
@@ -142,7 +142,7 @@ function custom_query_shortcode($atts) {
 				'return' => true
 			) );
 			
-			$title = ftf_html_tag( array(
+			$title = fnbx_html_tag( array(
 				'tag' => $the_query_arr['qs_title_tag'],
 				'class' => 'list-posts-item-title',
 				'tag_content' => $entry_title_link,
@@ -152,7 +152,7 @@ function custom_query_shortcode($atts) {
 			// Date
 			$temp_date = mysql2date( get_option('date_format'), $the_query_custom->post->post_date ) . ' at ' . get_the_time( '', $the_query_custom->post->ID );
 			
-			$temp_date_abbr = ftf_html_tag( array(
+			$temp_date_abbr = fnbx_html_tag( array(
 				'tag' => 'abbr',
 				'class' => 'published',
 				'title' => get_the_time( 'Y-m-d', $the_query_custom->post->ID ) . 'T' . get_the_time( 'H:i:sO', $the_query_custom->post->ID ),
@@ -160,14 +160,14 @@ function custom_query_shortcode($atts) {
 				'return' => true
 			) );
 			
-			$date = ftf_html_tag( array(
+			$date = fnbx_html_tag( array(
 				'tag' => 'div',
 				'class' => 'list-posts-item-date',
 				'tag_content' => $temp_date_abbr,
 				'return' => true		
 			) );
 						
-			$output .= ftf_html_tag( array(
+			$output .= fnbx_html_tag( array(
 				'tag' => 'li',
 				'tag_type' => 'open',
 				'class' => 'list-posts-item',
@@ -182,7 +182,7 @@ function custom_query_shortcode($atts) {
 			
 			$output .= $t_result . $ttest;
 			
-			$output .= ftf_html_tag( array(
+			$output .= fnbx_html_tag( array(
 				'tag' => 'li',
 				'tag_type' => 'close',
 				'return' => true
@@ -190,13 +190,13 @@ function custom_query_shortcode($atts) {
 	
 		}
 		
-		$output .= ftf_html_tag( array(
+		$output .= fnbx_html_tag( array(
 			'tag_type' => 'close',
 			'tag' => 'ul',
 			'return' => true
 		) );
 		
-		$output .= ftf_html_tag( array(
+		$output .= fnbx_html_tag( array(
 			'tag_type' => 'close',
 			'tag' => 'div',
 			'return' => true
@@ -206,9 +206,9 @@ function custom_query_shortcode($atts) {
 
 	// Reset the temporary variables so we can restore them later
 	$more = $more_temp;
-	$wp_query = ftf_clone( $temp_query );
+	$wp_query = fnbx_clone( $temp_query );
 	$posts = $temp_posts;
-	$post = ftf_clone( $temp_post );
+	$post = fnbx_clone( $temp_post );
 	
 	wp_reset_query();
 	wp_reset_postdata();

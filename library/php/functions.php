@@ -73,10 +73,10 @@ function nicholls_favicon() {
 	);
 	
 	$favicon_default['rel'] = 'icon';
-	ftf_html_tag( $favicon_default );
+	fnbx_html_tag( $favicon_default );
 	
 	$favicon_default['rel'] = 'shortcut icon';
-	ftf_html_tag( $favicon_default );
+	fnbx_html_tag( $favicon_default );
 
 }
 
@@ -98,16 +98,16 @@ function get_nicholls_core_url() {
 */
 function nicholls_form_google_search() {
 	
-	$form_google_search_content .= ftf_form_input( array( 'type' => 'text', 'name' => 'q', 'size' => 13, 'maxlength' => 256, 'return' => true ) );
-	$form_google_search_content .= ftf_form_input( array( 'type' => 'hidden', 'name' => 'sort', 'value' => 'date:D:L:d1', 'return' => true ) );
-	$form_google_search_content .= ftf_form_input( array( 'type' => 'hidden', 'name' => 'output', 'value' => 'xml_no_dtd', 'return' => true ) );
-	$form_google_search_content .= ftf_form_input( array( 'type' => 'hidden', 'name' => 'oe', 'value' => 'UTF-8', 'return' => true ) );
-	$form_google_search_content .= ftf_form_input( array( 'type' => 'hidden', 'name' => 'ie', 'value' => 'UTF-8', 'return' => true ) );
-	$form_google_search_content .= ftf_form_input( array( 'type' => 'hidden', 'name' => 'client', 'value' => 'default_frontend', 'return' => true ) );
-	$form_google_search_content .= ftf_form_input( array( 'type' => 'hidden', 'name' => 'proxystylesheet', 'value' => 'default_frontend', 'return' => true ) );
-	$form_google_search_content .= ftf_form_input( array( 'type' => 'hidden', 'name' => 'numgm', 'value' => '5', 'return' => true ) );
-	$form_google_search_content .= ftf_form_input( array( 'type' => 'hidden', 'name' => 'site', 'value' => 'default_collection', 'return' => true ) );
-	$form_google_search_content .= ftf_form_button( array( 
+	$form_google_search_content .= fnbx_form_input( array( 'type' => 'text', 'name' => 'q', 'size' => 13, 'maxlength' => 256, 'return' => true ) );
+	$form_google_search_content .= fnbx_form_input( array( 'type' => 'hidden', 'name' => 'sort', 'value' => 'date:D:L:d1', 'return' => true ) );
+	$form_google_search_content .= fnbx_form_input( array( 'type' => 'hidden', 'name' => 'output', 'value' => 'xml_no_dtd', 'return' => true ) );
+	$form_google_search_content .= fnbx_form_input( array( 'type' => 'hidden', 'name' => 'oe', 'value' => 'UTF-8', 'return' => true ) );
+	$form_google_search_content .= fnbx_form_input( array( 'type' => 'hidden', 'name' => 'ie', 'value' => 'UTF-8', 'return' => true ) );
+	$form_google_search_content .= fnbx_form_input( array( 'type' => 'hidden', 'name' => 'client', 'value' => 'default_frontend', 'return' => true ) );
+	$form_google_search_content .= fnbx_form_input( array( 'type' => 'hidden', 'name' => 'proxystylesheet', 'value' => 'default_frontend', 'return' => true ) );
+	$form_google_search_content .= fnbx_form_input( array( 'type' => 'hidden', 'name' => 'numgm', 'value' => '5', 'return' => true ) );
+	$form_google_search_content .= fnbx_form_input( array( 'type' => 'hidden', 'name' => 'site', 'value' => 'default_collection', 'return' => true ) );
+	$form_google_search_content .= fnbx_form_button( array( 
 		'type' => 'submit',
 		'name' => 'search',
 		'value' => 'search',
@@ -118,7 +118,7 @@ function nicholls_form_google_search() {
 		'onmouseout' => "this.className='button-search-'"	
 	) );
 	
-	return ftf_form( 'gs', 'http://search.nicholls.edu/search', 'get', $form_google_search_content, true );
+	return fnbx_form( 'gs', 'http://search.nicholls.edu/search', 'get', $form_google_search_content, true );
 
 }
 
@@ -161,7 +161,7 @@ function nicholls_get_logo( $logo_style, $logo_size, $link = false, $return = tr
 			'class' => 'link-home',		
 			'href' => get_nicholls_core_url(),
 			'title' => 'Nicholls State University',
-			'tag_content' => ftf_html_tag( $default_logo_img ),
+			'tag_content' => fnbx_html_tag( $default_logo_img ),
 			'return' => $return
 		);
 	} else {
@@ -169,9 +169,9 @@ function nicholls_get_logo( $logo_style, $logo_size, $link = false, $return = tr
 	}
 	
 	if ( $return )
-		return ftf_html_tag( $default_logo );
+		return fnbx_html_tag( $default_logo );
 	else 
-		ftf_html_tag( $default_logo );
+		fnbx_html_tag( $default_logo );
 		
 		
 }
@@ -223,7 +223,7 @@ function nicholls_top_menu() {
 	);
 
 		
-	$box_clear = ftf_html_tag( array(
+	$box_clear = fnbx_html_tag( array(
 		'tag' => 'div',
 		'class' => 'box-0x0 clear-both',
 		'tag_content' => '',
@@ -231,7 +231,7 @@ function nicholls_top_menu() {
 		'return' => true
 	) );
 	
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'div',
 		'tag_type' => 'open',
 		'id' => 'menu-primary-container',
@@ -239,7 +239,7 @@ function nicholls_top_menu() {
 		'tag_content_after' => "\n",
 	) );
 	
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'div',
 		'tag_type' => 'open',
 		'id' => 'menu-primary',
@@ -273,7 +273,7 @@ function nicholls_top_menu() {
 			// Add nicholls-no-menu to home link because it's quicker than jscript
 			if ( $item['name'] == 'nicholls-menu-home' ) $menu_link_defaults['class'] .= ' nicholls-menu-no';
 		
-			$menu_content_defaults['tag_content'] = ftf_html_tag( $menu_link_defaults );
+			$menu_content_defaults['tag_content'] = fnbx_html_tag( $menu_link_defaults );
 		} else {
 			if ( $item['name'] != 'nicholls-menu-search' ) $item['contents'] = '<span>' . $item['contents'] . '</span>';
 			
@@ -285,10 +285,10 @@ function nicholls_top_menu() {
 		// Add nicholls-no-menu to home link because it's quicker than jscript
 		if ( $item['name'] == 'nicholls-menu-home' ) $menu_content_defaults['class'] .= ' nicholls-menu-no';
 
-		$menu_content .= ftf_html_tag( $menu_content_defaults );
+		$menu_content .= fnbx_html_tag( $menu_content_defaults );
 	}
 
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'ul',
 		'id' => 'nicholls-menu-list',
 		'class' => 'nicholls-menu-list-',
@@ -296,7 +296,7 @@ function nicholls_top_menu() {
 		'tag_content_after' => "\n",
 	) );
 	
-	$menu_content = ftf_html_tag( array(
+	$menu_content = fnbx_html_tag( array(
 		'tag' => 'div',
 		'id' => 'nicholls-menu-content',
 		'class' => 'nicholls-menu-content-',
@@ -304,7 +304,7 @@ function nicholls_top_menu() {
 		'return' => true
 	) );
 
-	$menu_content_container = ftf_html_tag( array(
+	$menu_content_container = fnbx_html_tag( array(
 		'tag' => 'div',
 		'id' => 'nicholls-menu-content-container',
 		'class' => 'nicholls-menu-content-container-',
@@ -313,7 +313,7 @@ function nicholls_top_menu() {
 		'return' => true
 	) );
 	
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'div',
 		'id' => 'nicholls-menu-content-wrapper',
 		'class' => 'nicholls-menu-content-wrapper-',
@@ -322,14 +322,14 @@ function nicholls_top_menu() {
 	) );
 	
 	// Close menu-primary
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'div',
 		'tag_type' => 'close',
 		'tag_content_after' => "\n",
 	) );	
 
 	// Close menu-primary-container
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'div',
 		'tag_type' => 'close',
 		'tag_content_after' => "\n",
@@ -339,7 +339,7 @@ function nicholls_top_menu() {
 
 function nicholls_core_header() {
 		
-	$box_clear = ftf_html_tag( array(
+	$box_clear = fnbx_html_tag( array(
 		'tag' => 'div',
 		'class' => 'box-0x0 clear-both',
 		'tag_content' => '',
@@ -347,7 +347,7 @@ function nicholls_core_header() {
 		'return' => true
 	) );	
 	
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'div',
 		'tag_type' => 'open',
 		'id' => 'info-primary',
@@ -355,7 +355,7 @@ function nicholls_core_header() {
 		'tag_content_after' => "\n",
 	) );
 	
-	$logo = ftf_html_tag( array(
+	$logo = fnbx_html_tag( array(
 		'tag' => 'img',
 		'tag_type' => 'single',
 		'id' => 'logo-nicholls-medium',
@@ -367,7 +367,7 @@ function nicholls_core_header() {
 		'return' => true
 	) );
 
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'div',
 		'id' => 'logo-container',
 		'class' => 'logo-container-',
@@ -392,7 +392,7 @@ function nicholls_core_header() {
 	);
 	
 	foreach( $nicholls_menu_items as $item ) {
-		$menu_content .= ftf_html_tag( array(
+		$menu_content .= fnbx_html_tag( array(
 			'tag' => 'li',
 			'class' => 'info-' . $item['class'],
 			'tag_content' => $item['contents'],
@@ -401,14 +401,14 @@ function nicholls_core_header() {
 		) );
 	}
 
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'ul',
 		'tag_content' => $menu_content,
 		'tag_content_after' => "\n",
 	) );
 
 	// Close info-primary
-	ftf_html_tag( array(
+	fnbx_html_tag( array(
 		'tag' => 'div',
 		'tag_type' => 'close',
 		'tag_content_after' => "\n",

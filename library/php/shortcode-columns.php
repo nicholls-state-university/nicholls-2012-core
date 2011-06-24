@@ -38,7 +38,7 @@ function column_shortcode( $atts, $content = null ) {
 		unset( $column_defaults['style'] );
 	}
 	
-	return ftf_html_tag( $column_defaults );
+	return fnbx_html_tag( $column_defaults );
 }
 add_shortcode('column', 'column_shortcode');
 

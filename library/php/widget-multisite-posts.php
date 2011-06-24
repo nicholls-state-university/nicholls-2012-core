@@ -62,9 +62,9 @@ class WP_Widget_Multisite_Posts extends WP_Widget {
 	
 		// Set the temporary variables so we can restore them later
 		$more_temp = $more;
-		$temp_query = ftf_clone( $wp_query );
+		$temp_query = fnbx_clone( $wp_query );
 		$temp_posts = $posts;
-		$temp_post = ftf_clone( $post );
+		$temp_post = fnbx_clone( $post );
 		
 		switch_to_blog( $blog_id );
 	
@@ -79,13 +79,13 @@ class WP_Widget_Multisite_Posts extends WP_Widget {
 		
 			echo $before_widget;
 			if ( $title ) echo $before_title . $title . $after_title;		
-			ftf_html_tag( array(
+			fnbx_html_tag( array(
 				'tag_type' => 'open',
 				'tag' => 'div',
 				'class' => 'ms-posts-container'
 			) );
 			
-			ftf_html_tag( array(
+			fnbx_html_tag( array(
 				'tag_type' => 'open',
 				'tag' => 'ul'
 			) );
@@ -98,7 +98,7 @@ class WP_Widget_Multisite_Posts extends WP_Widget {
 				
 				// is_sticky?
 	
-				ftf_html_tag( array(
+				fnbx_html_tag( array(
 					'tag_type' => 'open',
 					'tag' => 'li'
 				) );
@@ -116,25 +116,25 @@ class WP_Widget_Multisite_Posts extends WP_Widget {
 					'return' => true
 				);
 				
-				$entry_title_link = ftf_html_tag( $entry_title_link_defaults );
+				$entry_title_link = fnbx_html_tag( $entry_title_link_defaults );
 				
-				ftf_html_tag( array(
+				fnbx_html_tag( array(
 					'tag' => 'h4',
 					'tag_content' => $entry_title_link
 				) );
 	
-				ftf_html_tag( array(
+				fnbx_html_tag( array(
 					'tag_type' => 'close',
 					'tag' => 'li'
 				) );
 			}
 	
-			ftf_html_tag( array(
+			fnbx_html_tag( array(
 				'tag_type' => 'close',
 				'tag' => 'ul'
 			) );
 			
-			ftf_html_tag( array(
+			fnbx_html_tag( array(
 				'tag_type' => 'close',
 				'tag' => 'div'
 			) );
@@ -149,9 +149,9 @@ class WP_Widget_Multisite_Posts extends WP_Widget {
 	
 		// Reset the temporary variables so we can restore them later
 		$more = $more_temp;
-		$wp_query = ftf_clone( $temp_query );
+		$wp_query = fnbx_clone( $temp_query );
 		$posts = $temp_posts;
-		$post = ftf_clone( $temp_post );
+		$post = fnbx_clone( $temp_post );
 		
 		wp_reset_query();
 		wp_reset_postdata();

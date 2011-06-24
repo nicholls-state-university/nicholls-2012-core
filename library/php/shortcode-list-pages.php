@@ -58,14 +58,14 @@ function list_pages_shortcode( $atts, $content = null ) {
 	   
 	   if ( isset( $toc_settings['toc_title_class'] ) ) $toc_title_defaults['class'] = $toc_settings['toc_title_class'];
 	   
-	   $toc_title = ftf_html_tag( $toc_title_defaults );
+	   $toc_title = fnbx_html_tag( $toc_title_defaults );
    }
    
    // Never Echo
    $toc_query['echo'] = 0;
    
    $toc_list = wp_list_pages( $toc_query );
-   $toc = ftf_html_tag( array(
+   $toc = fnbx_html_tag( array(
 	   'tag' => $toc_settings['toc_wrapper_tag'],
 	   'tag_content' => $toc_list,
 	   'return' => true
@@ -82,7 +82,7 @@ function list_pages_shortcode( $atts, $content = null ) {
 	   
 	   $toc_defaults['tag_content'] = $toc_title . $toc;
 	   
-	   $contents = ftf_html_tag( $toc_defaults );   
+	   $contents = fnbx_html_tag( $toc_defaults );   
    } else {
 	   $contents = $toc_title . $toc;
    }

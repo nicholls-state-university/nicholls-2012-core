@@ -14,40 +14,40 @@
 * Nicholls Core Actions
 * 
 * Default Nicholls actions. May overide or add to Funbox Theme actions. 
-* Executed by Funbox Action: ftf_child_init
+* Executed by Funbox Action: fnbx_child_init
 *
 */
 function nicholls_core_actions() {
 		
-	// ISSUE: Remove FTF BuddyPress search & login bar because we don't need it yet
-	remove_action( 'ftf_header_start', 'ftf_bp_search_login_bar' );
+	// ISSUE: Remove FNBX BuddyPress search & login bar because we don't need it yet
+	remove_action( 'fnbx_header_start', 'fnbx_bp_search_login_bar' );
 	
 }
-add_action( 'ftf_child_init', 'nicholls_core_actions' );
+add_action( 'fnbx_child_init', 'nicholls_core_actions' );
 
 
 /**
 * Nicholls Open Wrapper Element
 *
-* Uses ftf_layout_element_open() to open a div adding -wrapper to the element name
+* Uses fnbx_layout_element_open() to open a div adding -wrapper to the element name
 *
 */
 function nicholls_layout_wrapper_element_open( $element = '' ) {
 	if ( $element == '' ) return;
 		
-	ftf_layout_element_open( $element . '-wrapper' );
+	fnbx_layout_element_open( $element . '-wrapper' );
 }
 
 /**
 * Nicholls Close Wrapper Element
 *
-* Uses ftf_layout_element_close() to open a div adding -wrapper to the element name
+* Uses fnbx_layout_element_close() to open a div adding -wrapper to the element name
 *
 */
 function nicholls_layout_wrapper_element_close( $element = '' ) {
 	if ( $element == '' ) return;
 		
-	ftf_layout_element_close( $element . '-wrapper' );
+	fnbx_layout_element_close( $element . '-wrapper' );
 }
 
 /**
@@ -110,6 +110,6 @@ function nicholls_widget_disable_filter( $widget_groups ) {
 	$widget_groups['secondary'] = array();
 	return $widget_groups;
 }
-// $widget_groups = apply_filters( 'ftf_widgets',  $widget_groups );
+// $widget_groups = apply_filters( 'fnbx_widgets',  $widget_groups );
 
 ?>

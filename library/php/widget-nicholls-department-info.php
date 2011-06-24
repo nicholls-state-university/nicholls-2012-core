@@ -22,7 +22,7 @@ class WP_Widget_Nicholls_Department extends WP_Widget {
 		
 		echo $before_title . $title . $after_title;		
 		
-		ftf_html_tag( array(
+		fnbx_html_tag( array(
 			'tag' => 'div',
 			'tag_type' => 'open',
 			'id' => 'nicholls-department-info',
@@ -40,7 +40,7 @@ class WP_Widget_Nicholls_Department extends WP_Widget {
 			$this->html_field_display( 'Fax', 'department-fax-', ' ' . $widget_options['fax'] );
 		
 		if ( !empty( $widget_options['email_address'] ) ) {
-			$email = ftf_html_tag( array(
+			$email = fnbx_html_tag( array(
 				'tag' => 'a',
 				'href' => 'mailto:' . $widget_options['email_address'],
 				'tag_content' => $widget_options['email_name'],
@@ -54,7 +54,7 @@ class WP_Widget_Nicholls_Department extends WP_Widget {
 		if ( !empty( $widget_options['note'] ) )
 			$this->html_field_display( '', 'department-note-', $widget_options['note'] );
 
-		ftf_html_tag( array(
+		fnbx_html_tag( array(
 			'tag' => 'div',
 			'tag_type' => 'close',
 			'tag_content_after' => "\n"
@@ -69,7 +69,7 @@ class WP_Widget_Nicholls_Department extends WP_Widget {
 	}
 
 	function form( $instance ) {
-		ftf_html_tag( array(
+		fnbx_html_tag( array(
 			'tag' => 'strong',
 			'tag_content' => 'This widget has no settings!!',
 			'tag_content_after' => '<br />Look at the Nicholls menu item to set department info'
@@ -80,7 +80,7 @@ class WP_Widget_Nicholls_Department extends WP_Widget {
 		if ( $info_contents == '' ) return;
 		
 		if ( $title != '' ) {
-			$info = ftf_html_tag( array(
+			$info = fnbx_html_tag( array(
 				'tag' => 'strong',
 				'tag_content' => $title . ':',
 				'tag_content_after' => $info_contents,
@@ -90,7 +90,7 @@ class WP_Widget_Nicholls_Department extends WP_Widget {
 			$info = $info_contents;
 		}
 		
-		ftf_html_tag( array(
+		fnbx_html_tag( array(
 			'tag' => 'div',
 			'class' => $class,
 			'tag_content' => $info,
