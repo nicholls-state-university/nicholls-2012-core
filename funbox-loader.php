@@ -133,8 +133,6 @@ function fnbx_defaut_init_actions() {
 		
 		// Attachment template content
 		add_action( 'fnbx_template_loop_content_attachment_start', 'fnbx_attachment_content' );
-		// Attachment template Comments
-		add_action( 'fnbx_template_attachment_end', 'fnbx_comments_template_separate' );
 		// Image template content
 		add_action( 'fnbx_template_loop_content_image_start', 'fnbx_image_content' );
 	}	
