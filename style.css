@@ -604,18 +604,14 @@ body.widgets-primary-active .container- {
 	padding: .2em;
 }
 
-.widgets-primary- {
+.widgets-primary-, .widgets-secondary- {
 	float: left;
     width: 19.6em;
 	padding: 0 .4em 0 0;
 }
 
-.widgets-primary- li.widget {
+.widgets-primary- li.widget, .widgets-secondary- li.widget {
 	margin-left: 1em;
-}
-
-.widgets-secondary- {
-	clear: left;
 }
 
 /* END Widget Group Styles */
