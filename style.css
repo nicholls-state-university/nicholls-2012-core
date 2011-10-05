@@ -652,6 +652,10 @@ body.widgets-primary-active .container- {
     padding-top: .2em;
 }
 
+.entry-title {
+	color: #cc3333;
+}
+
 .entry-content {
     line-height: 1.4em;
     clear: both;
