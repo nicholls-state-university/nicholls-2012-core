@@ -113,6 +113,19 @@ function nicholls_common_admin_settings_register() {
 	
 	}
 
+	if ( is_super_admin() )
+		add_settings_field('nicholls_core_theme_admin_reset', 'Reset Front Page', 'nicholls_core_theme_admin_section_emergency_reset', 'nicholls_core_theme_admin', 'nicholls_core_theme_admin_main', $nicholls_core_field['name'] );
+}
+
+
+function nicholls_core_theme_admin_section_emergency_reset() {
+	$reset_nonce= wp_create_nonce('emergency_reset');
+
+	fnbx_html_tag( array(
+		'tag' => 'p',
+		'tag_content' => '<a href="/?emergency_reset=yes&_wpnonce=' . $reset_nonce . '">Reset Cache for Emergency Notices</a>'
+	) );
+	
 }
 
 function nicholls_core_theme_admin_section_text() {

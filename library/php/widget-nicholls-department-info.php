@@ -17,6 +17,8 @@ class WP_Widget_Nicholls_Department extends WP_Widget {
 	
 		$widget_options = get_option( 'nicholls_core_theme_options' );
 		$title = get_bloginfo( 'name' );
+		if ( !empty( $widget_options[ 'title_prefix' ] ) ) 
+				$title = $widget_options[ 'title_prefix' ] . ' &raquo; ' . $title;
 
 		echo $before_widget;
 		

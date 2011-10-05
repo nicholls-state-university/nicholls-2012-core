@@ -92,11 +92,20 @@ function get_nicholls_core_url() {
 }
 
 /**
-* Return the form for the Nicholls Google Mini Search engine
+* Echo the form for the Nicholls Google Mini Search engine
 *
 * @since 0.4
 */
 function nicholls_form_google_search() {
+	echo nicholls_get_form_google_search();
+}
+
+/**
+* Return the form for the Nicholls Google Mini Search engine
+*
+* @since 0.4
+*/
+function nicholls_get_form_google_search() {
 	
 	$form_google_search_content .= fnbx_form_input( array( 'type' => 'text', 'name' => 'q', 'size' => 13, 'maxlength' => 256, 'return' => true ) );
 	$form_google_search_content .= fnbx_form_input( array( 'type' => 'hidden', 'name' => 'sort', 'value' => 'date:D:L:d1', 'return' => true ) );
@@ -216,7 +225,7 @@ function nicholls_top_menu() {
 		),
 		6 => array(
 			'name' => 'nicholls-menu-search',
-			'contents' => nicholls_form_google_search(),
+			'contents' => nicholls_get_form_google_search(),
 			'link' => false
 		),		
 		
@@ -401,11 +410,20 @@ function nicholls_core_header() {
 		) );
 	}
 
-	fnbx_html_tag( array(
+	$menu_info_content = fnbx_html_tag( array(
 		'tag' => 'ul',
 		'tag_content' => $menu_content,
 		'tag_content_after' => "\n",
+		'return' => true
 	) );
+	
+	fnbx_html_tag( array(
+		'tag' => 'div',
+		'id' => 'info-primary-content',
+		'class' => 'info-primary-content-',
+		'tag_content' => $menu_info_content,
+		'tag_content_after' => "\n",
+	) );	
 
 	// Close info-primary
 	fnbx_html_tag( array(

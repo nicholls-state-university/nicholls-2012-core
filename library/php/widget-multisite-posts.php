@@ -70,7 +70,9 @@ class WP_Widget_Multisite_Posts extends WP_Widget {
 	
 		$default_query = array(
 			'showposts' => $number,
-		);	
+		);
+		
+		if ( !empty( $instance['category_name'] ) ) $default_query['category_name'] = $instance['category_name'];
 			
 		$the_query_custom = new WP_Query( $default_query );
 		$the_query_custom->in_the_loop = true;
@@ -164,6 +166,7 @@ class WP_Widget_Multisite_Posts extends WP_Widget {
 		$instance['title'] = strip_tags($new_instance['title']);
 		$instance['blog_id'] = (int) $new_instance['blog_id'];
 		$instance['number'] = (int) $new_instance['number'];
+		$instance['category_name'] = esc_attr(  $new_instance['category_name'] );
 		
 		$this->flush_widget_cache();
 
@@ -179,11 +182,12 @@ class WP_Widget_Multisite_Posts extends WP_Widget {
 	}
 
 	function form( $instance ) {
-		$title = esc_attr($instance['title']);
+		$title = esc_attr( $instance['title'] );
+		$category_name = esc_attr(  $instance['category_name'] );
 		if ( !$number = (int) $instance['number'] )
 			$number = 5;
 		if ( !$blog_id = (int) $instance['blog_id'] )
-			$blog_id = 1;			
+			$blog_id = 1;	
 ?>
 		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></p>
@@ -191,6 +195,9 @@ class WP_Widget_Multisite_Posts extends WP_Widget {
 		<p><label for="<?php echo $this->get_field_id('blog_id'); ?>"><?php _e('Blog ID:'); ?></label>
 		<input id="<?php echo $this->get_field_id('blog_id'); ?>" name="<?php echo $this->get_field_name('blog_id'); ?>" type="text" value="<?php echo $blog_id; ?>" size="3" /><br />
 		<small><?php _e('(at most 15)'); ?></small></p>
+		
+		<p><label for="<?php echo $this->get_field_id('category_name'); ?>"><?php _e('Category Slug:'); ?></label>
+		<input id="<?php echo $this->get_field_id('category_name'); ?>" name="<?php echo $this->get_field_name('category_name'); ?>" type="text" value="<?php echo $category_name; ?>" /></p>
 
 		<p><label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number of posts to show:'); ?></label>
 		<input id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="text" value="<?php echo $number; ?>" size="3" /><br />

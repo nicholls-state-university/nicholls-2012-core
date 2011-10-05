@@ -21,12 +21,6 @@ require_once( NICHOLLS_CORE_DIR . '/library/php/widget-nicholls-department-info.
 if ( is_multisite() ) require_once( NICHOLLS_CORE_DIR . '/library/php/widget-multisite-posts.php' );
 
 /**
-* Conditional includes for specific WordPress and plugin settings
-*/
-define( 'BP_USE_WP_ADMIN_BAR', true );
-if ( !is_user_logged_in() ) define( 'BP_DISABLE_ADMIN_BAR', true );
-
-/**
 * Conditional includes for fuctions and classes in WordPress admin panels 
 */
 if ( is_admin() ) {
@@ -62,6 +56,7 @@ function fnbx_theme_custom_header_filter( $custom_header ) {
 	$custom_header['header_image'] = NICHOLLS_CORE_URL . '/library/images/backgrounds/bg-1.jpg';
 	$custom_header['header_image_width'] = 962;
 	$custom_header['header_image_width'] = 158;
+	$custom_header['css_repeat'] = 'repeat-x';
 	$custom_header['css_position_x'] = right;
 	return $custom_header;
 }

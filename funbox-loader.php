@@ -91,7 +91,7 @@ function fnbx_defaut_init_actions() {
 	// Default Footer Content
 	
 	// Entry title
-	add_action( 'fnbx_template_loop_entry_title', 'fnbx_entry_title' );	
+	add_action( 'fnbx_template_loop_entry_title', 'fnbx_entry_title' );
 		
 	// For all archives we put a page title, for author and categories we put desicription meta if available
 	if ( is_archive() ) {
@@ -140,7 +140,7 @@ function fnbx_defaut_init_actions() {
 	// 404 Not Found page.
 	if ( is_404() ) {
 		// 404 template content (see: /library/php/404.php)
-		add_action( 'fnbx_template_loop_content_404_end', 'fnbx_search_form' );
+		add_action( 'fnbx_template_loop_content_404_end', 'nicholls_form_google_search' );
 		add_action( 'fnbx_template_loop_content_404_end', 'fnbx_404_report' );
 		add_action( 'fnbx_template_loop_content_404_end', 'fnbx_404_pagelist' );
 		// 404 title shortcode replace filter (see: /library/php/404.php)

@@ -3,17 +3,9 @@
 Template Name: Full Page, No Sidebars
 */
 
-function nicholls_full_page() {
-	// Widget Sidebar Group
-	add_filter( 'sidebars_widgets', 'nicholls_widget_disable_filter' );
-	remove_action( 'fnbx_container_end', 'fnbx_default_widget_sidebar' );
-}
+// Add function to remove sidebars
 add_action( 'fnbx_child_init', 'nicholls_full_page');
 
-
-// $sidebars_widgets = apply_filters('sidebars_widgets', $sidebars_widgets)
-
-	
 ?>
 
 <?php get_header() ?>

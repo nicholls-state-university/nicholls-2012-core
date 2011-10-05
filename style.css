@@ -10,8 +10,14 @@ TAGS: funbox, buddypress
 */
 
 /*
-START- CSS Reset by Eric Meyer http://meyerweb.com/
+START- CSS Reset
 */
+
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+/* Modified by Jess Planck to fix validation errors & warnings */
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,14 +33,10 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	outline: 0;
 	font-size: 100%;
 	vertical-align: baseline;
-	/* DISABLED because it messes with old HTML Table bgcolor
 	background: transparent;
-	*/
 }
-
 body {
 	line-height: 1;
-	text-align: center;
 }
 ol, ul {
 	list-style: none;
@@ -45,7 +47,7 @@ blockquote, q {
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
-	content: none;
+	/* remove content: none; to fix validator IE be dammed */
 }
 
 /* remember to define focus styles! */
@@ -66,6 +68,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /*
 END- CSS Reset
 */
@@ -267,16 +270,17 @@ body.widgets-primary-active .container- {
 /* START - Nicholls Primary Menu */
 
 .menu-primary-container- {
+	border-bottom: 1px solid #666;
 	width: 100%;
 	text-align: left;
 	clear: both;
-	background: transparent url( 'library/images/backgrounds/bg-nicholls-menu.png' ) 0px -1px repeat-x;		
+	background: #cc3333;		
 }
 
 .menu-primary- {
 	width: 87.2em;
 	height: 2.4em;
-	background: transparent url( 'library/images/backgrounds/bg-nicholls-menu.png' ) repeat-x;
+	background: #cc3333;
 	margin: 0 auto 0 auto;	
 }
 
@@ -373,17 +377,16 @@ body.widgets-primary-active .container- {
 	width: 84em;
 	height: 33.4em;
 	z-index: 1001;
-	background: url( 'library/images/nicholls-menu-pointer-down.png' ) no-repeat;	
+	background: #ccc url( 'library/images/nicholls-menu-pointer-down.png' ) no-repeat;	
 	margin: 0 0 0 2em;
 }
 
 .nicholls-menu-content- {
 	position: absolute;
-	top: 1.2em;
+	top: .4em;
 	width: 100%;
 	height: 32em;
 	background: #fff;
-	border: 1px solid #cc3333;
 	-moz-box-shadow: 2px 2px 6px #666;
 	-webkit-box-shadow: 2px 2px 6px #666;
 	box-shadow: 2px 2px 6px #666;	
@@ -416,11 +419,11 @@ body.widgets-primary-active .container- {
 }
 
 .nicholls-menu-contents .nicholls-menu-title- { 
+	border-bottom: 1px solid #ccc;
 	margin: 0;
 	padding: .2em .5em;
 	font-weight: 800;
 	color: #cc3333;
-	background: #000;
 }
 
 .nicholls-menu-contents .column- {
@@ -471,14 +474,23 @@ body.widgets-primary-active .container- {
 .header-nicholls- .info-primary- {
     width: 19.6em;
     height: 14em;
-    padding-left: .8em;
     float: left;
-    background: #fff;
 }
 
 .header-nicholls- .logo-container- {
     height: 5em;
-    padding: 2em 0 1em 0;
+    margin: 0 .5em 0 1.5em;
+    padding: 1em 0 .4em 0;
+    background: #fff;
+    text-align: center;
+}
+
+.header-nicholls- .info-primary- .info-primary-content- {
+	background: #fff;
+	clear: both;
+	margin: 0 .5em 0 1.5em;
+	padding: .2em .2em .2em .6em;
+	border-top: 1px solid #ccc;
 }
 
 .header-nicholls- .info-primary-  ul {
@@ -856,6 +868,10 @@ form input:focus, form textarea:focus {
 
 .transparent-black-50 {
     background: transparent url( 'library/images/backgrounds/bg-transparent-black-50.png' );
+}
+
+.transparent-white-50 {
+    background: transparent url( 'library/images/backgrounds/bg-transparent-white-50.png' );
 }
 
 /* END - Custom Classes */
