@@ -11,9 +11,6 @@
 * @since 1.0
 */
 function fnbx_defaut_init_actions() {
-
-	// Remove BP admin bar to start
-	wp_dequeue_style( 'bp-admin-bar' );
 	
 	// Nicholls Core Stylesheet CSS
 	nicholls_setup_stylesheet_core();
@@ -21,9 +18,6 @@ function fnbx_defaut_init_actions() {
 	nicholls_setup_stylesheet();
 	// Setup Nicholls BuddyPress Stylesheet CSS
 	nicholls_bp_stylesheet();
-	
-	// ISSUE: BuddyPress WPMU adminbar CSS needs to be loaded properly
-	if ( is_user_logged_in() ) wp_enqueue_style( 'bp-admin-bar' );
 	
 	// Nicholls Core JavaScript
 	nicholls_enqueue_javascript();

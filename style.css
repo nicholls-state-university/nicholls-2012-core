@@ -998,6 +998,27 @@ body.screen-narrow .widgets-primary- {
 	width: 17.6em;
 }
 
+/* START Widget Styles */
+
+li.widget_nav_menu li, 
+li.widget_pages li {
+	text-indent: -0.9em;
+}
+
+li.widget_nav_menu li:before, 
+li.widget_pages li:before {
+	content: "\00BB \0020";
+}
+
+.widgets- .menu li ul, .widgets- .widget_pages li ul {
+	display: none;
+}
+
+.widgets- .widget_pages .current_page_item ul, .widgets- .widget_pages .current_page_ancestor ul, .widgets- .menu .current-menu-item ul, .widgets- .menu .current-menu-ancestor ul {
+	display: block;
+}
+
+/* END Widget Styles */
 
 /* START Compatiblity Elements */
 

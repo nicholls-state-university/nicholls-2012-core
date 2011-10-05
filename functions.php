@@ -1,5 +1,4 @@
 <?php
-
 // Define theme core file location and uri
 define( 'NICHOLLS_CORE_DIR', get_theme_root() . '/nicholls-2011-core' );
 define( 'NICHOLLS_CORE_URL', content_url() . '/themes/nicholls-2011-core' );
