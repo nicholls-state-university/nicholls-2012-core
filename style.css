@@ -1000,6 +1000,10 @@ body.screen-narrow .widgets-primary- {
 
 /* START Widget Styles */
 
+.widgets- .widget_pages, .widgets- .menu {
+	line-height: 1.2em;
+}
+
 li.widget_nav_menu li, 
 li.widget_pages li {
 	text-indent: -0.9em;
@@ -1018,6 +1022,14 @@ li.widget_pages li:before {
 	display: block;
 }
 
+.widgets- .widget_pages a, .widgets- .widget_pages a:link, .widgets- .widget_pages a:active, .widgets- .widget_pages a:visited, 
+.widgets- .menu a, .widgets- .menu a:link, .widgets- .menu a:active, .widgets- .menu a:visited {
+	text-decoration: none;
+}
+
+.widgets- .widget_pages a:hover, .widgets- .menu a:hover {
+	text-decoration: underline;
+}
 /* END Widget Styles */
 
 /* START Compatiblity Elements */
