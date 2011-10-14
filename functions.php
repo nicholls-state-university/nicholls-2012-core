@@ -25,39 +25,3 @@ if ( is_multisite() ) require_once( NICHOLLS_CORE_DIR . '/library/php/widget-mul
 if ( is_admin() ) {
 	require_once( NICHOLLS_CORE_DIR . '/library/php/admin.php' );
 }
-
-/*
-* Funbox Theme Support Filter
-*
-* Since this may be delpolyed on WordPress sites lacking some theme support features.
-*
-* @since 1.0
-*/
-function fnbx_theme_support_filter( $features ) {
-	// Set and filter WordPress theme support features
-	$features['post-formats'] = false;
-	return $features;
-}
-add_filter( 'fnbx_theme_support', 'fnbx_theme_support_filter' );
-
-/*
-* Funbox Theme Custom Header Filter
-*
-* Modifies the output for custom header css.
-*
-* @since 1.0
-*/
-function fnbx_theme_custom_header_filter( $custom_header ) {
-	// Set and filter WordPress theme support features
-	$custom_header['no_header_text'] = false;
-	$custom_header['css_name'] = '.header-nicholls-';
-	$custom_header['header_image'] = NICHOLLS_CORE_URL . '/library/images/backgrounds/bg-1.jpg';
-	$custom_header['header_image_width'] = 962;
-	$custom_header['header_image_height'] = 158;
-	$custom_header['css_repeat'] = 'repeat-x';
-	$custom_header['css_position_x'] = right;
-	return $custom_header;
-}
-add_filter( 'fnbx_custom_header', 'fnbx_theme_custom_header_filter' );
-
-?>
