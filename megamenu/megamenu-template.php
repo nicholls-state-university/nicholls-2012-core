@@ -39,7 +39,7 @@
 
             <h5><a title="Directions" href="http://www.nicholls.edu/about/directions/">Directions</a></h5>
 
-            <h5><a title="Visiting Thibodaux" href="http://www.nicholls.edu/about/visiting-thibodaux/">Visiting Thibodaux</a><h5>
+            <h5><a title="Visiting Thibodaux" href="http://www.nicholls.edu/about/visiting-thibodaux/">Visiting Thibodaux</a></h5>
 
 			<ul>
 				<li><a title="Visitor Information" href="http://www.nicholls.edu/about/visiting-thibodaux/visitor-information/">Visitor Information</a></li>
