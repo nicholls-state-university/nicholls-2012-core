@@ -674,12 +674,6 @@ div#sidebar table {
 	width: 117%;
 }
 
-table tr td,
-table tr th {
-	padding: 8px;
-	vertical-align: middle;
-}
-
 table tr td.label {
 	border-right: 1px solid #eaeaea;
 	font-weight: bold;
@@ -696,7 +690,6 @@ table tr td.thread-info p.thread-excerpt {
 	margin-top: 3px;
 }
 
-div#sidebar table td,
 table.forum td {
 	text-align: center;
 }
