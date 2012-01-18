@@ -111,5 +111,3 @@ function nicholls_widget_disable_filter( $widget_groups ) {
 	return $widget_groups;
 }
 // $widget_groups = apply_filters( 'fnbx_widgets',  $widget_groups );
-
-?>

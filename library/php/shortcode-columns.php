@@ -75,5 +75,3 @@ function column_clean_shortcode_content( $content ) {
 
     return $content;
 }
-
-?>

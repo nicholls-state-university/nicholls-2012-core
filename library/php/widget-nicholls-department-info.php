@@ -111,4 +111,3 @@ function nicholls_widgets_init() {
 	register_widget('WP_Widget_Nicholls_Department');
 }
 add_action('widgets_init', 'nicholls_widgets_init', 1);
-?>

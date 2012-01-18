@@ -36,6 +36,3 @@ function nicholls_main_title_prefix_filter( $title_array = array() ) {
 	return $title_array;
 }
 add_filter( 'fnbx_default_title', 'nicholls_main_title_prefix_filter' );
-
-
-?>

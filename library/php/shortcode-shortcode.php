@@ -11,5 +11,3 @@ function n_shortcode_shortcode($atts, $content = null ){
 	return $content;
 }
 add_shortcode('shortcode', 'n_shortcode_shortcode');
-
-?>

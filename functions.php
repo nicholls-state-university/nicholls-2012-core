@@ -60,4 +60,3 @@ function fnbx_theme_custom_header_filter( $custom_header ) {
 	return $custom_header;
 }
 add_filter( 'fnbx_custom_header', 'fnbx_theme_custom_header_filter' );
-?>

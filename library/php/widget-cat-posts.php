@@ -221,5 +221,3 @@ function form($instance) {
 }
 
 add_action( 'widgets_init', create_function('', 'return register_widget("CategoryPosts");') );
-
-?>

@@ -460,5 +460,3 @@ function nicholls_core_debug_info() {
 
 
 }
-
-?>

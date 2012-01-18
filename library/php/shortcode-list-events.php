@@ -186,5 +186,3 @@ function the_events_abbr( $the_postid, $the_event_meta, $the_date, $the_date_cla
 	return $the_event;
 					
 }
-
-?>

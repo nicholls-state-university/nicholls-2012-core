@@ -205,5 +205,3 @@ class WP_Widget_Multisite_Posts extends WP_Widget {
 <?php
 	}
 }
-
-?>

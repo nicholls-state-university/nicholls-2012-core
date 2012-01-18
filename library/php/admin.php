@@ -254,6 +254,3 @@ function nicholls_common_admin() {
 		'tag_type' => 'close',
 	) );
 }
-
-?>
-

@@ -91,5 +91,3 @@ function list_pages_shortcode( $atts, $content = null ) {
    return $contents;
 }
 add_shortcode('list-pages', 'list_pages_shortcode');
-
-?>

@@ -226,5 +226,3 @@ add_action( 'fnbx_init', 'fnbx_default_init_filters' );
 function nicholls_megamenu_load() {
 	load_template( NICHOLLS_CORE_DIR . '/megamenu/megamenu-template.php' );
 }
-
-?>

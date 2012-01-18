@@ -215,5 +215,3 @@ function custom_query_shortcode($atts) {
 	return $output;
 }
 add_shortcode( 'list-posts', 'custom_query_shortcode' );
-
-?>
