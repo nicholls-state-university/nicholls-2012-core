@@ -142,9 +142,9 @@ ul.item-list li img.avatar {
 ul.item-list li div.item-title,
 ul.item-list li h4 {
 	font-weight: normal;
-	font-size: 14px;
+	font-size: 110%;
 	width: 75%;
-	margin: 0;
+	margin: .5em .2em;
 }
 
 ul.item-list li div.item-title span {

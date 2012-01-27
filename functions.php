@@ -1,29 +1,42 @@
 <?php
-// Define theme core file location and uri
-define( 'NICHOLLS_CORE_DIR', get_theme_root() . '/nicholls-2011-core' );
-define( 'NICHOLLS_CORE_URL', content_url() . '/themes/nicholls-2011-core' );
+// Define child theme path constants.
+if ( !defined( 'FNBX_CHILD_DIR' ) ) define( 'FNBX_CHILD_DIR', get_stylesheet_directory() );
+if ( !defined( 'FNBX_CHILD_URL' ) ) define( 'FNBX_CHILD_URL', get_stylesheet_directory_uri() );
+
+// Define theme core file location and uri using the current script file location
+$fnbx_core_theme_dir = array_pop( explode( '/' , dirname( __FILE__ ) ) );
+define( 'FNBX_CORE_DIR', get_theme_root() . '/' . $fnbx_core_theme_dir );
+define( 'FNBX_CORE_URL', get_theme_root_uri() . '/' . $fnbx_core_theme_dir );
 
 // Include core functions, actions, and filters.
-require_once( NICHOLLS_CORE_DIR . '/library/php/functions.php' );
-require_once( NICHOLLS_CORE_DIR . '/library/php/actions.php' );
-require_once( NICHOLLS_CORE_DIR . '/library/php/filters.php' );
+require_once( FNBX_CORE_DIR . '/library/php/functions.php' );
+require_once( FNBX_CORE_DIR . '/library/php/actions.php' );
+require_once( FNBX_CORE_DIR . '/library/php/filters.php' );
 
 // Include shortcodes
-require_once( NICHOLLS_CORE_DIR . '/library/php/shortcode-columns.php' );
-require_once( NICHOLLS_CORE_DIR . '/library/php/shortcode-list-pages.php' );
-require_once( NICHOLLS_CORE_DIR . '/library/php/shortcode-list-posts.php' );
-require_once( NICHOLLS_CORE_DIR . '/library/php/shortcode-list-events.php' );
-require_once( NICHOLLS_CORE_DIR . '/library/php/shortcode-shortcode.php' );
+require_once( FNBX_CORE_DIR . '/library/php/shortcode-columns.php' );
+require_once( FNBX_CORE_DIR . '/library/php/shortcode-list-pages.php' );
+require_once( FNBX_CORE_DIR . '/library/php/shortcode-list-posts.php' );
+require_once( FNBX_CORE_DIR . '/library/php/shortcode-list-events.php' );
+require_once( FNBX_CORE_DIR . '/library/php/shortcode-shortcode.php' );
 
 // Include widgets
-require_once( NICHOLLS_CORE_DIR . '/library/php/widget-nicholls-department-info.php' );
-if ( is_multisite() ) require_once( NICHOLLS_CORE_DIR . '/library/php/widget-multisite-posts.php' );
+if ( is_multisite() ) require_once( FNBX_CORE_DIR . '/library/php/widget-multisite-posts.php' );
+require_once( FNBX_CORE_DIR . '/library/php/widget-form-login.php' );
+require_once( FNBX_CORE_DIR . '/library/php/widget-nicholls-department-info.php' );
+
+/**
+* Conditional includes for specific WordPress and plugin settings
+*/
+
+// Use WP Admin Bar instead of BuddyPress
+define('BP_USE_WP_ADMIN_BAR', true);
 
 /**
 * Conditional includes for fuctions and classes in WordPress admin panels 
 */
 if ( is_admin() ) {
-	require_once( NICHOLLS_CORE_DIR . '/library/php/admin.php' );
+	require_once( FNBX_CORE_DIR . '/library/php/admin.php' );
 }
 
 /*
@@ -52,7 +65,7 @@ function fnbx_theme_custom_header_filter( $custom_header ) {
 	// Set and filter WordPress theme support features
 	$custom_header['no_header_text'] = false;
 	$custom_header['css_name'] = '.header-nicholls-';
-	$custom_header['header_image'] = NICHOLLS_CORE_URL . '/library/images/backgrounds/bg-1.jpg';
+	$custom_header['header_image'] = FNBX_CORE_URL . '/library/images/backgrounds/bg-1.jpg';
 	$custom_header['header_image_width'] = 962;
 	$custom_header['header_image_height'] = 158;
 	$custom_header['css_repeat'] = 'repeat-x';

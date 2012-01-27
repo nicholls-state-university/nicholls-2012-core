@@ -1,9 +1,8 @@
 <?php
 /**
-* Nicholls Theme Administration
+* Theme Administration
 *
 * These functions setup and control the theme interface
-* @package nicholls_webmanager
 * @author Jess Planck
 * @version 1.0
 */
@@ -79,7 +78,7 @@ function nicholls_core_theme_upgrade() {
 function nicholls_common_admin_setup() {
 
 	// Add Menu
-	add_menu_page( 'Nicholls Theme Options', 'Nicholls Theme Options' , 'delete_others_posts' , 'nicholl_common', 'nicholls_common_admin', NICHOLLS_CORE_URL . '/library/images/admin-icon.png');
+	add_menu_page( 'Nicholls Theme Options', 'Nicholls Theme Options' , 'delete_others_posts' , 'nicholl_common', 'nicholls_common_admin', FNBX_CORE_URL . '/library/images/admin-icon.png');
 	
 	// Register Settings
 	add_action( 'admin_init', 'nicholls_common_admin_settings_register' );
@@ -88,7 +87,7 @@ function nicholls_common_admin_setup() {
 
 		// Use action to enqueue javascript
 		wp_enqueue_script( 'jquery' );
-		wp_enqueue_script( 'nicholls-admin-js' , NICHOLLS_CORE_URL . '/library/js/nicholls-admin.js', array( 'jquery' ), '1.0' );		
+		wp_enqueue_script( 'nicholls-admin-js' , FNBX_CORE_URL . '/library/js/nicholls-admin.js', array( 'jquery' ), '1.0' );		
 
 	}	
 	

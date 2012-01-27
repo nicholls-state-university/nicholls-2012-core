@@ -3,8 +3,12 @@
 Template Name: Full Page, No Sidebars
 */
 
-// Add function to remove sidebars
-add_action( 'fnbx_child_init', 'nicholls_full_page');
+function fnbx_template_core_full_page() {
+	// Widget Sidebar Group
+	add_filter( 'sidebars_widgets', 'core_widget_disable_filter' );
+	remove_action( 'fnbx_container_end', 'fnbx_default_widget_sidebar' );
+}
+add_action( 'fnbx_child_init', 'fnbx_template_core_full_page');
 
 ?>
 

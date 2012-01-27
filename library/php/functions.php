@@ -1,12 +1,23 @@
 <?php
 /**
-* Nicholls Core Theme Funtions
+* Core Theme Funtions
 *
 * Action hooks used by the Funbox Theme
 *
-* @package Nicholls Core
+* @package Theme Core
 * @subpackage Hooks
 */
+
+/**
+* Get the root URL for this site.
+*
+* @since 0.4
+*/
+function fnbx_get_url_home() {
+	global $current_site;
+	
+	return get_home_url();
+}
 
 /**
 * Nicholls Core Admin Settings 
@@ -55,29 +66,6 @@ function nicholls_core_admin_get_setting_config() {
 	);	
 	
 	return $setting;
-}
-
-/**
-* Nicholls Core Favicon 
-*
-* Function used to add HTML to head for favicon stored in images directory.
-*
-* @since 0.4
-*/
-function nicholls_favicon() {
-	$favicon_default = array(
-		'tag' => 'link',
-		'tag_type' => 'single',
-		'href' => NICHOLLS_CORE_URL . '/library/images/logos/favicon.ico',
-		'type' => 'image/x-icon'
-	);
-	
-	$favicon_default['rel'] = 'icon';
-	fnbx_html_tag( $favicon_default );
-	
-	$favicon_default['rel'] = 'shortcut icon';
-	fnbx_html_tag( $favicon_default );
-
 }
 
 /**
@@ -155,7 +143,7 @@ function nicholls_get_logo( $logo_style, $logo_size, $link = false, $return = tr
 		'tag_type' => 'single',
 		'id' => 'logo-' . $logo_style . '-' . $logo_size,
 		'class' => 'logo-nicholls-medium-',		
-		'src' => NICHOLLS_CORE_URL . '/library/images/nicholls-logo.png',
+		'src' => FNBX_CORE_URL . '/library/images/nicholls-logo.png',
 		'title' => 'Nicholls State University',
 		'alt' => 'Nicholls State University',
 		'tag_content_after' => "\n",
@@ -369,7 +357,7 @@ function nicholls_core_header() {
 		'tag_type' => 'single',
 		'id' => 'logo-nicholls-medium',
 		'class' => 'logo-nicholls-medium-',		
-		'src' => NICHOLLS_CORE_URL . '/library/images/nicholls-logo.png',
+		'src' => FNBX_CORE_URL . '/library/images/nicholls-logo.png',
 		'title' => 'Nicholls State University',
 		'alt' => 'Nicholls State University',
 		'tag_content_after' => "\n",

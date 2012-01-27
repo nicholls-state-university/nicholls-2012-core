@@ -11,21 +11,24 @@
 */
 function fnbx_defaut_init_actions() {
 	
-	// Nicholls Core Stylesheet CSS
-	nicholls_setup_stylesheet_core();
-	// Setup Nicholls This Theme Stylesheet CSS
-	nicholls_setup_stylesheet();
-	// Setup Nicholls BuddyPress Stylesheet CSS
-	nicholls_bp_stylesheet();
+	// Core Stylesheet CSS
+	fnbx_stylesheet_core_config();
+	// Setup This Theme Stylesheet CSS
+	fnbx_stylesheet_current_config();
+	// Setup BuddyPress Stylesheet CSS
+	fnbx_stylesheet_bp_config();
 	
-	// Nicholls Core JavaScript
-	nicholls_enqueue_javascript();
+	// ISSUE: BuddyPress WPMU adminbar CSS needs to be loaded properly
+	if ( is_user_logged_in() ) wp_enqueue_style( 'bp-admin-bar' );
+	
+	// Core JavaScript
+	fnbx_javascript_enqueue_core();
 	
 	// Doctype
 	add_action( 'fnbx_header_init', 'fnbx_doctype' );
 	
-	// Nicholls Favicon
-	add_action( 'fnbx_wp_head_before', 'nicholls_favicon' );
+	// Favicon
+	add_action( 'fnbx_wp_head_before', 'fnbx_favicon_core' );
 
 	// Head Meta
 	add_action( 'fnbx_wp_head_before', 'fnbx_head_meta_content_type' );
@@ -80,8 +83,6 @@ function fnbx_defaut_init_actions() {
 
 	// Widget Sidebar Group
 	add_action( 'fnbx_container_end', 'fnbx_default_widget_sidebar' );
-
-	// Default Footer Content
 	
 	// Entry title
 	add_action( 'fnbx_template_loop_entry_title', 'fnbx_entry_title' );
@@ -224,5 +225,5 @@ add_action( 'fnbx_init', 'fnbx_default_init_filters' );
 * @since 1.0
 */
 function nicholls_megamenu_load() {
-	load_template( NICHOLLS_CORE_DIR . '/megamenu/megamenu-template.php' );
+	load_template( FNBX_CORE_DIR . '/megamenu/megamenu-template.php' );
 }

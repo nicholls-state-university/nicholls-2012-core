@@ -9,71 +9,6 @@ TEMPLATE: funbox
 TAGS: funbox, buddypress
 */
 
-/*
-START- CSS Reset
-*/
-
-/* http://meyerweb.com/eric/tools/css/reset/ */
-/* v1.0 | 20080212 */
-/* Modified by Jess Planck to fix validation errors & warnings */
-
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	/* remove content: none; to fix validator IE be dammed */
-}
-
-/* remember to define focus styles! */
-:focus {
-	outline: 0;
-}
-
-/* remember to highlight inserts somehow! */
-ins {
-	text-decoration: none;
-}
-del {
-	text-decoration: line-through;
-}
-
-/* tables still need 'cellspacing="0"' in the markup */
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*
-END- CSS Reset
-*/
-
-
 /* START defaults */
 
 body {
@@ -81,6 +16,7 @@ body {
 	font-size: 68.8%;
 	color: #000000;
 	width: auto;
+	padding: 0;
 }
 
 /* Interactive HTML Styles */
@@ -96,71 +32,6 @@ a:visited  {
 	
 a:hover {
 	text-decoration: none;
-}
-
-/* Content Common text blocks */	
-
-.content- p {
-	margin: 1em 0;
-}
-
-.content- blockquote {
-	margin: 1em;
-}
-
-/* Lists and definitions */
-
-.content- ul, .content- ol, .content- dl {
-	margin: .1em 0 .1em .4em;
-}
-
-.content- ul {
-	list-style: disc;
-}
-
-.content- ul li {
-	margin: .1em 0 .1em 1em;
-}
-
-.content- ol {
-	list-style: decimal;
-}
-
-.content- ol li {
-	margin: .1em 0 .1em 1.2em;
-}
-
-.content- dl dt {
-	font-weight: bold;
-	margin: .2em 0;
-}
-
-.content- dl dd {
-	margin: .1em 0 .1em 1.2em;
-}
-
-.content- table { 
-  	border-spacing: 0;
-	border-collapse: collapse;
-}
-
-.content- th {
-  	text-align: left;
-	font-weight: bold;
-}
-
-.content- td {
-  	text-align: left;
-	font-weight: normal;
-}
-
-.content- code, .content- pre {
-	font-family: "courier new", courier, monospace;
-}
-
-input.text {
-	padding: 3px;
-	border: 1px solid #999999;	
 }
 
 /* Heading Styles */
@@ -274,19 +145,21 @@ body.widgets-primary-active .container- {
 	width: 100%;
 	text-align: left;
 	clear: both;
-	background: #cc3333;		
+	background: #cc3333;
 }
 
 .menu-primary- {
 	width: 87.2em;
 	height: 2.4em;
 	background: #cc3333;
-	margin: 0 auto 0 auto;	
+	margin: 0 auto 0 auto;
+	padding: 0;
 }
 
 .menu-primary- .nicholls-menu-list- {
 	list-style-type: none;
 	clear: both;
+	margin: 0;
 }
 
 .menu-primary- .nicholls-menu-list- .nicholls-menu-item {
@@ -317,9 +190,8 @@ body.widgets-primary-active .container- {
 
 .menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- input {
 	border: 1px solid #999;
-	margin: .2em 0 0 0;
+	margin: .4em 0 0 0;
 	padding: .1em;
-	font-size: 90%;
 }
 
 .menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- .button-search- {
@@ -475,6 +347,8 @@ body.widgets-primary-active .container- {
     width: 19.6em;
     height: 14em;
     float: left;
+    margin: 0;
+    padding: 0;
 }
 
 .header-nicholls- .logo-container- {
@@ -496,6 +370,8 @@ body.widgets-primary-active .container- {
 .header-nicholls- .info-primary-  ul {
 	list-style-type: none;
 	clear: both;
+	margin: 0;
+	padding: 0;
 }
 
 .header-nicholls- .info-primary- ul li {
