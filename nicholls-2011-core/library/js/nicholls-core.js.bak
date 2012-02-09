@@ -1,0 +1,179 @@
+/*
+ * Nicholls Core Javascript
+ *
+ * version 1.0 
+ *
+ * by James Planck <james.planck@nicholls.edu>
+ *
+ * Core javascript functionality for the Nicholls website. Part of the Nicholls Core website
+ * theme. Dependent on jQuery and some jQuery plugins.
+ */
+
+						
+function the_resize(thewindowwidth) {
+	if ( thewindowwidth < 964 ) {
+		jQuery('body').addClass('screen-narrow');
+	} else {
+		jQuery('body').removeClass('screen-narrow');
+	}
+	return;
+}
+
+jQuery(document).ready( function() {
+
+	var thewindowwidth = jQuery(window).width();
+	the_resize(thewindowwidth);
+	
+	nicholls_menu_loader();
+	
+	// Mega Menus
+	jQuery('#nicholls-menu-content-container *').bind('mouseover', nicholls_menu_timeout_cancel);
+	jQuery('#nicholls-menu-content-container').bind('mouseout',  nicholls_menu_timeout);		
+	
+	jQuery('#menu-primary .nicholls-menu-item, #menu-primary .nicholls-menu-item-link').bind('mouseover', function() {
+		nicholls_menu_load( this );
+	});
+	jQuery('#menu-primary .nicholls-menu-item, #menu-primary .nicholls-menu-item-link').bind('mouseout',  function() {
+		nicholls_menu_timeout( this );
+	});
+	
+	// Set Transparency
+	jQuery('.header-').addClass('transparent-black-50');
+	
+	// Corners 
+	jQuery('.info-primary-').corner('tl');
+	jQuery('.header-nicholls-').corner('br');
+	jQuery('.header-nicholls-').corner('tr');
+
+	jQuery('.header-').corner('bl');
+	jQuery('.header-').corner('br');
+	jQuery('.header-').corner('tr');
+
+	jQuery.browser.msie6 = jQuery.browser.msie && parseInt(jQuery.browser.version) == 6 && typeof window['XMLHttpRequest'] != "object";
+	
+	if ( jQuery.browser.safari == true ) jQuery('body').addClass('safari');
+	if ( jQuery.browser.msie == true ) jQuery('body').addClass('msie');
+	if ( jQuery.browser.msie6 == true ) {
+		jQuery('body').addClass('msie');
+		// Fix PNG for IE6
+		jQuery('.menu-top-').pngFix( { blankgif:'./images/blank.gif' } );
+		jQuery('.logo-container-').pngFix( { blankgif:'./images/blank.gif' } );
+		jQuery('.header-').pngFix( { blankgif:'./images/blank.gif' } );		
+	}
+
+});
+
+jQuery(function() {
+	jQuery(window).resize(function() {
+		var thewindowwidth = jQuery(window).width();
+		the_resize(thewindowwidth);
+	});
+});
+
+var nicholls_menu_timer = 0;
+
+// Find and return the menu id in a mess of classes
+function nicholls_get_menu_from_class( menu_class ) {
+	
+	// We remove the common nicholls-menu-item if it in the class string
+	menu_class = menu_class.replace( /\s+/g, '');
+	menu_class = menu_class.replace( 'nicholls-menu-item', '');
+	menu_class = menu_class.replace( 'nicholls-menu-item-link', '');
+	menu_class = menu_class.replace( 'nicholls-menu-selected', '');
+	
+	// We remove the last character because it should be '-'
+	menu_class = menu_class.substring(0, menu_class.length - 1);
+	
+	return menu_class;
+}
+
+function nicholls_menu_loader() {
+
+	jQuery('#footer').append( '<div id="nicholls-menu-loader"></div>' );
+	
+	jQuery('#nicholls-menu-list').children().each( function() {
+		// We stop if the item has no menu. Using the .each() using 'return true' is like 'continue'
+		if ( jQuery(this).hasClass('nicholls-menu-no' ) ) return true;
+	   // We get the class of the moused over object
+		var  menu_load_id = jQuery(this).attr('class');
+		// Get the real menu id
+		menu_load_id = nicholls_get_menu_from_class( menu_load_id );
+		// Perorm all the heavy lifting ajax because menu_load_id should be clean by now
+		jQuery.ajax({
+			url:'http://webmanager.nicholls.edu/nicholls_test/site-tools/menus/'+menu_load_id+'/',
+			method:'GET',
+			success: function( data ) {
+				jQuery('#nicholls-menu-loader').append( '<div id="'+menu_load_id+'-loader">'+data+'</div>' );	
+			},
+			error:function() {
+				jQuery('#nicholls-sitebox').html('Sorry! There was a problem loading content!');
+			}
+		});
+		
+	});
+		
+
+}
+
+function nicholls_menu_load( menu_load ) {
+
+	// We get the class of the moused over object
+	var  menu_load_id = jQuery(menu_load).attr('class');
+	// Get the real menu id
+	menu_load_id = nicholls_get_menu_from_class( menu_load_id );
+
+	if ( !menu_load_id ) return;
+	// We stop if the item has no menu
+	if ( jQuery(menu_load).hasClass('nicholls-menu-no' ) ) return;
+	
+	// Hide and clean out the mega menus
+	jQuery('#nicholls-menu-content-wrapper').hide();
+	jQuery('#nicholls-menu-content-container #nicholls-menu-content').html( '' );
+		
+	// Perorm all the heavy lifting ajax because menu_load_id should be clean by now
+
+	var menu_html_loader = jQuery( '#'+menu_load_id+'-loader' ).html();
+	
+	jQuery('#nicholls-menu-content-container #nicholls-menu-content').html( menu_html_loader );
+	
+	jQuery( '#' + menu_load_id ).addClass('nicholls-menu-selected');
+	jQuery( '#nicholls-menu-content-container' ).addClass( menu_load_id + '-pointer' );
+	jQuery( '#nicholls-menu-content-container #nicholls-menu-content' ).addClass( menu_load_id + '-content' );
+	nicholls_menu_open();			
+
+}
+
+function nicholls_menu_open() {
+	nicholls_menu_timeout_cancel();
+	jQuery('#nicholls-menu-content-wrapper').addClass('nicholls-menu-content-wrapper-open');
+	jQuery('#nicholls-menu-content-wrapper').slideDown(400);
+}
+
+function nicholls_menu_close() {
+	// On hovering out slide subnav menus back up
+	jQuery('#nicholls-menu-content-wrapper').slideUp(200);
+	jQuery('#nicholls-menu-content-wrapper').removeClass('nicholls-menu-content-wrapper-open');	
+	jQuery('#nicholls-menu-content-container #nicholls-menu-content').empty();
+	jQuery( '.nicholls-menu-selected' ).removeClass('nicholls-menu-selected');
+}
+
+function nicholls_menu_timeout( menu_load ) {
+	
+	// We get the class of the moused over object
+	var  menu_loader_id = jQuery(menu_load).attr('class');
+	// Get the real menu id
+	menu_loader_id = nicholls_get_menu_from_class( menu_loader_id );
+	
+	nicholls_menu_timer = setTimeout( function() {
+		// On hovering out slide subnav menus back up
+		nicholls_menu_close();
+		jQuery('#nicholls-menu-content-container #nicholls-menu-content').removeClass( menu_load_id + '-content' );
+	}, 500 );
+}
+
+function nicholls_menu_timeout_cancel() {
+	if( nicholls_menu_timer ) {
+		clearTimeout(nicholls_menu_timer);
+		nicholls_menu_timer = null;
+	}
+}
