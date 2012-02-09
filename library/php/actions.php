@@ -120,6 +120,8 @@ function fnbx_stylesheet_bp_config() {
 
 // Use action to enqueue javascript
 function fnbx_javascript_enqueue_core() {
+	wp_enqueue_script( 'modernizr' , FNBX_CORE_URL . '/library/js/modernizr.mostly-all.js', array( 'jquery' ), '2.0.6' );
+
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'jquery-hoverintent' , FNBX_CORE_URL . '/library/js/jquery.hoverIntent.minified.js', array( 'jquery' ), 'r5' );
 	wp_enqueue_script( 'jquery-pngfix' , FNBX_CORE_URL . '/library/js/jquery.pngFix.js', array( 'jquery' ), '1.2' );	
