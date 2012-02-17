@@ -14,7 +14,7 @@ do_action( 'fnbx_header_init'); // Typically used for doctype
 
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes('xhtml'); ?>>
-<head profile="http://gmpg.org/xfn/11">
+<head>
 
 	<title><?php fnbx_document_title() ?></title>
 
