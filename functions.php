@@ -49,6 +49,7 @@ if ( is_admin() ) {
 function fnbx_theme_support_filter( $features ) {
 	// Set and filter WordPress theme support features
 	$features['post-formats'] = false;
+	$features['custom-background'] = false;
 	return $features;
 }
 add_filter( 'fnbx_theme_support', 'fnbx_theme_support_filter' );
