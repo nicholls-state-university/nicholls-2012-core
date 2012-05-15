@@ -16,7 +16,7 @@ function column_shortcode( $atts, $content = null ) {
 		'width' => '0',
 		'padding' => '0',
 		'style' => false,
-		'class' => 'column-'
+		'class' => ''
 		// ...etc
 	), $atts ) );
 	
@@ -25,7 +25,7 @@ function column_shortcode( $atts, $content = null ) {
 	$column_defaults = array(
 	   'tag' => 'div',
 	   'tag_content' => $content,
-	   'class' => $class,
+	   'class' => 'column- ' . $class,
 	   'return' => true
 	);
 	
