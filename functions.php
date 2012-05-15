@@ -68,9 +68,10 @@ function fnbx_theme_custom_header_filter( $custom_header ) {
 	$custom_header['css_name'] = '.header-nicholls-';
 	$custom_header['header_image'] = FNBX_CORE_URL . '/library/images/backgrounds/bg-1.jpg';
 	$custom_header['header_image_width'] = 962;
-	$custom_header['header_image_height'] = 158;
-	$custom_header['css_repeat'] = 'repeat-x';
-	$custom_header['css_position_x'] = right;
+	$custom_header['header_image_height'] = 200;
+	$custom_header['css_repeat'] = 'repeat';
+	$custom_header['css_position_x'] = 'right';
+	$custom_header['css_position_y'] = 'center';	
 	return $custom_header;
 }
 add_filter( 'fnbx_custom_header', 'fnbx_theme_custom_header_filter' );
