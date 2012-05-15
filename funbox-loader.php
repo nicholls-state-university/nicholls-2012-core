@@ -37,6 +37,9 @@ function fnbx_defaut_init_actions() {
 	add_action( 'fnbx_wp_head_before', 'fnbx_head_meta_author' );
 	add_action( 'fnbx_wp_head_before', 'fnbx_head_meta_copyright' );
 	add_action( 'fnbx_wp_head_before', 'fnbx_head_meta_revised' );
+	
+	// Viewport
+	add_action( 'fnbx_wp_head_before', 'fnbx_head_meta_viewport' );
 
 	// Links
 	add_action( 'fnbx_wp_head_before', 'fnbx_head_link_pingback' );
