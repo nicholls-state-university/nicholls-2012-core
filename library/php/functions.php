@@ -184,34 +184,39 @@ function nicholls_top_menu() {
 			'name' => 'nicholls-menu-home',
 			'contents' => 'Home',
 			'link' => $url_nicholls_home
-		),	
+		),
 		1 => array(
-			'name' => 'nicholls-menu-about',
-			'contents' => 'About Nicholls',
-			'link' => $url_nicholls_home . '/about'
-		),	
+			'name' => 'nicholls-menu-current',
+			'contents' => 'Current <br />Students',
+			'link' => $url_nicholls_home . '/current-students'
+			
+		),		
 		2 => array(
 			'name' => 'nicholls-menu-future',
-			'contents' => 'Future Students',
+			'contents' => 'Future <br />Students',
 			'link' => $url_nicholls_home . '/future-students'
 		),		
 		3 => array(
-			'name' => 'nicholls-menu-current',
-			'contents' => 'Current Students',
-			'link' => $url_nicholls_home . '/current-students'
-			
-		),
-		4 => array(
 			'name' => 'nicholls-menu-administration',
-			'contents' => 'Administration &amp; Faculty',
+			'contents' => 'Faculty &amp; <br />Staff',
 			'link' => $url_nicholls_home . '/faculty-staff'
 		),
+		4 => array(
+			'name' => 'nicholls-menu-life',
+			'contents' => 'Campus Life &amp; <br />Housing',
+			'link' => $url_nicholls_home . '/campus-life'
+		),
 		5 => array(
-			'name' => 'nicholls-menu-friends',
-			'contents' => 'Alumni, Donors, &amp; Friends',
-			'link' => $url_nicholls_home . '/alumni-donors-friends'
+			'name' => 'nicholls-menu-athletics',
+			'contents' => 'Athletics',
+			'link' => $url_nicholls_home . '/athletics'
 		),
 		6 => array(
+			'name' => 'nicholls-menu-friends',
+			'contents' => 'Alumni &amp; <br />Friends',
+			'link' => $url_nicholls_home . '/alumni-donors-friends'
+		),
+		7 => array(
 			'name' => 'nicholls-menu-search',
 			'contents' => nicholls_get_form_google_search(),
 			'link' => false
@@ -363,12 +368,14 @@ function nicholls_core_header() {
 		'tag_content_after' => "\n",
 		'return' => true
 	) );
+	
+	$logo_link = '<a class="link-logo-home" href="http://www.nicholls.edu">' . $logo . '</a>';
 
 	fnbx_html_tag( array(
 		'tag' => 'div',
 		'id' => 'logo-container',
 		'class' => 'logo-container-',
-		'tag_content' => $logo,
+		'tag_content' => $logo_link,
 		'tag_content_after' => "\n",
 	) );
 
