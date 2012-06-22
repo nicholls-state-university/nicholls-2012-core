@@ -181,42 +181,37 @@ function nicholls_top_menu() {
 	
 	$nicholls_menu_items = array( 
 		0 => array(
-			'name' => 'nicholls-menu-home',
-			'contents' => 'Home',
-			'link' => $url_nicholls_home
-		),
-		1 => array(
 			'name' => 'nicholls-menu-current',
 			'contents' => 'Current <br />Students',
 			'link' => $url_nicholls_home . '/current-students'
 			
 		),		
-		2 => array(
+		1 => array(
 			'name' => 'nicholls-menu-future',
 			'contents' => 'Future <br />Students',
 			'link' => $url_nicholls_home . '/future-students'
 		),		
-		3 => array(
-			'name' => 'nicholls-menu-administration',
-			'contents' => 'Faculty &amp; <br />Staff',
-			'link' => $url_nicholls_home . '/faculty-staff'
-		),
-		4 => array(
+		2 => array(
 			'name' => 'nicholls-menu-life',
-			'contents' => 'Campus Life &amp; <br />Housing',
+			'contents' => 'Housing &amp; <br />Campus Life',
 			'link' => $url_nicholls_home . '/campus-life'
 		),
-		5 => array(
+		3 => array(
 			'name' => 'nicholls-menu-athletics',
 			'contents' => 'Athletics',
 			'link' => $url_nicholls_home . '/athletics'
 		),
-		6 => array(
+		4 => array(
 			'name' => 'nicholls-menu-friends',
 			'contents' => 'Alumni &amp; <br />Friends',
 			'link' => $url_nicholls_home . '/alumni-donors-friends'
 		),
-		7 => array(
+		5 => array(
+			'name' => 'nicholls-menu-administration',
+			'contents' => 'Faculty &amp; <br />Staff',
+			'link' => $url_nicholls_home . '/faculty-staff'
+		),
+		6 => array(
 			'name' => 'nicholls-menu-search',
 			'contents' => nicholls_get_form_google_search(),
 			'link' => false
@@ -267,7 +262,7 @@ function nicholls_top_menu() {
 				'tag' => 'a',
 				'href' => $item['link'],
 				'class' => 'nicholls-menu-item-link ' . $item['name'] . '-',
-				'tag_content' => '<span>' . $item['contents'] . '</span>',
+				'tag_content' => '<span class="menu-icon"></span><span>' . $item['contents'] . '</span>',
 				'tag_content_after' => "\n",
 				'return' => true
 			);

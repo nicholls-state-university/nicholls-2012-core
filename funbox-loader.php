@@ -73,7 +73,7 @@ function fnbx_defaut_init_actions() {
 	add_action( 'nicholls_header_start', 'fnbx_access_menu' );
 	
 	// Nicholls Primary Menu
-	add_action( 'nicholls_header_start', 'nicholls_top_menu' );	
+	add_action( 'nicholls_header_start', 'nicholls_megamenu_load' );	
 	
 	// Nicholls Header - custom header.php - Layout
 	add_action( 'nicholls_header_start', 'nicholls_layout_wrapper_element_open' );	
@@ -171,7 +171,7 @@ function fnbx_defaut_init_actions() {
 	}
 	
 	// Nicholls MegaMenu
-	add_action( 'fnbx_footer', 'nicholls_megamenu_load' );
+	// add_action( 'fnbx_footer', 'nicholls_megamenu_load' );
 
 	// The default actions get... an action. 
 	do_action( 'fnbx_defaut_actions' );
