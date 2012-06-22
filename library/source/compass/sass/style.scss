@@ -1,0 +1,469 @@
+/*
+THEME NAME: Nicholls 2012 Core Theme
+THEME URI: http://www.nicholls.edu
+DESCRIPTION: Nicholls Core Theme to start development 
+VERSION: 1.0
+AUTHOR: Jess Planck
+AUTHOR URI: http://www.nicholls.edu
+TEMPLATE: funbox
+*/
+
+/* 
+Copyright (c) Jess Planck (http://funroe.net)
+
+The Funbox Base Theme is released under the GNU General Public License.
+
+This is a WordPress Theme (http://wordpress.org). WordPress is free
+software: you can redistribute it and/or modify it under the terms of
+the GNU General Public License as published by the Free Software
+Foundation, either version 2 of the License, or (at your option) any
+later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with WordPress.  If not, see <http://www.gnu.org/licenses/>.
+
+*/
+
+/* Imports --------------------------------------------------------------*/
+
+@import 'nicholls-sprites';
+@import "base";
+@import 'defaults';
+
+/* Layouts */
+
+$total-columns: 19; 
+$column-width: 2.626em;
+$gutter-width: .62em;
+$grid-padding: .382em;
+$show-grid-backgrounds: $show_grids;
+
+body {
+	background-repeat: repeat-x;
+	background-position: top left; 
+}
+
+.wrapper- {
+	@include container;
+	@include susy-grid-background;
+}
+
+.container- {
+	@include span-columns(13.8);
+	@include omega;
+	/* Container border - right inner div: */
+	
+	padding: gutter()/2;
+	
+	font-size: 96%;
+}
+
+.widgets-primary- {
+	@include span-columns(4 omega);
+
+	font-size: 94%;
+	float: left;
+	
+}
+
+
+
+/* Nichols Menu - Primary */
+
+.menu-primary- {
+	@include container;
+	margin: 0 auto;
+	
+	.nicholls-menu-list- {
+	  
+		.nicholls-menu-item {
+			margin-right: .4em;
+			padding-left: .2em;
+			padding-right: .2em;
+			width: 9em;
+		} 
+		
+		.nicholls-menu-current- {
+			.menu-icon {
+				@include nicholls_menu_icon('red-current-students');
+			}
+		}
+		
+		.nicholls-menu-current-:hover {
+			.menu-icon {
+				@include nicholls_menu_icon('white-current-students');
+			}
+		}
+		
+		.nicholls-menu-future- {
+			.menu-icon {
+				@include nicholls_menu_icon('red-future-students');
+			}
+		}
+		
+		.nicholls-menu-future-:hover {
+			.menu-icon {
+				@include nicholls_menu_icon('white-future-students');
+			}
+		}
+		.nicholls-menu-administration- {
+			.menu-icon {
+				@include nicholls_menu_icon('red-faculty-staff');
+			}
+		}
+		
+		.nicholls-menu-administration-:hover {
+			.menu-icon {
+				@include nicholls_menu_icon('white-faculty-staff');
+			}
+		}
+		.nicholls-menu-life- {
+			.menu-icon {
+				@include nicholls_menu_icon('red-housing-life');
+			}
+		}
+		
+		.nicholls-menu-life-:hover {
+			.menu-icon {
+				@include nicholls_menu_icon('white-housing-life');
+			}
+		}
+		.nicholls-menu-athletics- {
+			.menu-icon {
+				@include nicholls_menu_icon('red-athletics');
+			}
+		}
+		
+		.nicholls-menu-athletics-:hover {
+			.menu-icon {
+				@include nicholls_menu_icon('white-athletics');
+			}
+		}
+		.nicholls-menu-friends- {
+			.menu-icon {
+				@include nicholls_menu_icon('red-alumni-friends');
+			}
+		}
+		
+		.nicholls-menu-friends-:hover {
+			.menu-icon {
+				@include nicholls_menu_icon('white-alumni-friends');
+			}
+		}
+		  
+		.nicholls-menu-search- {
+			margin-left: 1em;
+		}
+	
+	}
+
+}
+
+.nicholls-menu-content-container- {
+	@include container;
+}
+
+/* Nicholls Header */
+
+.header-nicholls- {
+	@include container;
+	
+	height: 12em;
+	
+	.info-primary- {
+		@include span-columns(6);
+
+		float: left;
+		
+		background-color: $nicholls-color-white;
+		
+		.logo-container- {
+			// Evil Hard Coded Junk
+			background-image: url( 'library/images/logos/nicholls-logo_c_19.png' );	
+			
+			a {
+				display: block;
+				width: 240px;
+				height: 80px;
+				margin: auto auto;
+			}
+			
+			img {
+				display: none;
+			}
+	
+		}
+		
+	}
+	
+	.header- {
+		@include span-columns(16 omega);
+		float: right;
+		margin: 6.7em 0 0 0;
+	}
+
+}
+
+
+@include at-breakpoint( 74em 22 ) {
+
+	.wrapper- {
+		@include container;
+		@include susy-grid-background;	
+	}
+	
+	.container- {
+		@include span-columns(15.8);
+		@include omega;
+		/* Container border - right inner div: */
+		
+		padding: gutter()/2;
+		
+		font-size: 96%;
+	}
+	
+	.widgets-primary- {
+		@include span-columns(6 omega);
+	
+		font-size: 94%;
+		float: left;
+		
+	}
+	
+	.widgets-secondary- {
+		@include span-columns(6 omega);
+	
+		font-size: 94%;
+		float: left;
+	}	
+
+	/* Nichols Menu - Primary */
+	
+	.menu-primary- {
+		@include container;
+		margin: 0 auto;
+	}
+	
+	.nicholls-menu-content-container- {
+		@include container;
+	}
+	
+	/* Nicholls Header */
+	
+	.header-nicholls- {
+		@include container;
+		
+		.header- {
+			@include span-columns(12 omega);
+			float: right;
+			margin: 6.7em 0 0 0;
+		}
+	}
+}
+
+@include at-breakpoint( 42em 13 62em ) {
+
+	.wrapper- {
+		@include container;
+		@include susy-grid-background;
+	}
+		
+	/* Layout */
+	
+	.container- {
+		@include span-columns(13);
+		font-size: 96%;
+	}
+	
+	.content- {
+		@include span-columns(12.1, 13);
+		@include pre(.5);
+	}
+	
+	.widgets-primary- {
+		@include span-columns(4);
+		
+		padding: 0 1.2em 0 0;
+		
+		font-size: 94%;
+	}
+	
+	.widgets-secondary- {
+		@include span-columns(4);
+		
+		padding: 0 1.2em 0 0;
+		
+		font-size: 94%;	
+		clear: right;		
+	}
+
+	/* Nichols Menu - Primary */
+	
+	.menu-primary- {
+		@include container;
+		margin: 0 auto;
+	}
+	
+	.nicholls-menu-content-container- {
+		@include container;
+	}
+	
+	/* Nicholls Header */
+	
+	.header-nicholls- {
+		@include container;
+		
+		.header- {
+			@include span-columns(12 omega);
+			float: right;
+			margin: 6.7em 0 0 0;
+		}
+	}
+		
+}
+
+@include at-breakpoint( 28em 8 42em ) {
+	.wrapper- {
+		@include container;
+		@include susy-grid-background;
+	}
+		
+	/* Layout */
+	
+	.container- {
+		@include span-columns(8);
+		font-size: 96%;
+	}
+	
+	.content- {
+		@include span-columns(8);
+	}
+	
+	.widgets-primary- {
+		@include span-columns(8);
+				
+		font-size: 94%;
+	}
+	
+	.widgets-secondary- {
+		@include span-columns(8);
+				
+		font-size: 94%;	
+		clear: right;		
+	}
+
+	/* Nichols Menu - Primary */
+	
+	.menu-primary- {
+		@include container;
+		margin: 0 auto;
+	}
+	
+	.nicholls-menu-content-container- {
+		@include container;
+	}
+	
+	/* Nicholls Header */
+	
+	.header-nicholls- {
+		@include container;
+		
+		.header- {
+			@include span-columns(12 omega);
+			float: right;
+			margin: 6.7em 0 0 0;
+		}
+	}
+		
+}
+
+@include at-breakpoint( 0em 6 28em ) {
+	.wrapper- {
+		@include container;
+		@include susy-grid-background;
+	}
+		
+	/* Layout */
+	
+	.container- {
+		@include span-columns(6);
+		font-size: 96%;
+	}
+	
+	.content- {
+		@include span-columns(6);
+	}
+	
+	.widgets-primary- {
+		@include span-columns(6);
+				
+		font-size: 94%;
+	}
+	
+	.widgets-secondary- {
+		@include span-columns(6);
+				
+		font-size: 94%;	
+		clear: right;		
+	}
+	
+	/* Nichols Menu - Primary */
+	
+	.menu-primary- {
+		@include container;
+		margin: 0 auto;
+	}
+	
+	.nicholls-menu-content-container- {
+		@include container;
+	}
+	
+	/* Nicholls Header */
+	
+	.header-nicholls- {
+		@include container;
+		
+		.header- {
+			@include span-columns(12 omega);
+			float: right;
+			margin: 6.7em 0 0 0;
+		}
+	}	
+}
+
+
+/* 480px */
+@media only screen and (min-width: 1px) and (max-width: 480px), only screen and (max-device-width: 480px) {
+/*  @import 'media/6-column'; */
+}
+
+/* 768px */
+@media only screen and (min-width: 481px) and (max-width: 809px) {
+/*  @import 'media/9-column'; */
+}
+
+/* 768px */
+@media only screen and (min-width: 810px) and (max-width: 1009px) {
+/*  @import 'media/14-column'; */
+}
+
+/* 992px */
+@media only screen and (min-width: 1010px) and (max-width: 1381px) {
+/*  @import 'media/19-column'; */
+}
+
+/* 1382px */
+@media only screen and (min-width: 1382px) {
+/*  @import 'media/22-column'; */
+}
+
+/* 2x */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+/*  @import 'media/high-rez'; */
+}
+

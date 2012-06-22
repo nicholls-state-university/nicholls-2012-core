@@ -1,0 +1,52 @@
+/* Imports */
+@import "compass";
+@import "susy";
+@import "normalize";
+
+/* Settings */
+
+$show_grids: true;
+
+$body-width: 100%;
+$body-font-size: 100%;
+
+/* Colors - Nicholls */
+
+$nicholls-color-grey: #cccccc;
+$nicholls-color-red: #cc3333;
+
+
+$nicholls-color-white: #fff;
+$nicholls-color-black: #000;
+
+$nicholls-color-grey-light-a: #efefef;
+$nicholls-color-grey-dark-a: #666666;
+
+
+/* Colors - Nicholls - Palette A */
+
+$nicholls-color-graydark: #374149;
+$nicholls-color-crimson: #7a2224;
+$nicholls-color-mustard: #a45c0b;
+$nicholls-color-greydarkcool: #52616e;
+$nicholls-color-tanwarm: #dbab6c;
+$nicholls-color-bluegreencool: #467d80;
+$nicholls-color-tancool: #aaae87;
+$nicholls-color-greenblue: #149a8a;
+
+/* Colors - Nicholls - Palette B */
+
+$nicholls-color-orangelight: #f3ae2f;
+$nicholls-color-orange: #e57100;
+$nicholls-color-green: #aab200;
+$nicholls-color-bluegreen: #008897;
+$nicholls-color-tan: #b7975c;
+$nicholls-color-blue: #003d73;
+$nicholls-color-violet: #960049;
+$nicholls-color-yellowgreen: #e0e72d;
+
+/* Colors - Links & Text */
+
+$link-color: $nicholls-color-red;
+$link-color-visited: $nicholls-color-grey-dark-a;
+$link-color-hover: unused;

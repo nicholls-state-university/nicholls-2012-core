@@ -1,0 +1,919 @@
+/*
+THEME NAME: 2012 Nicholls Core Theme
+THEME URI: http://funroe.net
+DESCRIPTION: Basic Theme to start development for sites at Nicholls
+VERSION: 1.0
+AUTHOR: Jess Planck
+AUTHOR URI: http://funroe.net/
+TEMPLATE: funbox
+TAGS: funbox, buddypress
+*/
+
+/* START defaults */
+
+body {
+	font-family: Arial, sans serif;
+	font-size: 68.8%;
+	color: #000000;
+	width: auto;
+	padding: 0;
+}
+
+/* Interactive HTML Styles */
+
+a, a:link {
+	color: #CC3333;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #666;
+}
+	
+a:hover {
+	text-decoration: none;
+}
+
+/* Heading Styles */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Trebuchet MS", Arial, sans serif;
+	font-weight: 600;
+	line-height: 1.1em;
+    margin: .4em 0;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 180%;
+}
+
+h3 {
+    font-size: 160%;
+}
+
+h4 {
+    font-size: 140%;
+}
+
+h5 {
+    font-size: 120%;
+}
+
+h6 {
+    font-size: 110%;
+}
+
+/* END defaults */
+
+
+/* START Multi-purpose Elements */
+.left, .alignleft, div.nav-previous {
+	float: left;
+}
+
+.right, .alignright, div.nav-next {
+	float: right;
+}
+
+.box-0x0 {
+	width: 0;
+	height: 0;
+	line-height: 0;
+}
+
+.clear, .clearer, .clear-both, p.entry-edit {
+	clear: both;
+}
+
+.clear-right {
+	clear: right;
+}
+
+.clear-left {
+	clear: left;
+}
+
+/* END Multi-purpose Elements */
+
+/* START Layout */
+
+.wrapper- {
+	width: 87.2em; 	
+	margin: 0 auto 0 auto;
+	text-align: left;
+	background: #fff;
+	border-top: 1px solid #afafaf;
+}
+
+.container- {
+	width: 87.2em;
+	float: right;
+	padding-bottom: 4em;	
+}
+
+body.widgets-primary-active .container- {
+	width: 66em;
+	padding-left: .8em;
+	border-left: 1px solid #e0e0e0
+}
+
+.content- {
+	width: 100%;
+	padding: .2em 0 0 0;
+    font-size: 110%;	
+}
+
+.footer- {
+	width: 100%;
+	margin: 2em 0;
+	padding: 3em 0 0 0;
+	clear: both;
+	text-align: center;
+	border-top: 1px solid #afafaf;
+}
+
+/* END Layout */
+
+/* START - Nicholls Primary Menu */
+
+.menu-primary-container- {
+	border-bottom: 1px solid #666;
+	width: 100%;
+	text-align: left;
+	clear: both;
+	background: #cc3333;
+}
+
+.menu-primary- {
+	width: 87.2em;
+	height: 2.4em;
+	background: #cc3333;
+	margin: 0 auto 0 auto;
+	padding: 0;
+}
+
+.menu-primary- .nicholls-menu-list- {
+	list-style-type: none;
+	clear: both;
+	margin: 0;
+}
+
+.menu-primary- .nicholls-menu-list- .nicholls-menu-item {
+	height: 1.4em;
+	padding: 0.6em 0.5em 0.2em;
+	margin: 0 1.4em 0 0;
+	float: left;
+	font-weight: 600;	
+	color: #fff;
+	display: block;
+}
+
+.menu-primary- .nicholls-menu-list- .nicholls-menu-home- a {
+	display: block;	
+	width: 2em;
+	height: 1.6em;
+	background: transparent url( 'library/images/nicholls-icons.png' ) -16px -6px no-repeat;	
+}
+
+.menu-primary- .nicholls-menu-list- .nicholls-menu-home- a span {
+	display: none;
+}
+
+.menu-primary- .nicholls-menu-list- .nicholls-menu-search- {
+	margin: 0 0 0 2em;
+	padding: 0;
+}
+
+.menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- input {
+	border: 1px solid #999;
+	margin: .4em 0 0 0;
+	padding: .1em;
+}
+
+.menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- .button-search- {
+	background: #ccc;
+	border: 1px solid #999;
+	margin: .2em 0 0 0;
+	padding: .1em;
+	font-size: 90%;
+}
+
+.menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- input:hover,
+.menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- input:active,
+.menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- .button-search-:hover,
+.menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- .button-search-:active {
+	border: 1px solid #000;
+}
+
+.nicholls-menu-item a {
+	padding: 0 .2em;
+	color: #fff;
+	text-decoration: none;
+}
+
+.nicholls-menu-item a, .nicholls-menu-item a:link, .nicholls-menu-item a:active, .nicholls-menu-item a:visited {
+	text-decoration: none;
+}
+
+.nicholls-menu-item a:hover {
+	text-decoration: underline;
+}
+
+.nicholls-menu-selected {
+	background: #cc3333;
+}
+
+/* END - Nicholls Primary Menu */
+
+#nicholls-menu-sources, #nicholls-menu-sources div {
+	display: none !important;
+}
+
+.nicholls-menu-content-wrapper- {
+	position: relative;
+	display: none;		
+	width: 100%;
+}
+
+.nicholls-menu-contents {
+	display: none;		
+}
+
+.nicholls-menu-content-container- {
+	position: absolute;
+	top: 2.4em;
+	width: 84em;
+	height: 32.4em;
+	z-index: 1001;
+	background: #ccc url( 'library/images/nicholls-menu-pointer-down.png' ) no-repeat;	
+	margin: 0 0 0 2em;
+}
+
+.nicholls-menu-content- {
+	position: absolute;
+	top: .4em;
+	width: 100%;
+	height: 32em;
+	background: #fff;
+	-moz-box-shadow: 2px 2px 6px #666;
+	-webkit-box-shadow: 2px 2px 6px #666;
+	box-shadow: 2px 2px 6px #666;	
+	z-index: 1002;	
+}
+
+.nicholls-menu-about-container {
+	background-position: 5em 0em;
+}
+
+.nicholls-menu-about-container .nicholls-menu-content- {
+	background: #fff url( 'library/images/backgrounds/backgrounds-menus-1.jpg' ) top right no-repeat;
+}
+
+.nicholls-menu-future-container {
+	background-position: 15em 0em;
+}
+
+
+.nicholls-menu-current-container {
+	background-position: 26em 0em;
+}
+
+.nicholls-menu-administration-container {
+	background-position: 39em 0em;
+}
+
+.nicholls-menu-friends-container {
+	background-position: 54em 0em;
+}
+
+.nicholls-menu-contents .nicholls-menu-title- { 
+	border-bottom: 1px solid #ccc;
+	margin: 0;
+	padding: .2em .5em;
+	font-weight: 800;
+	color: #cc3333;
+}
+
+.nicholls-menu-contents .column- {
+	float: left;
+	width: 16em; /*width of each menu column*/
+	margin: .4em .4em 0 .6em;
+	font-size: 105%;
+}
+
+.nicholls-menu-contents .column- ul {
+	margin: 0 0 0 .5em;
+	padding: 0;
+	list-style-type: none;
+}
+
+.nicholls-menu-contents .column- ul li {
+	padding-bottom: .4em;
+}
+
+.nicholls-menu-contents .column- h2, .nicholls-menu-contents .column- h3. .nicholls-menu-contents .column- h4 {
+	color: #cc3333;
+	margin: .2em 0 .4em 0;
+}
+
+.nicholls-menu-contents .column- ul li a {
+	text-decoration: none;
+}
+
+.nicholls-menu-contents .column- ul li a:hover {
+	color: red;
+}
+
+/* START - Nicholls Header */
+
+.header-nicholls-wrapper- {
+	width: 100%;
+	text-align: left;
+}
+
+.header-nicholls- {
+	width: 87.2em;
+	height: 14em;
+	margin: 0 auto 0 auto;
+	overflow: hidden;
+    background: transparent url( 'library/images/backgrounds/bg-1.jpg' ) top right no-repeat;
+}
+
+.header-nicholls- .info-primary- {
+    width: 19.6em;
+    height: 14em;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nicholls- .logo-container- {
+    height: 5em;
+    margin: 0 .5em 0 1.5em;
+    padding: 1em 0 .4em 0;
+    background: #fff;
+    text-align: center;
+}
+
+.header-nicholls- .info-primary- .info-primary-content- {
+	background: #fff;
+	clear: both;
+	margin: 0 .5em 0 1.5em;
+	padding: .2em .2em .2em .6em;
+	border-top: 1px solid #ccc;
+}
+
+.header-nicholls- .info-primary-  ul {
+	list-style-type: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.header-nicholls- .info-primary- ul li {
+	margin: .4em 0;
+	font-size: 90%;
+	font-weight: 600;	
+	color: #cc3333;
+	display: block;
+}
+
+.header-nicholls- .info-primary- a, .header-nicholls- .info-primary- a:link, .header-nicholls- .info-primary- ul li a, .header-nicholls- .info-primary- ul li a:link, .header-nicholls- .info-primary- ul li a:active, .header-nicholls- .info-primary- ul li a:visited {
+	color: #cc3333;
+	text-decoration: none;
+}
+
+.header-nicholls- .info-primary- a:hover, .header-nicholls- .info-primary- ul li a:hover {
+	text-decoration: underline;
+}
+
+.header-nicholls- .info-primary- .info-contact {
+	font-size: 130%;
+}
+
+.header-nicholls- .info-primary- .info-programs {
+	padding-bottom: .4em;
+	padding-left: .4em;	
+}
+
+.header-nicholls- .info-primary- .info-request {
+	padding-bottom: .4em;
+	padding-left: .4em;	
+}
+
+/* END - Nicholls Header */
+
+/* START Header */
+
+.header- {
+	width: 66.8em;
+	height: 6em;
+	float: right;
+	margin: 8.2em 0 0 0;
+	color: #fff;
+    background: transparent url( 'library/images/45pc_black.png' );
+}
+
+.header- .blog-title- {
+	font-family: Georgia, "TImes New Roman", times, serif;
+	font-weight: 400;
+    font-size: 225%;	
+	line-height: 1.1em;
+	margin: 0;
+	padding: .2em;	
+	color: #fff;	
+}
+
+.header- .blog-title- a, .header- .blog-title- a:link, .header- .blog-title- a:active, .header- .blog-title- a:visited {
+	text-decoration: none;
+	color: #fff;		
+}
+
+.header- .blog-title- a:hover {
+	text-decoration: underline;
+}
+
+.header- .blog-description- {
+	padding: 0 0 0 1em;	
+}
+
+/* END Header */
+
+
+/* START Widget Group Styles */
+
+.widgets- ul {
+	list-style-type: none;
+	text-align: left;
+}
+
+.widgets- ul li {
+	list-style-type: none;
+	text-align: left;
+}
+
+.widgets- h3, .widgets- h4 {
+	font-size: 120%;
+	font-weight: 400;
+	padding: .4em 0;
+	margin: .4em 0;
+	border-bottom: 1px solid #afafaf;
+}
+
+.widgets- li.widget {
+	margin: 1em 0;
+}
+
+.widgets- li.widget ul {
+	margin: 0 0 0 .5em;
+}
+
+.widgets- li.widget li {
+	margin: .5em 0 .5em .5em;
+}
+
+.widgets- .widget_search {
+	padding: .2em;
+}
+
+.widgets-primary-, .widgets-secondary- {
+	float: left;
+    width: 19.6em;
+	padding: 0 .4em 0 0;
+}
+
+.widgets-primary- li.widget, .widgets-secondary- li.widget {
+	margin-left: 1em;
+}
+
+/* END Widget Group Styles */
+
+/* START Post Navigation Styles */
+
+.navigation {
+	/* 
+	This one is tricky since we have two floats in a div
+	requries both "width: x" and "overflow: auto" to clear
+	interior elements for box creation!
+	*/
+	width: auto;
+	padding: .2em .2em .4em .2em;
+	overflow: auto;
+	clear: both;
+}
+
+.nav-next, .nav-previous {
+	width: 48%;
+}
+
+.nav-previous {
+	float: left;
+	text-align: left;
+}
+
+.nav-next {
+	float: right;
+	text-align: right;
+	clear: right;
+}
+/* START Post Navigation Styles */
+
+/* START Post styles */
+
+.post {
+    padding-top: .2em;
+}
+
+.entry-title {
+	color: #cc3333;
+}
+
+.entry-content {
+    line-height: 1.4em;
+    clear: both;
+}
+
+.entry-content p {
+    line-height: 1.4em;
+}
+
+.entry-content img {
+	max-width: 460px;
+	margin: 4px;
+}
+
+.entry-content img.center {
+	display: block;
+	margin: 0.4em auto;
+}
+
+.entry-content img.alignright {
+	margin: 0.4em 0 0.4em 1.1em
+}
+
+.entry-content img.alignleft {
+	margin: 0.4em 1.1em 0.4em 0;
+}
+
+.entry-meta {
+	padding: .1em;
+	margin-bottom: 2em;
+	font-size: 90%;
+	border-top: 1px solid #AFAFAF;
+	color: #222;
+	background: #e0e0e0;
+	clear: both;
+}
+
+.entry-date {
+	color: #666;
+}
+
+.entry-date abbr.published {
+	display: block;
+	cursor: default;
+	margin: .2em 0 .2em .2em;
+	padding: .2em;
+	color: #AFAFAF;
+	font-weight: normal;
+}
+
+/* END Post styles */
+
+/* START WordPress Image / Gallery Styles */
+
+.gallery .gallery-item {
+	float: left;
+	width: 48%;
+}
+
+.wp-caption {
+	margin: .4em;
+	padding: .2em;
+	text-align: center;
+	border: 1px solid #ccc;
+}
+
+.wp-caption p.wp-caption-text {
+	margin: .2em 0 .1em 0;
+	padding: .2em .4em .1em .4em;
+	font-size: 76%;
+	text-align: center;
+	line-height: 1.2em;
+	border-top: 1px solid #e0e0e0;
+}
+
+/* END WordPress Image / Gallery Styles */
+
+/* START Comment Styles */
+
+.comments- {
+	margin: 0 .5em 0 .5em;
+	font-size: 96%;
+}
+
+div.comment-author {
+	padding: .4em;
+}
+
+div.comment-author .avatar {
+	float: left;
+	margin: 0 .5em .5em 0;
+}
+
+li.bypostauthor div.comment-author {
+	background: #FF9;
+}
+
+div.comment-meta {
+	clear: right;
+	margin: 0 0 .5em 0;
+	padding: .2em 0 .2em .5em;
+	font-size: 90%;
+	color: #222222;
+}
+
+ol.commentlist {
+	list-style-type: none;
+	margin: 0 .2em .5em .4em;
+}
+
+.commentlist li.comment, .commentlist li.pingback {
+	list-style-type: none;
+	margin: 0 0 2em 0;
+	padding: .2em 0 0 0;
+	border-top: 1px solid #e0e0e0;
+}
+
+/* END Comment Styles */
+
+/* Start Form Controls - Contact Us */
+
+form fieldset legend {
+	font-weight: 400;
+}
+
+form input, form textarea {
+	margin: .2em;
+	padding: .2em;
+	border: 1px solid #666;
+}
+
+form textarea {
+	clear: both;
+}
+
+form input:hover, form textarea:hover {
+  border: 1px solid #333333;
+}
+
+form input:focus, form textarea:focus {
+  border: 1px solid #d1d1d1;
+}
+
+/* End Form Controls - Contact Us */
+
+/* Start Form Controls - Funbox */
+
+.funbox_form_row {
+	margin: .2em 0;
+	clear: both;
+}
+
+.funbox_form_row label {
+	width: 12em;
+	float: left;
+	padding: 2px;
+	font-weight: bold;
+	text-align: right;
+}
+
+.funbox_textarea label {
+	width: 100%;
+	float: none;
+}
+
+.funbox_form_row .funbox_form_element {
+	padding: 2px;
+}
+
+/* End Form Controls - Funbox */
+
+
+/* START - Custom Layout Classes */
+
+/* Columns - column-float-width */
+
+.column-left-16 {
+	float: left;
+	width: 16em;
+	margin-right: 1em;
+}
+
+.column-left-20 {
+	float: left;
+	width: 16em;
+	margin-right: 1em;
+}
+
+/* Borders - border-location-color-size */
+
+.border-right-cccccc-1 {
+	border-right: 1px solid #ccc;
+}
+
+.border-left-cccccc-1 {
+	border-right: 1px solid #ccc;
+}
+
+/* END - Custom Layout Classes */
+
+/* START - Custom Classes */
+
+.type-serif {
+	font-family: "Georgia","Times New Roman",times,serif;
+}
+
+.type-normal {
+	font-size: 72%;
+}
+
+.transparent-black-50 {
+    background: transparent url( 'library/images/backgrounds/bg-transparent-black-50.png' );
+}
+
+.transparent-white-50 {
+    background: transparent url( 'library/images/backgrounds/bg-transparent-white-50.png' );
+}
+
+/* END - Custom Classes */
+
+
+/* START - Plugin Styles */
+
+/* START - Contact Form 7 */
+
+div.wpcf7 {
+	width: 100%;
+}
+
+div.form-wrapper {
+	position: relative;
+	width: 100%;
+	padding: .2em;
+}
+
+div.form-container {
+	position: relative;
+	width: 100%;
+	padding: .2em;
+	margin: 0 auto 0 auto;
+}
+
+div.form-container form {
+	margin: 0;
+	padding: 0;
+}
+
+div.form-container h3, div.form-container h4 {
+	clear: both;
+}
+
+div.form-container .form-row {
+	width: 100%;
+	clear: both;
+}
+
+div.form-container .form-note {
+	padding: .2em;
+	clear: both;
+}
+
+div.form-container .form-label, div.form-container label {
+	display: block;
+	float: left;
+	padding: .6em .4em .2em .2em;
+	width: 39%;
+	text-align: right;
+	font-weight: bold;
+}
+
+div.form-container .form-input, div.form-container .form-element {
+	display: block;
+	position: relative;
+	width: 59%;
+	margin: 0 0 0 15.4em;
+	padding: .4em 0 .4em 0;
+}
+
+div.form-container .wpcf7-list-item {
+	display: block;
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.wpcf7-checkbox input {
+	display: block;
+	float: left;
+}
+
+.wpcf7-checkbox .wpcf7-list-item-label {
+	display: block;
+	margin: .2em 0 .2em .2em;
+	float: left;
+	width: 18em;
+}
+
+.form-input .your-message textarea {
+	width: 20em;
+}
+
+/* END - Contact Form 7 - 2009 */
+
+/* END - Plugin Styles */
+
+/* START Hidden Elements */
+
+.access- {
+	display: none;
+}
+/* END Hidden Elements */
+
+/* START Compatiblity Elements */
+
+body.screen-narrow .header-nicholls- {
+	width: 70em;
+}
+
+body.screen-narrow .wrapper- {
+	width: 70em;
+}
+
+body.screen-narrow .header-nicholls- .info-primary- {
+	width: 18em;
+}
+
+body.screen-narrow .header- {
+	width: 51.2em;
+}
+
+body.screen-narrow .container- {
+	width: 70em;
+}
+
+body.screen-narrow.widgets-primary-active .container- {
+	width: 49.2em;
+}
+
+body.screen-narrow .widgets-primary- {
+	width: 17.6em;
+}
+
+/* START Widget Styles */
+
+.widgets- .widget_pages, .widgets- .menu {
+	line-height: 1.2em;
+}
+
+li.widget_nav_menu li, 
+li.widget_pages li {
+	text-indent: -0.9em;
+}
+
+li.widget_nav_menu li:before, 
+li.widget_pages li:before {
+	content: "\00BB \0020";
+}
+
+.widgets- .menu li ul, .widgets- .widget_pages li ul {
+	display: none;
+}
+
+.widgets- .widget_pages .current_page_item ul, .widgets- .widget_pages .current_page_ancestor ul, .widgets- .menu .current-menu-item ul, .widgets- .menu .current-menu-ancestor ul {
+	display: block;
+}
+
+.widgets- .widget_pages a, .widgets- .widget_pages a:link, .widgets- .widget_pages a:active, .widgets- .widget_pages a:visited, 
+.widgets- .menu a, .widgets- .menu a:link, .widgets- .menu a:active, .widgets- .menu a:visited {
+	text-decoration: none;
+}
+
+.widgets- .widget_pages a:hover, .widgets- .menu a:hover {
+	text-decoration: underline;
+}
+/* END Widget Styles */
+
+/* START Compatiblity Elements */
+
+/* START Debug */
+/*
+body {
+	background: #fff url("library/images/debug-grid-large.png") no-repeat top center;
+}
+*/
+/* END Debug */
