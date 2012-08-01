@@ -635,20 +635,84 @@ li.widget_pages li:before {
 	text-decoration: underline;
 }
 /* END Widget Styles */
+
+/* START Top Navigation and Search */
+
+.nav-top-wrapper- input {
+	font-size: 72%;
+}
+
+.nav-top-wrapper- {
+	width: 100%;
+	background: #666;
+}
+
+.nav-top- {
+	clear: both;
+}
+
+.form-gs-container- {
+	background-color: #fff;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */	
+	margin: .2em;
+	float: right;
+	clear: right;
+}
+
+.form-gs-container- fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.form-gs-container- label {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.input-q- {
+	border: none;
+	margin: .2em;
+}
+
+.form-gs-container- input:hover, .form-gs-container- input:focus {
+	border: none;
+}
+
+.form-gs-container- form input[type=submit] {
+	background : url("library/images/icons/icon-black-search.png") no-repeat center center;
+	width : 20px;
+	height :20px;
+	border : none;
+	color : transparent;
+	font-size : 0
+}
+
+.form-gs-container- form input[type=submit]:hover {
+	background-color: $nicholls-color-red;
+}
+
+/* END Top Navigation and Search */
+
 /* START - Nicholls Primary Menu */
 
 .menu-primary-container- {
-	border-bottom: 8px solid #e2e2e2;
-	width: 100%;
 	text-align: left;
 	clear: both;
-	background: $nicholls-color-white;
+	position: relative;
+	z-index: 1001;	
 }
 
 .menu-primary- {
 	height: 2.75em;
 	margin: 0 auto 0 auto;
 	padding: 0;
+	border-bottom: 2px solid #ccc;
+	border-top: 2px solid #ccc;
+	
 }
 
 .menu-primary- .nicholls-menu-list- {
@@ -662,65 +726,37 @@ li.widget_pages li:before {
 .menu-primary- .nicholls-menu-list- .nicholls-menu-item {
 	list-style-type: none;
 	list-style-position: inside;
-	padding: 0.6em 1.9em 0.2em;
+	padding: 0;
 	float: left;
 	font-weight: 600;	
 	color: $nicholls-color-red;
 	display: block;
 	font-size: 80%;
-	margin-left: 0;
-}
-
-.menu-primary- .nicholls-menu-list- .nicholls-menu-item a {
 	margin: 0;
-	padding: 0;
+	line-height: 1.2em;
 }
 
-.menu-primary- .nicholls-menu-list- .nicholls-menu-item a span {
+.nicholls-menu-list- .nicholls-menu-item .nicholls-menu-item-link {
 	margin: 0;
-	padding: 0;
+	display: block;
+	border-right: 2px solid #ccc;
 }
 
-.menu-primary- .nicholls-menu-list- .nicholls-menu-search- {
-	padding: 0 0 0.25em 2em;
-	clear: right;
+.nicholls-menu-list- .nicholls-menu-item:first-child .nicholls-menu-item-link {
+	margin: 0;
+	display: block;
+	border-left: 2px solid #ccc;
 }
 
-.menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- input {
-	border: 1px solid #999;
-	margin: .4em 0 0 0;
-	padding: .1em;
-	width: 10em;
-}
-
-.menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- .button-search- {
-	background: #ccc;
-	border: 1px solid #999;
-	margin-top: .2em;
-	padding: .1em;
-	font-size: 90%;
-}
-
-.menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- input:hover,
-.menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- input:active,
-.menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- .button-search-:hover,
-.menu-primary- .nicholls-menu-list- .nicholls-menu-search- .form-gs-container- .button-search-:active {
-	border: 1px solid $nicholls-color-black;
-}
-
-.nicholls-menu-item a {
-	padding: 0 .2em;
-	color: $nicholls-color-red;
+.nicholls-menu-item a.nicholls-menu-item-link, .nicholls-menu-item a.nicholls-menu-item-link:link, .nicholls-menu-item a.nicholls-menu-item-link:active, .nicholls-menu-item a.nicholls-menu-item-link:visited {
 	text-decoration: none;
+	color: #fff;
 }
 
-.nicholls-menu-item a, .nicholls-menu-item a:link, .nicholls-menu-item a:active, .nicholls-menu-item a:visited {
+.nicholls-menu-item a.nicholls-menu-item-link:hover {
 	text-decoration: none;
-	border: none;
-}
-
-.nicholls-menu-item a:hover {
-	text-decoration: underline;
+	background-color: #cc3333;
+	color: #fff;
 }
 
 .nicholls-menu-selected, .nicholls-menu-selected a, .nicholls-menu-selected a:link, .nicholls-menu-selected a:active, .nicholls-menu-selected a:visited {
@@ -728,36 +764,40 @@ li.widget_pages li:before {
 	color: $nicholls-color-white;
 }
 
-.nicholls-menu-about- {
-	border-bottom: 8px solid $nicholls-color-graydark;
-}
-.nicholls-menu-future- {
-	border-bottom: 8px solid $nicholls-color-crimson;
-}
 .nicholls-menu-current- {
-	border-bottom: 8px solid $nicholls-color-tancool;
+	background-color: $nicholls-color-tancool;
 }
-.nicholls-menu-administration- {
-	border-bottom: 8px solid $nicholls-color-mustard;
+
+.nicholls-menu-future- {
+	background-color: $nicholls-color-crimson;
 }
+
+.nicholls-menu-life- {
+	background-color: $nicholls-color-green;
+}
+
+.nicholls-menu-athletics- {
+	background-color: $nicholls-color-blue;
+}
+
 .nicholls-menu-friends- {
-	border-bottom: 8px solid $nicholls-color-greenblue;
+	background-color: $nicholls-color-greenblue;
 }
-.nicholls-menu-search- {
-	border-bottom: 8px solid $nicholls-color-greydarkcool;
+
+.nicholls-menu-administration- {
+	background-color: $nicholls-color-mustard;
 }
+
+.nicholls-menu-friends- .nicholls-menu-contents {
+	margin-left: -30em;
+}
+
+.nicholls-menu-administration- .nicholls-menu-contents {
+	margin-left: -30em;
+}
+
 
 /* END - Nicholls Primary Menu */
-
-#nicholls-menu-sources, #nicholls-menu-sources div {
-	display: none !important;
-}
-
-.nicholls-menu-content-wrapper- {
-	position: relative;
-	display: none;		
-	width: 100%;
-}
 
 .nicholls-menu-content-container- {
 	position: absolute;
@@ -766,14 +806,6 @@ li.widget_pages li:before {
 	z-index: 1101;
 	background: #ccc url( 'library/images/nicholls-menu-pointer-down.png' ) no-repeat;	
 	margin: 0
-}
-
-.nicholls-menu-about-container {
-	background-position: 5em 0em;
-}
-
-.nicholls-menu-about-container .nicholls-menu-content- {
-	background: $nicholls-color-white url( 'library/images/backgrounds/backgrounds-menus-1.jpg' ) top right no-repeat;
 }
 
 .nicholls-menu-future-container {
@@ -793,8 +825,13 @@ li.widget_pages li:before {
 }
 
 .nicholls-menu-contents {
-	position: absolute;
-	z-index: 1002;	
+	background: $nicholls-color-white;
+	display: none;
+	width: 38em;
+	height: 34em;
+	-moz-box-shadow: 2px 2px 6px #666;
+	-webkit-box-shadow: 2px 2px 6px #666;
+	box-shadow: 2px 2px 6px #666;		
 }
 
 .nicholls-menu-contents .mm-content-base {
@@ -852,12 +889,14 @@ li.widget_pages li:before {
 	width: 100%;
 	text-align: left;
 	clear: both;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;	
 }
 
 .header-nicholls- {
 	margin: 0 auto 0 auto;
 	overflow: hidden;
-    background: transparent url( 'library/images/backgrounds/bg-1.jpg' ) top right no-repeat;
 }
 
 .info-primary- {
@@ -865,15 +904,6 @@ li.widget_pages li:before {
     padding: 0;
     font-size: 80%;
     @include single-box-shadow(#333, 3px, 3px, 3px, 0px);
-}
-
-.header-nicholls- .logo-container- {
-    height: 6.8em;
-    margin-top: .62em;
-    background-color: $nicholls-color-white;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
 }
 
 .header-nicholls- .info-primary- .info-primary-content- {
@@ -910,9 +940,20 @@ li.widget_pages li:before {
 	text-decoration: underline;
 }
 
-.header-nicholls- .info-primary- .info-contact {
-	font-size: 130%;
-	margin: .3em .2em 0 0;
+.info-contact {
+	font-size: 102%;
+	margin-top: .8em;
+	color: #fff;
+}
+
+.info-contact a, .info-contact a:link, .info-contact a:active, .info-contact a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.info-contact a:hover {
+	color: #fff;
+	text-decoration: underline;	
 }
 
 .header-nicholls- .info-primary- .info-programs {
@@ -966,6 +1007,40 @@ li.widget_pages li:before {
 }
 
 /* END Header */
+
+/* START - footer */
+
+.footer- .column- {
+	float: left;
+	width: 12em; /*width of each menu column*/
+	margin: .4em .4em 0 0;
+}
+
+.footer- .column- ul {
+	margin: 0 0 0 .5em;
+	padding: 0;
+	list-style-type: none;
+}
+
+.footer- .column- ul li {
+	padding-bottom: .4em;
+}
+
+.footer- .column- h2, .footer- .column- h3, .footer- .column- h4 {
+	color: $nicholls-color-red;
+	margin: .2em 0 .4em 0;
+	font-size: 110%;
+}
+
+.footer- .column- ul li a {
+
+}
+
+.footer- .column- ul li a:hover {
+
+}
+
+/* END - Footer */
 
 /* END - Custom Site */
 

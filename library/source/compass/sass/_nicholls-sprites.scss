@@ -4,13 +4,13 @@
 $nicholls-menu-sprite-target: "library/images/sprites/nicholls-menu-sprite.png";
 $nicholls-menu-sprite-map: sprite-map("sprites/icons-menu/*.png",
   $position: 0%,
-  $spacing: 5px,
+  $spacing: 50px,
   $repeat: no-repeat,
   $icon-menu-dimensions: true,
   $icon-menu-spacing: 20px ); /**/
   
-$nicholls-menu-sprite-height: 34px;
-$nicholls-menu-sprite-width: 36px;
+$nicholls-menu-sprite-height: 28px;
+$nicholls-menu-sprite-width: 30px;
 
 
 // Sprite Name
@@ -27,6 +27,16 @@ $nicholls-menu-sprite-map-name: sprite-map-name( $nicholls-menu-sprite-map );
 
 // mixin
 @mixin nicholls_menu_icon( $name ) {
+		background-image: url($nicholls-menu-sprite-target);
+		// Adjusted so that icons are horizontally centered.
+		background-position: sprite-position($nicholls-menu-sprite-map, $name, 50%) !important;
+		background-repeat: no-repeat;
+		padding-top: $nicholls-menu-sprite-height;
+		display: block;
+}
+
+// mixin-backup - with width.
+@mixin nicholls_menu_icon_bak( $name ) {
 		background-image: url($nicholls-menu-sprite-target);
 		background-position: sprite-position($nicholls-menu-sprite-map, $name) !important;
 		background-repeat: no-repeat;

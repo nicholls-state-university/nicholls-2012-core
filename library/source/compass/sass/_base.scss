@@ -2,6 +2,10 @@
 @import "compass";
 @import "susy";
 @import "normalize";
+@import "compass/css3/images";
+
+/* IE9 - Gradient support */
+$experimental-support-for-svg: true;
 
 /* Settings */
 

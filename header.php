@@ -4,7 +4,7 @@
 *
 * Template for standard Header.
 *
-* @package Funbox Theme
+* @package FNBX Theme
 * @subpackage Template
 */
 
@@ -13,7 +13,7 @@ do_action( 'fnbx_child_init'); // Child init override or enhance defaults
 do_action( 'fnbx_header_init'); // Typically used for doctype
 
 ?>
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes('xhtml'); ?>>
+<html <?php language_attributes('html'); ?>>
 <head>
 
 	<title><?php fnbx_document_title() ?></title>
@@ -27,19 +27,48 @@ do_action( 'fnbx_header_init'); // Typically used for doctype
 </head>
 
 <body <?php body_class() ?>>
+<!-- START: body -->
+<?php do_action( 'fnbx_body_start', 'body' ) ?>
+
+<div class="nav-top-wrapper-">
+	<div class="nav-top-">
+		<div class="form-gs-container-" id="form-gs-container">
+		<form method="get" action="http://search.nicholls.edu/search" enctype="application/x-www-form-urlencoded" name="gs" id="gs">
+			<fieldset>
+				<label for="q">Search</label>
+				<input type="text" value="Search..." class="input-q-" name="q" id="q">
+				<input type="hidden" value="date:D:L:d1" class="input-sort-" name="sort" id="sort">
+				<input type="hidden" value="xml_no_dtd" class="input-output-" name="output" id="output">
+				<input type="hidden" value="UTF-8" class="input-oe-" name="oe" id="oe">
+				<input type="hidden" value="UTF-8" class="input-ie-" name="ie" id="ie">
+				<input type="hidden" value="default_frontend" class="input-client-" name="client" id="client">
+				<input type="hidden" value="default_frontend" class="input-proxystylesheet-" name="proxystylesheet" id="proxystylesheet">
+				<input type="hidden" value="5" class="input-numgm-" name="numgm" id="numgm">
+				<input type="hidden" value="default_collection" class="input-site-" name="site" id="site">
+				<input type="submit" value="Search" class="input-site-" name="search" id="search-">
+			</fieldset>
+		</form>
+		</div>
+	</div>
+</div>
 
 <?php do_action( 'nicholls_header_start', 'header-nicholls' ) ?> <!-- START: nicholls-header -->
 
-	<?php do_action( 'fnbx_header_start', 'header' ) ?> <!-- START: header -->
+	<!-- START: header -->
+	<?php do_action( 'fnbx_header_start', 'header' ) ?>
 
 		<?php do_action( 'fnbx_header', 'header' ) ?>
 
-	<?php do_action( 'fnbx_header_end', 'header' ) ?> <!-- END: header -->
+	<?php do_action( 'fnbx_header_end', 'header' ) ?>
+	<!-- END: header -->
 
 <?php do_action( 'nicholls_header_end', 'header-nicholls' ) ?> <!-- END: nicholls-header -->
 
-<?php do_action( 'fnbx_wrapper_start', 'wrapper' ) ?> <!-- START: wrapper -->
+<!-- START: wrapper -->
+<?php do_action( 'fnbx_wrapper_start', 'wrapper' ) ?>
 
-	<?php do_action( 'fnbx_container_start', 'container' ) ?> <!-- START: container -->
+	<!-- START: container -->
+	<?php do_action( 'fnbx_container_start', 'container' ) ?>
 
-		<?php do_action( 'fnbx_content_start', 'content' ) ?> <!-- START: content -->
+		<!-- START: content -->
+		<?php do_action( 'fnbx_content_start', 'content' ) ?>

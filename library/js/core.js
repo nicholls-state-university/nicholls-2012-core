@@ -29,6 +29,21 @@ jQuery(document).ready( function() {
 	// Set Transparency
 	jQuery('.header-').addClass('transparent-black-50');
 	
+	// Search Form Styling and Field Value Clearing
+	jQuery('.input-q-').each(function() {
+		var default_value = this.value;
+		jQuery(this).focus(function() {
+			if(this.value == default_value) {
+				this.value = '';
+			}
+		});
+		jQuery(this).blur(function() {
+			if(this.value == '') {
+				this.value = default_value;
+			}
+		});
+	});	
+	
 	// Corners 
 	// jQuery('.info-primary-').corner('tl');
 	// jQuery('.header-nicholls-').corner('br');
@@ -41,5 +56,7 @@ jQuery(document).ready( function() {
 });
 
 jQuery(function(){
-	jQuery("#nicholls-menu-list").megamenu( { 'show_method':'simple', 'hide_method': 'simple' } );	
+    // Deactivate menus if touch device
+    if (!Modernizr.touch) jQuery(window).responsinav({ breakpoint: 650 });
 });
+

@@ -77,30 +77,12 @@ function nicholls_layout_wrapper_element_close( $element = '' ) {
 *
 * @since 1.0
 */
-function fnbx_stylesheet_core_config() {
+function fnbx_stylesheet_core_init() {
     if ( !is_admin() ) {
-		$theme  = get_theme( get_current_theme() );
-		
-		wp_register_style( 'style-normalize', FNBX_CORE_URL . '/library/css/normalize.css', false, $theme['Version'] );
-		wp_enqueue_style( 'style-normalize' );		
+		$theme  = get_theme( get_current_theme() );	
 		
 		wp_register_style( 'style-core', FNBX_CORE_URL . '/style.css', false, $theme['Version'] );
 		wp_enqueue_style( 'style-core' );
-    }
- }
- 
- /**
-* Current Stylesheet Setup
-*
-* Used to setup the CSS Style sheet link for wp_head(). Needs to be called early and usuall in funbox-loader.php
-*
-* @since 1.0
-*/
-function fnbx_stylesheet_current_config() {
-    if ( !is_admin() ) {
-		$theme  = get_theme( get_current_theme() );
-		wp_register_style( 'style-current', get_stylesheet_uri(), false, $theme['Version'] );
-		wp_enqueue_style( 'style-current' );
     }
  }
 
@@ -110,7 +92,7 @@ function fnbx_stylesheet_current_config() {
 * Load the core stylesheet CSS
 *
 */
-function fnbx_stylesheet_bp_config() {
+function fnbx_stylesheet_core_bp_init() {
     if ( !is_admin() ) {
 		$theme  = get_theme( get_current_theme() );
 		wp_register_style( 'style-bp', FNBX_CORE_URL . '/library/css/bp.css', false, $theme['Version'] );
@@ -126,7 +108,9 @@ function fnbx_javascript_enqueue_core() {
 	wp_enqueue_script( 'jquery-hoverintent' , FNBX_CORE_URL . '/library/js/jquery.hoverIntent.minified.js', array( 'jquery' ), 'r5' );
 	wp_enqueue_script( 'jquery-pngfix' , FNBX_CORE_URL . '/library/js/jquery.pngFix.js', array( 'jquery' ), '1.2' );	
 	wp_enqueue_script( 'jquery-corner' , FNBX_CORE_URL . '/library/js/jquery.corner.js', array( 'jquery' ), '2.01' );
-	wp_enqueue_script( 'jquery-megamenu' , FNBX_CORE_URL . '/library/js/jquery.megamenu.js', array( 'jquery' ), '2.1a' );
+	wp_enqueue_script( 'jquery-responsenav' , FNBX_CORE_URL . '/library/js/jquery.responsinav.js', array( 'jquery' ), '1.0' );
+	// wp_enqueue_script( 'jquery-megamenu' , FNBX_CORE_URL . '/library/js/jquery.megamenu.js', array( 'jquery' ), '2.1a' );
+	wp_enqueue_script( 'jquery-anystretch' , FNBX_CORE_URL . '/library/js/jquery.anystretch.min.js', array( 'jquery' ), '1.1' );
 
 	wp_enqueue_script( 'core-js' , FNBX_CORE_URL . '/library/js/core.js', array( 'jquery' ), '1.0' );	
 }

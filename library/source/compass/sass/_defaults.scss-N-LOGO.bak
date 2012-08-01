@@ -1,0 +1,1080 @@
+/* Defaults - START */
+
+body {
+	font-family: 'Cabin', Arial, sans serif;
+	font-size: $body-font-size;	
+	color: $nicholls-color-black;
+	padding: 0;
+	margin: 0;
+	width: $body-width;
+}
+
+/* Interactive HTML Styles */
+
+a, a:link {
+	color: $link-color;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: $link-color-visited;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a.nofx {
+	background: none;
+	border: none;
+}
+
+a.nofx:hover {
+	background: none;
+	border: none;
+}
+
+/* Content Common text blocks */	
+
+.content- code, .content- pre {
+	font-family: "courier new", courier, monospace;
+}
+
+input.text {
+	padding: .2em;
+	border: 1px solid #999999;	
+}
+
+/* Heading Styles */
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	line-height: 1.1em;
+    color: #1f1f1f;
+    margin: .4em 0;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 180%;
+}
+
+h3 {
+    font-size: 160%;
+}
+
+h4 {
+    font-size: 140%;
+}
+
+h5 {
+    font-size: 120%;
+}
+
+h6 {
+    font-size: 110%;
+}
+
+/* Clearing Utility Elements */
+
+.box-0x0 {
+	width: 0;
+	height: 0;
+	line-height: 0;
+}
+
+.clear, .clearer, .clear-both, .entry-edit {
+	clear: both;
+}
+
+.clear-right {
+	clear: right;
+}
+
+.clear-left {
+	clear: left;
+}
+
+/* Alignment */
+
+.left, .alignleft {
+	display: inline;
+	float: left;
+	margin-right: .8em;
+}
+
+.right, .alignright {
+	display: inline;
+	float: right;
+	margin-left: .8em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Responsive Defaults */
+
+.content- {
+	width: auto;
+}
+
+.entry-content img,
+.comment-content img,
+.widget img {
+	max-width: 97.5%; /* Fluid images for posts, comments, and widgets */
+}
+
+img[class*="align"],
+img[class*="wp-image-"] {
+	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+
+img.size-full {
+	max-width: 97.5%;
+	width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
+}
+
+/* Layout */
+
+.wrapper- {
+  padding: 0;
+}
+
+/* Header */
+
+.header- .blog-title- {
+	margin: 0 auto;
+}
+
+.header- {
+	background: transparent;
+}
+
+.header- .blog-title- {
+	font-family: 'Crimson Text', Georgia, "TImes New Roman", times, serif;
+	font-weight: 400;
+    font-size: 225%;	
+	line-height: 1.1em;
+	margin: 0;
+	padding: .2em;	
+}
+
+.header- .blog-title- a, .header- .blog-title- a:link, .header- .blog-title- a:active, .header- .blog-title- a:visited {
+	text-decoration: none;
+}
+
+.header- .blog-title- a:hover {
+	text-decoration: underline;
+}
+
+.header- .blog-description- {
+	padding: 0 0 0 1em;	
+}
+
+/* Defaults - END */
+
+/* START ----OLD---- */
+
+
+
+
+/* END defaults */
+
+/* START Multi-purpose Elements */
+
+.nav-previous {
+	float: left;
+}
+
+.nav-next {
+	float: right;
+}
+
+.entry-edit {
+	clear: both;
+}
+
+/* END Multi-purpose Elements */
+
+/* START Widget Group Styles */
+
+.widgets- {
+	margin: 0;
+	padding: 0;
+}
+
+.widgets- ul, .widgets- ul li  {
+	list-style-type: none;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+.widgets- h3, .widgets- h4 {
+	font-size: 130%;
+}
+
+.widgets- .widgettitle {
+	padding: 0 0 .4em 0;
+	margin: 0 0 0.6em 0;
+}
+
+.widgets-primary- li.widget {
+	margin: 1em 0 1em 0;
+}
+
+.widgets-primary- li.widget ul {
+	margin: 0 0 0 .5em;
+}
+
+.widgets-primary- li.widget li {
+	margin: .5em 0 .5em .5em;
+}
+
+.widget_search {
+	padding: .2em;
+}
+
+/* END Widget Group Styles */
+
+/* START Post Navigation Styles */
+
+.navigation {
+	/* 
+	This one is tricky since we have two floats in a div
+	requries both "width: x" and "overflow: auto" to clear
+	interior elements for box creation!
+	*/
+	float: right;
+	width: 16em;
+	padding: .2em .2em .4em .2em;
+	font-size: 92%;
+	font-style: italic;
+	text-align: center;
+}
+
+.navigation .nav-previous {
+	
+}
+
+.navigation .nav-next {
+	padding: .8em 0 0 0;
+}
+
+.navigation .nav-meta {
+	font-weight: bold;
+	color: #ddd;
+}
+
+/* END Post Navigation Styles */
+
+/* START Post styles */
+
+.post {
+    padding-top: .2em;
+}
+
+.entry-title, .entry-title a, .entry-title a:visited {
+    text-decoration: none;
+}
+
+.entry-title a:hover {
+    text-decoration: underline;
+}
+
+.entry-date {
+	font-size: 90%;
+	color: #9f9f9f;
+}
+
+.entry-date abbr.published {
+	display: block;
+	cursor: default;
+	margin: .2em 0 .2em .2em;
+	padding: .2em;
+	color: #9f9f9f;	
+}
+
+.entry-content {
+    line-height: 1.4em;
+    clear: both;
+}
+
+.entry-content p {
+    line-height: 1.4em;
+}
+
+.entry-meta {
+	clear: both;
+	padding: .4em;
+	font-size: 90%;
+	border-top: 1px solid #AFAFAF;
+	color: #222;
+	background: #efefef;
+	text-align: center;
+}
+
+/* END Post styles */
+
+/* START WordPress Image / Gallery Styles */
+
+.gallery .gallery-item {
+	float: left;
+	width: 48%;
+}
+
+.wp-caption {
+	margin: .4em;
+	padding: .2em;
+	text-align: center;
+	border: 1px solid #ccc;
+}
+
+.wp-caption .wp-caption-text {
+	margin: .2em 0 .1em 0;
+	padding: .2em .4em .1em .4em;
+	font-size: 76%;
+	text-align: center;
+	line-height: 1.2em;
+	border-top: 1px solid #efefef;
+}
+
+/* END WordPress Image / Gallery Styles */
+
+/* START Comment Styles */
+
+.comments- {
+	margin: 0 .5em 0 .5em;
+	font-size: 96%;
+}
+
+.comment-author {
+	padding: .4em;
+}
+
+.comment-author .avatar {
+	float: left;
+	margin: 0 .5em .5em 0;
+}
+
+.bypostauthor .comment-body .comment-author {
+	color: $nicholls-color-white;
+	background: $nicholls-color-black;
+}
+
+.bypostauthor-no .comment-body .comment-author {
+	color: $nicholls-color-black;
+	background: transparent;
+}
+
+.comment-meta {
+	clear: right;
+	margin: 0 0 .5em 0;
+	padding: .2em 0 .2em .5em;
+	font-size: 90%;
+	color: #222;
+}
+
+.commentlist {
+	list-style-type: none;
+	margin: 0 .2em .5em .4em;
+}
+
+.commentlist .comment, .commentlist .pingback {
+	list-style-type: none;
+	margin: 0 0 2em 0;
+	padding: .2em 0 0 0;
+	border-top: 1px solid #e0e0e0;
+}
+
+.comments- label { 
+	clear: both;
+	display: block;
+	margin: .4em 0;
+}
+
+/* END Comment Styles */
+
+/* Start Forms and Controls */
+
+legend {
+	font-weight: 400;
+}
+
+label {
+	display: block;
+}
+
+input, textarea {
+	margin: .2em;
+	padding: .2em;
+	border: 1px solid #666;
+}
+
+textarea {
+	clear: both;
+}
+
+input:hover, textarea:hover {
+  border: 1px solid #333;
+}
+ 
+input:focus, textarea:focus {
+  border: 1px solid #d1d1d1;
+}
+
+.fnbx_form_row {
+	margin: .2em 0;
+	clear: both;
+}
+
+.fnbx_form_row label {
+	width: 12em;
+	float: left;
+	padding: 2px;
+	font-weight: bold;
+	text-align: right;
+}
+
+.fnbx_textarea label {
+	width: 100%;
+	float: none;
+}
+
+.fnbx_form_row .fnbx_form_element {
+	padding: 2px;
+}
+
+.form-container {
+	position: relative;
+	width: 36em;
+	padding: .2em;
+}
+
+.form-container form {
+	margin: 0;
+	padding: 0;
+}
+
+.form-container .form-note {
+	padding: 2px;
+	clear: both;
+}
+
+.form-container .form-row {
+	width: 100%;
+	clear: both;
+}
+
+.form-container .form-note {
+	padding: .2em;
+	clear: both;
+}
+
+.form-container .form-label, .form-container label {
+	display: block;
+	float: left;
+	padding: .6em .4em .2em .2em;
+	width: 39%;
+	text-align: right;
+	font-weight: bold;
+}
+
+.form-container .form-input, .form-container .form-element {
+	display: block;
+	position: relative;
+	width: 59%;
+	margin: 0 0 0 15.4em;
+	padding: .4em 0 .4em 0;
+}
+
+/* START - Plugin Contact Form 7 - Form Controls */
+
+div.wpcf7 {
+	width: 36em;
+}
+
+.form-container .wpcf7-list-item {
+	display: block;
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.wpcf7-checkbox input {
+	display: block;
+	float: left;
+}
+
+.wpcf7-checkbox .wpcf7-list-item-label {
+	display: block;
+	margin: .2em 0 .2em .2em;
+	float: left;
+	width: 18em;
+}
+
+.form-input .your-message textarea {
+	width: 20em;
+}
+
+/* END - Plugin Contact Form 7 - Form Controls */
+
+/* END - Plugin Styles */
+
+/* START - Custom Site */
+
+/* Layout Changes */
+
+.wrapper- {
+	background: #fff;
+}
+
+/* START Widget Group Styles */
+
+.widgets- h3, .widgets- h4 {
+	font-size: 120%;
+	font-weight: 400;
+	padding: .4em 0;
+	margin: .4em 0;
+	border-bottom: 1px solid #afafaf;
+}
+
+.widgets- .widgettitle {
+	padding: 0 0 .4em 0;
+	border-bottom: 1px solid #9F9F9F;
+	margin: 0 0 0.6em 0;
+}
+
+/* END Widget Group Styles */
+
+/* START - Custom Layout Classes */
+
+/* Columns - column-float-width */
+
+.column-left-16 {
+	float: left;
+	width: 16em;
+	margin-right: 1em;
+}
+
+.column-left-20 {
+	float: left;
+	width: 16em;
+	margin-right: 1em;
+}
+
+/* Borders - border-location-color-size */
+
+.border-right-cccccc-1 {
+	border-right: 1px solid #ccc;
+}
+
+.border-left-cccccc-1 {
+	border-right: 1px solid #ccc;
+}
+
+/* END - Custom Layout Classes */
+
+/* START - Custom Classes */
+
+.type-serif {
+	font-family: 'Crimson Text', 'Georgia','Times New Roman', times, serif;
+}
+
+.type-normal {
+	font-size: 72%;
+}
+
+.transparent-black-50 {
+    background: transparent url( 'library/images/backgrounds/bg-transparent-black-50.png' );
+}
+
+.transparent-white-50 {
+    background: transparent url( 'library/images/backgrounds/bg-transparent-white-50.png' );
+}
+
+/* END - Custom Classes */
+
+/* START Widget Styles */
+
+.widgets- .widget_pages, .widgets- .menu {
+	line-height: 1.2em;
+}
+
+li.widget_nav_menu li, 
+li.widget_pages li {
+	text-indent: -0.9em;
+}
+
+li.widget_nav_menu li:before, 
+li.widget_pages li:before {
+	content: "\00BB \0020";
+}
+
+.widgets- .menu li ul, .widgets- .widget_pages li ul {
+	display: none;
+}
+
+.widgets- .widget_pages .current_page_item ul, .widgets- .widget_pages .current_page_ancestor ul, .widgets- .menu .current-menu-item ul, .widgets- .menu .current-menu-ancestor ul {
+	display: block;
+}
+
+.widgets- .widget_pages a, .widgets- .widget_pages a:link, .widgets- .widget_pages a:active, .widgets- .widget_pages a:visited, 
+.widgets- .menu a, .widgets- .menu a:link, .widgets- .menu a:active, .widgets- .menu a:visited {
+	text-decoration: none;
+}
+
+.widgets- .widget_pages a:hover, .widgets- .menu a:hover {
+	text-decoration: underline;
+}
+/* END Widget Styles */
+
+/* START Top Navigation and Search */
+
+.nav-top-wrapper- input {
+	font-size: 72%;
+}
+
+.nav-top-wrapper- {
+	width: 100%;
+	background: #666;
+}
+
+.nav-top- {
+	clear: both;
+}
+
+.form-gs-container- {
+	background-color: #fff;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */	
+	margin: .2em;
+	float: right;
+	clear: right;
+}
+
+.form-gs-container- fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.form-gs-container- label {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.input-q- {
+	border: none;
+	margin: .2em;
+}
+
+.form-gs-container- input:hover, .form-gs-container- input:focus {
+	border: none;
+}
+
+.form-gs-container- form input[type=submit] {
+	background : url("library/images/icons/icon-black-search.png") no-repeat center center;
+	width : 20px;
+	height :20px;
+	border : none;
+	color : transparent;
+	font-size : 0
+}
+
+.form-gs-container- form input[type=submit]:hover {
+	background-color: $nicholls-color-red;
+}
+
+/* END Top Navigation and Search */
+
+/* START - Nicholls Primary Menu */
+
+.menu-primary-container- {
+	text-align: left;
+	clear: both;
+	position: relative;
+	z-index: 1001;	
+}
+
+.menu-primary- {
+	height: 2.75em;
+	margin: 0 auto 0 auto;
+	padding: 0;
+	border-bottom: 2px solid #ccc;
+	border-top: 2px solid #ccc;
+	
+}
+
+.menu-primary- .nicholls-menu-list- {
+	list-style-type: none;
+	list-style-position: inside;	
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.menu-primary- .nicholls-menu-list- .nicholls-menu-item {
+	list-style-type: none;
+	list-style-position: inside;
+	padding: 0;
+	float: left;
+	font-weight: 600;	
+	color: $nicholls-color-red;
+	display: block;
+	font-size: 80%;
+	margin: 0;
+	line-height: 1.2em;
+}
+
+.nicholls-menu-list- .nicholls-menu-item .nicholls-menu-item-link {
+	margin: 0;
+	display: block;
+	border-right: 2px solid #ccc;
+}
+
+.nicholls-menu-list- .nicholls-menu-item:first-child .nicholls-menu-item-link {
+	margin: 0;
+	display: block;
+	border-left: 2px solid #ccc;
+}
+
+.nicholls-menu-item a.nicholls-menu-item-link, .nicholls-menu-item a.nicholls-menu-item-link:link, .nicholls-menu-item a.nicholls-menu-item-link:active, .nicholls-menu-item a.nicholls-menu-item-link:visited {
+	text-decoration: none;
+	color: #fff;
+}
+
+.nicholls-menu-item a.nicholls-menu-item-link:hover {
+	text-decoration: none;
+	background-color: #cc3333;
+	color: #fff;
+}
+
+.nicholls-menu-selected, .nicholls-menu-selected a, .nicholls-menu-selected a:link, .nicholls-menu-selected a:active, .nicholls-menu-selected a:visited {
+	background: $nicholls-color-red;
+	color: $nicholls-color-white;
+}
+
+.nicholls-menu-current- {
+	background-color: $nicholls-color-tancool;
+}
+
+.nicholls-menu-future- {
+	background-color: $nicholls-color-crimson;
+}
+
+.nicholls-menu-life- {
+	background-color: $nicholls-color-green;
+}
+
+.nicholls-menu-athletics- {
+	background-color: $nicholls-color-blue;
+}
+
+.nicholls-menu-friends- {
+	background-color: $nicholls-color-greenblue;
+}
+
+.nicholls-menu-administration- {
+	background-color: $nicholls-color-mustard;
+}
+
+.nicholls-menu-friends- .nicholls-menu-contents {
+	margin-left: -30em;
+}
+
+.nicholls-menu-administration- .nicholls-menu-contents {
+	margin-left: -30em;
+}
+
+
+/* END - Nicholls Primary Menu */
+
+.nicholls-menu-content-container- {
+	position: absolute;
+	top: 3em;
+	height: 32.4em;
+	z-index: 1101;
+	background: #ccc url( 'library/images/nicholls-menu-pointer-down.png' ) no-repeat;	
+	margin: 0
+}
+
+.nicholls-menu-future-container {
+	background-position: 15em 0em;
+}
+
+.nicholls-menu-current-container {
+	background-position: 26em 0em;
+}
+
+.nicholls-menu-administration-container {
+	background-position: 39em 0em;
+}
+
+.nicholls-menu-friends-container {
+	background-position: 54em 0em;
+}
+
+.nicholls-menu-contents {
+	background: $nicholls-color-white;
+	display: none;
+	width: 38em;
+	height: 34em;
+	-moz-box-shadow: 2px 2px 6px #666;
+	-webkit-box-shadow: 2px 2px 6px #666;
+	box-shadow: 2px 2px 6px #666;		
+}
+
+.nicholls-menu-contents .mm-content-base {
+  position: relative;
+  z-index: 1003;
+	top: .4em;
+	width: 100%;
+	height: 32em;
+	background: $nicholls-color-white;
+	-moz-box-shadow: 2px 2px 6px #666;
+	-webkit-box-shadow: 2px 2px 6px #666;
+	box-shadow: 2px 2px 6px #666;	  
+}
+
+.nicholls-menu-contents .nicholls-menu-title- { 
+	border-bottom: 1px solid #ccc;
+	margin: 0;
+	padding: .2em .5em;
+	font-weight: 800;
+	color: $nicholls-color-red;
+}
+
+.nicholls-menu-contents .column- {
+	float: left;
+	width: 16em; /*width of each menu column*/
+	margin: .4em .4em 0 .6em;
+}
+
+.nicholls-menu-contents .column- ul {
+	margin: 0 0 0 .5em;
+	padding: 0;
+	list-style-type: none;
+}
+
+.nicholls-menu-contents .column- ul li {
+	padding-bottom: .4em;
+}
+
+.nicholls-menu-contents .column- h2, .nicholls-menu-contents .column- h3, .nicholls-menu-contents .column- h4 {
+	color: $nicholls-color-red;
+	margin: .2em 0 .4em 0;
+}
+
+.nicholls-menu-contents .column- ul li a {
+	text-decoration: none;
+}
+
+.nicholls-menu-contents .column- ul li a:hover {
+	color: red;
+}
+
+/* START - Nicholls Header */
+
+.header-nicholls-wrapper- {
+	width: 100%;
+	text-align: left;
+	clear: both;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;	
+}
+
+.header-nicholls- {
+	margin: 0 auto 0 auto;
+	overflow: hidden;
+}
+
+.info-primary- {
+    margin: 0;
+    padding: 0;
+    font-size: 80%;
+    @include single-box-shadow(#333, 3px, 3px, 3px, 0px);
+}
+
+.header-nicholls- .info-primary- .info-primary-content- {
+	background: $nicholls-color-white;
+	clear: both;
+	margin-top: .62em;
+	padding: .2em .2em .2em .6em;
+	border-top: 1px solid $nicholls-color-grey;
+	border-bottom: 1px solid $nicholls-color-grey;
+	
+}
+
+.header-nicholls- .info-primary-  ul {
+	list-style-type: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.header-nicholls- .info-primary- ul li {
+	margin: .4em 0;
+	font-size: 90%;
+	font-weight: 600;	
+	color: $nicholls-color-red;
+	display: block;
+}
+
+.header-nicholls- .info-primary- a, .header-nicholls- .info-primary- a:link, .header-nicholls- .info-primary- ul li a, .header-nicholls- .info-primary- ul li a:link, .header-nicholls- .info-primary- ul li a:active, .header-nicholls- .info-primary- ul li a:visited {
+	color: $nicholls-color-red;
+	text-decoration: none;
+}
+
+.header-nicholls- .info-primary- a:hover, .header-nicholls- .info-primary- ul li a:hover {
+	text-decoration: underline;
+}
+
+.info-contact {
+	font-size: 102%;
+	margin-top: .2em;
+	color: #fff;
+}
+
+.info-contact a, .info-contact a:link, .info-contact a:active, .info-contact a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.info-contact a:hover {
+	color: #fff;
+	text-decoration: underline;	
+}
+
+.header-nicholls- .info-primary- .info-programs {
+	padding-bottom: .3em;
+	padding-left: .4em;	
+}
+
+.header-nicholls- .info-primary- .info-request {
+	padding-bottom: .3em;
+	padding-left: .4em;	
+}
+
+/* END - Nicholls Header */
+
+/* START Header */
+
+.header- {
+	color: $nicholls-color-white;
+    background: transparent url( 'library/images/45pc_black.png' );
+}
+
+.header- .blog-title-prefix- {
+	display: block;
+	margin: 0;
+	padding: .5em 0 0 .4em;
+}
+
+.header- .blog-title- {
+	font-family: 'Crimson Text', 'Times New Roman', times, Georgia, serif;
+	font-weight: 400;
+    font-size: 225%;	
+	margin: 0;
+	padding: .2em;	
+	color: $nicholls-color-white;
+	
+	@include text-shadow( $nicholls-color-black 1px 1px 1px );
+}
+
+.header- .blog-title- a, .header- .blog-title- a:link, .header- .blog-title- a:active, .header- .blog-title- a:visited {
+	text-decoration: none;
+	color: $nicholls-color-white;		
+}
+
+.header- .blog-title- a:hover {
+	text-decoration: underline;
+}
+
+.header- .blog-description- {
+	font-size: 92%;
+	padding: 0 0 .2em .5em;	
+}
+
+/* END Header */
+
+/* START - footer */
+
+.footer- .column- {
+	float: left;
+	width: 12em; /*width of each menu column*/
+	margin: .4em .4em 0 0;
+}
+
+.footer- .column- ul {
+	margin: 0 0 0 .5em;
+	padding: 0;
+	list-style-type: none;
+}
+
+.footer- .column- ul li {
+	padding-bottom: .4em;
+}
+
+.footer- .column- h2, .footer- .column- h3, .footer- .column- h4 {
+	color: $nicholls-color-red;
+	margin: .2em 0 .4em 0;
+	font-size: 110%;
+}
+
+.footer- .column- ul li a {
+
+}
+
+.footer- .column- ul li a:hover {
+
+}
+
+/* END - Footer */
+
+/* END - Custom Site */
+
+/* START Hidden Elements */
+
+.hide, .access- {
+	position: absolute !important;
+	top: -9999px !important;
+	left: -9999px !important;
+}
+
+/* END Hidden Elements */
+
+/* START Conditional Elements */
+
+.widgets-primary-active .container- {
+	 border-left-width: 1px;
+	 border-left-style: solid;
+	 border-left-color: $nicholls-color-grey;	 
+}
+
+/* Widgets Inactive (Primary & Secondary) - Container goes full width */
+body.widgets-primary-inactive.widgets-secondary-inactive .container- {
+	float: none;
+	width: auto;
+	border-left: none;
+}
+
+/* END Conditional Elements */
+
+/* START Compatiblity Elements */
+
+/* END Compatiblity Elements */
+
+/* START Debug */
+
+/* END Debug */

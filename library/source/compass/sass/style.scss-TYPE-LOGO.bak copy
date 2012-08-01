@@ -1,0 +1,509 @@
+/*
+THEME NAME: Nicholls 2012 Core Theme
+THEME URI: http://www.nicholls.edu
+DESCRIPTION: Nicholls Core Theme to start development 
+VERSION: 1.0
+AUTHOR: Jess Planck
+AUTHOR URI: http://www.nicholls.edu
+TEMPLATE: fnbx
+*/
+
+/* 
+Copyright (c) Jess Planck (http://funroe.net)
+
+The FNBX Theme is released under the GNU General Public License.
+
+This is a WordPress Theme (http://wordpress.org). WordPress is free
+software: you can redistribute it and/or modify it under the terms of
+the GNU General Public License as published by the Free Software
+Foundation, either version 2 of the License, or (at your option) any
+later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with WordPress.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/* Imports --------------------------------------------------------------*/
+
+@import 'nicholls-sprites';
+@import "base";
+@import 'defaults';
+
+/* Layouts */
+
+/* 
+Column Notes
+.5 width = 1.313
+.25 width = .6565
+*/
+
+$total-columns: 26; 
+$column-width: 1.423em;
+$gutter-width: .88em;
+$grid-padding: 0;
+$show-grid-backgrounds: $show_grids;
+
+/*
+Make Static or Magic
+*/
+$container-style: static;
+
+body {
+	background-repeat: repeat-x;
+	background-position: top left; 
+}
+
+/* Layout */
+
+.wrapper- {
+	@include container;
+	@include susy-grid-background;
+}
+
+.container- {
+	@include span-columns(19.8, 26);
+	@include omega;
+	/* Container border - right inner div: */
+	
+	padding: gutter()/2;
+	
+	font-size: 96%;
+}
+
+.widgets-primary- {
+	@include span-columns(6 omega, 26);
+	
+	font-size: 94%;
+	float: left;
+}
+
+.widgets-secondary- {
+	@include span-columns(6 omega, 26);
+	
+	font-size: 94%;
+	float: left;
+	clear: right;		
+}
+
+
+.logo-container-wrapper- {
+	background-image: url( 'library/images/backgrounds/bg-logo-ribbon.png' );	
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: top left;
+		
+	float: left;
+	width: 221px;
+	height: 145px;
+	
+	text-align: center;
+
+}
+
+.logo-container- {
+
+	// Evil Hard Coded Junk
+	background-image: url( 'library/images/logos/logo-nicholls-white-188x52.png' );	
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+
+	margin: .4em 0 0 .5em;
+	width: 188px;
+	height: 52px;
+	
+	display: block;
+	clear: both;
+	
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+		
+	a {
+		display: block;
+		width: 240px;
+		height: 80px;
+		margin: auto auto;
+	}
+		
+	img {
+		display: none;
+	}
+
+}
+
+.footer- {
+	@include span-columns(26 omega, 26);
+	margin-top: 1em;
+	border-top: 1px solid #666;
+	background-color: #eaeaea;
+	clear: both;
+	
+	.column- {
+		@include span-columns(5, 26);
+		font-size: 80%;
+	}
+}
+
+.nav-top-wrapper- {
+	width: 100%;
+	text-align: left;
+	clear: both;
+}
+
+.nav-top- {
+	@include container;
+	
+	background-image: url( 'library/images/backgrounds/bg-logo-ribbon-top.png' );	
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+/* Nicholls Header */
+
+.header-nicholls- {
+	@include container;
+	padding: 0;
+	
+	height: 28em;
+	
+	.info-primary- {
+		@include span-columns(8, 26);
+
+		float: left;
+		
+		background-color: $nicholls-color-white;
+		
+	}
+	
+	.header- {
+		height: 8em;
+		width: 100%;
+		padding: 0 .5em;
+		margin: 20em 0 0 0;
+	}
+
+}
+
+/* Nichols Menu - Primary */
+
+.menu-primary-container- {
+	@include span-columns(26, 26);
+	height: 3em;
+}
+
+.menu-primary- {
+	float: right;
+	clear: right;
+}
+
+.nicholls-menu-item {
+	width: 6em;
+	height: 2.4em;
+} 
+
+.nicholls-menu-item-link {
+	width: auto;
+	height: 2.4em;
+	padding-left: .2em;
+	padding-right: .2em;
+} 
+
+.nicholls-menu-current- .nicholls-menu-item-link {
+	@include nicholls_menu_icon('white-current-students');
+}
+
+.nicholls-menu-current- .nicholls-menu-item-link:hover {
+	@include nicholls_menu_icon('white-current-students');
+}
+
+.nicholls-menu-future- .nicholls-menu-item-link {
+	@include nicholls_menu_icon('white-future-students');
+}
+
+.nicholls-menu-future- .nicholls-menu-item-link:hover {
+	@include nicholls_menu_icon('white-future-students');
+}
+
+.nicholls-menu-administration- .nicholls-menu-item-link {
+	@include nicholls_menu_icon('white-faculty-staff');
+}
+
+.nicholls-menu-administration- .nicholls-menu-item-link:hover {
+	@include nicholls_menu_icon('white-faculty-staff');
+}
+
+.nicholls-menu-life- .nicholls-menu-item-link {
+	@include nicholls_menu_icon('white-housing-life');
+}
+
+.nicholls-menu-life- .nicholls-menu-item-link:hover {
+	@include nicholls_menu_icon('white-housing-life');
+}
+
+.nicholls-menu-athletics- .nicholls-menu-item-link {
+	@include nicholls_menu_icon('white-athletics');
+}
+
+.nicholls-menu-athletics- .nicholls-menu-item-link:hover {
+	@include nicholls_menu_icon('white-athletics');
+}
+
+.nicholls-menu-friends- .nicholls-menu-item-link {
+	@include nicholls_menu_icon('white-alumni-friends');
+}
+
+.nicholls-menu-friends- .nicholls-menu-item-link:hover {
+	@include nicholls_menu_icon('white-alumni-friends');
+}
+
+
+@include at-breakpoint( 74em 32 ) {
+
+	.wrapper- {
+		@include container;
+		@include susy-grid-background;	
+	}
+	
+	.container- {
+		@include span-columns(23.8, 32);
+		@include omega;
+		/* Container border - right inner div: */
+		
+		padding: gutter()/2;
+		
+		font-size: 96%;
+	}
+	
+	.widgets-primary- {
+		@include span-columns(8 omega, 32);
+	
+		font-size: 94%;
+		float: left;
+		
+	}
+	
+	.widgets-secondary- {
+		@include span-columns(8 omega, 32);
+	
+		font-size: 94%;
+		float: left;
+	}	
+
+	.nav-top- {
+		@include container;
+	}
+
+	/* Nichols Menu - Primary */
+	
+	/* Nicholls Header */
+	
+	.header-nicholls- {
+		@include container;
+		padding: 0;
+
+		.header- {
+			width: 100%;
+			padding: 0 .5em;
+			margin: 20em 0 0 0;
+			height: 8em;
+		}
+	}
+}
+
+@include at-breakpoint( 42em 18 62em ) {
+
+	.wrapper- {
+		@include container;
+		@include susy-grid-background;
+	}
+		
+	/* Layout */
+	
+	.container- {
+		@include span-columns(18, 18);
+		font-size: 96%;
+	}
+	
+	.content- {
+		@include span-columns(18, 18);
+		@include pre(.5);
+	}
+	
+	.widgets-primary- {
+		@include span-columns(6, 18);
+		
+		padding: 0 1.2em 0 0;
+		
+		font-size: 94%;
+	}
+	
+	.widgets-secondary- {
+		@include span-columns(6, 18);
+		
+		padding: 0 1.2em 0 0;
+		
+		font-size: 94%;	
+		clear: right;		
+	}
+
+	.nav-top- {
+		@include container;
+	}
+
+	/* Nichols Menu - Primary */
+	
+	/* Nicholls Header */
+	
+	.header-nicholls- {
+		@include container;
+		padding: 0;
+
+		.header- {
+			@include container;
+			float: right;
+			margin: 6.7em 0 0 0;
+		}
+	}
+		
+}
+
+@include at-breakpoint( 28em 12 42em ) {
+	.wrapper- {
+		@include container;
+		@include susy-grid-background;
+	}
+		
+	/* Layout */
+	
+	.container- {
+		@include span-columns(12, 12);
+		font-size: 96%;
+	}
+	
+	.content- {
+		@include span-columns(12, 12);
+	}
+	
+	.widgets-primary- {
+		@include span-columns(12 omega, 12);
+				
+		font-size: 94%;
+	}
+	
+	.widgets-secondary- {
+		@include span-columns(12 omega, 12);
+				
+		font-size: 94%;	
+		clear: right;		
+	}
+
+	.nav-top- {
+		@include container;
+	}
+
+	/* Nichols Menu - Primary */
+	
+	/* Nicholls Header */
+	
+	.header-nicholls- {
+		@include container;
+		padding: 0;
+
+		.header- {
+			@include container;
+			float: right;
+			margin: 6.7em 0 0 0;
+		}
+	}
+		
+}
+
+@include at-breakpoint( 0em 8 28em ) {
+	.wrapper- {
+		@include container;
+		@include susy-grid-background;
+	}
+		
+	/* Layout */
+	
+	.container- {
+		@include span-columns(8, 8);
+		font-size: 96%;
+	}
+	
+	.content- {
+		@include span-columns(8, 8);
+	}
+	
+	.widgets-primary- {
+		@include span-columns(8, 8);
+				
+		font-size: 94%;
+	}
+	
+	.widgets-secondary- {
+		@include span-columns(8, 8);
+				
+		font-size: 94%;	
+		clear: right;		
+	}
+
+	.nav-top- {
+		@include container;
+	}
+	
+	/* Nichols Menu - Primary */
+	
+	/* Nicholls Header */
+	
+	.header-nicholls- {
+		@include container;
+		padding: 0;
+
+		.header- {
+			@include container;
+			float: right;
+			margin: 6.7em 0 0 0;
+		}
+	}	
+}
+
+
+/* 480px */
+@media only screen and (min-width: 1px) and (max-width: 480px), only screen and (max-device-width: 480px) {
+/*  @import 'media/6-column'; */
+}
+
+/* 768px */
+@media only screen and (min-width: 481px) and (max-width: 809px) {
+/*  @import 'media/9-column'; */
+}
+
+/* 768px */
+@media only screen and (min-width: 810px) and (max-width: 1009px) {
+/*  @import 'media/14-column'; */
+}
+
+/* 992px */
+@media only screen and (min-width: 1010px) and (max-width: 1381px) {
+/*  @import 'media/19-column'; */
+}
+
+/* 1382px */
+@media only screen and (min-width: 1382px) {
+/*  @import 'media/22-column'; */
+}
+
+/* 2x */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+/*  @import 'media/high-rez'; */
+}
+
