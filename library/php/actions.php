@@ -79,9 +79,9 @@ function nicholls_layout_wrapper_element_close( $element = '' ) {
 */
 function fnbx_stylesheet_core_init() {
     if ( !is_admin() ) {
-		$theme  = get_theme( get_current_theme() );	
+		$theme  = wp_get_theme();	
 		
-		wp_register_style( 'style-core', FNBX_CORE_URL . '/style.css', false, $theme['Version'] );
+		wp_register_style( 'style-core', FNBX_CORE_URL . '/style.css', false, $theme->version );
 		wp_enqueue_style( 'style-core' );
     }
  }

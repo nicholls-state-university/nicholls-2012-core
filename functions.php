@@ -30,7 +30,7 @@ require_once( FNBX_CORE_DIR . '/library/php/widget-nicholls-department-info.php'
 */
 
 // Use WP Admin Bar instead of BuddyPress
-define('BP_USE_WP_ADMIN_BAR', true);
+if ( !defined( 'BP_USE_WP_ADMIN_BAR' ) ) define('BP_USE_WP_ADMIN_BAR', true);
 
 /**
 * Conditional includes for fuctions and classes in WordPress admin panels 
@@ -49,7 +49,8 @@ if ( is_admin() ) {
 function fnbx_theme_support_filter( $features ) {
 	// Set and filter WordPress theme support features
 	$features['post-formats'] = false;
-	$features['custom-background'] = false;
+	$features['custom-background'] = true;
+	$features['custom-header'] = true;
 	return $features;
 }
 add_filter( 'fnbx_theme_support', 'fnbx_theme_support_filter' );
@@ -69,9 +70,24 @@ function fnbx_theme_custom_header_filter( $custom_header ) {
 	$custom_header['header_image'] = FNBX_CORE_URL . '/library/images/backgrounds/bg-1.jpg';
 	$custom_header['header_image_width'] = 1134;
 	$custom_header['header_image_height'] = 449;
+	$custom_header['header_image_flex_width'] = true;
+	$custom_header['header_image_flex_height'] = true;
 	$custom_header['css_repeat'] = 'repeat';
 	$custom_header['css_position_x'] = 'right';
-	$custom_header['css_position_y'] = 'center';	
+	$custom_header['css_position_y'] = 'center';
+		
 	return $custom_header;
 }
 add_filter( 'fnbx_custom_header', 'fnbx_theme_custom_header_filter' );
+
+/*
+* Funbox Theme Custom Header Width Filter
+*
+* Modifies the width for the header so it will zoom.
+*
+* @since 1.0
+*/
+function fnbx_theme_custom_header_width_filter( $h_width ) {
+	return false;
+}
+add_filter( 'fnbx_custom_header_css_background_width', 'fnbx_theme_custom_header_width_filter' );

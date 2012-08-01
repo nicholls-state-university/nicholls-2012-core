@@ -82,9 +82,6 @@ function fnbx_defaut_init_actions() {
 	// Nicholls Primary Menu
 	add_action( 'nicholls_header_start', 'nicholls_megamenu_load' );	
 
-	// Nicholls Logo Primary Info and Links
-	add_action( 'nicholls_header_start', 'nicholls_core_header' );	
-
 	// Widget Sidebar Group
 	add_action( 'fnbx_container_end', 'fnbx_default_widget_sidebar' );
 	
