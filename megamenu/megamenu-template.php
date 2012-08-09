@@ -8,7 +8,7 @@
 	<div class="menu-primary-" id="menu-primary">
 		<ul class="nicholls-menu-list-" id="nicholls-menu-list">
 			<li class="nicholls-menu-item nicholls-menu-current-" id="nicholls-menu-current">
-				<a class="nicholls-menu-item-link nicholls-menu-current-" href="http://www.nicholls.edu/current-students">
+				<a class="nicholls-menu-item-link nicholls-menu-current-link-" href="http://www.nicholls.edu/current-students">
 					Current <br>Students
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-current-contents">
@@ -45,7 +45,7 @@
 				</div>				
 			</li>
 			<li class="nicholls-menu-item nicholls-menu-future-" id="nicholls-menu-future">
-				<a class="nicholls-menu-item-link nicholls-menu-future-" href="http://www.nicholls.edu/future-students">
+				<a class="nicholls-menu-item-link nicholls-menu-future-link-" href="http://www.nicholls.edu/future-students">
 					Future <br/>Students
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-future-contents">
@@ -78,7 +78,7 @@
 				</div>			
 			</li>
 			<li class="nicholls-menu-item nicholls-menu-life-" id="nicholls-menu-life">
-				<a class="nicholls-menu-item-link nicholls-menu-life-" href="http://www.nicholls.edu/campus-life">
+				<a class="nicholls-menu-item-link nicholls-menu-life-link-" href="http://www.nicholls.edu/campus-life">
 					Housing &amp; <br>Campus Life
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-life-contents">
@@ -113,12 +113,12 @@
 				</div>
 			</li>
 			<li class="nicholls-menu-item nicholls-menu-athletics-" id="nicholls-menu-athletics">
-				<a class="nicholls-menu-item-link nicholls-menu-athletics-" href="http://www.nicholls.edu/athletics">
+				<a class="nicholls-menu-item-link nicholls-menu-athletics-link-" href="http://www.nicholls.edu/athletics">
 					Athletics
 				</a>
 			</li>
 			<li class="nicholls-menu-item nicholls-menu-friends-" id="nicholls-menu-friends">
-				<a class="nicholls-menu-item-link nicholls-menu-friends-" href="http://www.nicholls.edu/alumni-donors-friends">
+				<a class="nicholls-menu-item-link nicholls-menu-friends-link-" href="http://www.nicholls.edu/alumni-donors-friends">
 					Alumni &amp; <br>Friends
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-friends-contents">
@@ -150,7 +150,7 @@
 				</div>				
 			</li>
 			<li class="nicholls-menu-item nicholls-menu-administration-" id="nicholls-menu-administration">
-				<a class="nicholls-menu-item-link nicholls-menu-administration-" href="http://www.nicholls.edu/faculty-staff">
+				<a class="nicholls-menu-item-link nicholls-menu-administration-link-" href="http://www.nicholls.edu/faculty-staff">
 					Faculty &amp; <br>Staff
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-administration-contents">

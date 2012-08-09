@@ -9,8 +9,8 @@ $nicholls-menu-sprite-map: sprite-map("sprites/icons-menu/*.png",
   $icon-menu-dimensions: true,
   $icon-menu-spacing: 20px ); /**/
   
-$nicholls-menu-sprite-height: 28px;
-$nicholls-menu-sprite-width: 30px;
+$nicholls-menu-sprite-height: 36px;
+$nicholls-menu-sprite-width: 36px;
 
 
 // Sprite Name
@@ -53,70 +53,3 @@ $nicholls-menu-sprite-map-name: sprite-map-name( $nicholls-menu-sprite-map );
 // move and rename
 $rename: rename-sprite($nicholls-menu-sprite-map, $nicholls-menu-sprite-target);
 
-.nicholls-menu-current- {
-  .menu-icon {
-	  @include nicholls_menu_icon('red-current-students');
-  }
-}
-
-.nicholls-menu-current-:hover {
-  .menu-icon {
-	  @include nicholls_menu_icon('white-current-students');
-  }
-}
-
-.nicholls-menu-future- {
-  .menu-icon {
-	  @include nicholls_menu_icon('red-future-students');
-  }
-}
-
-.nicholls-menu-future-:hover {
-  .menu-icon {
-	  @include nicholls_menu_icon('white-future-students');
-  }
-}
-.nicholls-menu-administration- {
-  .menu-icon {
-	  @include nicholls_menu_icon('red-faculty-staff');
-  }
-}
-
-.nicholls-menu-administration-:hover {
-  .menu-icon {
-	  @include nicholls_menu_icon('white-faculty-staff');
-  }
-}
-.nicholls-menu-life- {
-  .menu-icon {
-	  @include nicholls_menu_icon('red-housing-life');
-  }
-}
-
-.nicholls-menu-life-:hover {
-  .menu-icon {
-	  @include nicholls_menu_icon('white-housing-life');
-  }
-}
-.nicholls-menu-athletics- {
-  .menu-icon {
-	  @include nicholls_menu_icon('red-athletics');
-  }
-}
-
-.nicholls-menu-athletics-:hover {
-  .menu-icon {
-	  @include nicholls_menu_icon('white-athletics');
-  }
-}
-.nicholls-menu-friends- {
-  .menu-icon {
-	  @include nicholls_menu_icon('red-alumni-friends');
-  }
-}
-
-.nicholls-menu-friends-:hover {
-  .menu-icon {
-	  @include nicholls_menu_icon('white-alumni-friends');
-  }
-}

@@ -709,10 +709,7 @@ li.widget_pages li:before {
 .menu-primary- {
 	height: 2.75em;
 	margin: 0 auto 0 auto;
-	padding: 0;
-	border-bottom: 2px solid #ccc;
-	border-top: 2px solid #ccc;
-	
+	padding: 0;	
 }
 
 .menu-primary- .nicholls-menu-list- {
@@ -724,6 +721,8 @@ li.widget_pages li:before {
 }
 
 .menu-primary- .nicholls-menu-list- .nicholls-menu-item {
+	@include border-radius( 18px );
+		
 	list-style-type: none;
 	list-style-position: inside;
 	padding: 0;
@@ -737,20 +736,27 @@ li.widget_pages li:before {
 }
 
 .nicholls-menu-list- .nicholls-menu-item .nicholls-menu-item-link {
+	@include border-bottom-left-radius( 18px );
+	@include border-bottom-right-radius( 18px );
+
 	margin: 0;
 	display: block;
-	border-right: 2px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	height: 2.4em;
 }
 
 .nicholls-menu-list- .nicholls-menu-item:first-child .nicholls-menu-item-link {
-	margin: 0;
-	display: block;
-	border-left: 2px solid #ccc;
+	border-left: 1px solid #ccc;
 }
 
 .nicholls-menu-item a.nicholls-menu-item-link, .nicholls-menu-item a.nicholls-menu-item-link:link, .nicholls-menu-item a.nicholls-menu-item-link:active, .nicholls-menu-item a.nicholls-menu-item-link:visited {
 	text-decoration: none;
 	color: #fff;
+	background-color: #cc3333;
+	text-align: center;
+	margin-top: 36px;
 }
 
 .nicholls-menu-item a.nicholls-menu-item-link:hover {
@@ -765,27 +771,51 @@ li.widget_pages li:before {
 }
 
 .nicholls-menu-current- {
-	background-color: $nicholls-color-tancool;
+	background:$nicholls-color-tancool;
 }
 
 .nicholls-menu-future- {
-	background-color: $nicholls-color-crimson;
+	background:$nicholls-color-crimson;
 }
 
 .nicholls-menu-life- {
-	background-color: $nicholls-color-green;
+	background:$nicholls-color-orangelight;
 }
 
 .nicholls-menu-athletics- {
-	background-color: $nicholls-color-blue;
+	background:$nicholls-color-bluegreencool;
 }
 
 .nicholls-menu-friends- {
-	background-color: $nicholls-color-greenblue;
+	background:$nicholls-color-mustard;
 }
 
 .nicholls-menu-administration- {
-	background-color: $nicholls-color-mustard;
+	background:$nicholls-color-greydarkcool;
+}
+
+.nicholls-menu-current- .nicholls-menu-item-link {
+	border-bottom: 4px solid $nicholls-color-tancool;
+}
+
+.nicholls-menu-future- .nicholls-menu-item-link {
+	border-bottom: 4px solid $nicholls-color-crimson;
+}
+
+.nicholls-menu-life- .nicholls-menu-item-link {
+	border-bottom: 4px solid $nicholls-color-orangelight;
+}
+
+.nicholls-menu-athletics- .nicholls-menu-item-link {
+	border-bottom: 4px solid $nicholls-color-blue;
+}
+
+.nicholls-menu-friends- .nicholls-menu-item-link {
+	border-bottom: 4px solid $nicholls-color-bluegreencool;
+}
+
+.nicholls-menu-administration- .nicholls-menu-item-link {
+	border-bottom: 4px solid $nicholls-color-greydarkcool;
 }
 
 .nicholls-menu-friends- .nicholls-menu-contents {

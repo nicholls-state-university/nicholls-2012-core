@@ -200,70 +200,45 @@ body {
 }
 
 .menu-primary- {
-	float: right;
+	float: left;
 	clear: right;
 }
 
 .nicholls-menu-item {
 	width: 6em;
-	height: 2.4em;
 } 
 
 .nicholls-menu-item-link {
 	width: auto;
-	height: 2.4em;
+	top: 36px;
 	padding-left: .2em;
 	padding-right: .2em;
+	background: white;
 } 
 
-.nicholls-menu-current- .nicholls-menu-item-link {
+.nicholls-menu-current- {
 	@include nicholls_menu_icon('white-current-students');
 }
 
-.nicholls-menu-current- .nicholls-menu-item-link:hover {
-	@include nicholls_menu_icon('white-current-students');
-}
-
-.nicholls-menu-future- .nicholls-menu-item-link {
+.nicholls-menu-future- {
 	@include nicholls_menu_icon('white-future-students');
 }
 
-.nicholls-menu-future- .nicholls-menu-item-link:hover {
-	@include nicholls_menu_icon('white-future-students');
-}
-
-.nicholls-menu-administration- .nicholls-menu-item-link {
+.nicholls-menu-administration-{
 	@include nicholls_menu_icon('white-faculty-staff');
 }
 
-.nicholls-menu-administration- .nicholls-menu-item-link:hover {
-	@include nicholls_menu_icon('white-faculty-staff');
-}
-
-.nicholls-menu-life- .nicholls-menu-item-link {
+.nicholls-menu-life- {
 	@include nicholls_menu_icon('white-housing-life');
 }
 
-.nicholls-menu-life- .nicholls-menu-item-link:hover {
-	@include nicholls_menu_icon('white-housing-life');
-}
-
-.nicholls-menu-athletics- .nicholls-menu-item-link {
+.nicholls-menu-athletics- {
 	@include nicholls_menu_icon('white-athletics');
 }
 
-.nicholls-menu-athletics- .nicholls-menu-item-link:hover {
-	@include nicholls_menu_icon('white-athletics');
-}
-
-.nicholls-menu-friends- .nicholls-menu-item-link {
+.nicholls-menu-friends- {
 	@include nicholls_menu_icon('white-alumni-friends');
 }
-
-.nicholls-menu-friends- .nicholls-menu-item-link:hover {
-	@include nicholls_menu_icon('white-alumni-friends');
-}
-
 
 @include at-breakpoint( 74em 32 ) {
 
