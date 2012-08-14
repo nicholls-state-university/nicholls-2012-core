@@ -596,6 +596,17 @@ div.wpcf7 {
     background: transparent url( 'library/images/backgrounds/bg-transparent-black-50.png' );
 }
 
+.color-black-transparent-50 {
+	/* Fallback for web browsers that doesn't support RGBa */
+	background: rgb(0, 0, 0);
+	/* RGBa with 0.5 opacity */
+	background: rgba(0, 0, 0, 0.5);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000, endColorstr=#7f000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000, endColorstr=#7f000000)";
+}
+
 .transparent-white-50 {
     background: transparent url( 'library/images/backgrounds/bg-transparent-white-50.png' );
 }
@@ -699,17 +710,18 @@ li.widget_pages li:before {
 
 /* START - Nicholls Primary Menu */
 
-.menu-primary-container- {
+.menu-primary-container- {	
 	text-align: left;
 	clear: both;
 	position: relative;
-	z-index: 1001;	
+	z-index: 1001;
 }
 
 .menu-primary- {
-	height: 2.75em;
-	margin: 0 auto 0 auto;
+	height: 4.4em;
+	margin: 0;
 	padding: 0;	
+	border-top: 1px solid #000;
 }
 
 .menu-primary- .nicholls-menu-list- {
@@ -721,7 +733,6 @@ li.widget_pages li:before {
 }
 
 .menu-primary- .nicholls-menu-list- .nicholls-menu-item {
-	@include border-radius( 18px );
 		
 	list-style-type: none;
 	list-style-position: inside;
@@ -731,30 +742,30 @@ li.widget_pages li:before {
 	color: $nicholls-color-red;
 	display: block;
 	font-size: 80%;
-	margin: 0;
+	margin: 0 2.4em 0 0;
 	line-height: 1.2em;
+	
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+
+}
+
+.nicholls-menu-list- .nicholls-menu-item:first-child {
+	margin-left: 2.4em;
 }
 
 .nicholls-menu-list- .nicholls-menu-item .nicholls-menu-item-link {
-	@include border-bottom-left-radius( 18px );
-	@include border-bottom-right-radius( 18px );
-
 	margin: 0;
 	display: block;
-	border-right: 1px solid #ccc;
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
 	height: 2.4em;
+	padding-bottom: .3em;
 }
 
-.nicholls-menu-list- .nicholls-menu-item:first-child .nicholls-menu-item-link {
-	border-left: 1px solid #ccc;
-}
+
 
 .nicholls-menu-item a.nicholls-menu-item-link, .nicholls-menu-item a.nicholls-menu-item-link:link, .nicholls-menu-item a.nicholls-menu-item-link:active, .nicholls-menu-item a.nicholls-menu-item-link:visited {
 	text-decoration: none;
 	color: #fff;
-	background-color: #cc3333;
 	text-align: center;
 	margin-top: 36px;
 }
@@ -771,51 +782,63 @@ li.widget_pages li:before {
 }
 
 .nicholls-menu-current- {
-	background:$nicholls-color-tancool;
-}
-
-.nicholls-menu-future- {
-	background:$nicholls-color-crimson;
-}
-
-.nicholls-menu-life- {
-	background:$nicholls-color-orangelight;
-}
-
-.nicholls-menu-athletics- {
-	background:$nicholls-color-bluegreencool;
-}
-
-.nicholls-menu-friends- {
-	background:$nicholls-color-mustard;
-}
-
-.nicholls-menu-administration- {
-	background:$nicholls-color-greydarkcool;
+	background-color:$nicholls-color-tancool;
 }
 
 .nicholls-menu-current- .nicholls-menu-item-link {
-	border-bottom: 4px solid $nicholls-color-tancool;
+	background-color:$nicholls-color-tancool; // Old browsers
+	@include filter-gradient(#aaae87, #666850, vertical); // IE6-9
+	@include background-image(linear-gradient(top,  #aaae87 0%,#666850 100%));
+}
+
+.nicholls-menu-future- {
+	background-color:$nicholls-color-crimson;
 }
 
 .nicholls-menu-future- .nicholls-menu-item-link {
-	border-bottom: 4px solid $nicholls-color-crimson;
+	background-color:$nicholls-color-crimson; // Old browsers
+	@include filter-gradient(#7a2224, #491415, vertical); // IE6-9
+	@include background-image(linear-gradient(top,  #7a2224 0%,#491415 100%));
+}
+
+.nicholls-menu-life- {
+	background-color:$nicholls-color-orangelight;
 }
 
 .nicholls-menu-life- .nicholls-menu-item-link {
-	border-bottom: 4px solid $nicholls-color-orangelight;
+	background-color: $nicholls-color-orangelight; // Old browsers
+	@include filter-gradient(#f3ae2f, #92681c, vertical); // IE6-9
+	@include background-image(linear-gradient(top,  #f3ae2f 0%,#92681c 100%));
+}
+
+.nicholls-menu-athletics- {
+	background-color: $nicholls-color-bluegreencool;
 }
 
 .nicholls-menu-athletics- .nicholls-menu-item-link {
-	border-bottom: 4px solid $nicholls-color-blue;
+	background-color: $nicholls-color-bluegreencool;
+	@include filter-gradient(#467d80, #2a4a4d, vertical); // IE6-9
+	@include background-image(linear-gradient(top,  #467d80 0%,#2a4a4d 100%));
+}
+
+.nicholls-menu-friends- {
+	background-color: $nicholls-color-mustard;
 }
 
 .nicholls-menu-friends- .nicholls-menu-item-link {
-	border-bottom: 4px solid $nicholls-color-bluegreencool;
+	background-color: $nicholls-color-mustard;
+	@include filter-gradient(#a45c0b, #623706, vertical); // IE6-9
+	@include background-image(linear-gradient(top,  #a45c0b 0%,#623706 100%));
+}
+
+.nicholls-menu-administration- {
+	background-color:$nicholls-color-greydarkcool;
 }
 
 .nicholls-menu-administration- .nicholls-menu-item-link {
-	border-bottom: 4px solid $nicholls-color-greydarkcool;
+	background-color:$nicholls-color-greydarkcool;
+	@include filter-gradient(#52616e, #313a41, vertical); // IE6-9
+	@include background-image(linear-gradient(top,  #52616e 0%,#313a41 100%));
 }
 
 .nicholls-menu-friends- .nicholls-menu-contents {

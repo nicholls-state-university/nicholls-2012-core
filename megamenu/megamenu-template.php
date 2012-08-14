@@ -5,7 +5,7 @@
 		<div class="info-contact">1-877-NICHOLLS <span class="type-normal"> - <a href="http://webmanager.nicholls.edu/nicholls_test//contact">Contact Us</a></span></div>
 	</div>
 
-	<div class="menu-primary-" id="menu-primary">
+	<div id="menu-primary" class="menu-primary- color-black-transparent-50">
 		<ul class="nicholls-menu-list-" id="nicholls-menu-list">
 			<li class="nicholls-menu-item nicholls-menu-current-" id="nicholls-menu-current">
 				<a class="nicholls-menu-item-link nicholls-menu-current-link-" href="http://www.nicholls.edu/current-students">
