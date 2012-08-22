@@ -240,6 +240,66 @@ body {
 	@include nicholls_menu_icon('white-alumni-friends');
 }
 
+
+/* START - Nicholls Home Menu */
+
+.nicholls-home-list-container- {	
+	text-align: left;
+	clear: both;
+	position: relative;
+	z-index: 1001;
+}
+
+.nicholls-home-list-container- .nicholls-home-list- {
+	list-style-type: none;
+	list-style-position: inside;	
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.nicholls-home-list-container- .nicholls-home-list- .nicholls-home-list-item {
+	list-style-type: none;
+	list-style-position: inside;
+	padding: 130px 0 0 0;
+	float: left;
+	font-weight: 600;	
+	color: $nicholls-color-red;
+	display: block;
+	width: 132px;
+	text-align: center;
+	margin-left: .5em;
+}
+
+.nicholls-home-list-apply- {
+	@include nicholls_home_icon('red-apply');
+}
+
+.nicholls-home-list-calendar- {
+	@include nicholls_home_icon('red-calendar');
+}
+
+.nicholls-home-list-explore- {
+	@include nicholls_home_icon('red-explore');
+}
+
+.nicholls-home-list-finaid- {
+	@include nicholls_home_icon('red-financial-aid');
+}
+
+.nicholls-home-list-majors- {
+	@include nicholls_home_icon('red-majors');
+}
+
+.nicholls-home-list-tour- {
+	@include nicholls_home_icon('red-tour');
+}
+
+.nicholls-home-list-social- {
+	@include nicholls_home_icon('red-social');
+}
+
+
 @include at-breakpoint( 74em 32 ) {
 
 	.wrapper- {

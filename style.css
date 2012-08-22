@@ -28,9 +28,10 @@ with WordPress.  If not, see <http://www.gnu.org/licenses/>.
 */
 /* Imports --------------------------------------------------------------*/
 /**/
+/**/
 /* Imports */
 /* normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
-/* line 18, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/html5.scss */
+/* line 18, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/html5.scss */
 article,
 aside,
 details,
@@ -44,7 +45,7 @@ section,
 summary {
   display: block; }
 
-/* line 26, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/html5.scss */
+/* line 26, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/html5.scss */
 audio,
 canvas,
 video {
@@ -52,20 +53,20 @@ video {
   *display: inline;
   *zoom: 1; }
 
-/* line 35, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/html5.scss */
+/* line 35, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/html5.scss */
 audio:not([controls]) {
   display: none;
   height: 0; }
 
-/* line 43, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/html5.scss */
+/* line 43, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/html5.scss */
 [hidden] {
   display: none; }
 
-/* line 53, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/html5.scss */
+/* line 53, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/html5.scss */
 figure {
   margin: 0; }
 
-/* line 10, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 10, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 html {
   font-size: 100%;
   /* 1 */
@@ -74,7 +75,7 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */ }
 
-/* line 22, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 22, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 html,
 button,
 input,
@@ -82,77 +83,77 @@ select,
 textarea {
   font-family: sans-serif; }
 
-/* line 28, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 28, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 body {
   margin: 0; }
 
-/* line 40, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 40, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 a:focus {
   outline: thin dotted; }
 
-/* line 48, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 48, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 a:hover,
 a:active {
   outline: 0; }
 
-/* line 60, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 60, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
-/* line 65, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 65, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 h2 {
   font-size: 1.5em;
   margin: 0.83em 0; }
 
-/* line 70, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 70, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 h3 {
   font-size: 1.17em;
   margin: 1em 0; }
 
-/* line 75, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 75, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 h4 {
   font-size: 1em;
   margin: 1.33em 0; }
 
-/* line 80, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 80, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 h5 {
   font-size: 0.83em;
   margin: 1.67em 0; }
 
-/* line 85, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 85, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 h6 {
   font-size: 0.75em;
   margin: 2.33em 0; }
 
-/* line 92, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 92, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 abbr[title] {
   border-bottom: 1px dotted; }
 
-/* line 99, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 99, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 b,
 strong {
   font-weight: bold; }
 
-/* line 103, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 103, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 blockquote {
   margin: 1em 40px; }
 
-/* line 109, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 109, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 dfn {
   font-style: italic; }
 
-/* line 115, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 115, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 mark {
   background: #ff0;
   color: #000; }
 
-/* line 123, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 123, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 p,
 pre {
   margin: 1em 0; }
 
-/* line 133, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 133, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 pre,
 code,
 kbd,
@@ -161,27 +162,27 @@ samp {
   _font-family: 'courier new', monospace;
   font-size: 1em; }
 
-/* line 141, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 141, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word; }
 
-/* line 152, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 152, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 q {
   quotes: none; }
 
-/* line 159, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 159, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 q:before,
 q:after {
   content: '';
   content: none; }
 
-/* line 164, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 164, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 small {
   font-size: 75%; }
 
-/* line 172, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 172, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 sub,
 sup {
   font-size: 75%;
@@ -189,71 +190,71 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
-/* line 179, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 179, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 sup {
   top: -0.5em; }
 
-/* line 183, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 183, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 sub {
   bottom: -0.25em; }
 
-/* line 197, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 197, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 dl,
 menu,
 ol,
 ul {
   margin: 1em 0; }
 
-/* line 201, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 201, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 dd {
   margin: 0 0 0 40px; }
 
-/* line 209, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 209, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 menu,
 ol,
 ul {
   padding: 0 0 0 40px; }
 
-/* line 216, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 216, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 nav ul,
 nav ol {
   list-style: none;
   list-style-image: none; }
 
-/* line 230, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 230, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 img {
   border: 0;
   /* 1 */
   -ms-interpolation-mode: bicubic;
   /* 2 */ }
 
-/* line 237, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 237, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 svg:not(:root) {
   overflow: hidden; }
 
-/* line 248, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
+/* line 248, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/base.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 7, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
+/* line 7, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
 form {
   margin: 0; }
 
-/* line 13, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
+/* line 13, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
-/* line 23, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
+/* line 23, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
 legend {
   border: 0;
   padding: 0;
   white-space: normal;
   *margin-left: -7px; }
 
-/* line 37, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
+/* line 37, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
 button,
 input,
 select,
@@ -263,12 +264,12 @@ textarea {
   vertical-align: baseline;
   *vertical-align: middle; }
 
-/* line 47, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
+/* line 47, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
 button,
 input {
   line-height: normal; }
 
-/* line 59, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
+/* line 59, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
 button,
 input[type="button"],
 input[type="reset"],
@@ -277,12 +278,12 @@ input[type="submit"] {
   -webkit-appearance: button;
   *overflow: visible; }
 
-/* line 68, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
+/* line 68, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
 button[disabled],
 input[disabled] {
   cursor: default; }
 
-/* line 78, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
+/* line 78, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -290,25 +291,25 @@ input[type="radio"] {
   *height: 13px;
   *width: 13px; }
 
-/* line 88, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
+/* line 88, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
-/* line 98, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
+/* line 98, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none; }
 
-/* line 106, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
+/* line 106, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-/* line 114, /Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
+/* line 114, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-normalize-1.1.1/stylesheets/normalize/forms.scss */
 textarea {
   overflow: auto;
   vertical-align: top; }
@@ -320,7 +321,7 @@ textarea {
 /* Colors - Nicholls - Palette B */
 /* Colors - Links & Text */
 /* Defaults - START */
-/* line 3, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 3, library/source/compass/sass/_defaults.scss */
 body {
   font-family: 'Cabin', Arial, sans serif;
   font-size: 100%;
@@ -330,104 +331,104 @@ body {
   width: 100%; }
 
 /* Interactive HTML Styles */
-/* line 14, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 14, library/source/compass/sass/_defaults.scss */
 a, a:link {
   color: #cc3333;
   text-decoration: underline; }
 
-/* line 19, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 19, library/source/compass/sass/_defaults.scss */
 a:visited {
   color: #666666; }
 
-/* line 23, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 23, library/source/compass/sass/_defaults.scss */
 a:hover {
   text-decoration: none; }
 
-/* line 27, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 27, library/source/compass/sass/_defaults.scss */
 a.nofx {
   background: none;
   border: none; }
 
-/* line 32, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 32, library/source/compass/sass/_defaults.scss */
 a.nofx:hover {
   background: none;
   border: none; }
 
 /* Content Common text blocks */
-/* line 39, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 39, library/source/compass/sass/_defaults.scss */
 .content- code, .content- pre {
   font-family: "courier new", courier, monospace; }
 
-/* line 43, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 43, library/source/compass/sass/_defaults.scss */
 input.text {
   padding: .2em;
   border: 1px solid #999999; }
 
 /* Heading Styles */
-/* line 50, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 50, library/source/compass/sass/_defaults.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.1em;
   color: #1f1f1f;
   margin: .4em 0; }
 
-/* line 57, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 57, library/source/compass/sass/_defaults.scss */
 h1 {
   font-size: 200%; }
 
-/* line 61, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 61, library/source/compass/sass/_defaults.scss */
 h2 {
   font-size: 180%; }
 
-/* line 65, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 65, library/source/compass/sass/_defaults.scss */
 h3 {
   font-size: 160%; }
 
-/* line 69, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 69, library/source/compass/sass/_defaults.scss */
 h4 {
   font-size: 140%; }
 
-/* line 73, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 73, library/source/compass/sass/_defaults.scss */
 h5 {
   font-size: 120%; }
 
-/* line 77, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 77, library/source/compass/sass/_defaults.scss */
 h6 {
   font-size: 110%; }
 
 /* Clearing Utility Elements */
-/* line 83, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 83, library/source/compass/sass/_defaults.scss */
 .box-0x0 {
   width: 0;
   height: 0;
   line-height: 0; }
 
-/* line 89, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 89, library/source/compass/sass/_defaults.scss */
 .clear, .clearer, .clear-both, .entry-edit {
   clear: both; }
 
-/* line 93, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 93, library/source/compass/sass/_defaults.scss */
 .clear-right {
   clear: right; }
 
-/* line 97, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 97, library/source/compass/sass/_defaults.scss */
 .clear-left {
   clear: left; }
 
 /* Alignment */
-/* line 103, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 103, library/source/compass/sass/_defaults.scss */
 .left, .alignleft {
   display: inline;
   float: left;
   margin-right: .8em; }
 
-/* line 109, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 109, library/source/compass/sass/_defaults.scss */
 .right, .alignright {
   display: inline;
   float: right;
   margin-left: .8em; }
 
-/* line 115, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 115, library/source/compass/sass/_defaults.scss */
 .aligncenter {
   clear: both;
   display: block;
@@ -435,44 +436,44 @@ h6 {
   margin-right: auto; }
 
 /* Responsive Defaults */
-/* line 124, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 124, library/source/compass/sass/_defaults.scss */
 .content- {
   width: auto; }
 
-/* line 130, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 130, library/source/compass/sass/_defaults.scss */
 .entry-content img,
 .comment-content img,
 .widget img {
   max-width: 97.5%;
   /* Fluid images for posts, comments, and widgets */ }
 
-/* line 135, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 135, library/source/compass/sass/_defaults.scss */
 img[class*="align"],
 img[class*="wp-image-"] {
   height: auto;
   /* Make sure images with WordPress-added height and width attributes are scaled correctly */ }
 
-/* line 139, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 139, library/source/compass/sass/_defaults.scss */
 img.size-full {
   max-width: 97.5%;
   width: auto;
   /* Prevent stretching of full-size images with height and width attributes in IE8 */ }
 
 /* Layout */
-/* line 146, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 146, library/source/compass/sass/_defaults.scss */
 .wrapper- {
   padding: 0; }
 
 /* Header */
-/* line 152, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 152, library/source/compass/sass/_defaults.scss */
 .header- .blog-title- {
   margin: 0 auto; }
 
-/* line 156, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 156, library/source/compass/sass/_defaults.scss */
 .header- {
   background: transparent; }
 
-/* line 160, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 160, library/source/compass/sass/_defaults.scss */
 .header- .blog-title- {
   font-family: 'Crimson Text', Georgia, "TImes New Roman", times, serif;
   font-weight: 400;
@@ -481,15 +482,15 @@ img.size-full {
   margin: 0;
   padding: .2em; }
 
-/* line 169, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 169, library/source/compass/sass/_defaults.scss */
 .header- .blog-title- a, .header- .blog-title- a:link, .header- .blog-title- a:active, .header- .blog-title- a:visited {
   text-decoration: none; }
 
-/* line 173, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 173, library/source/compass/sass/_defaults.scss */
 .header- .blog-title- a:hover {
   text-decoration: underline; }
 
-/* line 177, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 177, library/source/compass/sass/_defaults.scss */
 .header- .blog-description- {
   padding: 0 0 0 1em; }
 
@@ -497,60 +498,60 @@ img.size-full {
 /* START ----OLD---- */
 /* END defaults */
 /* START Multi-purpose Elements */
-/* line 192, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 192, library/source/compass/sass/_defaults.scss */
 .nav-previous {
   float: left; }
 
-/* line 196, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 196, library/source/compass/sass/_defaults.scss */
 .nav-next {
   float: right; }
 
-/* line 200, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 200, library/source/compass/sass/_defaults.scss */
 .entry-edit {
   clear: both; }
 
 /* END Multi-purpose Elements */
 /* START Widget Group Styles */
-/* line 208, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 208, library/source/compass/sass/_defaults.scss */
 .widgets- {
   margin: 0;
   padding: 0; }
 
-/* line 213, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 213, library/source/compass/sass/_defaults.scss */
 .widgets- ul, .widgets- ul li {
   list-style-type: none;
   text-align: left;
   margin: 0;
   padding: 0; }
 
-/* line 220, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 220, library/source/compass/sass/_defaults.scss */
 .widgets- h3, .widgets- h4 {
   font-size: 130%; }
 
-/* line 224, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 224, library/source/compass/sass/_defaults.scss */
 .widgets- .widgettitle {
   padding: 0 0 .4em 0;
   margin: 0 0 0.6em 0; }
 
-/* line 229, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 229, library/source/compass/sass/_defaults.scss */
 .widgets-primary- li.widget {
   margin: 1em 0 1em 0; }
 
-/* line 233, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 233, library/source/compass/sass/_defaults.scss */
 .widgets-primary- li.widget ul {
   margin: 0 0 0 .5em; }
 
-/* line 237, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 237, library/source/compass/sass/_defaults.scss */
 .widgets-primary- li.widget li {
   margin: .5em 0 .5em .5em; }
 
-/* line 241, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 241, library/source/compass/sass/_defaults.scss */
 .widget_search {
   padding: .2em; }
 
 /* END Widget Group Styles */
 /* START Post Navigation Styles */
-/* line 249, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 249, library/source/compass/sass/_defaults.scss */
 .navigation {
   /* 
   This one is tricky since we have two floats in a div
@@ -564,35 +565,35 @@ img.size-full {
   font-style: italic;
   text-align: center; }
 
-/* line 267, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 267, library/source/compass/sass/_defaults.scss */
 .navigation .nav-next {
   padding: .8em 0 0 0; }
 
-/* line 271, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 271, library/source/compass/sass/_defaults.scss */
 .navigation .nav-meta {
   font-weight: bold;
   color: #ddd; }
 
 /* END Post Navigation Styles */
 /* START Post styles */
-/* line 280, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 280, library/source/compass/sass/_defaults.scss */
 .post {
   padding-top: .2em; }
 
-/* line 284, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 284, library/source/compass/sass/_defaults.scss */
 .entry-title, .entry-title a, .entry-title a:visited {
   text-decoration: none; }
 
-/* line 288, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 288, library/source/compass/sass/_defaults.scss */
 .entry-title a:hover {
   text-decoration: underline; }
 
-/* line 292, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 292, library/source/compass/sass/_defaults.scss */
 .entry-date {
   font-size: 90%;
   color: #9f9f9f; }
 
-/* line 297, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 297, library/source/compass/sass/_defaults.scss */
 .entry-date abbr.published {
   display: block;
   cursor: default;
@@ -600,16 +601,16 @@ img.size-full {
   padding: .2em;
   color: #9f9f9f; }
 
-/* line 305, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 305, library/source/compass/sass/_defaults.scss */
 .entry-content {
   line-height: 1.4em;
   clear: both; }
 
-/* line 310, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 310, library/source/compass/sass/_defaults.scss */
 .entry-content p {
   line-height: 1.4em; }
 
-/* line 314, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 314, library/source/compass/sass/_defaults.scss */
 .entry-meta {
   clear: both;
   padding: .4em;
@@ -621,19 +622,19 @@ img.size-full {
 
 /* END Post styles */
 /* START WordPress Image / Gallery Styles */
-/* line 328, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 328, library/source/compass/sass/_defaults.scss */
 .gallery .gallery-item {
   float: left;
   width: 48%; }
 
-/* line 333, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 333, library/source/compass/sass/_defaults.scss */
 .wp-caption {
   margin: .4em;
   padding: .2em;
   text-align: center;
   border: 1px solid #ccc; }
 
-/* line 340, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 340, library/source/compass/sass/_defaults.scss */
 .wp-caption .wp-caption-text {
   margin: .2em 0 .1em 0;
   padding: .2em .4em .1em .4em;
@@ -644,31 +645,31 @@ img.size-full {
 
 /* END WordPress Image / Gallery Styles */
 /* START Comment Styles */
-/* line 353, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 353, library/source/compass/sass/_defaults.scss */
 .comments- {
   margin: 0 .5em 0 .5em;
   font-size: 96%; }
 
-/* line 358, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 358, library/source/compass/sass/_defaults.scss */
 .comment-author {
   padding: .4em; }
 
-/* line 362, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 362, library/source/compass/sass/_defaults.scss */
 .comment-author .avatar {
   float: left;
   margin: 0 .5em .5em 0; }
 
-/* line 367, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 367, library/source/compass/sass/_defaults.scss */
 .bypostauthor .comment-body .comment-author {
   color: white;
   background: black; }
 
-/* line 372, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 372, library/source/compass/sass/_defaults.scss */
 .bypostauthor-no .comment-body .comment-author {
   color: black;
   background: transparent; }
 
-/* line 377, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 377, library/source/compass/sass/_defaults.scss */
 .comment-meta {
   clear: right;
   margin: 0 0 .5em 0;
@@ -676,19 +677,19 @@ img.size-full {
   font-size: 90%;
   color: #222; }
 
-/* line 385, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 385, library/source/compass/sass/_defaults.scss */
 .commentlist {
   list-style-type: none;
   margin: 0 .2em .5em .4em; }
 
-/* line 390, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 390, library/source/compass/sass/_defaults.scss */
 .commentlist .comment, .commentlist .pingback {
   list-style-type: none;
   margin: 0 0 2em 0;
   padding: .2em 0 0 0;
   border-top: 1px solid #e0e0e0; }
 
-/* line 397, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 397, library/source/compass/sass/_defaults.scss */
 .comments- label {
   clear: both;
   display: block;
@@ -696,38 +697,38 @@ img.size-full {
 
 /* END Comment Styles */
 /* Start Forms and Controls */
-/* line 407, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 407, library/source/compass/sass/_defaults.scss */
 legend {
   font-weight: 400; }
 
-/* line 411, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 411, library/source/compass/sass/_defaults.scss */
 label {
   display: block; }
 
-/* line 415, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 415, library/source/compass/sass/_defaults.scss */
 input, textarea {
   margin: .2em;
   padding: .2em;
   border: 1px solid #666; }
 
-/* line 421, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 421, library/source/compass/sass/_defaults.scss */
 textarea {
   clear: both; }
 
-/* line 425, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 425, library/source/compass/sass/_defaults.scss */
 input:hover, textarea:hover {
   border: 1px solid #333; }
 
-/* line 429, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 429, library/source/compass/sass/_defaults.scss */
 input:focus, textarea:focus {
   border: 1px solid #d1d1d1; }
 
-/* line 433, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 433, library/source/compass/sass/_defaults.scss */
 .fnbx_form_row {
   margin: .2em 0;
   clear: both; }
 
-/* line 438, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 438, library/source/compass/sass/_defaults.scss */
 .fnbx_form_row label {
   width: 12em;
   float: left;
@@ -735,42 +736,42 @@ input:focus, textarea:focus {
   font-weight: bold;
   text-align: right; }
 
-/* line 446, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 446, library/source/compass/sass/_defaults.scss */
 .fnbx_textarea label {
   width: 100%;
   float: none; }
 
-/* line 451, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 451, library/source/compass/sass/_defaults.scss */
 .fnbx_form_row .fnbx_form_element {
   padding: 2px; }
 
-/* line 455, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 455, library/source/compass/sass/_defaults.scss */
 .form-container {
   position: relative;
   width: 36em;
   padding: .2em; }
 
-/* line 461, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 461, library/source/compass/sass/_defaults.scss */
 .form-container form {
   margin: 0;
   padding: 0; }
 
-/* line 466, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 466, library/source/compass/sass/_defaults.scss */
 .form-container .form-note {
   padding: 2px;
   clear: both; }
 
-/* line 471, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 471, library/source/compass/sass/_defaults.scss */
 .form-container .form-row {
   width: 100%;
   clear: both; }
 
-/* line 476, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 476, library/source/compass/sass/_defaults.scss */
 .form-container .form-note {
   padding: .2em;
   clear: both; }
 
-/* line 481, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 481, library/source/compass/sass/_defaults.scss */
 .form-container .form-label, .form-container label {
   display: block;
   float: left;
@@ -779,7 +780,7 @@ input:focus, textarea:focus {
   text-align: right;
   font-weight: bold; }
 
-/* line 490, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 490, library/source/compass/sass/_defaults.scss */
 .form-container .form-input, .form-container .form-element {
   display: block;
   position: relative;
@@ -788,30 +789,30 @@ input:focus, textarea:focus {
   padding: .4em 0 .4em 0; }
 
 /* START - Plugin Contact Form 7 - Form Controls */
-/* line 500, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 500, library/source/compass/sass/_defaults.scss */
 div.wpcf7 {
   width: 36em; }
 
-/* line 504, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 504, library/source/compass/sass/_defaults.scss */
 .form-container .wpcf7-list-item {
   display: block;
   clear: both;
   margin: 0;
   padding: 0; }
 
-/* line 511, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 511, library/source/compass/sass/_defaults.scss */
 .wpcf7-checkbox input {
   display: block;
   float: left; }
 
-/* line 516, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 516, library/source/compass/sass/_defaults.scss */
 .wpcf7-checkbox .wpcf7-list-item-label {
   display: block;
   margin: .2em 0 .2em .2em;
   float: left;
   width: 18em; }
 
-/* line 523, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 523, library/source/compass/sass/_defaults.scss */
 .form-input .your-message textarea {
   width: 20em; }
 
@@ -819,12 +820,12 @@ div.wpcf7 {
 /* END - Plugin Styles */
 /* START - Custom Site */
 /* Layout Changes */
-/* line 535, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 535, library/source/compass/sass/_defaults.scss */
 .wrapper- {
   background: #fff; }
 
 /* START Widget Group Styles */
-/* line 541, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 541, library/source/compass/sass/_defaults.scss */
 .widgets- h3, .widgets- h4 {
   font-size: 120%;
   font-weight: 400;
@@ -832,7 +833,7 @@ div.wpcf7 {
   margin: .4em 0;
   border-bottom: 1px solid #afafaf; }
 
-/* line 549, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 549, library/source/compass/sass/_defaults.scss */
 .widgets- .widgettitle {
   padding: 0 0 .4em 0;
   border-bottom: 1px solid #9F9F9F;
@@ -841,42 +842,42 @@ div.wpcf7 {
 /* END Widget Group Styles */
 /* START - Custom Layout Classes */
 /* Columns - column-float-width */
-/* line 561, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 561, library/source/compass/sass/_defaults.scss */
 .column-left-16 {
   float: left;
   width: 16em;
   margin-right: 1em; }
 
-/* line 567, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 567, library/source/compass/sass/_defaults.scss */
 .column-left-20 {
   float: left;
   width: 16em;
   margin-right: 1em; }
 
 /* Borders - border-location-color-size */
-/* line 575, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 575, library/source/compass/sass/_defaults.scss */
 .border-right-cccccc-1 {
   border-right: 1px solid #ccc; }
 
-/* line 579, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 579, library/source/compass/sass/_defaults.scss */
 .border-left-cccccc-1 {
   border-right: 1px solid #ccc; }
 
 /* END - Custom Layout Classes */
 /* START - Custom Classes */
-/* line 587, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 587, library/source/compass/sass/_defaults.scss */
 .type-serif {
   font-family: 'Crimson Text', 'Georgia','Times New Roman', times, serif; }
 
-/* line 591, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 591, library/source/compass/sass/_defaults.scss */
 .type-normal {
   font-size: 72%; }
 
-/* line 595, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 595, library/source/compass/sass/_defaults.scss */
 .transparent-black-50 {
   background: transparent url("library/images/backgrounds/bg-transparent-black-50.png"); }
 
-/* line 599, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 599, library/source/compass/sass/_defaults.scss */
 .color-black-transparent-50 {
   /* Fallback for web browsers that doesn't support RGBa */
   background: black;
@@ -887,59 +888,59 @@ div.wpcf7 {
   /* For IE 8*/
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000, endColorstr=#7f000000)"; }
 
-/* line 610, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 610, library/source/compass/sass/_defaults.scss */
 .transparent-white-50 {
   background: transparent url("library/images/backgrounds/bg-transparent-white-50.png"); }
 
 /* END - Custom Classes */
 /* START Widget Styles */
-/* line 618, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 618, library/source/compass/sass/_defaults.scss */
 .widgets- .widget_pages, .widgets- .menu {
   line-height: 1.2em; }
 
-/* line 623, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 623, library/source/compass/sass/_defaults.scss */
 li.widget_nav_menu li,
 li.widget_pages li {
   text-indent: -0.9em; }
 
-/* line 628, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 628, library/source/compass/sass/_defaults.scss */
 li.widget_nav_menu li:before,
 li.widget_pages li:before {
   content: "\00BB \0020"; }
 
-/* line 632, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 632, library/source/compass/sass/_defaults.scss */
 .widgets- .menu li ul, .widgets- .widget_pages li ul {
   display: none; }
 
-/* line 636, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 636, library/source/compass/sass/_defaults.scss */
 .widgets- .widget_pages .current_page_item ul, .widgets- .widget_pages .current_page_ancestor ul, .widgets- .menu .current-menu-item ul, .widgets- .menu .current-menu-ancestor ul {
   display: block; }
 
-/* line 641, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 641, library/source/compass/sass/_defaults.scss */
 .widgets- .widget_pages a, .widgets- .widget_pages a:link, .widgets- .widget_pages a:active, .widgets- .widget_pages a:visited,
 .widgets- .menu a, .widgets- .menu a:link, .widgets- .menu a:active, .widgets- .menu a:visited {
   text-decoration: none; }
 
-/* line 645, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 645, library/source/compass/sass/_defaults.scss */
 .widgets- .widget_pages a:hover, .widgets- .menu a:hover {
   text-decoration: underline; }
 
 /* END Widget Styles */
 /* START Top Navigation and Search */
-/* line 652, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 652, library/source/compass/sass/_defaults.scss */
 .nav-top-wrapper- input {
   font-size: 72%; }
 
-/* line 656, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 656, library/source/compass/sass/_defaults.scss */
 .nav-top-wrapper- {
   width: 100%;
   background: #666; }
 
-/* line 661, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 661, library/source/compass/sass/_defaults.scss */
 .nav-top- {
   clear: both; }
 
-/* line 665, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 665, library/source/compass/sass/_defaults.scss */
 .form-gs-container- {
   background-color: #fff;
   -moz-border-radius: 10px;
@@ -950,29 +951,29 @@ li.widget_pages li:before {
   float: right;
   clear: right; }
 
-/* line 675, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 675, library/source/compass/sass/_defaults.scss */
 .form-gs-container- fieldset {
   border: none;
   margin: 0;
   padding: 0; }
 
-/* line 681, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 681, library/source/compass/sass/_defaults.scss */
 .form-gs-container- label {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px); }
 
-/* line 687, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 687, library/source/compass/sass/_defaults.scss */
 .input-q- {
   border: none;
   margin: .2em; }
 
-/* line 692, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 692, library/source/compass/sass/_defaults.scss */
 .form-gs-container- input:hover, .form-gs-container- input:focus {
   border: none; }
 
-/* line 696, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 696, library/source/compass/sass/_defaults.scss */
 .form-gs-container- form input[type=submit] {
   background: url("library/images/icons/icon-black-search.png") no-repeat center center;
   width: 20px;
@@ -981,27 +982,27 @@ li.widget_pages li:before {
   color: transparent;
   font-size: 0; }
 
-/* line 705, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 705, library/source/compass/sass/_defaults.scss */
 .form-gs-container- form input[type=submit]:hover {
   background-color: #cc3333; }
 
 /* END Top Navigation and Search */
 /* START - Nicholls Primary Menu */
-/* line 713, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 713, library/source/compass/sass/_defaults.scss */
 .menu-primary-container- {
   text-align: left;
   clear: both;
   position: relative;
   z-index: 1001; }
 
-/* line 720, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 720, library/source/compass/sass/_defaults.scss */
 .menu-primary- {
   height: 4.4em;
   margin: 0;
   padding: 0;
   border-top: 1px solid #000; }
 
-/* line 727, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 727, library/source/compass/sass/_defaults.scss */
 .menu-primary- .nicholls-menu-list- {
   list-style-type: none;
   list-style-position: inside;
@@ -1009,7 +1010,7 @@ li.widget_pages li:before {
   margin: 0;
   padding: 0; }
 
-/* line 735, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 735, library/source/compass/sass/_defaults.scss */
 .menu-primary- .nicholls-menu-list- .nicholls-menu-item {
   list-style-type: none;
   list-style-position: inside;
@@ -1024,40 +1025,40 @@ li.widget_pages li:before {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc; }
 
-/* line 753, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 753, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-list- .nicholls-menu-item:first-child {
   margin-left: 2.4em; }
 
-/* line 757, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 757, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-list- .nicholls-menu-item .nicholls-menu-item-link {
   margin: 0;
   display: block;
   height: 2.4em;
   padding-bottom: .3em; }
 
-/* line 766, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 766, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-item a.nicholls-menu-item-link, .nicholls-menu-item a.nicholls-menu-item-link:link, .nicholls-menu-item a.nicholls-menu-item-link:active, .nicholls-menu-item a.nicholls-menu-item-link:visited {
   text-decoration: none;
   color: #fff;
   text-align: center;
   margin-top: 36px; }
 
-/* line 773, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 773, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-item a.nicholls-menu-item-link:hover {
   text-decoration: none;
   background-color: #cc3333;
   color: #fff; }
 
-/* line 779, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 779, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-selected, .nicholls-menu-selected a, .nicholls-menu-selected a:link, .nicholls-menu-selected a:active, .nicholls-menu-selected a:visited {
   background: #cc3333;
   color: white; }
 
-/* line 784, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 784, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-current- {
   background-color: #aaae87; }
 
-/* line 788, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 788, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-current- .nicholls-menu-item-link {
   background-color: #aaae87;
   *zoom: 1;
@@ -1071,11 +1072,11 @@ li.widget_pages li:before {
   background-image: -ms-linear-gradient(top, #aaae87 0%, #666850 100%);
   background-image: linear-gradient(top, #aaae87 0%, #666850 100%); }
 
-/* line 794, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 794, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-future- {
   background-color: #7a2224; }
 
-/* line 798, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 798, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-future- .nicholls-menu-item-link {
   background-color: #7a2224;
   *zoom: 1;
@@ -1089,11 +1090,11 @@ li.widget_pages li:before {
   background-image: -ms-linear-gradient(top, #7a2224 0%, #491415 100%);
   background-image: linear-gradient(top, #7a2224 0%, #491415 100%); }
 
-/* line 804, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 804, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-life- {
   background-color: #f3ae2f; }
 
-/* line 808, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 808, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-life- .nicholls-menu-item-link {
   background-color: #f3ae2f;
   *zoom: 1;
@@ -1107,11 +1108,11 @@ li.widget_pages li:before {
   background-image: -ms-linear-gradient(top, #f3ae2f 0%, #92681c 100%);
   background-image: linear-gradient(top, #f3ae2f 0%, #92681c 100%); }
 
-/* line 814, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 814, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-athletics- {
   background-color: #467d80; }
 
-/* line 818, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 818, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-athletics- .nicholls-menu-item-link {
   background-color: #467d80;
   *zoom: 1;
@@ -1125,11 +1126,11 @@ li.widget_pages li:before {
   background-image: -ms-linear-gradient(top, #467d80 0%, #2a4a4d 100%);
   background-image: linear-gradient(top, #467d80 0%, #2a4a4d 100%); }
 
-/* line 824, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 824, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-friends- {
   background-color: #a45c0b; }
 
-/* line 828, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 828, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-friends- .nicholls-menu-item-link {
   background-color: #a45c0b;
   *zoom: 1;
@@ -1143,11 +1144,11 @@ li.widget_pages li:before {
   background-image: -ms-linear-gradient(top, #a45c0b 0%, #623706 100%);
   background-image: linear-gradient(top, #a45c0b 0%, #623706 100%); }
 
-/* line 834, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 834, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-administration- {
   background-color: #52616e; }
 
-/* line 838, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 838, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-administration- .nicholls-menu-item-link {
   background-color: #52616e;
   *zoom: 1;
@@ -1161,16 +1162,16 @@ li.widget_pages li:before {
   background-image: -ms-linear-gradient(top, #52616e 0%, #313a41 100%);
   background-image: linear-gradient(top, #52616e 0%, #313a41 100%); }
 
-/* line 844, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 844, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-friends- .nicholls-menu-contents {
   margin-left: -30em; }
 
-/* line 848, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 848, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-administration- .nicholls-menu-contents {
   margin-left: -30em; }
 
 /* END - Nicholls Primary Menu */
-/* line 855, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 855, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-content-container- {
   position: absolute;
   top: 3em;
@@ -1179,23 +1180,23 @@ li.widget_pages li:before {
   background: #cccccc url("library/images/nicholls-menu-pointer-down.png") no-repeat;
   margin: 0; }
 
-/* line 864, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 864, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-future-container {
   background-position: 15em 0em; }
 
-/* line 868, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 868, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-current-container {
   background-position: 26em 0em; }
 
-/* line 872, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 872, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-administration-container {
   background-position: 39em 0em; }
 
-/* line 876, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 876, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-friends-container {
   background-position: 54em 0em; }
 
-/* line 880, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 880, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents {
   background: white;
   display: none;
@@ -1205,7 +1206,7 @@ li.widget_pages li:before {
   -webkit-box-shadow: 2px 2px 6px #666;
   box-shadow: 2px 2px 6px #666; }
 
-/* line 890, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 890, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .mm-content-base {
   position: relative;
   z-index: 1003;
@@ -1217,7 +1218,7 @@ li.widget_pages li:before {
   -webkit-box-shadow: 2px 2px 6px #666;
   box-shadow: 2px 2px 6px #666; }
 
-/* line 902, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 902, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .nicholls-menu-title- {
   border-bottom: 1px solid #ccc;
   margin: 0;
@@ -1225,38 +1226,38 @@ li.widget_pages li:before {
   font-weight: 800;
   color: #cc3333; }
 
-/* line 910, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 910, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .column- {
   float: left;
   width: 16em;
   /*width of each menu column*/
   margin: .4em .4em 0 .6em; }
 
-/* line 916, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 916, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .column- ul {
   margin: 0 0 0 .5em;
   padding: 0;
   list-style-type: none; }
 
-/* line 922, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 922, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .column- ul li {
   padding-bottom: .4em; }
 
-/* line 926, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 926, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .column- h2, .nicholls-menu-contents .column- h3, .nicholls-menu-contents .column- h4 {
   color: #cc3333;
   margin: .2em 0 .4em 0; }
 
-/* line 931, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 931, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .column- ul li a {
   text-decoration: none; }
 
-/* line 935, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 935, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .column- ul li a:hover {
   color: red; }
 
 /* START - Nicholls Header */
-/* line 941, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 941, library/source/compass/sass/_defaults.scss */
 .header-nicholls-wrapper- {
   width: 100%;
   text-align: left;
@@ -1265,12 +1266,12 @@ li.widget_pages li:before {
   -moz-background-size: cover;
   -webkit-background-size: cover; }
 
-/* line 950, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 950, library/source/compass/sass/_defaults.scss */
 .header-nicholls- {
   margin: 0 auto 0 auto;
   overflow: hidden; }
 
-/* line 955, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 955, library/source/compass/sass/_defaults.scss */
 .info-primary- {
   margin: 0;
   padding: 0;
@@ -1279,7 +1280,7 @@ li.widget_pages li:before {
   -moz-box-shadow: 3px 3px 3px 0px #333333;
   box-shadow: 3px 3px 3px 0px #333333; }
 
-/* line 962, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 962, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- .info-primary-content- {
   background: white;
   clear: both;
@@ -1288,14 +1289,14 @@ li.widget_pages li:before {
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc; }
 
-/* line 972, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 972, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- ul {
   list-style-type: none;
   clear: both;
   margin: 0;
   padding: 0; }
 
-/* line 979, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 979, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- ul li {
   margin: .4em 0;
   font-size: 90%;
@@ -1303,55 +1304,55 @@ li.widget_pages li:before {
   color: #cc3333;
   display: block; }
 
-/* line 987, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 987, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- a, .header-nicholls- .info-primary- a:link, .header-nicholls- .info-primary- ul li a, .header-nicholls- .info-primary- ul li a:link, .header-nicholls- .info-primary- ul li a:active, .header-nicholls- .info-primary- ul li a:visited {
   color: #cc3333;
   text-decoration: none; }
 
-/* line 992, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 992, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- a:hover, .header-nicholls- .info-primary- ul li a:hover {
   text-decoration: underline; }
 
-/* line 996, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 996, library/source/compass/sass/_defaults.scss */
 .info-contact {
   font-size: 102%;
   margin-top: .8em;
   color: #fff; }
 
-/* line 1002, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 1002, library/source/compass/sass/_defaults.scss */
 .info-contact a, .info-contact a:link, .info-contact a:active, .info-contact a:visited {
   color: #fff;
   text-decoration: none; }
 
-/* line 1007, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 1007, library/source/compass/sass/_defaults.scss */
 .info-contact a:hover {
   color: #fff;
   text-decoration: underline; }
 
-/* line 1012, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 1012, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- .info-programs {
   padding-bottom: .3em;
   padding-left: .4em; }
 
-/* line 1017, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 1017, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- .info-request {
   padding-bottom: .3em;
   padding-left: .4em; }
 
 /* END - Nicholls Header */
 /* START Header */
-/* line 1026, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 1026, library/source/compass/sass/_defaults.scss */
 .header- {
   color: white;
   background: transparent url("library/images/45pc_black.png"); }
 
-/* line 1031, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 1031, library/source/compass/sass/_defaults.scss */
 .header- .blog-title-prefix- {
   display: block;
   margin: 0;
   padding: .5em 0 0 .4em; }
 
-/* line 1037, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 1037, library/source/compass/sass/_defaults.scss */
 .header- .blog-title- {
   font-family: 'Crimson Text', 'Times New Roman', times, Georgia, serif;
   font-weight: 400;
@@ -1361,40 +1362,40 @@ li.widget_pages li:before {
   color: white;
   text-shadow: black 1px 1px 1px; }
 
-/* line 1048, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 1048, library/source/compass/sass/_defaults.scss */
 .header- .blog-title- a, .header- .blog-title- a:link, .header- .blog-title- a:active, .header- .blog-title- a:visited {
   text-decoration: none;
   color: white; }
 
-/* line 1053, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 1053, library/source/compass/sass/_defaults.scss */
 .header- .blog-title- a:hover {
   text-decoration: underline; }
 
-/* line 1057, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 1057, library/source/compass/sass/_defaults.scss */
 .header- .blog-description- {
   font-size: 92%;
   padding: 0 0 .2em .5em; }
 
 /* END Header */
 /* START - footer */
-/* line 1066, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 1066, library/source/compass/sass/_defaults.scss */
 .footer- .column- {
   float: left;
   width: 12em;
   /*width of each menu column*/
   margin: .4em .4em 0 0; }
 
-/* line 1072, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 1072, library/source/compass/sass/_defaults.scss */
 .footer- .column- ul {
   margin: 0 0 0 .5em;
   padding: 0;
   list-style-type: none; }
 
-/* line 1078, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 1078, library/source/compass/sass/_defaults.scss */
 .footer- .column- ul li {
   padding-bottom: .4em; }
 
-/* line 1082, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 1082, library/source/compass/sass/_defaults.scss */
 .footer- .column- h2, .footer- .column- h3, .footer- .column- h4 {
   color: #cc3333;
   margin: .2em 0 .4em 0;
@@ -1403,7 +1404,7 @@ li.widget_pages li:before {
 /* END - Footer */
 /* END - Custom Site */
 /* START Hidden Elements */
-/* line 1102, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 1102, library/source/compass/sass/_defaults.scss */
 .hide, .access- {
   position: absolute !important;
   top: -9999px !important;
@@ -1411,14 +1412,14 @@ li.widget_pages li:before {
 
 /* END Hidden Elements */
 /* START Conditional Elements */
-/* line 1112, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 1112, library/source/compass/sass/_defaults.scss */
 .widgets-primary-active .container- {
   border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #cccccc; }
 
 /* Widgets Inactive (Primary & Secondary) - Container goes full width */
-/* line 1119, /Users/Shared/ev3rywh3re/work.funroe.net/wordpress/wp-content-current/themes/nicholls-2012-core/library/source/compass/sass/_defaults.scss */
+/* line 1119, library/source/compass/sass/_defaults.scss */
 body.widgets-primary-inactive.widgets-secondary-inactive .container- {
   float: none;
   width: auto;
@@ -1460,7 +1461,7 @@ body {
   -webkit-background-clip: content-box;
   -moz-background-clip: content-box;
   background-clip: content-box; }
-  /* line 38, /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   .wrapper-:after {
     content: "";
     display: table;
@@ -1573,7 +1574,7 @@ body {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: top left; }
-  /* line 38, /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   .nav-top-:after {
     content: "";
     display: table;
@@ -1590,7 +1591,7 @@ body {
   padding-right: 0;
   padding: 0;
   height: 28em; }
-  /* line 38, /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   .header-nicholls-:after {
     content: "";
     display: table;
@@ -1684,8 +1685,93 @@ body {
   padding-top: 36px;
   display: block; }
 
+/* START - Nicholls Home Menu */
+/* line 246, library/source/compass/sass/style.scss */
+.nicholls-home-list-container- {
+  text-align: left;
+  clear: both;
+  position: relative;
+  z-index: 1001; }
+
+/* line 253, library/source/compass/sass/style.scss */
+.nicholls-home-list-container- .nicholls-home-list- {
+  list-style-type: none;
+  list-style-position: inside;
+  clear: both;
+  margin: 0;
+  padding: 0; }
+
+/* line 261, library/source/compass/sass/style.scss */
+.nicholls-home-list-container- .nicholls-home-list- .nicholls-home-list-item {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 130px 0 0 0;
+  float: left;
+  font-weight: 600;
+  color: #cc3333;
+  display: block;
+  width: 132px;
+  text-align: center;
+  margin-left: .5em; }
+
+/* line 274, library/source/compass/sass/style.scss */
+.nicholls-home-list-apply- {
+  background-image: url("library/images/sprites/nicholls-home-sprite.png");
+  background-position: 50% -450px !important;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  display: block; }
+
+/* line 278, library/source/compass/sass/style.scss */
+.nicholls-home-list-calendar- {
+  background-image: url("library/images/sprites/nicholls-home-sprite.png");
+  background-position: 50% -900px !important;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  display: block; }
+
+/* line 282, library/source/compass/sass/style.scss */
+.nicholls-home-list-explore- {
+  background-image: url("library/images/sprites/nicholls-home-sprite.png");
+  background-position: 50% 0 !important;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  display: block; }
+
+/* line 286, library/source/compass/sass/style.scss */
+.nicholls-home-list-finaid- {
+  background-image: url("library/images/sprites/nicholls-home-sprite.png");
+  background-position: 50% -150px !important;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  display: block; }
+
+/* line 290, library/source/compass/sass/style.scss */
+.nicholls-home-list-majors- {
+  background-image: url("library/images/sprites/nicholls-home-sprite.png");
+  background-position: 50% -750px !important;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  display: block; }
+
+/* line 294, library/source/compass/sass/style.scss */
+.nicholls-home-list-tour- {
+  background-image: url("library/images/sprites/nicholls-home-sprite.png");
+  background-position: 50% -600px !important;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  display: block; }
+
+/* line 298, library/source/compass/sass/style.scss */
+.nicholls-home-list-social- {
+  background-image: url("library/images/sprites/nicholls-home-sprite.png");
+  background-position: 50% -300px !important;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  display: block; }
+
 @media (min-width: 74em) {
-  /* line 245, library/source/compass/sass/style.scss */
+  /* line 305, library/source/compass/sass/style.scss */
   .wrapper- {
     *zoom: 1;
     width: 72.816em;
@@ -1701,13 +1787,13 @@ body {
     -webkit-background-clip: content-box;
     -moz-background-clip: content-box;
     background-clip: content-box; }
-    /* line 38, /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+    /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
     .wrapper-:after {
       content: "";
       display: table;
       clear: both; }
 
-  /* line 250, library/source/compass/sass/style.scss */
+  /* line 310, library/source/compass/sass/style.scss */
   .container- {
     width: 74.307%;
     float: left;
@@ -1721,7 +1807,7 @@ body {
     padding: 0.604%;
     font-size: 96%; }
 
-  /* line 260, library/source/compass/sass/style.scss */
+  /* line 320, library/source/compass/sass/style.scss */
   .widgets-primary- {
     width: 24.094%;
     float: right;
@@ -1731,7 +1817,7 @@ body {
     font-size: 94%;
     float: left; }
 
-  /* line 268, library/source/compass/sass/style.scss */
+  /* line 328, library/source/compass/sass/style.scss */
   .widgets-secondary- {
     width: 24.094%;
     float: right;
@@ -1741,7 +1827,7 @@ body {
     font-size: 94%;
     float: left; }
 
-  /* line 275, library/source/compass/sass/style.scss */
+  /* line 335, library/source/compass/sass/style.scss */
   .nav-top- {
     *zoom: 1;
     width: 72.816em;
@@ -1749,7 +1835,7 @@ body {
     margin-right: auto;
     padding-left: 0;
     padding-right: 0; }
-    /* line 38, /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+    /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
     .nav-top-:after {
       content: "";
       display: table;
@@ -1757,7 +1843,7 @@ body {
 
   /* Nichols Menu - Primary */
   /* Nicholls Header */
-  /* line 283, library/source/compass/sass/style.scss */
+  /* line 343, library/source/compass/sass/style.scss */
   .header-nicholls- {
     *zoom: 1;
     width: 72.816em;
@@ -1766,19 +1852,19 @@ body {
     padding-left: 0;
     padding-right: 0;
     padding: 0; }
-    /* line 38, /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+    /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
     .header-nicholls-:after {
       content: "";
       display: table;
       clear: both; }
-    /* line 287, library/source/compass/sass/style.scss */
+    /* line 347, library/source/compass/sass/style.scss */
     .header-nicholls- .header- {
       width: 100%;
       padding: 0 .5em;
       margin: 20em 0 0 0;
       height: 8em; } }
 @media (min-width: 42em) and (max-width: 62em) {
-  /* line 298, library/source/compass/sass/style.scss */
+  /* line 358, library/source/compass/sass/style.scss */
   .wrapper- {
     *zoom: 1;
     width: 40.574em;
@@ -1794,14 +1880,14 @@ body {
     -webkit-background-clip: content-box;
     -moz-background-clip: content-box;
     background-clip: content-box; }
-    /* line 38, /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+    /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
     .wrapper-:after {
       content: "";
       display: table;
       clear: both; }
 
   /* Layout */
-  /* line 305, library/source/compass/sass/style.scss */
+  /* line 365, library/source/compass/sass/style.scss */
   .container- {
     width: 100%;
     float: left;
@@ -1809,7 +1895,7 @@ body {
     display: inline;
     font-size: 96%; }
 
-  /* line 310, library/source/compass/sass/style.scss */
+  /* line 370, library/source/compass/sass/style.scss */
   .content- {
     width: 100%;
     float: left;
@@ -1817,7 +1903,7 @@ body {
     display: inline;
     margin-left: 3.922%; }
 
-  /* line 315, library/source/compass/sass/style.scss */
+  /* line 375, library/source/compass/sass/style.scss */
   .widgets-primary- {
     width: 31.887%;
     float: left;
@@ -1826,7 +1912,7 @@ body {
     padding: 0 1.2em 0 0;
     font-size: 94%; }
 
-  /* line 323, library/source/compass/sass/style.scss */
+  /* line 383, library/source/compass/sass/style.scss */
   .widgets-secondary- {
     width: 31.887%;
     float: left;
@@ -1836,7 +1922,7 @@ body {
     font-size: 94%;
     clear: right; }
 
-  /* line 332, library/source/compass/sass/style.scss */
+  /* line 392, library/source/compass/sass/style.scss */
   .nav-top- {
     *zoom: 1;
     width: 40.574em;
@@ -1844,7 +1930,7 @@ body {
     margin-right: auto;
     padding-left: 0;
     padding-right: 0; }
-    /* line 38, /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+    /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
     .nav-top-:after {
       content: "";
       display: table;
@@ -1852,7 +1938,7 @@ body {
 
   /* Nichols Menu - Primary */
   /* Nicholls Header */
-  /* line 340, library/source/compass/sass/style.scss */
+  /* line 400, library/source/compass/sass/style.scss */
   .header-nicholls- {
     *zoom: 1;
     width: 40.574em;
@@ -1861,12 +1947,12 @@ body {
     padding-left: 0;
     padding-right: 0;
     padding: 0; }
-    /* line 38, /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+    /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
     .header-nicholls-:after {
       content: "";
       display: table;
       clear: both; }
-    /* line 344, library/source/compass/sass/style.scss */
+    /* line 404, library/source/compass/sass/style.scss */
     .header-nicholls- .header- {
       *zoom: 1;
       width: 40.574em;
@@ -1876,13 +1962,13 @@ body {
       padding-right: 0;
       float: right;
       margin: 6.7em 0 0 0; }
-      /* line 38, /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+      /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
       .header-nicholls- .header-:after {
         content: "";
         display: table;
         clear: both; } }
 @media (min-width: 28em) and (max-width: 42em) {
-  /* line 354, library/source/compass/sass/style.scss */
+  /* line 414, library/source/compass/sass/style.scss */
   .wrapper- {
     *zoom: 1;
     width: 26.756em;
@@ -1898,14 +1984,14 @@ body {
     -webkit-background-clip: content-box;
     -moz-background-clip: content-box;
     background-clip: content-box; }
-    /* line 38, /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+    /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
     .wrapper-:after {
       content: "";
       display: table;
       clear: both; }
 
   /* Layout */
-  /* line 361, library/source/compass/sass/style.scss */
+  /* line 421, library/source/compass/sass/style.scss */
   .container- {
     width: 100%;
     float: left;
@@ -1913,14 +1999,14 @@ body {
     display: inline;
     font-size: 96%; }
 
-  /* line 366, library/source/compass/sass/style.scss */
+  /* line 426, library/source/compass/sass/style.scss */
   .content- {
     width: 100%;
     float: left;
     margin-right: 3.289%;
     display: inline; }
 
-  /* line 370, library/source/compass/sass/style.scss */
+  /* line 430, library/source/compass/sass/style.scss */
   .widgets-primary- {
     width: 100%;
     float: right;
@@ -1929,7 +2015,7 @@ body {
     display: inline;
     font-size: 94%; }
 
-  /* line 376, library/source/compass/sass/style.scss */
+  /* line 436, library/source/compass/sass/style.scss */
   .widgets-secondary- {
     width: 100%;
     float: right;
@@ -1939,7 +2025,7 @@ body {
     font-size: 94%;
     clear: right; }
 
-  /* line 383, library/source/compass/sass/style.scss */
+  /* line 443, library/source/compass/sass/style.scss */
   .nav-top- {
     *zoom: 1;
     width: 26.756em;
@@ -1947,7 +2033,7 @@ body {
     margin-right: auto;
     padding-left: 0;
     padding-right: 0; }
-    /* line 38, /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+    /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
     .nav-top-:after {
       content: "";
       display: table;
@@ -1955,7 +2041,7 @@ body {
 
   /* Nichols Menu - Primary */
   /* Nicholls Header */
-  /* line 391, library/source/compass/sass/style.scss */
+  /* line 451, library/source/compass/sass/style.scss */
   .header-nicholls- {
     *zoom: 1;
     width: 26.756em;
@@ -1964,12 +2050,12 @@ body {
     padding-left: 0;
     padding-right: 0;
     padding: 0; }
-    /* line 38, /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+    /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
     .header-nicholls-:after {
       content: "";
       display: table;
       clear: both; }
-    /* line 395, library/source/compass/sass/style.scss */
+    /* line 455, library/source/compass/sass/style.scss */
     .header-nicholls- .header- {
       *zoom: 1;
       width: 26.756em;
@@ -1979,13 +2065,13 @@ body {
       padding-right: 0;
       float: right;
       margin: 6.7em 0 0 0; }
-      /* line 38, /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+      /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
       .header-nicholls- .header-:after {
         content: "";
         display: table;
         clear: both; } }
 @media (min-width: 0em) and (max-width: 28em) {
-  /* line 405, library/source/compass/sass/style.scss */
+  /* line 465, library/source/compass/sass/style.scss */
   .wrapper- {
     *zoom: 1;
     width: 17.544em;
@@ -2001,14 +2087,14 @@ body {
     -webkit-background-clip: content-box;
     -moz-background-clip: content-box;
     background-clip: content-box; }
-    /* line 38, /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+    /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
     .wrapper-:after {
       content: "";
       display: table;
       clear: both; }
 
   /* Layout */
-  /* line 412, library/source/compass/sass/style.scss */
+  /* line 472, library/source/compass/sass/style.scss */
   .container- {
     width: 100%;
     float: left;
@@ -2016,14 +2102,14 @@ body {
     display: inline;
     font-size: 96%; }
 
-  /* line 417, library/source/compass/sass/style.scss */
+  /* line 477, library/source/compass/sass/style.scss */
   .content- {
     width: 100%;
     float: left;
     margin-right: 5.016%;
     display: inline; }
 
-  /* line 421, library/source/compass/sass/style.scss */
+  /* line 481, library/source/compass/sass/style.scss */
   .widgets-primary- {
     width: 100%;
     float: left;
@@ -2031,7 +2117,7 @@ body {
     display: inline;
     font-size: 94%; }
 
-  /* line 427, library/source/compass/sass/style.scss */
+  /* line 487, library/source/compass/sass/style.scss */
   .widgets-secondary- {
     width: 100%;
     float: left;
@@ -2040,7 +2126,7 @@ body {
     font-size: 94%;
     clear: right; }
 
-  /* line 434, library/source/compass/sass/style.scss */
+  /* line 494, library/source/compass/sass/style.scss */
   .nav-top- {
     *zoom: 1;
     width: 17.544em;
@@ -2048,7 +2134,7 @@ body {
     margin-right: auto;
     padding-left: 0;
     padding-right: 0; }
-    /* line 38, /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+    /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
     .nav-top-:after {
       content: "";
       display: table;
@@ -2056,7 +2142,7 @@ body {
 
   /* Nichols Menu - Primary */
   /* Nicholls Header */
-  /* line 442, library/source/compass/sass/style.scss */
+  /* line 502, library/source/compass/sass/style.scss */
   .header-nicholls- {
     *zoom: 1;
     width: 17.544em;
@@ -2065,12 +2151,12 @@ body {
     padding-left: 0;
     padding-right: 0;
     padding: 0; }
-    /* line 38, /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+    /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
     .header-nicholls-:after {
       content: "";
       display: table;
       clear: both; }
-    /* line 446, library/source/compass/sass/style.scss */
+    /* line 506, library/source/compass/sass/style.scss */
     .header-nicholls- .header- {
       *zoom: 1;
       width: 17.544em;
@@ -2080,7 +2166,7 @@ body {
       padding-right: 0;
       float: right;
       margin: 6.7em 0 0 0; }
-      /* line 38, /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+      /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
       .header-nicholls- .header-:after {
         content: "";
         display: table;

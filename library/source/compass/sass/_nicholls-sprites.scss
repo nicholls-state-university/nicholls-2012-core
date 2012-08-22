@@ -1,6 +1,8 @@
 @import "compass/utilities/sprites/base";
 
 // Define Sprite Configurations
+
+// Nicholls Menu
 $nicholls-menu-sprite-target: "library/images/sprites/nicholls-menu-sprite.png";
 $nicholls-menu-sprite-map: sprite-map("sprites/icons-menu/*.png",
   $position: 0%,
@@ -8,13 +10,27 @@ $nicholls-menu-sprite-map: sprite-map("sprites/icons-menu/*.png",
   $repeat: no-repeat,
   $icon-menu-dimensions: true,
   $icon-menu-spacing: 20px ); /**/
-  
+ 
 $nicholls-menu-sprite-height: 36px;
 $nicholls-menu-sprite-width: 36px;
 
-
 // Sprite Name
 $nicholls-menu-sprite-map-name: sprite-map-name( $nicholls-menu-sprite-map );
+
+// Nicholls Home
+$nicholls-home-sprite-target: "library/images/sprites/nicholls-home-sprite.png";
+$nicholls-home-sprite-map: sprite-map("sprites/icons-home/*.png",
+  $position: 0%,
+  $spacing: 50px,
+  $repeat: no-repeat,
+  $icon-menu-dimensions: true,
+  $icon-menu-spacing: 20px ); /**/
+   
+$nicholls-home-sprite-height: 100px;
+$nicholls-home-sprite-width: 100px;
+
+// Sprite Name
+$nicholls-home-sprite-map-name: sprite-map-name( $nicholls-home-sprite-map );
 
 
 // mixin
@@ -35,6 +51,16 @@ $nicholls-menu-sprite-map-name: sprite-map-name( $nicholls-menu-sprite-map );
 		display: block;
 }
 
+// mixin
+@mixin nicholls_home_icon( $name ) {
+		background-image: url($nicholls-home-sprite-target);
+		// Adjusted so that icons are horizontally centered.
+		background-position: sprite-position($nicholls-home-sprite-map, $name, 50%) !important;
+		background-repeat: no-repeat;
+		padding-top: $nicholls-home-sprite-height;
+		display: block;
+}
+
 // mixin-backup - with width.
 @mixin nicholls_menu_icon_bak( $name ) {
 		background-image: url($nicholls-menu-sprite-target);
@@ -52,4 +78,4 @@ $nicholls-menu-sprite-map-name: sprite-map-name( $nicholls-menu-sprite-map );
 
 // move and rename
 $rename: rename-sprite($nicholls-menu-sprite-map, $nicholls-menu-sprite-target);
-
+$rename: rename-sprite($nicholls-home-sprite-map, $nicholls-home-sprite-target);
