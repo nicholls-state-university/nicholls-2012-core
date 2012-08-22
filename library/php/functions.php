@@ -173,6 +173,20 @@ function nicholls_get_logo( $logo_style, $logo_size, $link = false, $return = tr
 		
 }
 
+/**
+* Nicholls Full Page
+*
+* Filter function to be used to disable sidebar widgets on page templates.
+*
+*
+* @since 0.1
+*/
+function fnbx_template_core_full_page() {
+	// Widget Sidebar Group
+	add_filter( 'sidebars_widgets', 'core_widget_disable_filter' );
+	remove_action( 'fnbx_container_end', 'fnbx_default_widget_sidebar' );
+}
+
 function nicholls_core_debug_info() {
 
 	echo "<!--\n";

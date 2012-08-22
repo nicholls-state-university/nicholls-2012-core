@@ -3,11 +3,7 @@
 Template Name: Full Page, No Sidebars
 */
 
-function fnbx_template_core_full_page() {
-	// Widget Sidebar Group
-	add_filter( 'sidebars_widgets', 'core_widget_disable_filter' );
-	remove_action( 'fnbx_container_end', 'fnbx_default_widget_sidebar' );
-}
+// Filter to clear out sidebar widgets to make full page
 add_action( 'fnbx_child_init', 'fnbx_template_core_full_page');
 
 ?>
