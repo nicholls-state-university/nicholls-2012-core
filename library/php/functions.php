@@ -181,10 +181,19 @@ function nicholls_get_logo( $logo_style, $logo_size, $link = false, $return = tr
 *
 * @since 0.1
 */
-function fnbx_template_core_full_page() {
+function nicholls_template_core_full_page() {
 	// Widget Sidebar Group
-	add_filter( 'sidebars_widgets', 'core_widget_disable_filter' );
+	add_filter( 'sidebars_widgets', 'nicholls_core_widget_disable_filter' );
 	remove_action( 'fnbx_container_end', 'fnbx_default_widget_sidebar' );
+}
+
+// Remove Sidebars Widgets
+if ( !function_exists( 'nicholls_core_widget_disable_filter' ) ) {
+	function nicholls_core_widget_disable_filter( $widget_groups ) {
+		$widget_groups['primary'] = array();
+		$widget_groups['secondary'] = array();
+		return $widget_groups;
+	}
 }
 
 function nicholls_core_debug_info() {

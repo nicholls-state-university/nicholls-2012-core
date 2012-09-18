@@ -170,7 +170,11 @@ function fnbx_defaut_init_actions() {
 	
 	// Nicholls MegaMenu
 	// add_action( 'fnbx_footer', 'nicholls_megamenu_load' );
-
+	
+	// Nicholls Footer - custom footer.php - Layout
+	add_action( 'nicholls_footer_start', 'nicholls_layout_wrapper_element_open' );	
+	add_action( 'nicholls_footer_end', 'nicholls_layout_wrapper_element_close' );
+	
 	// The default actions get... an action. 
 	do_action( 'fnbx_defaut_actions' );
 }

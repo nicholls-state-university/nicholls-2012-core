@@ -4,7 +4,7 @@ Template Name: Full Page, No Sidebars
 */
 
 // Filter to clear out sidebar widgets to make full page
-add_action( 'fnbx_child_init', 'fnbx_template_core_full_page');
+add_action( 'fnbx_child_init', 'nicholls_template_core_full_page');
 
 ?>
 

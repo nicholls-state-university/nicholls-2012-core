@@ -115,11 +115,3 @@ function fnbx_javascript_enqueue_core() {
 	wp_enqueue_script( 'core-js' , FNBX_CORE_URL . '/library/js/core.js', array( 'jquery' ), '1.0' );	
 }
 
-
-// Remove Sidebars Widgets
-function fnbx_core_widget_disable_filter( $widget_groups ) {
-	$widget_groups['primary'] = array();
-	$widget_groups['secondary'] = array();
-	return $widget_groups;
-}
-// $widget_groups = apply_filters( 'fnbx_widgets',  $widget_groups );

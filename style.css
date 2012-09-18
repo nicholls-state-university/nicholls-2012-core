@@ -1640,7 +1640,7 @@ body {
 /* line 219, library/source/compass/sass/style.scss */
 .nicholls-menu-current- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
-  background-position: 50% -946px !important;
+  background-position: 50% -1368px !important;
   background-repeat: no-repeat;
   padding-top: 36px;
   display: block; }
@@ -1648,7 +1648,7 @@ body {
 /* line 223, library/source/compass/sass/style.scss */
 .nicholls-menu-future- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
-  background-position: 50% -1118px !important;
+  background-position: 50% -1032px !important;
   background-repeat: no-repeat;
   padding-top: 36px;
   display: block; }
@@ -1656,7 +1656,7 @@ body {
 /* line 227, library/source/compass/sass/style.scss */
 .nicholls-menu-administration- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
-  background-position: 50% -1720px !important;
+  background-position: 50% -1958px !important;
   background-repeat: no-repeat;
   padding-top: 36px;
   display: block; }
@@ -1664,7 +1664,7 @@ body {
 /* line 231, library/source/compass/sass/style.scss */
 .nicholls-menu-life- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
-  background-position: 50% -1892px !important;
+  background-position: 50% -1790px !important;
   background-repeat: no-repeat;
   padding-top: 36px;
   display: block; }
@@ -1672,7 +1672,7 @@ body {
 /* line 235, library/source/compass/sass/style.scss */
 .nicholls-menu-athletics- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
-  background-position: 50% -860px !important;
+  background-position: 50% -1622px !important;
   background-repeat: no-repeat;
   padding-top: 36px;
   display: block; }
@@ -1680,7 +1680,7 @@ body {
 /* line 239, library/source/compass/sass/style.scss */
 .nicholls-menu-friends- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
-  background-position: 50% -516px !important;
+  background-position: 50% -1286px !important;
   background-repeat: no-repeat;
   padding-top: 36px;
   display: block; }
@@ -1705,29 +1705,29 @@ body {
 .nicholls-home-list-container- .nicholls-home-list- .nicholls-home-list-item {
   list-style-type: none;
   list-style-position: inside;
-  padding: 130px 0 0 0;
+  padding: 100px 0 0 0;
   float: left;
   font-weight: 600;
   color: #cc3333;
   display: block;
-  width: 132px;
+  width: 100px;
   text-align: center;
   margin-left: .5em; }
 
 /* line 274, library/source/compass/sass/style.scss */
 .nicholls-home-list-apply- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
-  background-position: 50% -450px !important;
+  background-position: 50% -390px !important;
   background-repeat: no-repeat;
-  padding-top: 100px;
+  padding-top: 80px;
   display: block; }
 
 /* line 278, library/source/compass/sass/style.scss */
 .nicholls-home-list-calendar- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
-  background-position: 50% -900px !important;
+  background-position: 50% -780px !important;
   background-repeat: no-repeat;
-  padding-top: 100px;
+  padding-top: 80px;
   display: block; }
 
 /* line 282, library/source/compass/sass/style.scss */
@@ -1735,39 +1735,39 @@ body {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% 0 !important;
   background-repeat: no-repeat;
-  padding-top: 100px;
+  padding-top: 80px;
   display: block; }
 
 /* line 286, library/source/compass/sass/style.scss */
 .nicholls-home-list-finaid- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
-  background-position: 50% -150px !important;
+  background-position: 50% -260px !important;
   background-repeat: no-repeat;
-  padding-top: 100px;
+  padding-top: 80px;
   display: block; }
 
 /* line 290, library/source/compass/sass/style.scss */
 .nicholls-home-list-majors- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
-  background-position: 50% -750px !important;
+  background-position: 50% -650px !important;
   background-repeat: no-repeat;
-  padding-top: 100px;
+  padding-top: 80px;
   display: block; }
 
 /* line 294, library/source/compass/sass/style.scss */
 .nicholls-home-list-tour- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
-  background-position: 50% -600px !important;
+  background-position: 50% -520px !important;
   background-repeat: no-repeat;
-  padding-top: 100px;
+  padding-top: 80px;
   display: block; }
 
 /* line 298, library/source/compass/sass/style.scss */
 .nicholls-home-list-social- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
-  background-position: 50% -300px !important;
+  background-position: 50% -130px !important;
   background-repeat: no-repeat;
-  padding-top: 100px;
+  padding-top: 80px;
   display: block; }
 
 @media (min-width: 74em) {
