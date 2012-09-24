@@ -14,6 +14,9 @@
 
 	<?php do_action( 'fnbx_container_end', 'container' ) ?>
 	<!-- END: container -->
+	
+<?php do_action( 'fnbx_wrapper_end', 'wrapper' ) ?>
+<!-- END: wrapper -->	
 
 <!-- START: nicholls-footer -->
 <?php do_action( 'nicholls_footer_start', 'footer-nicholls' ) ?> 
@@ -84,9 +87,6 @@
 
 <?php do_action( 'nicholls_footer_end', 'footer-nicholls' ) ?>
 <!-- END: nicholls-footer -->
-
-<?php do_action( 'fnbx_wrapper_end', 'wrapper' ) ?>
-<!-- END: wrapper -->
 
 <?php do_action( 'fnbx_wp_footer_before', 'wp_footer' ) ?>
 <?php wp_footer() ?>

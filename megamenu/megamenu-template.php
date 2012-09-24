@@ -1,14 +1,15 @@
 <div class="menu-primary-container-" id="menu-primary-container">
 
 	<div class="logo-container-wrapper-">
-		<h1 id="logo-container" class="logo-container-"><a class="link-logo-home" href="http://www.nicholls.edu">Nicholls State University</a></h1>
+		<h1 id="logo-container" class="logo-container-"><a class="link-logo-home" href="http://www.nicholls.edu"  tabindex="2">Nicholls State University</a></h1>
+		<div class="info-tagline">people creating possibilities</div>
 		<div class="info-contact">1-877-NICHOLLS <span class="type-normal"> - <a href="http://webmanager.nicholls.edu/nicholls_test//contact">Contact Us</a></span></div>
 	</div>
 
-	<div id="menu-primary" class="menu-primary- color-black-transparent-50">
+	<div id="menu-primary" class="menu-primary-">
 		<ul class="nicholls-menu-list-" id="nicholls-menu-list">
 			<li class="nicholls-menu-item nicholls-menu-current-" id="nicholls-menu-current">
-				<a class="nicholls-menu-item-link nicholls-menu-current-link-" href="http://www.nicholls.edu/current-students">
+				<a class="nicholls-menu-item-link nicholls-menu-current-link-" href="http://www.nicholls.edu/current-students" tabindex="3">
 					Current <br>Students
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-current-contents">
@@ -45,7 +46,7 @@
 				</div>				
 			</li>
 			<li class="nicholls-menu-item nicholls-menu-future-" id="nicholls-menu-future">
-				<a class="nicholls-menu-item-link nicholls-menu-future-link-" href="http://www.nicholls.edu/future-students">
+				<a class="nicholls-menu-item-link nicholls-menu-future-link-" href="http://www.nicholls.edu/future-students" tabindex="4">
 					Future <br/>Students
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-future-contents">
@@ -78,7 +79,7 @@
 				</div>			
 			</li>
 			<li class="nicholls-menu-item nicholls-menu-life-" id="nicholls-menu-life">
-				<a class="nicholls-menu-item-link nicholls-menu-life-link-" href="http://www.nicholls.edu/campus-life">
+				<a class="nicholls-menu-item-link nicholls-menu-life-link-" href="http://www.nicholls.edu/campus-life" tabindex="5">
 					Housing &amp; <br>Campus Life
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-life-contents">
@@ -113,7 +114,7 @@
 				</div>
 			</li>
 			<li class="nicholls-menu-item nicholls-menu-athletics-" id="nicholls-menu-athletics">
-				<a class="nicholls-menu-item-link nicholls-menu-athletics-link-" href="http://www.nicholls.edu/athletics">
+				<a class="nicholls-menu-item-link nicholls-menu-athletics-link-" href="http://www.nicholls.edu/athletics" tabindex="6">
 					Athletics
 				</a>
 			</li>
@@ -150,7 +151,7 @@
 				</div>				
 			</li>
 			<li class="nicholls-menu-item nicholls-menu-administration-" id="nicholls-menu-administration">
-				<a class="nicholls-menu-item-link nicholls-menu-administration-link-" href="http://www.nicholls.edu/faculty-staff">
+				<a class="nicholls-menu-item-link nicholls-menu-administration-link-" href="http://www.nicholls.edu/faculty-staff" tabindex="7">
 					Faculty &amp; <br>Staff
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-administration-contents">
@@ -182,6 +183,27 @@
 						</ul>
 					</div>
 				</div>
+			</li>
+			<li class="nicholls-menu-item nicholls-menu-search-" id="nicholls-menu-search">
+
+				<div class="form-gs-container-" id="form-gs-container">
+					<form method="get" action="http://search.nicholls.edu/search" enctype="application/x-www-form-urlencoded" name="gs" id="gs">
+						<fieldset>
+							<label for="q">Search</label>
+							<input tabindex="1" type="text" value="Search..." class="input-q-" name="q" id="q">
+							<input type="hidden" value="date:D:L:d1" class="input-sort-" name="sort" id="sort">
+							<input type="hidden" value="xml_no_dtd" class="input-output-" name="output" id="output">
+							<input type="hidden" value="UTF-8" class="input-oe-" name="oe" id="oe">
+							<input type="hidden" value="UTF-8" class="input-ie-" name="ie" id="ie">
+							<input type="hidden" value="default_frontend" class="input-client-" name="client" id="client">
+							<input type="hidden" value="default_frontend" class="input-proxystylesheet-" name="proxystylesheet" id="proxystylesheet">
+							<input type="hidden" value="5" class="input-numgm-" name="numgm" id="numgm">
+							<input type="hidden" value="default_collection" class="input-site-" name="site" id="site">
+							<input type="submit" value="Search" class="input-site-" name="search" id="search-">
+						</fieldset>
+					</form>
+				</div>
+					
 			</li>
 		</ul>
 	</div>

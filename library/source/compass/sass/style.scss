@@ -99,7 +99,7 @@ body {
 		
 	float: left;
 	width: 221px;
-	height: 145px;
+	height: 172px;
 	
 	text-align: center;
 
@@ -111,12 +111,14 @@ body {
 	background-image: url( 'library/images/logos/logo-nicholls-white-188x52.png' );	
 	background-color: transparent;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: top center;
+	
+	border-bottom: 1px solid #fff;
 
-
-	margin: .4em 0 0 .5em;
+	margin: .5em 0 0 .5em;
+	padding: 0;
 	width: 188px;
-	height: 52px;
+	height: 58px;
 	
 	display: block;
 	clear: both;
@@ -127,8 +129,8 @@ body {
 		
 	a {
 		display: block;
-		width: 240px;
-		height: 80px;
+		width: 188px;
+		height: 52px;
 		margin: auto auto;
 	}
 		
@@ -138,8 +140,20 @@ body {
 
 }
 
+.footer-nicholls-wrapper- {
+	width: 100%;
+	text-align: left;
+	clear: both;
+	
+	background: #EAEAEA;
+	background-image: url( 'library/images/backgrounds/bg-pattern-n-rectangles-grey.png' );
+
+}
+
 .footer- {
-	@include span-columns(26 omega, 26);
+	@include container;
+	@include susy-grid-background;
+
 	margin-top: 1em;
 	border-top: 1px solid #666;
 	background-color: #eaeaea;
@@ -151,27 +165,13 @@ body {
 	}
 }
 
-.nav-top-wrapper- {
-	width: 100%;
-	text-align: left;
-	clear: both;
-}
-
-.nav-top- {
-	@include container;
-	
-	background-image: url( 'library/images/backgrounds/bg-logo-banner-top.png' );	
-	background-color: transparent;
-	background-repeat: no-repeat;
-	background-position: top left;
-}
-
 /* Nicholls Header */
 
 .header-nicholls- {
 	@include container;
-	padding: 0;
 	
+	position: relative;
+	padding: 0;
 	height: 28em;
 	
 	.info-primary- {
@@ -206,7 +206,16 @@ body {
 
 .nicholls-menu-item {
 	width: 6em;
-} 
+}
+
+.nicholls-menu-search- {
+	width: 10em;
+	background: #666;
+}
+
+.nicholls-menu-search- .form-gs-container- {
+	margin: 1.2em .5em 1.8em .5em;
+}
 
 .nicholls-menu-item-link {
 	width: auto;
@@ -330,10 +339,6 @@ body {
 	
 		font-size: 94%;
 		float: left;
-	}	
-
-	.nav-top- {
-		@include container;
 	}
 
 	/* Nichols Menu - Primary */
@@ -351,6 +356,24 @@ body {
 			height: 8em;
 		}
 	}
+
+	/* Nicholls Footer */
+
+	.footer- {
+		@include container;
+		@include susy-grid-background;
+	
+		margin-top: 1em;
+		border-top: 1px solid #666;
+		background-color: #eaeaea;
+		clear: both;
+		
+		.column- {
+			@include span-columns(5, 26);
+			font-size: 80%;
+		}
+	}
+	
 }
 
 @include at-breakpoint( 42em 18 62em ) {
@@ -387,10 +410,6 @@ body {
 		
 		font-size: 94%;	
 		clear: right;		
-	}
-
-	.nav-top- {
-		@include container;
 	}
 
 	/* Nichols Menu - Primary */
@@ -440,10 +459,6 @@ body {
 		clear: right;		
 	}
 
-	.nav-top- {
-		@include container;
-	}
-
 	/* Nichols Menu - Primary */
 	
 	/* Nicholls Header */
@@ -489,10 +504,6 @@ body {
 				
 		font-size: 94%;	
 		clear: right;		
-	}
-
-	.nav-top- {
-		@include container;
 	}
 	
 	/* Nichols Menu - Primary */

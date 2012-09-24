@@ -928,81 +928,76 @@ li.widget_pages li:before {
 /* END Widget Styles */
 /* START Top Navigation and Search */
 /* line 652, library/source/compass/sass/_defaults.scss */
-.nav-top-wrapper- input {
-  font-size: 72%; }
-
-/* line 656, library/source/compass/sass/_defaults.scss */
-.nav-top-wrapper- {
-  width: 100%;
-  background: #666; }
-
-/* line 661, library/source/compass/sass/_defaults.scss */
-.nav-top- {
-  clear: both; }
-
-/* line 665, library/source/compass/sass/_defaults.scss */
 .form-gs-container- {
+  -webkit-border-radius: 10px 10px;
+  -moz-border-radius: 10px / 10px;
+  border-radius: 10px / 10px;
   background-color: #fff;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  /* future proofing */
   margin: .2em;
   float: right;
   clear: right; }
 
-/* line 675, library/source/compass/sass/_defaults.scss */
+/* line 661, library/source/compass/sass/_defaults.scss */
 .form-gs-container- fieldset {
   border: none;
   margin: 0;
   padding: 0; }
 
-/* line 681, library/source/compass/sass/_defaults.scss */
+/* line 667, library/source/compass/sass/_defaults.scss */
 .form-gs-container- label {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px); }
 
-/* line 687, library/source/compass/sass/_defaults.scss */
+/* line 673, library/source/compass/sass/_defaults.scss */
 .input-q- {
   border: none;
-  margin: .2em; }
+  margin: 0 0 0 .7em;
+  padding: .4em .2em .2em 0; }
 
-/* line 692, library/source/compass/sass/_defaults.scss */
+/* line 679, library/source/compass/sass/_defaults.scss */
+.form-gs-container- input {
+  font-size: 88%;
+  width: 7em; }
+
+/* line 684, library/source/compass/sass/_defaults.scss */
 .form-gs-container- input:hover, .form-gs-container- input:focus {
   border: none; }
 
-/* line 696, library/source/compass/sass/_defaults.scss */
+/* line 688, library/source/compass/sass/_defaults.scss */
 .form-gs-container- form input[type=submit] {
-  background: url("library/images/icons/icon-black-search.png") no-repeat center center;
-  width: 20px;
-  height: 20px;
-  border: none;
+  -webkit-border-radius: 10px 10px;
+  -moz-border-radius: 10px / 10px;
+  border-radius: 10px / 10px;
+  background: url("library/images/icons/icon-white-search.png") no-repeat center center;
+  background-color: #000;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #ccc;
   color: transparent;
   font-size: 0; }
 
-/* line 705, library/source/compass/sass/_defaults.scss */
+/* line 700, library/source/compass/sass/_defaults.scss */
 .form-gs-container- form input[type=submit]:hover {
   background-color: #cc3333; }
 
 /* END Top Navigation and Search */
 /* START - Nicholls Primary Menu */
-/* line 713, library/source/compass/sass/_defaults.scss */
+/* line 708, library/source/compass/sass/_defaults.scss */
 .menu-primary-container- {
   text-align: left;
   clear: both;
   position: relative;
   z-index: 1001; }
 
-/* line 720, library/source/compass/sass/_defaults.scss */
+/* line 715, library/source/compass/sass/_defaults.scss */
 .menu-primary- {
-  height: 4.4em;
   margin: 0;
   padding: 0;
   border-top: 1px solid #000; }
 
-/* line 727, library/source/compass/sass/_defaults.scss */
+/* line 721, library/source/compass/sass/_defaults.scss */
 .menu-primary- .nicholls-menu-list- {
   list-style-type: none;
   list-style-position: inside;
@@ -1010,55 +1005,54 @@ li.widget_pages li:before {
   margin: 0;
   padding: 0; }
 
-/* line 735, library/source/compass/sass/_defaults.scss */
+/* line 729, library/source/compass/sass/_defaults.scss */
 .menu-primary- .nicholls-menu-list- .nicholls-menu-item {
   list-style-type: none;
   list-style-position: inside;
   padding: 0;
   float: left;
   font-weight: 600;
-  color: #cc3333;
   display: block;
   font-size: 80%;
-  margin: 0 2.4em 0 0;
+  margin: 0 .4em 0 0;
   line-height: 1.2em;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc; }
 
-/* line 753, library/source/compass/sass/_defaults.scss */
+/* line 746, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-list- .nicholls-menu-item:first-child {
-  margin-left: 2.4em; }
+  margin-left: .4em; }
 
-/* line 757, library/source/compass/sass/_defaults.scss */
+/* line 750, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-list- .nicholls-menu-item .nicholls-menu-item-link {
   margin: 0;
   display: block;
   height: 2.4em;
   padding-bottom: .3em; }
 
-/* line 766, library/source/compass/sass/_defaults.scss */
+/* line 757, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-item a.nicholls-menu-item-link, .nicholls-menu-item a.nicholls-menu-item-link:link, .nicholls-menu-item a.nicholls-menu-item-link:active, .nicholls-menu-item a.nicholls-menu-item-link:visited {
   text-decoration: none;
   color: #fff;
   text-align: center;
   margin-top: 36px; }
 
-/* line 773, library/source/compass/sass/_defaults.scss */
+/* line 764, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-item a.nicholls-menu-item-link:hover {
   text-decoration: none;
   background-color: #cc3333;
-  color: #fff; }
+  color: white; }
 
-/* line 779, library/source/compass/sass/_defaults.scss */
+/* line 770, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-selected, .nicholls-menu-selected a, .nicholls-menu-selected a:link, .nicholls-menu-selected a:active, .nicholls-menu-selected a:visited {
   background: #cc3333;
   color: white; }
 
-/* line 784, library/source/compass/sass/_defaults.scss */
+/* line 775, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-current- {
   background-color: #aaae87; }
 
-/* line 788, library/source/compass/sass/_defaults.scss */
+/* line 779, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-current- .nicholls-menu-item-link {
   background-color: #aaae87;
   *zoom: 1;
@@ -1072,11 +1066,11 @@ li.widget_pages li:before {
   background-image: -ms-linear-gradient(top, #aaae87 0%, #666850 100%);
   background-image: linear-gradient(top, #aaae87 0%, #666850 100%); }
 
-/* line 794, library/source/compass/sass/_defaults.scss */
+/* line 785, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-future- {
   background-color: #7a2224; }
 
-/* line 798, library/source/compass/sass/_defaults.scss */
+/* line 789, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-future- .nicholls-menu-item-link {
   background-color: #7a2224;
   *zoom: 1;
@@ -1090,11 +1084,11 @@ li.widget_pages li:before {
   background-image: -ms-linear-gradient(top, #7a2224 0%, #491415 100%);
   background-image: linear-gradient(top, #7a2224 0%, #491415 100%); }
 
-/* line 804, library/source/compass/sass/_defaults.scss */
+/* line 795, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-life- {
   background-color: #f3ae2f; }
 
-/* line 808, library/source/compass/sass/_defaults.scss */
+/* line 799, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-life- .nicholls-menu-item-link {
   background-color: #f3ae2f;
   *zoom: 1;
@@ -1108,11 +1102,11 @@ li.widget_pages li:before {
   background-image: -ms-linear-gradient(top, #f3ae2f 0%, #92681c 100%);
   background-image: linear-gradient(top, #f3ae2f 0%, #92681c 100%); }
 
-/* line 814, library/source/compass/sass/_defaults.scss */
+/* line 805, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-athletics- {
   background-color: #467d80; }
 
-/* line 818, library/source/compass/sass/_defaults.scss */
+/* line 809, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-athletics- .nicholls-menu-item-link {
   background-color: #467d80;
   *zoom: 1;
@@ -1126,11 +1120,11 @@ li.widget_pages li:before {
   background-image: -ms-linear-gradient(top, #467d80 0%, #2a4a4d 100%);
   background-image: linear-gradient(top, #467d80 0%, #2a4a4d 100%); }
 
-/* line 824, library/source/compass/sass/_defaults.scss */
+/* line 815, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-friends- {
   background-color: #a45c0b; }
 
-/* line 828, library/source/compass/sass/_defaults.scss */
+/* line 819, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-friends- .nicholls-menu-item-link {
   background-color: #a45c0b;
   *zoom: 1;
@@ -1144,11 +1138,11 @@ li.widget_pages li:before {
   background-image: -ms-linear-gradient(top, #a45c0b 0%, #623706 100%);
   background-image: linear-gradient(top, #a45c0b 0%, #623706 100%); }
 
-/* line 834, library/source/compass/sass/_defaults.scss */
+/* line 825, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-administration- {
   background-color: #52616e; }
 
-/* line 838, library/source/compass/sass/_defaults.scss */
+/* line 829, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-administration- .nicholls-menu-item-link {
   background-color: #52616e;
   *zoom: 1;
@@ -1162,16 +1156,20 @@ li.widget_pages li:before {
   background-image: -ms-linear-gradient(top, #52616e 0%, #313a41 100%);
   background-image: linear-gradient(top, #52616e 0%, #313a41 100%); }
 
-/* line 844, library/source/compass/sass/_defaults.scss */
+/* line 835, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-friends- .nicholls-menu-contents {
   margin-left: -30em; }
 
-/* line 848, library/source/compass/sass/_defaults.scss */
+/* line 839, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-administration- .nicholls-menu-contents {
   margin-left: -30em; }
 
+/* line 844, library/source/compass/sass/_defaults.scss */
+.menu-primary- .nicholls-menu-list- .nicholls-menu-search- {
+  border: none; }
+
 /* END - Nicholls Primary Menu */
-/* line 855, library/source/compass/sass/_defaults.scss */
+/* line 851, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-content-container- {
   position: absolute;
   top: 3em;
@@ -1180,23 +1178,23 @@ li.widget_pages li:before {
   background: #cccccc url("library/images/nicholls-menu-pointer-down.png") no-repeat;
   margin: 0; }
 
-/* line 864, library/source/compass/sass/_defaults.scss */
+/* line 860, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-future-container {
   background-position: 15em 0em; }
 
-/* line 868, library/source/compass/sass/_defaults.scss */
+/* line 864, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-current-container {
   background-position: 26em 0em; }
 
-/* line 872, library/source/compass/sass/_defaults.scss */
+/* line 868, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-administration-container {
   background-position: 39em 0em; }
 
-/* line 876, library/source/compass/sass/_defaults.scss */
+/* line 872, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-friends-container {
   background-position: 54em 0em; }
 
-/* line 880, library/source/compass/sass/_defaults.scss */
+/* line 876, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents {
   background: white;
   display: none;
@@ -1206,7 +1204,7 @@ li.widget_pages li:before {
   -webkit-box-shadow: 2px 2px 6px #666;
   box-shadow: 2px 2px 6px #666; }
 
-/* line 890, library/source/compass/sass/_defaults.scss */
+/* line 886, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .mm-content-base {
   position: relative;
   z-index: 1003;
@@ -1218,7 +1216,7 @@ li.widget_pages li:before {
   -webkit-box-shadow: 2px 2px 6px #666;
   box-shadow: 2px 2px 6px #666; }
 
-/* line 902, library/source/compass/sass/_defaults.scss */
+/* line 898, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .nicholls-menu-title- {
   border-bottom: 1px solid #ccc;
   margin: 0;
@@ -1226,38 +1224,38 @@ li.widget_pages li:before {
   font-weight: 800;
   color: #cc3333; }
 
-/* line 910, library/source/compass/sass/_defaults.scss */
+/* line 906, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .column- {
   float: left;
   width: 16em;
   /*width of each menu column*/
   margin: .4em .4em 0 .6em; }
 
-/* line 916, library/source/compass/sass/_defaults.scss */
+/* line 912, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .column- ul {
   margin: 0 0 0 .5em;
   padding: 0;
   list-style-type: none; }
 
-/* line 922, library/source/compass/sass/_defaults.scss */
+/* line 918, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .column- ul li {
   padding-bottom: .4em; }
 
-/* line 926, library/source/compass/sass/_defaults.scss */
+/* line 922, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .column- h2, .nicholls-menu-contents .column- h3, .nicholls-menu-contents .column- h4 {
   color: #cc3333;
   margin: .2em 0 .4em 0; }
 
-/* line 931, library/source/compass/sass/_defaults.scss */
+/* line 927, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .column- ul li a {
   text-decoration: none; }
 
-/* line 935, library/source/compass/sass/_defaults.scss */
+/* line 931, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .column- ul li a:hover {
   color: red; }
 
 /* START - Nicholls Header */
-/* line 941, library/source/compass/sass/_defaults.scss */
+/* line 937, library/source/compass/sass/_defaults.scss */
 .header-nicholls-wrapper- {
   width: 100%;
   text-align: left;
@@ -1266,12 +1264,12 @@ li.widget_pages li:before {
   -moz-background-size: cover;
   -webkit-background-size: cover; }
 
-/* line 950, library/source/compass/sass/_defaults.scss */
+/* line 946, library/source/compass/sass/_defaults.scss */
 .header-nicholls- {
   margin: 0 auto 0 auto;
   overflow: hidden; }
 
-/* line 955, library/source/compass/sass/_defaults.scss */
+/* line 951, library/source/compass/sass/_defaults.scss */
 .info-primary- {
   margin: 0;
   padding: 0;
@@ -1280,7 +1278,7 @@ li.widget_pages li:before {
   -moz-box-shadow: 3px 3px 3px 0px #333333;
   box-shadow: 3px 3px 3px 0px #333333; }
 
-/* line 962, library/source/compass/sass/_defaults.scss */
+/* line 958, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- .info-primary-content- {
   background: white;
   clear: both;
@@ -1289,14 +1287,14 @@ li.widget_pages li:before {
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc; }
 
-/* line 972, library/source/compass/sass/_defaults.scss */
+/* line 968, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- ul {
   list-style-type: none;
   clear: both;
   margin: 0;
   padding: 0; }
 
-/* line 979, library/source/compass/sass/_defaults.scss */
+/* line 975, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- ul li {
   margin: .4em 0;
   font-size: 90%;
@@ -1304,55 +1302,61 @@ li.widget_pages li:before {
   color: #cc3333;
   display: block; }
 
-/* line 987, library/source/compass/sass/_defaults.scss */
+/* line 983, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- a, .header-nicholls- .info-primary- a:link, .header-nicholls- .info-primary- ul li a, .header-nicholls- .info-primary- ul li a:link, .header-nicholls- .info-primary- ul li a:active, .header-nicholls- .info-primary- ul li a:visited {
   color: #cc3333;
   text-decoration: none; }
 
-/* line 992, library/source/compass/sass/_defaults.scss */
+/* line 988, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- a:hover, .header-nicholls- .info-primary- ul li a:hover {
   text-decoration: underline; }
 
-/* line 996, library/source/compass/sass/_defaults.scss */
-.info-contact {
-  font-size: 102%;
-  margin-top: .8em;
+/* line 992, library/source/compass/sass/_defaults.scss */
+.info-tagline {
+  font-size: 80%;
+  margin-top: .6em;
   color: #fff; }
 
-/* line 1002, library/source/compass/sass/_defaults.scss */
+/* line 998, library/source/compass/sass/_defaults.scss */
+.info-contact {
+  font-size: 102%;
+  margin-top: .4em;
+  color: #fff; }
+
+/* line 1004, library/source/compass/sass/_defaults.scss */
 .info-contact a, .info-contact a:link, .info-contact a:active, .info-contact a:visited {
   color: #fff;
   text-decoration: none; }
 
-/* line 1007, library/source/compass/sass/_defaults.scss */
+/* line 1009, library/source/compass/sass/_defaults.scss */
 .info-contact a:hover {
   color: #fff;
   text-decoration: underline; }
 
-/* line 1012, library/source/compass/sass/_defaults.scss */
+/* line 1014, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- .info-programs {
   padding-bottom: .3em;
   padding-left: .4em; }
 
-/* line 1017, library/source/compass/sass/_defaults.scss */
+/* line 1019, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- .info-request {
   padding-bottom: .3em;
   padding-left: .4em; }
 
 /* END - Nicholls Header */
 /* START Header */
-/* line 1026, library/source/compass/sass/_defaults.scss */
+/* line 1028, library/source/compass/sass/_defaults.scss */
 .header- {
   color: white;
   background: transparent url("library/images/45pc_black.png"); }
 
-/* line 1031, library/source/compass/sass/_defaults.scss */
+/* line 1033, library/source/compass/sass/_defaults.scss */
 .header- .blog-title-prefix- {
   display: block;
   margin: 0;
   padding: .5em 0 0 .4em; }
 
-/* line 1037, library/source/compass/sass/_defaults.scss */
+/* line 1039, library/source/compass/sass/_defaults.scss */
 .header- .blog-title- {
   font-family: 'Crimson Text', 'Times New Roman', times, Georgia, serif;
   font-weight: 400;
@@ -1362,40 +1366,40 @@ li.widget_pages li:before {
   color: white;
   text-shadow: black 1px 1px 1px; }
 
-/* line 1048, library/source/compass/sass/_defaults.scss */
+/* line 1050, library/source/compass/sass/_defaults.scss */
 .header- .blog-title- a, .header- .blog-title- a:link, .header- .blog-title- a:active, .header- .blog-title- a:visited {
   text-decoration: none;
   color: white; }
 
-/* line 1053, library/source/compass/sass/_defaults.scss */
+/* line 1055, library/source/compass/sass/_defaults.scss */
 .header- .blog-title- a:hover {
   text-decoration: underline; }
 
-/* line 1057, library/source/compass/sass/_defaults.scss */
+/* line 1059, library/source/compass/sass/_defaults.scss */
 .header- .blog-description- {
   font-size: 92%;
   padding: 0 0 .2em .5em; }
 
 /* END Header */
 /* START - footer */
-/* line 1066, library/source/compass/sass/_defaults.scss */
+/* line 1068, library/source/compass/sass/_defaults.scss */
 .footer- .column- {
   float: left;
   width: 12em;
   /*width of each menu column*/
   margin: .4em .4em 0 0; }
 
-/* line 1072, library/source/compass/sass/_defaults.scss */
+/* line 1074, library/source/compass/sass/_defaults.scss */
 .footer- .column- ul {
   margin: 0 0 0 .5em;
   padding: 0;
   list-style-type: none; }
 
-/* line 1078, library/source/compass/sass/_defaults.scss */
+/* line 1080, library/source/compass/sass/_defaults.scss */
 .footer- .column- ul li {
   padding-bottom: .4em; }
 
-/* line 1082, library/source/compass/sass/_defaults.scss */
+/* line 1084, library/source/compass/sass/_defaults.scss */
 .footer- .column- h2, .footer- .column- h3, .footer- .column- h4 {
   color: #cc3333;
   margin: .2em 0 .4em 0;
@@ -1404,7 +1408,7 @@ li.widget_pages li:before {
 /* END - Footer */
 /* END - Custom Site */
 /* START Hidden Elements */
-/* line 1102, library/source/compass/sass/_defaults.scss */
+/* line 1104, library/source/compass/sass/_defaults.scss */
 .hide, .access- {
   position: absolute !important;
   top: -9999px !important;
@@ -1412,14 +1416,14 @@ li.widget_pages li:before {
 
 /* END Hidden Elements */
 /* START Conditional Elements */
-/* line 1112, library/source/compass/sass/_defaults.scss */
+/* line 1114, library/source/compass/sass/_defaults.scss */
 .widgets-primary-active .container- {
   border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #cccccc; }
 
 /* Widgets Inactive (Primary & Secondary) - Container goes full width */
-/* line 1119, library/source/compass/sass/_defaults.scss */
+/* line 1121, library/source/compass/sass/_defaults.scss */
 body.widgets-primary-inactive.widgets-secondary-inactive .container- {
   float: none;
   width: auto;
@@ -1510,7 +1514,7 @@ body {
   background-position: top left;
   float: left;
   width: 221px;
-  height: 145px;
+  height: 172px;
   text-align: center; }
 
 /* line 108, library/source/compass/sass/style.scss */
@@ -1518,37 +1522,61 @@ body {
   background-image: url("library/images/logos/logo-nicholls-white-188x52.png");
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: center center;
-  margin: .4em 0 0 .5em;
+  background-position: top center;
+  border-bottom: 1px solid #fff;
+  margin: .5em 0 0 .5em;
+  padding: 0;
   width: 188px;
-  height: 52px;
+  height: 58px;
   display: block;
   clear: both;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden; }
-  /* line 128, library/source/compass/sass/style.scss */
+  /* line 130, library/source/compass/sass/style.scss */
   .logo-container- a {
     display: block;
-    width: 240px;
-    height: 80px;
+    width: 188px;
+    height: 52px;
     margin: auto auto; }
-  /* line 135, library/source/compass/sass/style.scss */
+  /* line 137, library/source/compass/sass/style.scss */
   .logo-container- img {
     display: none; }
 
-/* line 141, library/source/compass/sass/style.scss */
-.footer- {
+/* line 143, library/source/compass/sass/style.scss */
+.footer-nicholls-wrapper- {
   width: 100%;
-  float: right;
-  margin-right: 0;
-  #margin-left: -0.88em;
-  display: inline;
+  text-align: left;
+  clear: both;
+  background: #EAEAEA;
+  background-image: url("library/images/backgrounds/bg-pattern-n-rectangles-grey.png"); }
+
+/* line 153, library/source/compass/sass/style.scss */
+.footer- {
+  *zoom: 1;
+  width: 58.998em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-background-origin: content;
+  -moz-background-origin: content;
+  -ms-background-origin: content-box;
+  -o-background-origin: content-box;
+  background-origin: content-box;
+  -webkit-background-clip: content-box;
+  -moz-background-clip: content-box;
+  background-clip: content-box;
   margin-top: 1em;
   border-top: 1px solid #666;
   background-color: #eaeaea;
   clear: both; }
-  /* line 148, library/source/compass/sass/style.scss */
+  /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .footer-:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 162, library/source/compass/sass/style.scss */
   .footer- .column- {
     width: 18.026%;
     float: left;
@@ -1556,32 +1584,8 @@ body {
     display: inline;
     font-size: 80%; }
 
-/* line 154, library/source/compass/sass/style.scss */
-.nav-top-wrapper- {
-  width: 100%;
-  text-align: left;
-  clear: both; }
-
-/* line 160, library/source/compass/sass/style.scss */
-.nav-top- {
-  *zoom: 1;
-  width: 58.998em;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0;
-  padding-right: 0;
-  background-image: url("library/images/backgrounds/bg-logo-banner-top.png");
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: top left; }
-  /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-  .nav-top-:after {
-    content: "";
-    display: table;
-    clear: both; }
-
 /* Nicholls Header */
-/* line 171, library/source/compass/sass/style.scss */
+/* line 170, library/source/compass/sass/style.scss */
 .header-nicholls- {
   *zoom: 1;
   width: 58.998em;
@@ -1589,6 +1593,7 @@ body {
   margin-right: auto;
   padding-left: 0;
   padding-right: 0;
+  position: relative;
   padding: 0;
   height: 28em; }
   /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -1630,6 +1635,15 @@ body {
   width: 6em; }
 
 /* line 211, library/source/compass/sass/style.scss */
+.nicholls-menu-search- {
+  width: 10em;
+  background: #666; }
+
+/* line 216, library/source/compass/sass/style.scss */
+.nicholls-menu-search- .form-gs-container- {
+  margin: 1.2em .5em 1.8em .5em; }
+
+/* line 220, library/source/compass/sass/style.scss */
 .nicholls-menu-item-link {
   width: auto;
   top: 36px;
@@ -1637,7 +1651,7 @@ body {
   padding-right: .2em;
   background: white; }
 
-/* line 219, library/source/compass/sass/style.scss */
+/* line 228, library/source/compass/sass/style.scss */
 .nicholls-menu-current- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
   background-position: 50% -1368px !important;
@@ -1645,7 +1659,7 @@ body {
   padding-top: 36px;
   display: block; }
 
-/* line 223, library/source/compass/sass/style.scss */
+/* line 232, library/source/compass/sass/style.scss */
 .nicholls-menu-future- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
   background-position: 50% -1032px !important;
@@ -1653,7 +1667,7 @@ body {
   padding-top: 36px;
   display: block; }
 
-/* line 227, library/source/compass/sass/style.scss */
+/* line 236, library/source/compass/sass/style.scss */
 .nicholls-menu-administration- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
   background-position: 50% -1958px !important;
@@ -1661,7 +1675,7 @@ body {
   padding-top: 36px;
   display: block; }
 
-/* line 231, library/source/compass/sass/style.scss */
+/* line 240, library/source/compass/sass/style.scss */
 .nicholls-menu-life- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
   background-position: 50% -1790px !important;
@@ -1669,7 +1683,7 @@ body {
   padding-top: 36px;
   display: block; }
 
-/* line 235, library/source/compass/sass/style.scss */
+/* line 244, library/source/compass/sass/style.scss */
 .nicholls-menu-athletics- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
   background-position: 50% -1622px !important;
@@ -1677,7 +1691,7 @@ body {
   padding-top: 36px;
   display: block; }
 
-/* line 239, library/source/compass/sass/style.scss */
+/* line 248, library/source/compass/sass/style.scss */
 .nicholls-menu-friends- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
   background-position: 50% -1286px !important;
@@ -1686,14 +1700,14 @@ body {
   display: block; }
 
 /* START - Nicholls Home Menu */
-/* line 246, library/source/compass/sass/style.scss */
+/* line 255, library/source/compass/sass/style.scss */
 .nicholls-home-list-container- {
   text-align: left;
   clear: both;
   position: relative;
   z-index: 1001; }
 
-/* line 253, library/source/compass/sass/style.scss */
+/* line 262, library/source/compass/sass/style.scss */
 .nicholls-home-list-container- .nicholls-home-list- {
   list-style-type: none;
   list-style-position: inside;
@@ -1701,7 +1715,7 @@ body {
   margin: 0;
   padding: 0; }
 
-/* line 261, library/source/compass/sass/style.scss */
+/* line 270, library/source/compass/sass/style.scss */
 .nicholls-home-list-container- .nicholls-home-list- .nicholls-home-list-item {
   list-style-type: none;
   list-style-position: inside;
@@ -1714,7 +1728,7 @@ body {
   text-align: center;
   margin-left: .5em; }
 
-/* line 274, library/source/compass/sass/style.scss */
+/* line 283, library/source/compass/sass/style.scss */
 .nicholls-home-list-apply- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% -390px !important;
@@ -1722,7 +1736,7 @@ body {
   padding-top: 80px;
   display: block; }
 
-/* line 278, library/source/compass/sass/style.scss */
+/* line 287, library/source/compass/sass/style.scss */
 .nicholls-home-list-calendar- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% -780px !important;
@@ -1730,7 +1744,7 @@ body {
   padding-top: 80px;
   display: block; }
 
-/* line 282, library/source/compass/sass/style.scss */
+/* line 291, library/source/compass/sass/style.scss */
 .nicholls-home-list-explore- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% 0 !important;
@@ -1738,7 +1752,7 @@ body {
   padding-top: 80px;
   display: block; }
 
-/* line 286, library/source/compass/sass/style.scss */
+/* line 295, library/source/compass/sass/style.scss */
 .nicholls-home-list-finaid- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% -260px !important;
@@ -1746,7 +1760,7 @@ body {
   padding-top: 80px;
   display: block; }
 
-/* line 290, library/source/compass/sass/style.scss */
+/* line 299, library/source/compass/sass/style.scss */
 .nicholls-home-list-majors- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% -650px !important;
@@ -1754,7 +1768,7 @@ body {
   padding-top: 80px;
   display: block; }
 
-/* line 294, library/source/compass/sass/style.scss */
+/* line 303, library/source/compass/sass/style.scss */
 .nicholls-home-list-tour- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% -520px !important;
@@ -1762,7 +1776,7 @@ body {
   padding-top: 80px;
   display: block; }
 
-/* line 298, library/source/compass/sass/style.scss */
+/* line 307, library/source/compass/sass/style.scss */
 .nicholls-home-list-social- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% -130px !important;
@@ -1771,7 +1785,7 @@ body {
   display: block; }
 
 @media (min-width: 74em) {
-  /* line 305, library/source/compass/sass/style.scss */
+  /* line 314, library/source/compass/sass/style.scss */
   .wrapper- {
     *zoom: 1;
     width: 72.816em;
@@ -1793,7 +1807,7 @@ body {
       display: table;
       clear: both; }
 
-  /* line 310, library/source/compass/sass/style.scss */
+  /* line 319, library/source/compass/sass/style.scss */
   .container- {
     width: 74.307%;
     float: left;
@@ -1807,7 +1821,7 @@ body {
     padding: 0.604%;
     font-size: 96%; }
 
-  /* line 320, library/source/compass/sass/style.scss */
+  /* line 329, library/source/compass/sass/style.scss */
   .widgets-primary- {
     width: 24.094%;
     float: right;
@@ -1817,7 +1831,7 @@ body {
     font-size: 94%;
     float: left; }
 
-  /* line 328, library/source/compass/sass/style.scss */
+  /* line 337, library/source/compass/sass/style.scss */
   .widgets-secondary- {
     width: 24.094%;
     float: right;
@@ -1827,23 +1841,9 @@ body {
     font-size: 94%;
     float: left; }
 
-  /* line 335, library/source/compass/sass/style.scss */
-  .nav-top- {
-    *zoom: 1;
-    width: 72.816em;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0;
-    padding-right: 0; }
-    /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-    .nav-top-:after {
-      content: "";
-      display: table;
-      clear: both; }
-
   /* Nichols Menu - Primary */
   /* Nicholls Header */
-  /* line 343, library/source/compass/sass/style.scss */
+  /* line 348, library/source/compass/sass/style.scss */
   .header-nicholls- {
     *zoom: 1;
     width: 72.816em;
@@ -1857,14 +1857,48 @@ body {
       content: "";
       display: table;
       clear: both; }
-    /* line 347, library/source/compass/sass/style.scss */
+    /* line 352, library/source/compass/sass/style.scss */
     .header-nicholls- .header- {
       width: 100%;
       padding: 0 .5em;
       margin: 20em 0 0 0;
-      height: 8em; } }
+      height: 8em; }
+
+  /* Nicholls Footer */
+  /* line 362, library/source/compass/sass/style.scss */
+  .footer- {
+    *zoom: 1;
+    width: 72.816em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+    margin-top: 1em;
+    border-top: 1px solid #666;
+    background-color: #eaeaea;
+    clear: both; }
+    /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+    .footer-:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 371, library/source/compass/sass/style.scss */
+    .footer- .column- {
+      width: 18.026%;
+      float: left;
+      margin-right: 1.492%;
+      display: inline;
+      font-size: 80%; } }
 @media (min-width: 42em) and (max-width: 62em) {
-  /* line 358, library/source/compass/sass/style.scss */
+  /* line 381, library/source/compass/sass/style.scss */
   .wrapper- {
     *zoom: 1;
     width: 40.574em;
@@ -1887,7 +1921,7 @@ body {
       clear: both; }
 
   /* Layout */
-  /* line 365, library/source/compass/sass/style.scss */
+  /* line 388, library/source/compass/sass/style.scss */
   .container- {
     width: 100%;
     float: left;
@@ -1895,7 +1929,7 @@ body {
     display: inline;
     font-size: 96%; }
 
-  /* line 370, library/source/compass/sass/style.scss */
+  /* line 393, library/source/compass/sass/style.scss */
   .content- {
     width: 100%;
     float: left;
@@ -1903,7 +1937,7 @@ body {
     display: inline;
     margin-left: 3.922%; }
 
-  /* line 375, library/source/compass/sass/style.scss */
+  /* line 398, library/source/compass/sass/style.scss */
   .widgets-primary- {
     width: 31.887%;
     float: left;
@@ -1912,7 +1946,7 @@ body {
     padding: 0 1.2em 0 0;
     font-size: 94%; }
 
-  /* line 383, library/source/compass/sass/style.scss */
+  /* line 406, library/source/compass/sass/style.scss */
   .widgets-secondary- {
     width: 31.887%;
     float: left;
@@ -1922,23 +1956,9 @@ body {
     font-size: 94%;
     clear: right; }
 
-  /* line 392, library/source/compass/sass/style.scss */
-  .nav-top- {
-    *zoom: 1;
-    width: 40.574em;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0;
-    padding-right: 0; }
-    /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-    .nav-top-:after {
-      content: "";
-      display: table;
-      clear: both; }
-
   /* Nichols Menu - Primary */
   /* Nicholls Header */
-  /* line 400, library/source/compass/sass/style.scss */
+  /* line 419, library/source/compass/sass/style.scss */
   .header-nicholls- {
     *zoom: 1;
     width: 40.574em;
@@ -1952,7 +1972,7 @@ body {
       content: "";
       display: table;
       clear: both; }
-    /* line 404, library/source/compass/sass/style.scss */
+    /* line 423, library/source/compass/sass/style.scss */
     .header-nicholls- .header- {
       *zoom: 1;
       width: 40.574em;
@@ -1968,7 +1988,7 @@ body {
         display: table;
         clear: both; } }
 @media (min-width: 28em) and (max-width: 42em) {
-  /* line 414, library/source/compass/sass/style.scss */
+  /* line 433, library/source/compass/sass/style.scss */
   .wrapper- {
     *zoom: 1;
     width: 26.756em;
@@ -1991,7 +2011,7 @@ body {
       clear: both; }
 
   /* Layout */
-  /* line 421, library/source/compass/sass/style.scss */
+  /* line 440, library/source/compass/sass/style.scss */
   .container- {
     width: 100%;
     float: left;
@@ -1999,14 +2019,14 @@ body {
     display: inline;
     font-size: 96%; }
 
-  /* line 426, library/source/compass/sass/style.scss */
+  /* line 445, library/source/compass/sass/style.scss */
   .content- {
     width: 100%;
     float: left;
     margin-right: 3.289%;
     display: inline; }
 
-  /* line 430, library/source/compass/sass/style.scss */
+  /* line 449, library/source/compass/sass/style.scss */
   .widgets-primary- {
     width: 100%;
     float: right;
@@ -2015,7 +2035,7 @@ body {
     display: inline;
     font-size: 94%; }
 
-  /* line 436, library/source/compass/sass/style.scss */
+  /* line 455, library/source/compass/sass/style.scss */
   .widgets-secondary- {
     width: 100%;
     float: right;
@@ -2025,23 +2045,9 @@ body {
     font-size: 94%;
     clear: right; }
 
-  /* line 443, library/source/compass/sass/style.scss */
-  .nav-top- {
-    *zoom: 1;
-    width: 26.756em;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0;
-    padding-right: 0; }
-    /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-    .nav-top-:after {
-      content: "";
-      display: table;
-      clear: both; }
-
   /* Nichols Menu - Primary */
   /* Nicholls Header */
-  /* line 451, library/source/compass/sass/style.scss */
+  /* line 466, library/source/compass/sass/style.scss */
   .header-nicholls- {
     *zoom: 1;
     width: 26.756em;
@@ -2055,7 +2061,7 @@ body {
       content: "";
       display: table;
       clear: both; }
-    /* line 455, library/source/compass/sass/style.scss */
+    /* line 470, library/source/compass/sass/style.scss */
     .header-nicholls- .header- {
       *zoom: 1;
       width: 26.756em;
@@ -2071,7 +2077,7 @@ body {
         display: table;
         clear: both; } }
 @media (min-width: 0em) and (max-width: 28em) {
-  /* line 465, library/source/compass/sass/style.scss */
+  /* line 480, library/source/compass/sass/style.scss */
   .wrapper- {
     *zoom: 1;
     width: 17.544em;
@@ -2094,7 +2100,7 @@ body {
       clear: both; }
 
   /* Layout */
-  /* line 472, library/source/compass/sass/style.scss */
+  /* line 487, library/source/compass/sass/style.scss */
   .container- {
     width: 100%;
     float: left;
@@ -2102,14 +2108,14 @@ body {
     display: inline;
     font-size: 96%; }
 
-  /* line 477, library/source/compass/sass/style.scss */
+  /* line 492, library/source/compass/sass/style.scss */
   .content- {
     width: 100%;
     float: left;
     margin-right: 5.016%;
     display: inline; }
 
-  /* line 481, library/source/compass/sass/style.scss */
+  /* line 496, library/source/compass/sass/style.scss */
   .widgets-primary- {
     width: 100%;
     float: left;
@@ -2117,7 +2123,7 @@ body {
     display: inline;
     font-size: 94%; }
 
-  /* line 487, library/source/compass/sass/style.scss */
+  /* line 502, library/source/compass/sass/style.scss */
   .widgets-secondary- {
     width: 100%;
     float: left;
@@ -2126,23 +2132,9 @@ body {
     font-size: 94%;
     clear: right; }
 
-  /* line 494, library/source/compass/sass/style.scss */
-  .nav-top- {
-    *zoom: 1;
-    width: 17.544em;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0;
-    padding-right: 0; }
-    /* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-    .nav-top-:after {
-      content: "";
-      display: table;
-      clear: both; }
-
   /* Nichols Menu - Primary */
   /* Nicholls Header */
-  /* line 502, library/source/compass/sass/style.scss */
+  /* line 513, library/source/compass/sass/style.scss */
   .header-nicholls- {
     *zoom: 1;
     width: 17.544em;
@@ -2156,7 +2148,7 @@ body {
       content: "";
       display: table;
       clear: both; }
-    /* line 506, library/source/compass/sass/style.scss */
+    /* line 517, library/source/compass/sass/style.scss */
     .header-nicholls- .header- {
       *zoom: 1;
       width: 17.544em;
