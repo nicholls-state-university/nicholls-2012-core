@@ -146,7 +146,7 @@ body {
 	clear: both;
 	
 	background: #EAEAEA;
-	background-image: url( 'library/images/backgrounds/bg-pattern-n-rectangles-grey.png' );
+	background-image: url( 'library/images/backgrounds/bg-footer-pattern.png' );
 
 }
 
@@ -160,7 +160,9 @@ body {
 	clear: both;
 	
 	.column- {
-		@include span-columns(5, 26);
+		float: left;	
+		width: 20%;
+		margin: 0;
 		font-size: 80%;
 	}
 }
@@ -196,7 +198,7 @@ body {
 
 .menu-primary-container- {
 	@include span-columns(26, 26);
-	height: 3em;
+	height: 0;
 }
 
 .menu-primary- {
@@ -369,7 +371,9 @@ body {
 		clear: both;
 		
 		.column- {
-			@include span-columns(5, 26);
+			float: left;
+			width: 20%;
+			margin: 0;
 			font-size: 80%;
 		}
 	}

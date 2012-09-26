@@ -1065,11 +1065,19 @@ li.widget_pages li:before {
 
 /* START - footer */
 
-.footer- .column- {
-	float: left;
-	width: 12em; /*width of each menu column*/
-	margin: .4em .4em 0 0;
+
+.footer- .column-title- {
+	font-size: 118%;
+	margin: 0;
+	padding: .4em .4em;
+	background: #cc3333;
+	color: #fff;
 }
+
+.footer- .column-content- {
+	margin: .4em .4em .4em .2em;
+}
+
 
 .footer- .column- ul {
 	margin: 0 0 0 .5em;
@@ -1079,12 +1087,6 @@ li.widget_pages li:before {
 
 .footer- .column- ul li {
 	padding-bottom: .4em;
-}
-
-.footer- .column- h2, .footer- .column- h3, .footer- .column- h4 {
-	color: $nicholls-color-red;
-	margin: .2em 0 .4em 0;
-	font-size: 110%;
 }
 
 .footer- .column- ul li a {

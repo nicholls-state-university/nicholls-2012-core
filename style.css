@@ -1382,33 +1382,32 @@ li.widget_pages li:before {
 
 /* END Header */
 /* START - footer */
-/* line 1068, library/source/compass/sass/_defaults.scss */
-.footer- .column- {
-  float: left;
-  width: 12em;
-  /*width of each menu column*/
-  margin: .4em .4em 0 0; }
+/* line 1069, library/source/compass/sass/_defaults.scss */
+.footer- .column-title- {
+  font-size: 118%;
+  margin: 0;
+  padding: .4em .4em;
+  background: #cc3333;
+  color: #fff; }
 
-/* line 1074, library/source/compass/sass/_defaults.scss */
+/* line 1077, library/source/compass/sass/_defaults.scss */
+.footer- .column-content- {
+  margin: .4em .4em .4em .2em; }
+
+/* line 1082, library/source/compass/sass/_defaults.scss */
 .footer- .column- ul {
   margin: 0 0 0 .5em;
   padding: 0;
   list-style-type: none; }
 
-/* line 1080, library/source/compass/sass/_defaults.scss */
+/* line 1088, library/source/compass/sass/_defaults.scss */
 .footer- .column- ul li {
   padding-bottom: .4em; }
-
-/* line 1084, library/source/compass/sass/_defaults.scss */
-.footer- .column- h2, .footer- .column- h3, .footer- .column- h4 {
-  color: #cc3333;
-  margin: .2em 0 .4em 0;
-  font-size: 110%; }
 
 /* END - Footer */
 /* END - Custom Site */
 /* START Hidden Elements */
-/* line 1104, library/source/compass/sass/_defaults.scss */
+/* line 1106, library/source/compass/sass/_defaults.scss */
 .hide, .access- {
   position: absolute !important;
   top: -9999px !important;
@@ -1416,14 +1415,14 @@ li.widget_pages li:before {
 
 /* END Hidden Elements */
 /* START Conditional Elements */
-/* line 1114, library/source/compass/sass/_defaults.scss */
+/* line 1116, library/source/compass/sass/_defaults.scss */
 .widgets-primary-active .container- {
   border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #cccccc; }
 
 /* Widgets Inactive (Primary & Secondary) - Container goes full width */
-/* line 1121, library/source/compass/sass/_defaults.scss */
+/* line 1123, library/source/compass/sass/_defaults.scss */
 body.widgets-primary-inactive.widgets-secondary-inactive .container- {
   float: none;
   width: auto;
@@ -1549,7 +1548,7 @@ body {
   text-align: left;
   clear: both;
   background: #EAEAEA;
-  background-image: url("library/images/backgrounds/bg-pattern-n-rectangles-grey.png"); }
+  background-image: url("library/images/backgrounds/bg-footer-pattern.png"); }
 
 /* line 153, library/source/compass/sass/style.scss */
 .footer- {
@@ -1578,14 +1577,13 @@ body {
     clear: both; }
   /* line 162, library/source/compass/sass/style.scss */
   .footer- .column- {
-    width: 18.026%;
     float: left;
-    margin-right: 1.492%;
-    display: inline;
+    width: 20%;
+    margin: 0;
     font-size: 80%; }
 
 /* Nicholls Header */
-/* line 170, library/source/compass/sass/style.scss */
+/* line 172, library/source/compass/sass/style.scss */
 .header-nicholls- {
   *zoom: 1;
   width: 58.998em;
@@ -1601,7 +1599,7 @@ body {
     content: "";
     display: table;
     clear: both; }
-  /* line 177, library/source/compass/sass/style.scss */
+  /* line 179, library/source/compass/sass/style.scss */
   .header-nicholls- .info-primary- {
     width: 29.737%;
     float: left;
@@ -1609,7 +1607,7 @@ body {
     display: inline;
     float: left;
     background-color: white; }
-  /* line 186, library/source/compass/sass/style.scss */
+  /* line 188, library/source/compass/sass/style.scss */
   .header-nicholls- .header- {
     height: 8em;
     width: 100%;
@@ -1617,33 +1615,33 @@ body {
     margin: 20em 0 0 0; }
 
 /* Nichols Menu - Primary */
-/* line 197, library/source/compass/sass/style.scss */
+/* line 199, library/source/compass/sass/style.scss */
 .menu-primary-container- {
   width: 100%;
   float: left;
   margin-right: 1.492%;
   display: inline;
-  height: 3em; }
+  height: 0; }
 
-/* line 202, library/source/compass/sass/style.scss */
+/* line 204, library/source/compass/sass/style.scss */
 .menu-primary- {
   float: left;
   clear: right; }
 
-/* line 207, library/source/compass/sass/style.scss */
+/* line 209, library/source/compass/sass/style.scss */
 .nicholls-menu-item {
   width: 6em; }
 
-/* line 211, library/source/compass/sass/style.scss */
+/* line 213, library/source/compass/sass/style.scss */
 .nicholls-menu-search- {
   width: 10em;
   background: #666; }
 
-/* line 216, library/source/compass/sass/style.scss */
+/* line 218, library/source/compass/sass/style.scss */
 .nicholls-menu-search- .form-gs-container- {
   margin: 1.2em .5em 1.8em .5em; }
 
-/* line 220, library/source/compass/sass/style.scss */
+/* line 222, library/source/compass/sass/style.scss */
 .nicholls-menu-item-link {
   width: auto;
   top: 36px;
@@ -1651,7 +1649,7 @@ body {
   padding-right: .2em;
   background: white; }
 
-/* line 228, library/source/compass/sass/style.scss */
+/* line 230, library/source/compass/sass/style.scss */
 .nicholls-menu-current- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
   background-position: 50% -1368px !important;
@@ -1659,7 +1657,7 @@ body {
   padding-top: 36px;
   display: block; }
 
-/* line 232, library/source/compass/sass/style.scss */
+/* line 234, library/source/compass/sass/style.scss */
 .nicholls-menu-future- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
   background-position: 50% -1032px !important;
@@ -1667,7 +1665,7 @@ body {
   padding-top: 36px;
   display: block; }
 
-/* line 236, library/source/compass/sass/style.scss */
+/* line 238, library/source/compass/sass/style.scss */
 .nicholls-menu-administration- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
   background-position: 50% -1958px !important;
@@ -1675,7 +1673,7 @@ body {
   padding-top: 36px;
   display: block; }
 
-/* line 240, library/source/compass/sass/style.scss */
+/* line 242, library/source/compass/sass/style.scss */
 .nicholls-menu-life- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
   background-position: 50% -1790px !important;
@@ -1683,7 +1681,7 @@ body {
   padding-top: 36px;
   display: block; }
 
-/* line 244, library/source/compass/sass/style.scss */
+/* line 246, library/source/compass/sass/style.scss */
 .nicholls-menu-athletics- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
   background-position: 50% -1622px !important;
@@ -1691,7 +1689,7 @@ body {
   padding-top: 36px;
   display: block; }
 
-/* line 248, library/source/compass/sass/style.scss */
+/* line 250, library/source/compass/sass/style.scss */
 .nicholls-menu-friends- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
   background-position: 50% -1286px !important;
@@ -1700,14 +1698,14 @@ body {
   display: block; }
 
 /* START - Nicholls Home Menu */
-/* line 255, library/source/compass/sass/style.scss */
+/* line 257, library/source/compass/sass/style.scss */
 .nicholls-home-list-container- {
   text-align: left;
   clear: both;
   position: relative;
   z-index: 1001; }
 
-/* line 262, library/source/compass/sass/style.scss */
+/* line 264, library/source/compass/sass/style.scss */
 .nicholls-home-list-container- .nicholls-home-list- {
   list-style-type: none;
   list-style-position: inside;
@@ -1715,7 +1713,7 @@ body {
   margin: 0;
   padding: 0; }
 
-/* line 270, library/source/compass/sass/style.scss */
+/* line 272, library/source/compass/sass/style.scss */
 .nicholls-home-list-container- .nicholls-home-list- .nicholls-home-list-item {
   list-style-type: none;
   list-style-position: inside;
@@ -1728,7 +1726,7 @@ body {
   text-align: center;
   margin-left: .5em; }
 
-/* line 283, library/source/compass/sass/style.scss */
+/* line 285, library/source/compass/sass/style.scss */
 .nicholls-home-list-apply- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% -390px !important;
@@ -1736,7 +1734,7 @@ body {
   padding-top: 80px;
   display: block; }
 
-/* line 287, library/source/compass/sass/style.scss */
+/* line 289, library/source/compass/sass/style.scss */
 .nicholls-home-list-calendar- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% -780px !important;
@@ -1744,7 +1742,7 @@ body {
   padding-top: 80px;
   display: block; }
 
-/* line 291, library/source/compass/sass/style.scss */
+/* line 293, library/source/compass/sass/style.scss */
 .nicholls-home-list-explore- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% 0 !important;
@@ -1752,7 +1750,7 @@ body {
   padding-top: 80px;
   display: block; }
 
-/* line 295, library/source/compass/sass/style.scss */
+/* line 297, library/source/compass/sass/style.scss */
 .nicholls-home-list-finaid- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% -260px !important;
@@ -1760,7 +1758,7 @@ body {
   padding-top: 80px;
   display: block; }
 
-/* line 299, library/source/compass/sass/style.scss */
+/* line 301, library/source/compass/sass/style.scss */
 .nicholls-home-list-majors- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% -650px !important;
@@ -1768,7 +1766,7 @@ body {
   padding-top: 80px;
   display: block; }
 
-/* line 303, library/source/compass/sass/style.scss */
+/* line 305, library/source/compass/sass/style.scss */
 .nicholls-home-list-tour- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% -520px !important;
@@ -1776,7 +1774,7 @@ body {
   padding-top: 80px;
   display: block; }
 
-/* line 307, library/source/compass/sass/style.scss */
+/* line 309, library/source/compass/sass/style.scss */
 .nicholls-home-list-social- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% -130px !important;
@@ -1785,7 +1783,7 @@ body {
   display: block; }
 
 @media (min-width: 74em) {
-  /* line 314, library/source/compass/sass/style.scss */
+  /* line 316, library/source/compass/sass/style.scss */
   .wrapper- {
     *zoom: 1;
     width: 72.816em;
@@ -1807,7 +1805,7 @@ body {
       display: table;
       clear: both; }
 
-  /* line 319, library/source/compass/sass/style.scss */
+  /* line 321, library/source/compass/sass/style.scss */
   .container- {
     width: 74.307%;
     float: left;
@@ -1821,7 +1819,7 @@ body {
     padding: 0.604%;
     font-size: 96%; }
 
-  /* line 329, library/source/compass/sass/style.scss */
+  /* line 331, library/source/compass/sass/style.scss */
   .widgets-primary- {
     width: 24.094%;
     float: right;
@@ -1831,7 +1829,7 @@ body {
     font-size: 94%;
     float: left; }
 
-  /* line 337, library/source/compass/sass/style.scss */
+  /* line 339, library/source/compass/sass/style.scss */
   .widgets-secondary- {
     width: 24.094%;
     float: right;
@@ -1843,7 +1841,7 @@ body {
 
   /* Nichols Menu - Primary */
   /* Nicholls Header */
-  /* line 348, library/source/compass/sass/style.scss */
+  /* line 350, library/source/compass/sass/style.scss */
   .header-nicholls- {
     *zoom: 1;
     width: 72.816em;
@@ -1857,7 +1855,7 @@ body {
       content: "";
       display: table;
       clear: both; }
-    /* line 352, library/source/compass/sass/style.scss */
+    /* line 354, library/source/compass/sass/style.scss */
     .header-nicholls- .header- {
       width: 100%;
       padding: 0 .5em;
@@ -1865,7 +1863,7 @@ body {
       height: 8em; }
 
   /* Nicholls Footer */
-  /* line 362, library/source/compass/sass/style.scss */
+  /* line 364, library/source/compass/sass/style.scss */
   .footer- {
     *zoom: 1;
     width: 72.816em;
@@ -1890,15 +1888,14 @@ body {
       content: "";
       display: table;
       clear: both; }
-    /* line 371, library/source/compass/sass/style.scss */
+    /* line 373, library/source/compass/sass/style.scss */
     .footer- .column- {
-      width: 18.026%;
       float: left;
-      margin-right: 1.492%;
-      display: inline;
+      width: 20%;
+      margin: 0;
       font-size: 80%; } }
 @media (min-width: 42em) and (max-width: 62em) {
-  /* line 381, library/source/compass/sass/style.scss */
+  /* line 385, library/source/compass/sass/style.scss */
   .wrapper- {
     *zoom: 1;
     width: 40.574em;
@@ -1921,7 +1918,7 @@ body {
       clear: both; }
 
   /* Layout */
-  /* line 388, library/source/compass/sass/style.scss */
+  /* line 392, library/source/compass/sass/style.scss */
   .container- {
     width: 100%;
     float: left;
@@ -1929,7 +1926,7 @@ body {
     display: inline;
     font-size: 96%; }
 
-  /* line 393, library/source/compass/sass/style.scss */
+  /* line 397, library/source/compass/sass/style.scss */
   .content- {
     width: 100%;
     float: left;
@@ -1937,7 +1934,7 @@ body {
     display: inline;
     margin-left: 3.922%; }
 
-  /* line 398, library/source/compass/sass/style.scss */
+  /* line 402, library/source/compass/sass/style.scss */
   .widgets-primary- {
     width: 31.887%;
     float: left;
@@ -1946,7 +1943,7 @@ body {
     padding: 0 1.2em 0 0;
     font-size: 94%; }
 
-  /* line 406, library/source/compass/sass/style.scss */
+  /* line 410, library/source/compass/sass/style.scss */
   .widgets-secondary- {
     width: 31.887%;
     float: left;
@@ -1958,7 +1955,7 @@ body {
 
   /* Nichols Menu - Primary */
   /* Nicholls Header */
-  /* line 419, library/source/compass/sass/style.scss */
+  /* line 423, library/source/compass/sass/style.scss */
   .header-nicholls- {
     *zoom: 1;
     width: 40.574em;
@@ -1972,7 +1969,7 @@ body {
       content: "";
       display: table;
       clear: both; }
-    /* line 423, library/source/compass/sass/style.scss */
+    /* line 427, library/source/compass/sass/style.scss */
     .header-nicholls- .header- {
       *zoom: 1;
       width: 40.574em;
@@ -1988,7 +1985,7 @@ body {
         display: table;
         clear: both; } }
 @media (min-width: 28em) and (max-width: 42em) {
-  /* line 433, library/source/compass/sass/style.scss */
+  /* line 437, library/source/compass/sass/style.scss */
   .wrapper- {
     *zoom: 1;
     width: 26.756em;
@@ -2011,7 +2008,7 @@ body {
       clear: both; }
 
   /* Layout */
-  /* line 440, library/source/compass/sass/style.scss */
+  /* line 444, library/source/compass/sass/style.scss */
   .container- {
     width: 100%;
     float: left;
@@ -2019,14 +2016,14 @@ body {
     display: inline;
     font-size: 96%; }
 
-  /* line 445, library/source/compass/sass/style.scss */
+  /* line 449, library/source/compass/sass/style.scss */
   .content- {
     width: 100%;
     float: left;
     margin-right: 3.289%;
     display: inline; }
 
-  /* line 449, library/source/compass/sass/style.scss */
+  /* line 453, library/source/compass/sass/style.scss */
   .widgets-primary- {
     width: 100%;
     float: right;
@@ -2035,7 +2032,7 @@ body {
     display: inline;
     font-size: 94%; }
 
-  /* line 455, library/source/compass/sass/style.scss */
+  /* line 459, library/source/compass/sass/style.scss */
   .widgets-secondary- {
     width: 100%;
     float: right;
@@ -2047,7 +2044,7 @@ body {
 
   /* Nichols Menu - Primary */
   /* Nicholls Header */
-  /* line 466, library/source/compass/sass/style.scss */
+  /* line 470, library/source/compass/sass/style.scss */
   .header-nicholls- {
     *zoom: 1;
     width: 26.756em;
@@ -2061,7 +2058,7 @@ body {
       content: "";
       display: table;
       clear: both; }
-    /* line 470, library/source/compass/sass/style.scss */
+    /* line 474, library/source/compass/sass/style.scss */
     .header-nicholls- .header- {
       *zoom: 1;
       width: 26.756em;
@@ -2077,7 +2074,7 @@ body {
         display: table;
         clear: both; } }
 @media (min-width: 0em) and (max-width: 28em) {
-  /* line 480, library/source/compass/sass/style.scss */
+  /* line 484, library/source/compass/sass/style.scss */
   .wrapper- {
     *zoom: 1;
     width: 17.544em;
@@ -2100,7 +2097,7 @@ body {
       clear: both; }
 
   /* Layout */
-  /* line 487, library/source/compass/sass/style.scss */
+  /* line 491, library/source/compass/sass/style.scss */
   .container- {
     width: 100%;
     float: left;
@@ -2108,14 +2105,14 @@ body {
     display: inline;
     font-size: 96%; }
 
-  /* line 492, library/source/compass/sass/style.scss */
+  /* line 496, library/source/compass/sass/style.scss */
   .content- {
     width: 100%;
     float: left;
     margin-right: 5.016%;
     display: inline; }
 
-  /* line 496, library/source/compass/sass/style.scss */
+  /* line 500, library/source/compass/sass/style.scss */
   .widgets-primary- {
     width: 100%;
     float: left;
@@ -2123,7 +2120,7 @@ body {
     display: inline;
     font-size: 94%; }
 
-  /* line 502, library/source/compass/sass/style.scss */
+  /* line 506, library/source/compass/sass/style.scss */
   .widgets-secondary- {
     width: 100%;
     float: left;
@@ -2134,7 +2131,7 @@ body {
 
   /* Nichols Menu - Primary */
   /* Nicholls Header */
-  /* line 513, library/source/compass/sass/style.scss */
+  /* line 517, library/source/compass/sass/style.scss */
   .header-nicholls- {
     *zoom: 1;
     width: 17.544em;
@@ -2148,7 +2145,7 @@ body {
       content: "";
       display: table;
       clear: both; }
-    /* line 517, library/source/compass/sass/style.scss */
+    /* line 521, library/source/compass/sass/style.scss */
     .header-nicholls- .header- {
       *zoom: 1;
       width: 17.544em;
