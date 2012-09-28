@@ -984,192 +984,8 @@ li.widget_pages li:before {
 
 /* END Top Navigation and Search */
 /* START - Nicholls Primary Menu */
-/* line 708, library/source/compass/sass/_defaults.scss */
-.menu-primary-container- {
-  text-align: left;
-  clear: both;
-  position: relative;
-  z-index: 1001; }
-
-/* line 715, library/source/compass/sass/_defaults.scss */
-.menu-primary- {
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid #000; }
-
-/* line 721, library/source/compass/sass/_defaults.scss */
-.menu-primary- .nicholls-menu-list- {
-  list-style-type: none;
-  list-style-position: inside;
-  clear: both;
-  margin: 0;
-  padding: 0; }
-
-/* line 729, library/source/compass/sass/_defaults.scss */
-.menu-primary- .nicholls-menu-list- .nicholls-menu-item {
-  list-style-type: none;
-  list-style-position: inside;
-  padding: 0;
-  float: left;
-  font-weight: 600;
-  display: block;
-  font-size: 80%;
-  margin: 0 .4em 0 0;
-  line-height: 1.2em;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc; }
-
-/* line 746, library/source/compass/sass/_defaults.scss */
-.nicholls-menu-list- .nicholls-menu-item:first-child {
-  margin-left: .4em; }
-
-/* line 750, library/source/compass/sass/_defaults.scss */
-.nicholls-menu-list- .nicholls-menu-item .nicholls-menu-item-link {
-  margin: 0;
-  display: block;
-  height: 2.4em;
-  padding-bottom: .3em; }
-
-/* line 757, library/source/compass/sass/_defaults.scss */
-.nicholls-menu-item a.nicholls-menu-item-link, .nicholls-menu-item a.nicholls-menu-item-link:link, .nicholls-menu-item a.nicholls-menu-item-link:active, .nicholls-menu-item a.nicholls-menu-item-link:visited {
-  text-decoration: none;
-  color: #fff;
-  text-align: center;
-  margin-top: 36px; }
-
-/* line 764, library/source/compass/sass/_defaults.scss */
-.nicholls-menu-item a.nicholls-menu-item-link:hover {
-  text-decoration: none;
-  background-color: #cc3333;
-  color: white; }
-
-/* line 770, library/source/compass/sass/_defaults.scss */
-.nicholls-menu-selected, .nicholls-menu-selected a, .nicholls-menu-selected a:link, .nicholls-menu-selected a:active, .nicholls-menu-selected a:visited {
-  background: #cc3333;
-  color: white; }
-
-/* line 775, library/source/compass/sass/_defaults.scss */
-.nicholls-menu-current- {
-  background-color: #aaae87; }
-
-/* line 779, library/source/compass/sass/_defaults.scss */
-.nicholls-menu-current- .nicholls-menu-item-link {
-  background-color: #aaae87;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFAAAE87', endColorstr='#FF666850');
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2FhYWU4NyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzY2Njg1MCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aaae87), color-stop(100%, #666850));
-  background-image: -webkit-linear-gradient(top, #aaae87 0%, #666850 100%);
-  background-image: -moz-linear-gradient(top, #aaae87 0%, #666850 100%);
-  background-image: -o-linear-gradient(top, #aaae87 0%, #666850 100%);
-  background-image: -ms-linear-gradient(top, #aaae87 0%, #666850 100%);
-  background-image: linear-gradient(top, #aaae87 0%, #666850 100%); }
-
-/* line 785, library/source/compass/sass/_defaults.scss */
-.nicholls-menu-future- {
-  background-color: #7a2224; }
-
-/* line 789, library/source/compass/sass/_defaults.scss */
-.nicholls-menu-future- .nicholls-menu-item-link {
-  background-color: #7a2224;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF7A2224', endColorstr='#FF491415');
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdhMjIyNCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQ5MTQxNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7a2224), color-stop(100%, #491415));
-  background-image: -webkit-linear-gradient(top, #7a2224 0%, #491415 100%);
-  background-image: -moz-linear-gradient(top, #7a2224 0%, #491415 100%);
-  background-image: -o-linear-gradient(top, #7a2224 0%, #491415 100%);
-  background-image: -ms-linear-gradient(top, #7a2224 0%, #491415 100%);
-  background-image: linear-gradient(top, #7a2224 0%, #491415 100%); }
-
-/* line 795, library/source/compass/sass/_defaults.scss */
-.nicholls-menu-life- {
-  background-color: #f3ae2f; }
-
-/* line 799, library/source/compass/sass/_defaults.scss */
-.nicholls-menu-life- .nicholls-menu-item-link {
-  background-color: #f3ae2f;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF3AE2F', endColorstr='#FF92681C');
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YzYWUyZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzkyNjgxYyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3ae2f), color-stop(100%, #92681c));
-  background-image: -webkit-linear-gradient(top, #f3ae2f 0%, #92681c 100%);
-  background-image: -moz-linear-gradient(top, #f3ae2f 0%, #92681c 100%);
-  background-image: -o-linear-gradient(top, #f3ae2f 0%, #92681c 100%);
-  background-image: -ms-linear-gradient(top, #f3ae2f 0%, #92681c 100%);
-  background-image: linear-gradient(top, #f3ae2f 0%, #92681c 100%); }
-
-/* line 805, library/source/compass/sass/_defaults.scss */
-.nicholls-menu-athletics- {
-  background-color: #467d80; }
-
-/* line 809, library/source/compass/sass/_defaults.scss */
-.nicholls-menu-athletics- .nicholls-menu-item-link {
-  background-color: #467d80;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF467D80', endColorstr='#FF2A4A4D');
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ2N2Q4MCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzJhNGE0ZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #467d80), color-stop(100%, #2a4a4d));
-  background-image: -webkit-linear-gradient(top, #467d80 0%, #2a4a4d 100%);
-  background-image: -moz-linear-gradient(top, #467d80 0%, #2a4a4d 100%);
-  background-image: -o-linear-gradient(top, #467d80 0%, #2a4a4d 100%);
-  background-image: -ms-linear-gradient(top, #467d80 0%, #2a4a4d 100%);
-  background-image: linear-gradient(top, #467d80 0%, #2a4a4d 100%); }
-
-/* line 815, library/source/compass/sass/_defaults.scss */
-.nicholls-menu-friends- {
-  background-color: #a45c0b; }
-
-/* line 819, library/source/compass/sass/_defaults.scss */
-.nicholls-menu-friends- .nicholls-menu-item-link {
-  background-color: #a45c0b;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFA45C0B', endColorstr='#FF623706');
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E0NWMwYiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzYyMzcwNiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a45c0b), color-stop(100%, #623706));
-  background-image: -webkit-linear-gradient(top, #a45c0b 0%, #623706 100%);
-  background-image: -moz-linear-gradient(top, #a45c0b 0%, #623706 100%);
-  background-image: -o-linear-gradient(top, #a45c0b 0%, #623706 100%);
-  background-image: -ms-linear-gradient(top, #a45c0b 0%, #623706 100%);
-  background-image: linear-gradient(top, #a45c0b 0%, #623706 100%); }
-
-/* line 825, library/source/compass/sass/_defaults.scss */
-.nicholls-menu-administration- {
-  background-color: #52616e; }
-
-/* line 829, library/source/compass/sass/_defaults.scss */
-.nicholls-menu-administration- .nicholls-menu-item-link {
-  background-color: #52616e;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF52616E', endColorstr='#FF313A41');
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUyNjE2ZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzMxM2E0MSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #52616e), color-stop(100%, #313a41));
-  background-image: -webkit-linear-gradient(top, #52616e 0%, #313a41 100%);
-  background-image: -moz-linear-gradient(top, #52616e 0%, #313a41 100%);
-  background-image: -o-linear-gradient(top, #52616e 0%, #313a41 100%);
-  background-image: -ms-linear-gradient(top, #52616e 0%, #313a41 100%);
-  background-image: linear-gradient(top, #52616e 0%, #313a41 100%); }
-
-/* line 835, library/source/compass/sass/_defaults.scss */
-.nicholls-menu-friends- .nicholls-menu-contents {
-  margin-left: -30em; }
-
-/* line 839, library/source/compass/sass/_defaults.scss */
-.nicholls-menu-administration- .nicholls-menu-contents {
-  margin-left: -30em; }
-
-/* line 844, library/source/compass/sass/_defaults.scss */
-.menu-primary- .nicholls-menu-list- .nicholls-menu-search- {
-  border: none; }
-
 /* END - Nicholls Primary Menu */
-/* line 851, library/source/compass/sass/_defaults.scss */
+/* line 712, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-content-container- {
   position: absolute;
   top: 3em;
@@ -1178,23 +994,23 @@ li.widget_pages li:before {
   background: #cccccc url("library/images/nicholls-menu-pointer-down.png") no-repeat;
   margin: 0; }
 
-/* line 860, library/source/compass/sass/_defaults.scss */
+/* line 721, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-future-container {
   background-position: 15em 0em; }
 
-/* line 864, library/source/compass/sass/_defaults.scss */
+/* line 725, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-current-container {
   background-position: 26em 0em; }
 
-/* line 868, library/source/compass/sass/_defaults.scss */
+/* line 729, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-administration-container {
   background-position: 39em 0em; }
 
-/* line 872, library/source/compass/sass/_defaults.scss */
+/* line 733, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-friends-container {
   background-position: 54em 0em; }
 
-/* line 876, library/source/compass/sass/_defaults.scss */
+/* line 737, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents {
   background: white;
   display: none;
@@ -1204,7 +1020,7 @@ li.widget_pages li:before {
   -webkit-box-shadow: 2px 2px 6px #666;
   box-shadow: 2px 2px 6px #666; }
 
-/* line 886, library/source/compass/sass/_defaults.scss */
+/* line 747, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .mm-content-base {
   position: relative;
   z-index: 1003;
@@ -1216,7 +1032,7 @@ li.widget_pages li:before {
   -webkit-box-shadow: 2px 2px 6px #666;
   box-shadow: 2px 2px 6px #666; }
 
-/* line 898, library/source/compass/sass/_defaults.scss */
+/* line 759, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .nicholls-menu-title- {
   border-bottom: 1px solid #ccc;
   margin: 0;
@@ -1224,38 +1040,38 @@ li.widget_pages li:before {
   font-weight: 800;
   color: #cc3333; }
 
-/* line 906, library/source/compass/sass/_defaults.scss */
+/* line 767, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .column- {
   float: left;
   width: 16em;
   /*width of each menu column*/
   margin: .4em .4em 0 .6em; }
 
-/* line 912, library/source/compass/sass/_defaults.scss */
+/* line 773, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .column- ul {
   margin: 0 0 0 .5em;
   padding: 0;
   list-style-type: none; }
 
-/* line 918, library/source/compass/sass/_defaults.scss */
+/* line 779, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .column- ul li {
   padding-bottom: .4em; }
 
-/* line 922, library/source/compass/sass/_defaults.scss */
+/* line 783, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .column- h2, .nicholls-menu-contents .column- h3, .nicholls-menu-contents .column- h4 {
   color: #cc3333;
   margin: .2em 0 .4em 0; }
 
-/* line 927, library/source/compass/sass/_defaults.scss */
+/* line 788, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .column- ul li a {
   text-decoration: none; }
 
-/* line 931, library/source/compass/sass/_defaults.scss */
+/* line 792, library/source/compass/sass/_defaults.scss */
 .nicholls-menu-contents .column- ul li a:hover {
   color: red; }
 
 /* START - Nicholls Header */
-/* line 937, library/source/compass/sass/_defaults.scss */
+/* line 798, library/source/compass/sass/_defaults.scss */
 .header-nicholls-wrapper- {
   width: 100%;
   text-align: left;
@@ -1264,12 +1080,12 @@ li.widget_pages li:before {
   -moz-background-size: cover;
   -webkit-background-size: cover; }
 
-/* line 946, library/source/compass/sass/_defaults.scss */
+/* line 807, library/source/compass/sass/_defaults.scss */
 .header-nicholls- {
   margin: 0 auto 0 auto;
   overflow: hidden; }
 
-/* line 951, library/source/compass/sass/_defaults.scss */
+/* line 812, library/source/compass/sass/_defaults.scss */
 .info-primary- {
   margin: 0;
   padding: 0;
@@ -1278,7 +1094,7 @@ li.widget_pages li:before {
   -moz-box-shadow: 3px 3px 3px 0px #333333;
   box-shadow: 3px 3px 3px 0px #333333; }
 
-/* line 958, library/source/compass/sass/_defaults.scss */
+/* line 819, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- .info-primary-content- {
   background: white;
   clear: both;
@@ -1287,14 +1103,14 @@ li.widget_pages li:before {
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc; }
 
-/* line 968, library/source/compass/sass/_defaults.scss */
+/* line 829, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- ul {
   list-style-type: none;
   clear: both;
   margin: 0;
   padding: 0; }
 
-/* line 975, library/source/compass/sass/_defaults.scss */
+/* line 836, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- ul li {
   margin: .4em 0;
   font-size: 90%;
@@ -1302,61 +1118,61 @@ li.widget_pages li:before {
   color: #cc3333;
   display: block; }
 
-/* line 983, library/source/compass/sass/_defaults.scss */
+/* line 844, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- a, .header-nicholls- .info-primary- a:link, .header-nicholls- .info-primary- ul li a, .header-nicholls- .info-primary- ul li a:link, .header-nicholls- .info-primary- ul li a:active, .header-nicholls- .info-primary- ul li a:visited {
   color: #cc3333;
   text-decoration: none; }
 
-/* line 988, library/source/compass/sass/_defaults.scss */
+/* line 849, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- a:hover, .header-nicholls- .info-primary- ul li a:hover {
   text-decoration: underline; }
 
-/* line 992, library/source/compass/sass/_defaults.scss */
+/* line 853, library/source/compass/sass/_defaults.scss */
 .info-tagline {
   font-size: 80%;
   margin-top: .6em;
   color: #fff; }
 
-/* line 998, library/source/compass/sass/_defaults.scss */
+/* line 859, library/source/compass/sass/_defaults.scss */
 .info-contact {
   font-size: 102%;
   margin-top: .4em;
   color: #fff; }
 
-/* line 1004, library/source/compass/sass/_defaults.scss */
+/* line 865, library/source/compass/sass/_defaults.scss */
 .info-contact a, .info-contact a:link, .info-contact a:active, .info-contact a:visited {
   color: #fff;
   text-decoration: none; }
 
-/* line 1009, library/source/compass/sass/_defaults.scss */
+/* line 870, library/source/compass/sass/_defaults.scss */
 .info-contact a:hover {
   color: #fff;
   text-decoration: underline; }
 
-/* line 1014, library/source/compass/sass/_defaults.scss */
+/* line 875, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- .info-programs {
   padding-bottom: .3em;
   padding-left: .4em; }
 
-/* line 1019, library/source/compass/sass/_defaults.scss */
+/* line 880, library/source/compass/sass/_defaults.scss */
 .header-nicholls- .info-primary- .info-request {
   padding-bottom: .3em;
   padding-left: .4em; }
 
 /* END - Nicholls Header */
 /* START Header */
-/* line 1028, library/source/compass/sass/_defaults.scss */
+/* line 889, library/source/compass/sass/_defaults.scss */
 .header- {
   color: white;
   background: transparent url("library/images/45pc_black.png"); }
 
-/* line 1033, library/source/compass/sass/_defaults.scss */
+/* line 894, library/source/compass/sass/_defaults.scss */
 .header- .blog-title-prefix- {
   display: block;
   margin: 0;
   padding: .5em 0 0 .4em; }
 
-/* line 1039, library/source/compass/sass/_defaults.scss */
+/* line 900, library/source/compass/sass/_defaults.scss */
 .header- .blog-title- {
   font-family: 'Crimson Text', 'Times New Roman', times, Georgia, serif;
   font-weight: 400;
@@ -1366,23 +1182,23 @@ li.widget_pages li:before {
   color: white;
   text-shadow: black 1px 1px 1px; }
 
-/* line 1050, library/source/compass/sass/_defaults.scss */
+/* line 911, library/source/compass/sass/_defaults.scss */
 .header- .blog-title- a, .header- .blog-title- a:link, .header- .blog-title- a:active, .header- .blog-title- a:visited {
   text-decoration: none;
   color: white; }
 
-/* line 1055, library/source/compass/sass/_defaults.scss */
+/* line 916, library/source/compass/sass/_defaults.scss */
 .header- .blog-title- a:hover {
   text-decoration: underline; }
 
-/* line 1059, library/source/compass/sass/_defaults.scss */
+/* line 920, library/source/compass/sass/_defaults.scss */
 .header- .blog-description- {
   font-size: 92%;
   padding: 0 0 .2em .5em; }
 
 /* END Header */
 /* START - footer */
-/* line 1069, library/source/compass/sass/_defaults.scss */
+/* line 930, library/source/compass/sass/_defaults.scss */
 .footer- .column-title- {
   font-size: 118%;
   margin: 0;
@@ -1390,24 +1206,24 @@ li.widget_pages li:before {
   background: #cc3333;
   color: #fff; }
 
-/* line 1077, library/source/compass/sass/_defaults.scss */
+/* line 938, library/source/compass/sass/_defaults.scss */
 .footer- .column-content- {
   margin: .4em .4em .4em .2em; }
 
-/* line 1082, library/source/compass/sass/_defaults.scss */
+/* line 943, library/source/compass/sass/_defaults.scss */
 .footer- .column- ul {
   margin: 0 0 0 .5em;
   padding: 0;
   list-style-type: none; }
 
-/* line 1088, library/source/compass/sass/_defaults.scss */
+/* line 949, library/source/compass/sass/_defaults.scss */
 .footer- .column- ul li {
   padding-bottom: .4em; }
 
 /* END - Footer */
 /* END - Custom Site */
 /* START Hidden Elements */
-/* line 1106, library/source/compass/sass/_defaults.scss */
+/* line 967, library/source/compass/sass/_defaults.scss */
 .hide, .access- {
   position: absolute !important;
   top: -9999px !important;
@@ -1415,14 +1231,14 @@ li.widget_pages li:before {
 
 /* END Hidden Elements */
 /* START Conditional Elements */
-/* line 1116, library/source/compass/sass/_defaults.scss */
+/* line 977, library/source/compass/sass/_defaults.scss */
 .widgets-primary-active .container- {
   border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #cccccc; }
 
 /* Widgets Inactive (Primary & Secondary) - Container goes full width */
-/* line 1123, library/source/compass/sass/_defaults.scss */
+/* line 984, library/source/compass/sass/_defaults.scss */
 body.widgets-primary-inactive.widgets-secondary-inactive .container- {
   float: none;
   width: auto;
@@ -1621,91 +1437,236 @@ body {
   float: left;
   margin-right: 1.492%;
   display: inline;
+  text-align: left;
+  clear: both;
+  position: relative;
+  z-index: 1001;
   height: 0; }
 
-/* line 204, library/source/compass/sass/style.scss */
+/* line 208, library/source/compass/sass/style.scss */
 .menu-primary- {
   float: left;
-  clear: right; }
+  clear: right;
+  height: 4.5em;
+  width: 45em;
+  background: transparent url("library/images/backgrounds/bg-transparent-black-60.png"); }
 
-/* line 209, library/source/compass/sass/style.scss */
+/* line 216, library/source/compass/sass/style.scss */
+.nicholls-menu-list- {
+  list-style-type: none;
+  list-style-position: inside;
+  clear: both;
+  margin: 0;
+  padding: 0; }
+
+/* line 224, library/source/compass/sass/style.scss */
 .nicholls-menu-item {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0;
+  float: left;
+  font-weight: 600;
+  display: block;
+  font-size: 80%;
+  margin: 0 1.2em 0 0;
+  line-height: 1.2em;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
   width: 6em; }
 
-/* line 213, library/source/compass/sass/style.scss */
-.nicholls-menu-search- {
-  width: 10em;
-  background: #666; }
+/* line 242, library/source/compass/sass/style.scss */
+.nicholls-menu-list- .nicholls-menu-item:first-child {
+  margin-left: 1.2em; }
 
-/* line 218, library/source/compass/sass/style.scss */
-.nicholls-menu-search- .form-gs-container- {
-  margin: 1.2em .5em 1.8em .5em; }
-
-/* line 222, library/source/compass/sass/style.scss */
+/* line 246, library/source/compass/sass/style.scss */
 .nicholls-menu-item-link {
-  width: auto;
-  top: 36px;
-  padding-left: .2em;
-  padding-right: .2em;
-  background: white; }
+  margin: 0;
+  display: block;
+  height: 2.4em;
+  padding: 0 .2em .3em .2em; }
 
-/* line 230, library/source/compass/sass/style.scss */
+/* line 253, library/source/compass/sass/style.scss */
+.nicholls-menu-item-link, .nicholls-menu-item-link:link, .nicholls-menu-item-link:active, .nicholls-menu-item-link:visited {
+  text-decoration: none;
+  color: #fff;
+  text-align: center; }
+
+/* line 259, library/source/compass/sass/style.scss */
+.nicholls-menu-item-link:hover {
+  text-decoration: none;
+  background-color: #cc3333;
+  color: white; }
+
+/* line 265, library/source/compass/sass/style.scss */
+.nicholls-menu-selected, .nicholls-menu-selected a, .nicholls-menu-selected a:link, .nicholls-menu-selected a:active, .nicholls-menu-selected a:visited {
+  background: #cc3333;
+  color: white; }
+
+/* line 270, library/source/compass/sass/style.scss */
 .nicholls-menu-current- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
   background-position: 50% -1368px !important;
   background-repeat: no-repeat;
   padding-top: 36px;
-  display: block; }
+  display: block;
+  background-color: #aaae87; }
 
-/* line 234, library/source/compass/sass/style.scss */
+/* line 276, library/source/compass/sass/style.scss */
+.nicholls-menu-current- .nicholls-menu-item-link {
+  background-color: #aaae87;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFAAAE87', endColorstr='#FF666850');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2FhYWU4NyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzY2Njg1MCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aaae87), color-stop(100%, #666850));
+  background-image: -webkit-linear-gradient(top, #aaae87 0%, #666850 100%);
+  background-image: -moz-linear-gradient(top, #aaae87 0%, #666850 100%);
+  background-image: -o-linear-gradient(top, #aaae87 0%, #666850 100%);
+  background-image: -ms-linear-gradient(top, #aaae87 0%, #666850 100%);
+  background-image: linear-gradient(top, #aaae87 0%, #666850 100%); }
+
+/* line 282, library/source/compass/sass/style.scss */
 .nicholls-menu-future- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
   background-position: 50% -1032px !important;
   background-repeat: no-repeat;
   padding-top: 36px;
-  display: block; }
+  display: block;
+  background-color: #7a2224; }
 
-/* line 238, library/source/compass/sass/style.scss */
-.nicholls-menu-administration- {
-  background-image: url("library/images/sprites/nicholls-menu-sprite.png");
-  background-position: 50% -1958px !important;
-  background-repeat: no-repeat;
-  padding-top: 36px;
-  display: block; }
+/* line 288, library/source/compass/sass/style.scss */
+.nicholls-menu-future- .nicholls-menu-item-link {
+  background-color: #7a2224;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF7A2224', endColorstr='#FF491415');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdhMjIyNCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQ5MTQxNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7a2224), color-stop(100%, #491415));
+  background-image: -webkit-linear-gradient(top, #7a2224 0%, #491415 100%);
+  background-image: -moz-linear-gradient(top, #7a2224 0%, #491415 100%);
+  background-image: -o-linear-gradient(top, #7a2224 0%, #491415 100%);
+  background-image: -ms-linear-gradient(top, #7a2224 0%, #491415 100%);
+  background-image: linear-gradient(top, #7a2224 0%, #491415 100%); }
 
-/* line 242, library/source/compass/sass/style.scss */
+/* line 294, library/source/compass/sass/style.scss */
 .nicholls-menu-life- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
   background-position: 50% -1790px !important;
   background-repeat: no-repeat;
   padding-top: 36px;
-  display: block; }
+  display: block;
+  background-color: #f3ae2f; }
 
-/* line 246, library/source/compass/sass/style.scss */
+/* line 300, library/source/compass/sass/style.scss */
+.nicholls-menu-life- .nicholls-menu-item-link {
+  background-color: #f3ae2f;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF3AE2F', endColorstr='#FF92681C');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YzYWUyZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzkyNjgxYyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3ae2f), color-stop(100%, #92681c));
+  background-image: -webkit-linear-gradient(top, #f3ae2f 0%, #92681c 100%);
+  background-image: -moz-linear-gradient(top, #f3ae2f 0%, #92681c 100%);
+  background-image: -o-linear-gradient(top, #f3ae2f 0%, #92681c 100%);
+  background-image: -ms-linear-gradient(top, #f3ae2f 0%, #92681c 100%);
+  background-image: linear-gradient(top, #f3ae2f 0%, #92681c 100%); }
+
+/* line 306, library/source/compass/sass/style.scss */
 .nicholls-menu-athletics- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
   background-position: 50% -1622px !important;
   background-repeat: no-repeat;
   padding-top: 36px;
-  display: block; }
+  display: block;
+  background-color: #467d80; }
 
-/* line 250, library/source/compass/sass/style.scss */
+/* line 312, library/source/compass/sass/style.scss */
+.nicholls-menu-athletics- .nicholls-menu-item-link {
+  background-color: #467d80;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF467D80', endColorstr='#FF2A4A4D');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ2N2Q4MCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzJhNGE0ZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #467d80), color-stop(100%, #2a4a4d));
+  background-image: -webkit-linear-gradient(top, #467d80 0%, #2a4a4d 100%);
+  background-image: -moz-linear-gradient(top, #467d80 0%, #2a4a4d 100%);
+  background-image: -o-linear-gradient(top, #467d80 0%, #2a4a4d 100%);
+  background-image: -ms-linear-gradient(top, #467d80 0%, #2a4a4d 100%);
+  background-image: linear-gradient(top, #467d80 0%, #2a4a4d 100%); }
+
+/* line 318, library/source/compass/sass/style.scss */
 .nicholls-menu-friends- {
   background-image: url("library/images/sprites/nicholls-menu-sprite.png");
   background-position: 50% -1286px !important;
   background-repeat: no-repeat;
   padding-top: 36px;
-  display: block; }
+  display: block;
+  background-color: #a45c0b; }
+
+/* line 324, library/source/compass/sass/style.scss */
+.nicholls-menu-friends- .nicholls-menu-item-link {
+  background-color: #a45c0b;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFA45C0B', endColorstr='#FF623706');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E0NWMwYiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzYyMzcwNiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a45c0b), color-stop(100%, #623706));
+  background-image: -webkit-linear-gradient(top, #a45c0b 0%, #623706 100%);
+  background-image: -moz-linear-gradient(top, #a45c0b 0%, #623706 100%);
+  background-image: -o-linear-gradient(top, #a45c0b 0%, #623706 100%);
+  background-image: -ms-linear-gradient(top, #a45c0b 0%, #623706 100%);
+  background-image: linear-gradient(top, #a45c0b 0%, #623706 100%); }
+
+/* line 330, library/source/compass/sass/style.scss */
+.nicholls-menu-administration- {
+  background-image: url("library/images/sprites/nicholls-menu-sprite.png");
+  background-position: 50% -1958px !important;
+  background-repeat: no-repeat;
+  padding-top: 36px;
+  display: block;
+  background-color: #52616e; }
+
+/* line 336, library/source/compass/sass/style.scss */
+.nicholls-menu-administration- .nicholls-menu-item-link {
+  background-color: #52616e;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF52616E', endColorstr='#FF313A41');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUyNjE2ZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzMxM2E0MSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #52616e), color-stop(100%, #313a41));
+  background-image: -webkit-linear-gradient(top, #52616e 0%, #313a41 100%);
+  background-image: -moz-linear-gradient(top, #52616e 0%, #313a41 100%);
+  background-image: -o-linear-gradient(top, #52616e 0%, #313a41 100%);
+  background-image: -ms-linear-gradient(top, #52616e 0%, #313a41 100%);
+  background-image: linear-gradient(top, #52616e 0%, #313a41 100%); }
+
+/* line 342, library/source/compass/sass/style.scss */
+.nicholls-menu-search- {
+  border: none;
+  width: 10em;
+  margin: 0; }
+
+/* line 348, library/source/compass/sass/style.scss */
+.nicholls-menu-search- .form-gs-container- {
+  margin: 1.2em .5em 1.8em .5em; }
+
+/* line 352, library/source/compass/sass/style.scss */
+.nicholls-menu-friends- .nicholls-menu-contents {
+  margin-left: -30em; }
+
+/* line 356, library/source/compass/sass/style.scss */
+.nicholls-menu-administration- .nicholls-menu-contents {
+  margin-left: -30em; }
 
 /* START - Nicholls Home Menu */
-/* line 257, library/source/compass/sass/style.scss */
+/* line 363, library/source/compass/sass/style.scss */
 .nicholls-home-list-container- {
   text-align: left;
   clear: both;
   position: relative;
   z-index: 1001; }
 
-/* line 264, library/source/compass/sass/style.scss */
+/* line 370, library/source/compass/sass/style.scss */
 .nicholls-home-list-container- .nicholls-home-list- {
   list-style-type: none;
   list-style-position: inside;
@@ -1713,7 +1674,7 @@ body {
   margin: 0;
   padding: 0; }
 
-/* line 272, library/source/compass/sass/style.scss */
+/* line 378, library/source/compass/sass/style.scss */
 .nicholls-home-list-container- .nicholls-home-list- .nicholls-home-list-item {
   list-style-type: none;
   list-style-position: inside;
@@ -1726,7 +1687,7 @@ body {
   text-align: center;
   margin-left: .5em; }
 
-/* line 285, library/source/compass/sass/style.scss */
+/* line 391, library/source/compass/sass/style.scss */
 .nicholls-home-list-apply- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% -390px !important;
@@ -1734,7 +1695,7 @@ body {
   padding-top: 80px;
   display: block; }
 
-/* line 289, library/source/compass/sass/style.scss */
+/* line 395, library/source/compass/sass/style.scss */
 .nicholls-home-list-calendar- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% -780px !important;
@@ -1742,7 +1703,7 @@ body {
   padding-top: 80px;
   display: block; }
 
-/* line 293, library/source/compass/sass/style.scss */
+/* line 399, library/source/compass/sass/style.scss */
 .nicholls-home-list-explore- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% 0 !important;
@@ -1750,7 +1711,7 @@ body {
   padding-top: 80px;
   display: block; }
 
-/* line 297, library/source/compass/sass/style.scss */
+/* line 403, library/source/compass/sass/style.scss */
 .nicholls-home-list-finaid- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% -260px !important;
@@ -1758,7 +1719,7 @@ body {
   padding-top: 80px;
   display: block; }
 
-/* line 301, library/source/compass/sass/style.scss */
+/* line 407, library/source/compass/sass/style.scss */
 .nicholls-home-list-majors- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% -650px !important;
@@ -1766,7 +1727,7 @@ body {
   padding-top: 80px;
   display: block; }
 
-/* line 305, library/source/compass/sass/style.scss */
+/* line 411, library/source/compass/sass/style.scss */
 .nicholls-home-list-tour- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% -520px !important;
@@ -1774,7 +1735,7 @@ body {
   padding-top: 80px;
   display: block; }
 
-/* line 309, library/source/compass/sass/style.scss */
+/* line 415, library/source/compass/sass/style.scss */
 .nicholls-home-list-social- {
   background-image: url("library/images/sprites/nicholls-home-sprite.png");
   background-position: 50% -130px !important;
@@ -1783,7 +1744,7 @@ body {
   display: block; }
 
 @media (min-width: 74em) {
-  /* line 316, library/source/compass/sass/style.scss */
+  /* line 422, library/source/compass/sass/style.scss */
   .wrapper- {
     *zoom: 1;
     width: 72.816em;
@@ -1805,7 +1766,7 @@ body {
       display: table;
       clear: both; }
 
-  /* line 321, library/source/compass/sass/style.scss */
+  /* line 427, library/source/compass/sass/style.scss */
   .container- {
     width: 74.307%;
     float: left;
@@ -1819,7 +1780,7 @@ body {
     padding: 0.604%;
     font-size: 96%; }
 
-  /* line 331, library/source/compass/sass/style.scss */
+  /* line 437, library/source/compass/sass/style.scss */
   .widgets-primary- {
     width: 24.094%;
     float: right;
@@ -1829,7 +1790,7 @@ body {
     font-size: 94%;
     float: left; }
 
-  /* line 339, library/source/compass/sass/style.scss */
+  /* line 445, library/source/compass/sass/style.scss */
   .widgets-secondary- {
     width: 24.094%;
     float: right;
@@ -1839,9 +1800,8 @@ body {
     font-size: 94%;
     float: left; }
 
-  /* Nichols Menu - Primary */
   /* Nicholls Header */
-  /* line 350, library/source/compass/sass/style.scss */
+  /* line 454, library/source/compass/sass/style.scss */
   .header-nicholls- {
     *zoom: 1;
     width: 72.816em;
@@ -1855,15 +1815,28 @@ body {
       content: "";
       display: table;
       clear: both; }
-    /* line 354, library/source/compass/sass/style.scss */
+    /* line 458, library/source/compass/sass/style.scss */
     .header-nicholls- .header- {
       width: 100%;
       padding: 0 .5em;
       margin: 20em 0 0 0;
       height: 8em; }
 
+  /* Nichols Menu - Primary */
+  /* line 467, library/source/compass/sass/style.scss */
+  .menu-primary- {
+    width: 58.9em; }
+
+  /* line 471, library/source/compass/sass/style.scss */
+  .nicholls-menu-item {
+    margin: 0 3em 0 0; }
+
+  /* line 475, library/source/compass/sass/style.scss */
+  .nicholls-menu-list- .nicholls-menu-item:first-child {
+    margin-left: 3em; }
+
   /* Nicholls Footer */
-  /* line 364, library/source/compass/sass/style.scss */
+  /* line 481, library/source/compass/sass/style.scss */
   .footer- {
     *zoom: 1;
     width: 72.816em;
@@ -1888,14 +1861,14 @@ body {
       content: "";
       display: table;
       clear: both; }
-    /* line 373, library/source/compass/sass/style.scss */
+    /* line 490, library/source/compass/sass/style.scss */
     .footer- .column- {
       float: left;
       width: 20%;
       margin: 0;
       font-size: 80%; } }
 @media (min-width: 42em) and (max-width: 62em) {
-  /* line 385, library/source/compass/sass/style.scss */
+  /* line 502, library/source/compass/sass/style.scss */
   .wrapper- {
     *zoom: 1;
     width: 40.574em;
@@ -1918,7 +1891,7 @@ body {
       clear: both; }
 
   /* Layout */
-  /* line 392, library/source/compass/sass/style.scss */
+  /* line 509, library/source/compass/sass/style.scss */
   .container- {
     width: 100%;
     float: left;
@@ -1926,7 +1899,7 @@ body {
     display: inline;
     font-size: 96%; }
 
-  /* line 397, library/source/compass/sass/style.scss */
+  /* line 514, library/source/compass/sass/style.scss */
   .content- {
     width: 100%;
     float: left;
@@ -1934,7 +1907,7 @@ body {
     display: inline;
     margin-left: 3.922%; }
 
-  /* line 402, library/source/compass/sass/style.scss */
+  /* line 519, library/source/compass/sass/style.scss */
   .widgets-primary- {
     width: 31.887%;
     float: left;
@@ -1943,7 +1916,7 @@ body {
     padding: 0 1.2em 0 0;
     font-size: 94%; }
 
-  /* line 410, library/source/compass/sass/style.scss */
+  /* line 527, library/source/compass/sass/style.scss */
   .widgets-secondary- {
     width: 31.887%;
     float: left;
@@ -1955,7 +1928,7 @@ body {
 
   /* Nichols Menu - Primary */
   /* Nicholls Header */
-  /* line 423, library/source/compass/sass/style.scss */
+  /* line 540, library/source/compass/sass/style.scss */
   .header-nicholls- {
     *zoom: 1;
     width: 40.574em;
@@ -1969,7 +1942,7 @@ body {
       content: "";
       display: table;
       clear: both; }
-    /* line 427, library/source/compass/sass/style.scss */
+    /* line 544, library/source/compass/sass/style.scss */
     .header-nicholls- .header- {
       *zoom: 1;
       width: 40.574em;
@@ -1985,7 +1958,7 @@ body {
         display: table;
         clear: both; } }
 @media (min-width: 28em) and (max-width: 42em) {
-  /* line 437, library/source/compass/sass/style.scss */
+  /* line 554, library/source/compass/sass/style.scss */
   .wrapper- {
     *zoom: 1;
     width: 26.756em;
@@ -2008,7 +1981,7 @@ body {
       clear: both; }
 
   /* Layout */
-  /* line 444, library/source/compass/sass/style.scss */
+  /* line 561, library/source/compass/sass/style.scss */
   .container- {
     width: 100%;
     float: left;
@@ -2016,14 +1989,14 @@ body {
     display: inline;
     font-size: 96%; }
 
-  /* line 449, library/source/compass/sass/style.scss */
+  /* line 566, library/source/compass/sass/style.scss */
   .content- {
     width: 100%;
     float: left;
     margin-right: 3.289%;
     display: inline; }
 
-  /* line 453, library/source/compass/sass/style.scss */
+  /* line 570, library/source/compass/sass/style.scss */
   .widgets-primary- {
     width: 100%;
     float: right;
@@ -2032,7 +2005,7 @@ body {
     display: inline;
     font-size: 94%; }
 
-  /* line 459, library/source/compass/sass/style.scss */
+  /* line 576, library/source/compass/sass/style.scss */
   .widgets-secondary- {
     width: 100%;
     float: right;
@@ -2044,7 +2017,7 @@ body {
 
   /* Nichols Menu - Primary */
   /* Nicholls Header */
-  /* line 470, library/source/compass/sass/style.scss */
+  /* line 587, library/source/compass/sass/style.scss */
   .header-nicholls- {
     *zoom: 1;
     width: 26.756em;
@@ -2058,7 +2031,7 @@ body {
       content: "";
       display: table;
       clear: both; }
-    /* line 474, library/source/compass/sass/style.scss */
+    /* line 591, library/source/compass/sass/style.scss */
     .header-nicholls- .header- {
       *zoom: 1;
       width: 26.756em;
@@ -2074,7 +2047,7 @@ body {
         display: table;
         clear: both; } }
 @media (min-width: 0em) and (max-width: 28em) {
-  /* line 484, library/source/compass/sass/style.scss */
+  /* line 601, library/source/compass/sass/style.scss */
   .wrapper- {
     *zoom: 1;
     width: 17.544em;
@@ -2097,7 +2070,7 @@ body {
       clear: both; }
 
   /* Layout */
-  /* line 491, library/source/compass/sass/style.scss */
+  /* line 608, library/source/compass/sass/style.scss */
   .container- {
     width: 100%;
     float: left;
@@ -2105,14 +2078,14 @@ body {
     display: inline;
     font-size: 96%; }
 
-  /* line 496, library/source/compass/sass/style.scss */
+  /* line 613, library/source/compass/sass/style.scss */
   .content- {
     width: 100%;
     float: left;
     margin-right: 5.016%;
     display: inline; }
 
-  /* line 500, library/source/compass/sass/style.scss */
+  /* line 617, library/source/compass/sass/style.scss */
   .widgets-primary- {
     width: 100%;
     float: left;
@@ -2120,7 +2093,7 @@ body {
     display: inline;
     font-size: 94%; }
 
-  /* line 506, library/source/compass/sass/style.scss */
+  /* line 623, library/source/compass/sass/style.scss */
   .widgets-secondary- {
     width: 100%;
     float: left;
@@ -2131,7 +2104,7 @@ body {
 
   /* Nichols Menu - Primary */
   /* Nicholls Header */
-  /* line 517, library/source/compass/sass/style.scss */
+  /* line 634, library/source/compass/sass/style.scss */
   .header-nicholls- {
     *zoom: 1;
     width: 17.544em;
@@ -2145,7 +2118,7 @@ body {
       content: "";
       display: table;
       clear: both; }
-    /* line 521, library/source/compass/sass/style.scss */
+    /* line 638, library/source/compass/sass/style.scss */
     .header-nicholls- .header- {
       *zoom: 1;
       width: 17.544em;
