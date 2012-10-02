@@ -1,4 +1,4 @@
-/*
+/*!
 THEME NAME: Nicholls 2012 Core Theme
 THEME URI: http://www.nicholls.edu
 DESCRIPTION: Nicholls Core Theme to start development 
@@ -8,7 +8,7 @@ AUTHOR URI: http://www.nicholls.edu
 TEMPLATE: fnbx
 */
 
-/* 
+/*! 
 Copyright (c) Jess Planck (http://funroe.net)
 
 The FNBX Theme is released under the GNU General Public License.
@@ -91,7 +91,7 @@ body {
 }
 
 
-.logo-container-wrapper- {
+.nicholls-banner- {
 	background-image: url( 'library/images/backgrounds/bg-logo-banner.png' );	
 	background-color: transparent;
 	background-repeat: no-repeat;
@@ -138,33 +138,6 @@ body {
 		display: none;
 	}
 
-}
-
-.footer-nicholls-wrapper- {
-	width: 100%;
-	text-align: left;
-	clear: both;
-	
-	background: #EAEAEA;
-	background-image: url( 'library/images/backgrounds/bg-footer-pattern.png' );
-
-}
-
-.footer- {
-	@include container;
-	@include susy-grid-background;
-
-	margin-top: 1em;
-	border-top: 1px solid #666;
-	background-color: #eaeaea;
-	clear: both;
-	
-	.column- {
-		float: left;	
-		width: 20%;
-		margin: 0;
-		font-size: 80%;
-	}
 }
 
 /* Nicholls Header */
@@ -357,65 +330,34 @@ body {
 	margin-left: -30em;
 }
 
+/* Nicholls Footer */
 
-/* START - Nicholls Home Menu */
-
-.nicholls-home-list-container- {	
+.footer-nicholls-wrapper- {
+	width: 100%;
 	text-align: left;
 	clear: both;
-	position: relative;
-	z-index: 1001;
+	
+	background: #EAEAEA;
+	background-image: url( 'library/images/backgrounds/bg-footer-pattern.png' );
+
 }
 
-.nicholls-home-list-container- .nicholls-home-list- {
-	list-style-type: none;
-	list-style-position: inside;	
+.footer- {
+	@include container;
+	@include susy-grid-background;
+
+	margin-top: 1em;
+	border-top: 1px solid #666;
+	background-color: #eaeaea;
 	clear: both;
-	margin: 0;
-	padding: 0;
+	
+	.column- {
+		float: left;	
+		width: 20%;
+		margin: 0;
+		font-size: 80%;
+	}
 }
-
-.nicholls-home-list-container- .nicholls-home-list- .nicholls-home-list-item {
-	list-style-type: none;
-	list-style-position: inside;
-	padding: 100px 0 0 0;
-	float: left;
-	font-weight: 600;	
-	color: $nicholls-color-red;
-	display: block;
-	width: 100px;
-	text-align: center;
-	margin-left: .5em;
-}
-
-.nicholls-home-list-apply- {
-	@include nicholls_home_icon('red-apply');
-}
-
-.nicholls-home-list-calendar- {
-	@include nicholls_home_icon('red-calendar');
-}
-
-.nicholls-home-list-explore- {
-	@include nicholls_home_icon('red-explore');
-}
-
-.nicholls-home-list-finaid- {
-	@include nicholls_home_icon('red-financial-aid');
-}
-
-.nicholls-home-list-majors- {
-	@include nicholls_home_icon('red-majors');
-}
-
-.nicholls-home-list-tour- {
-	@include nicholls_home_icon('red-tour');
-}
-
-.nicholls-home-list-social- {
-	@include nicholls_home_icon('red-social');
-}
-
 
 @include at-breakpoint( 74em 32 ) {
 
@@ -532,8 +474,6 @@ body {
 		font-size: 94%;	
 		clear: right;		
 	}
-
-	/* Nichols Menu - Primary */
 	
 	/* Nicholls Header */
 	
@@ -544,9 +484,61 @@ body {
 		.header- {
 			@include container;
 			float: right;
-			margin: 6.7em 0 0 0;
 		}
 	}
+	
+	.nicholls-banner- {
+		@include container;
+
+		background-color: #cc3333;
+		background-image: none;
+		clear: both;
+		
+		width: 100%;
+		height: auto;
+		
+	}
+
+	.logo-container-wrapper- {
+		float: left;
+	}
+
+	.logo-container- {
+		padding: 0;
+		margin: 0;
+	}
+	
+	/* Nichols Menu - Primary */
+
+	.nicholls-menu-list- .nicholls-menu-item:first-child {
+		margin-left: 0;
+	}
+	
+	.nicholls-menu-search- {
+		clear: left;
+		border: none;
+		width: 10em;
+		margin: 0;
+	}
+
+	/* Nicholls Footer */
+
+	.footer- {
+		@include container;
+		@include susy-grid-background;
+	
+		margin-top: 1em;
+		border-top: 1px solid #666;
+		background-color: #eaeaea;
+		clear: both;
+		
+		.column- {
+			float: left;
+			width: 20%;
+			margin: 0;
+			font-size: 80%;
+		}
+	}	
 		
 }
 
@@ -579,8 +571,6 @@ body {
 		font-size: 94%;	
 		clear: right;		
 	}
-
-	/* Nichols Menu - Primary */
 	
 	/* Nicholls Header */
 	
@@ -591,10 +581,61 @@ body {
 		.header- {
 			@include container;
 			float: right;
-			margin: 6.7em 0 0 0;
 		}
 	}
+
+	.nicholls-banner- {
+		@include container;
+
+		background-color: #cc3333;
+		background-image: none;
+		clear: both;
 		
+		width: 100%;
+		height: auto;
+		
+	}
+
+	.logo-container-wrapper- {
+		float: left;
+	}
+
+	.logo-container- {
+		padding: 0;
+		margin: 0;
+	}
+	
+	/* Nichols Menu - Primary */
+
+	.nicholls-menu-list- .nicholls-menu-item:first-child {
+		margin-left: 0;
+	}
+	
+	.nicholls-menu-search- {
+		clear: left;
+		border: none;
+		width: 10em;
+		margin: 0;
+	}	
+	
+	/* Nicholls Footer */
+
+	.footer- {
+		@include container;
+		@include susy-grid-background;
+	
+		margin-top: 1em;
+		border-top: 1px solid #666;
+		background-color: #eaeaea;
+		clear: both;
+		
+		.column- {
+			float: left;
+			width: 20%;
+			margin: 0;
+			font-size: 80%;
+		}
+	}		
 }
 
 @include at-breakpoint( 0em 8 28em ) {
@@ -626,9 +667,7 @@ body {
 		font-size: 94%;	
 		clear: right;		
 	}
-	
-	/* Nichols Menu - Primary */
-	
+		
 	/* Nicholls Header */
 	
 	.header-nicholls- {
@@ -638,7 +677,59 @@ body {
 		.header- {
 			@include container;
 			float: right;
-			margin: 6.7em 0 0 0;
+		}
+	}
+	
+	.nicholls-banner- {
+		@include container;
+
+		background-color: #cc3333;
+		background-image: none;
+		clear: both;
+		
+		width: 100%;
+		height: auto;
+		
+	}
+
+	.logo-container-wrapper- {
+		float: none;
+	}
+
+	.logo-container- {
+		padding: 0;
+		margin: 0;
+	}
+		
+	/* Nichols Menu - Primary */
+
+	.nicholls-menu-list- .nicholls-menu-item:first-child {
+		margin-left: 0;
+	}
+	
+	.nicholls-menu-search- {
+		clear: left;
+		border: none;
+		width: 10em;
+		margin: 0;
+	}
+	
+	/* Nicholls Footer */
+
+	.footer- {
+		@include container;
+		@include susy-grid-background;
+	
+		margin-top: 1em;
+		border-top: 1px solid #666;
+		background-color: #eaeaea;
+		clear: both;
+		
+		.column- {
+			float: left;
+			width: 20%;
+			margin: 0;
+			font-size: 80%;
 		}
 	}	
 }

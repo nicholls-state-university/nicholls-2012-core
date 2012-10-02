@@ -57,6 +57,6 @@ jQuery(document).ready( function() {
 
 jQuery(function(){
     // Deactivate menus if touch device
-    if (!Modernizr.touch) jQuery(window).responsinav({ breakpoint: 650 });
+    if (!Modernizr.touch) jQuery(window).responsinav({ breakpoint: 977 });
 });
 

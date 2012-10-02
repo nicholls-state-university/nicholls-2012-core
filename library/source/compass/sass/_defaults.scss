@@ -495,6 +495,8 @@ input:focus, textarea:focus {
 	padding: .4em 0 .4em 0;
 }
 
+/* START - Plugin Styles */
+
 /* START - Plugin Contact Form 7 - Form Controls */
 
 div.wpcf7 {
@@ -704,8 +706,6 @@ li.widget_pages li:before {
 /* END Top Navigation and Search */
 
 /* START - Nicholls Primary Menu */
-
-
 
 /* END - Nicholls Primary Menu */
 
@@ -959,6 +959,156 @@ li.widget_pages li:before {
 }
 
 /* END - Footer */
+
+
+/* START - Special Usage */
+
+/* START - Tables */
+
+.table-defaults  td, .table-defaults th {
+	padding: .3em .5em;
+	vertical-align: top;
+}
+
+.table-style-a {
+	width:100%;
+	border-collapse:collapse;
+}
+
+.table-style-a  td, .table-style-a   th {
+	padding: .3em .5em;
+	border-right: 1px solid #000;
+	vertical-align: top;
+}
+
+.table-style-a  td:last-child, .table-style-a  th:last-child {
+	border-right: none;
+}
+
+.table-style-a  th {
+	font-size: 105%;
+	text-align: left;
+	background-color: #666;
+	color: #fff;
+}
+
+.table-style-b {
+	width:100%;
+	border-collapse:collapse;
+}
+
+.table-style-b  td, .table-style-b  th {
+	padding: .3em .5em;
+	vertical-align: top;
+}
+
+.table-style-b  td, .table-style-b  th {
+	padding: .3em .5em;
+	vertical-align: top;
+}
+
+.table-style-b  tr td {
+	border-top: 1px solid #000;
+}
+
+.table-style-b  th {
+	font-size: 105%;
+	text-align: left;
+}
+
+.table-header-red th {
+	background: #cc3333;
+	color: #fff;
+}
+
+.table-cells-even-down-grey tr:nth-child(even) td {
+	background-color: #e2e2e2;
+}
+
+.table-cells-even-across-grey tr td:nth-child(even) {
+	background-color: #e2e2e2;
+}
+
+.table-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.table-lines-vertical {
+	border-collapse:collapse;
+}
+
+.table-lines-vertical  td, .table-lines-vertical   th {
+	padding: .3em .5em;
+	border-right: 1px solid #000;
+	vertical-align: top;
+}
+
+.table-lines-vertical  td:last-child, .table-lines-vertical  th:last-child {
+	border-right: none;
+}
+
+.table-lines-horizontal {
+	border-collapse:collapse;
+}
+
+.table-lines-horizontal  td, .table-lines-horizontal  th {
+	padding: .3em .5em;
+	vertical-align: top;
+}
+
+.table-lines-horizontal  td, .table-lines-horizontal  th {
+	padding: .3em .5em;
+	vertical-align: top;
+}
+
+.table-lines-horizontal  tr td {
+	border-top: 1px solid #000;
+}
+
+.table-lines-horizontal  th {
+	font-size: 105%;
+	text-align: left;
+}
+
+.table-cells-even-down-grey tr:nth-child(even) td {
+	background-color: #e2e2e2;
+}
+
+.table-cells-even-across-grey tr td:nth-child(even) {
+	background-color: #e2e2e2;
+}
+
+.table-header-bg-red th {
+	background: #cc3333;
+	color: #fff;
+}
+
+.table-header-bg-dark-grey  th {
+	font-size: 105%;
+	text-align: left;
+	background-color: #666;
+	color: #fff;
+}
+
+.table-caption-bg-red caption {
+	background: #cc3333;
+	color: #fff;
+}
+
+.table-caption-bg-dark-grey caption {
+	background: #666;
+	color: #fff;
+}
+
+.table-border-black {
+	border: 1px solid #000;
+}
+
+/* START - Tables */
+
+/* END - Special Usage */
+
 
 /* END - Custom Site */
 

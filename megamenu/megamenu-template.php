@@ -1,7 +1,9 @@
 <div class="menu-primary-container-" id="menu-primary-container">
 
-	<div class="logo-container-wrapper-">
-		<h1 id="logo-container" class="logo-container-"><a class="link-logo-home" href="http://www.nicholls.edu"  tabindex="2">Nicholls State University</a></h1>
+	<div class="nicholls-banner-">
+		<div class="logo-container-wrapper-">
+			<h1 id="logo-container" class="logo-container-"><a class="link-logo-home" href="http://www.nicholls.edu"  tabindex="2">Nicholls State University</a></h1>
+		</div>
 		<div class="info-tagline">people creating possibilities</div>
 		<div class="info-contact">1-877-NICHOLLS <span class="type-normal"> - <a href="http://webmanager.nicholls.edu/nicholls_test//contact">Contact Us</a></span></div>
 	</div>

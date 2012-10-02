@@ -60,6 +60,9 @@
                 
                 // Set mode
                 rn_mode = 1;
+                
+                /* - this as written hides navigation for small screens?
+                
                 // Start nav hidden
                 $('.menu-primary- > ul').hide();
                 // Create mobile handle
@@ -87,7 +90,9 @@
                         }
                     });
                     sub_nav_bind = true;
-                } 
+                }
+                */
+                
             }      
         };       
     };
