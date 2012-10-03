@@ -72,7 +72,7 @@
 	<h3 class="column-title-">Apply</h3>
 	<div class="column-content-">	
 		<ul>
-			<li><a href="http://www.nicholls.edu/apply/">Online application</a></li>
+			<li><a href="http://www.nicholls.edu/apply/">Online Application</a></li>
 			<li><a href="http://www.nicholls.edu/admission/">Office of Admissions</a></li>
 			<li><a href="http://www.nicholls.edu/admission/admissions-requirements/">Admissions Criteria</a></li>
 			<li><a href="http://www.nicholls.edu/orientation/">Orientation</a></li>
