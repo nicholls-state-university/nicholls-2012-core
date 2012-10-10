@@ -113,6 +113,14 @@ h6 {
 	margin-left: .8em;
 }
 
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
 .aligncenter {
 	clear: both;
 	display: block;
@@ -561,12 +569,38 @@ div.wpcf7 {
 
 /* Columns - column-float-width */
 
+.column- {
+	padding: 0 .3em;
+	margin: 0 .3em;
+}
+
+.width-50 {
+	width: 50%;
+}
+
+.width-49 {
+	width: 49%;
+}
+
+.width-47 {
+	width: 47%;
+}
+
+.width-46 {
+	width: 47%;
+}
+
+.width-right-default, .width-default {
+	width: 40.5%;
+}
+
+/* ??? */
 .column-left-16 {
 	float: left;
 	width: 16em;
 	margin-right: 1em;
 }
-
+/* ??? */
 .column-left-20 {
 	float: left;
 	width: 16em;
