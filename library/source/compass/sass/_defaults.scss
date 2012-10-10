@@ -21,6 +21,7 @@ a:visited {
 }
 
 a:hover {
+	color: $link-color-hover;
 	text-decoration: none;
 }
 
@@ -709,89 +710,6 @@ li.widget_pages li:before {
 
 /* END - Nicholls Primary Menu */
 
-.nicholls-menu-content-container- {
-	position: absolute;
-	top: 3em;
-	height: 32.4em;
-	z-index: 1101;
-	background: #ccc url( 'library/images/nicholls-menu-pointer-down.png' ) no-repeat;	
-	margin: 0
-}
-
-.nicholls-menu-future-container {
-	background-position: 15em 0em;
-}
-
-.nicholls-menu-current-container {
-	background-position: 26em 0em;
-}
-
-.nicholls-menu-administration-container {
-	background-position: 39em 0em;
-}
-
-.nicholls-menu-friends-container {
-	background-position: 54em 0em;
-}
-
-.nicholls-menu-contents {
-	background: $nicholls-color-white;
-	display: none;
-	width: 38em;
-	height: 34em;
-	-moz-box-shadow: 2px 2px 6px #666;
-	-webkit-box-shadow: 2px 2px 6px #666;
-	box-shadow: 2px 2px 6px #666;		
-}
-
-.nicholls-menu-contents .mm-content-base {
-  position: relative;
-  z-index: 1003;
-	top: .4em;
-	width: 100%;
-	height: 32em;
-	background: $nicholls-color-white;
-	-moz-box-shadow: 2px 2px 6px #666;
-	-webkit-box-shadow: 2px 2px 6px #666;
-	box-shadow: 2px 2px 6px #666;	  
-}
-
-.nicholls-menu-contents .nicholls-menu-title- { 
-	border-bottom: 1px solid #ccc;
-	margin: 0;
-	padding: .2em .5em;
-	font-weight: 800;
-	color: $nicholls-color-red;
-}
-
-.nicholls-menu-contents .column- {
-	float: left;
-	width: 16em; /*width of each menu column*/
-	margin: .4em .4em 0 .6em;
-}
-
-.nicholls-menu-contents .column- ul {
-	margin: 0 0 0 .5em;
-	padding: 0;
-	list-style-type: none;
-}
-
-.nicholls-menu-contents .column- ul li {
-	padding-bottom: .4em;
-}
-
-.nicholls-menu-contents .column- h2, .nicholls-menu-contents .column- h3, .nicholls-menu-contents .column- h4 {
-	color: $nicholls-color-red;
-	margin: .2em 0 .4em 0;
-}
-
-.nicholls-menu-contents .column- ul li a {
-	text-decoration: none;
-}
-
-.nicholls-menu-contents .column- ul li a:hover {
-	color: red;
-}
 
 /* START - Nicholls Header */
 

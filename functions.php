@@ -49,7 +49,7 @@ if ( is_admin() ) {
 function fnbx_theme_support_filter( $features ) {
 	// Set and filter WordPress theme support features
 	$features['post-formats'] = false;
-	$features['custom-background'] = true;
+	$features['custom-background'] = false;
 	$features['custom-header'] = true;
 	return $features;
 }

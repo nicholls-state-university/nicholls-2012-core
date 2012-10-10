@@ -240,50 +240,118 @@ body {
 	color: $nicholls-color-white;
 }
 
+.nicholls-menu-contents {
+	background: $nicholls-color-white;
+	display: none;
+	width: 38em;
+	height: 26em;
+    @include single-box-shadow(#666, 2px, 2px, 6px, 0px);		
+}
+
+.nicholls-menu-contents .mm-content-base {
+	position: relative;
+	z-index: 1003;
+	top: .4em;
+	width: 100%;
+	height: 32em;
+	background: $nicholls-color-white;
+	@include single-box-shadow(#666, 2px, 2px, 6px, 0px);	  
+}
+
+.nicholls-menu-title- { 
+	border-bottom: 1px solid #ccc;
+	margin: 0;
+	padding: .2em .5em;
+	font-weight: 800;
+	color: $nicholls-color-white;
+}
+
+.nicholls-menu-contents .column- {
+	float: left;
+	width: 16em; /*width of each menu column*/
+	margin: .4em .4em 0 .6em;
+}
+
+.nicholls-menu-contents .column- ul {
+	margin: 0 0 0 .5em;
+	padding: 0;
+	list-style-type: none;
+}
+
+.nicholls-menu-contents .column- ul li {
+	padding-bottom: .4em;
+}
+
+.nicholls-menu-contents .column- h2, .nicholls-menu-contents .column- h3, .nicholls-menu-contents .column- h4 {
+	color: $nicholls-color-red;
+	margin: .2em 0 .4em 0;
+}
+
+.nicholls-menu-contents .column- ul li a {
+	text-decoration: none;
+}
+
+.nicholls-menu-contents .column- ul li a:hover {
+	color: $nicholls-color-red;
+}
+
 .nicholls-menu-current- {
 	@include nicholls_menu_icon('white-current-students');
 
-	background-color: $nicholls-color-tancool;
+	background-color: $nicholls-color-current;
 }
 
 .nicholls-menu-current- .nicholls-menu-item-link {
-	background-color:$nicholls-color-tancool; // Old browsers
+	background-color: $nicholls-color-current; // Old browsers
 	@include filter-gradient(#aaae87, #666850, vertical); // IE6-9
 	@include background-image(linear-gradient(top,  #aaae87 0%,#666850 100%));
+}
+
+
+.nicholls-menu-current- .nicholls-menu-title- {
+	background-color: $nicholls-color-current;
 }
 
 .nicholls-menu-future- {
 	@include nicholls_menu_icon('white-future-students');
 
-	background-color:$nicholls-color-crimson;
+	background-color: $nicholls-color-future;
 }
 
 .nicholls-menu-future- .nicholls-menu-item-link {
-	background-color:$nicholls-color-crimson; // Old browsers
+	background-color:$nicholls-color-future; // Old browsers
 	@include filter-gradient(#7a2224, #491415, vertical); // IE6-9
 	@include background-image(linear-gradient(top,  #7a2224 0%,#491415 100%));
+}
+
+.nicholls-menu-future- .nicholls-menu-title- {
+	background-color: $nicholls-color-future;
 }
 
 .nicholls-menu-life- {
 	@include nicholls_menu_icon('white-housing-life');
 
-	background-color:$nicholls-color-orangelight;
+	background-color: $nicholls-color-life;
 }
 
 .nicholls-menu-life- .nicholls-menu-item-link {
-	background-color: $nicholls-color-orangelight; // Old browsers
+	background-color: $nicholls-color-life; // Old browsers
 	@include filter-gradient(#f3ae2f, #92681c, vertical); // IE6-9
 	@include background-image(linear-gradient(top,  #f3ae2f 0%,#92681c 100%));
+}
+
+.nicholls-menu-life- .nicholls-menu-title- {
+	background-color: $nicholls-color-life;
 }
 
 .nicholls-menu-athletics- {
 	@include nicholls_menu_icon('white-athletics');
 
-	background-color: $nicholls-color-bluegreencool;
+	background-color: $nicholls-color-athletics;
 }
 
 .nicholls-menu-athletics- .nicholls-menu-item-link {
-	background-color: $nicholls-color-bluegreencool;
+	background-color: $nicholls-color-athletics;
 	@include filter-gradient(#467d80, #2a4a4d, vertical); // IE6-9
 	@include background-image(linear-gradient(top,  #467d80 0%,#2a4a4d 100%));
 }
@@ -291,25 +359,41 @@ body {
 .nicholls-menu-friends- {
 	@include nicholls_menu_icon('white-alumni-friends');
 
-	background-color: $nicholls-color-mustard;
+	background-color: $nicholls-color-friends;
 }
 
 .nicholls-menu-friends- .nicholls-menu-item-link {
-	background-color: $nicholls-color-mustard;
+	background-color: $nicholls-color-friends;
 	@include filter-gradient(#a45c0b, #623706, vertical); // IE6-9
 	@include background-image(linear-gradient(top,  #a45c0b 0%,#623706 100%));
+}
+
+.nicholls-menu-friends- .nicholls-menu-title- {
+	background-color: $nicholls-color-friends;
+}
+
+.nicholls-menu-friends- .nicholls-menu-contents {
+	margin-left: -30em;
 }
 
 .nicholls-menu-administration- {
 	@include nicholls_menu_icon('white-faculty-staff');
 
-	background-color:$nicholls-color-greydarkcool;
+	background-color: $nicholls-color-administration;
 }
 
 .nicholls-menu-administration- .nicholls-menu-item-link {
-	background-color:$nicholls-color-greydarkcool;
+	background-color:$nicholls-color-administration;
 	@include filter-gradient(#52616e, #313a41, vertical); // IE6-9
 	@include background-image(linear-gradient(top,  #52616e 0%,#313a41 100%));
+}
+
+.nicholls-menu-administration- .nicholls-menu-title- {
+	background-color: $nicholls-color-administration;
+}
+
+.nicholls-menu-administration- .nicholls-menu-contents {
+	margin-left: -30em;
 }
 
 .nicholls-menu-search- {
@@ -320,14 +404,6 @@ body {
 
 .nicholls-menu-search- .form-gs-container- {
 	margin: 1.2em .5em 1.8em .5em;
-}
-
-.nicholls-menu-friends- .nicholls-menu-contents {
-	margin-left: -30em;
-}
-
-.nicholls-menu-administration- .nicholls-menu-contents {
-	margin-left: -30em;
 }
 
 /* Nicholls Footer */
@@ -350,6 +426,14 @@ body {
 	border-top: 1px solid #666;
 	background-color: #eaeaea;
 	clear: both;
+	
+	a, a:link, a:visited, a:active {
+		text-decoration: none;
+	}
+	
+	a:hover {
+		text-decoration: underline;
+	}
 	
 	.column- {
 		float: left;	

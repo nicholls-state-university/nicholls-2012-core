@@ -51,6 +51,17 @@ $nicholls-color-yellowgreen: #e0e72d;
 
 /* Colors - Links & Text */
 
-$link-color: $nicholls-color-red;
+$link-color: $nicholls-color-blue;
 $link-color-visited: $nicholls-color-grey-dark-a;
-$link-color-hover: unused;
+$link-color-hover: $nicholls-color-blue;
+
+/* Colors - By Area */
+
+$nicholls-color-current: $nicholls-color-tancool;
+$nicholls-color-future: $nicholls-color-crimson;
+$nicholls-color-life: $nicholls-color-orangelight;
+$nicholls-color-athletics: $nicholls-color-bluegreencool;
+$nicholls-color-friends: $nicholls-color-mustard;
+$nicholls-color-administration: $nicholls-color-greydarkcool;
+
+

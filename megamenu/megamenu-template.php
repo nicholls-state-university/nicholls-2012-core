@@ -125,7 +125,7 @@
 					Alumni &amp; <br>Friends
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-friends-contents">
-					<h4 class="nicholls-menu-title-">Alumni &amp; Friends</h4>
+					<h2 class="nicholls-menu-title-">Alumni &amp; Friends</h2>
 					<div class="column-">
 						<h3>Alumni</h3>
 						<ul>
@@ -157,7 +157,7 @@
 					Faculty &amp; <br>Staff
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-administration-contents">
-					<h4 class="nicholls-menu-title-">Administration &amp; Faculty</h4>
+					<h2 class="nicholls-menu-title-">Administration &amp; Faculty</h2>
 					<div class="column-">
 						<h3>On-line Services</h3>
 						<ul>
