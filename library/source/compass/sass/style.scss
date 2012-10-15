@@ -66,24 +66,23 @@ body {
 }
 
 .container- {
-	@include span-columns(19.8, 26);
-	@include omega;
+	@include span-columns(19 omega, 26);
 	/* Container border - right inner div: */
-	
-	padding: gutter()/2;
+	margin-left: -gutter(19)/2;
+	padding-left: gutter(19)/2;
 	
 	font-size: 96%;
 }
 
 .widgets-primary- {
-	@include span-columns(6 omega, 26);
+	@include span-columns(7 omega, 26);
 	
 	font-size: 94%;
 	float: left;
 }
 
 .widgets-secondary- {
-	@include span-columns(6 omega, 26);
+	@include span-columns(7 omega, 26);
 	
 	font-size: 94%;
 	float: left;
@@ -424,9 +423,12 @@ body {
 	@include susy-grid-background;
 
 	margin-top: 1em;
-	border-top: 1px solid #666;
-	background-color: #eaeaea;
 	clear: both;
+
+	background-color: #eaeaea;
+	background-image: url( 'library/images/backgrounds/bg-footer-top-red-5x30.png' );
+	background-repeat: repeat-x;
+	
 	
 	a, a:link, a:visited, a:active {
 		text-decoration: none;
@@ -445,6 +447,7 @@ body {
 	}
 }
 
+/* Layout - Large Screen breakpoint is 1166 */
 @include at-breakpoint( 74em 32 ) {
 
 	.wrapper- {
@@ -453,17 +456,16 @@ body {
 	}
 	
 	.container- {
-		@include span-columns(23.8, 32);
-		@include omega;
+		@include span-columns(23 omega, 32);
 		/* Container border - right inner div: */
-		
-		padding: gutter()/2;
+		margin-left: -gutter(23)/2;
+		padding-left: gutter(23)/2;
 		
 		font-size: 96%;
 	}
 	
 	.widgets-primary- {
-		@include span-columns(8 omega, 32);
+		@include span-columns(9 omega, 32);
 	
 		font-size: 94%;
 		float: left;
@@ -471,7 +473,7 @@ body {
 	}
 	
 	.widgets-secondary- {
-		@include span-columns(8 omega, 32);
+		@include span-columns(9 omega, 32);
 	
 		font-size: 94%;
 		float: left;
@@ -526,6 +528,7 @@ body {
 	
 }
 
+/* Layout - Tablet Screen breakpoint is  */
 @include at-breakpoint( 42em 18 62em ) {
 
 	.wrapper- {
@@ -537,12 +540,14 @@ body {
 	
 	.container- {
 		@include span-columns(18, 18);
+		padding: gutter(18)/2;
+		margin: 0;
+		
 		font-size: 96%;
 	}
 	
-	.content- {
-		@include span-columns(18, 18);
-		@include pre(.5);
+	.widgets-primary-active .container- {
+		border: none;
 	}
 	
 	.widgets-primary- {
@@ -588,6 +593,7 @@ body {
 
 	.logo-container-wrapper- {
 		float: left;
+		margin: .5em;
 	}
 
 	.logo-container- {
@@ -629,6 +635,7 @@ body {
 		
 }
 
+/* Layout - Phone Screen Landscape breakpoint is  */
 @include at-breakpoint( 28em 12 42em ) {
 	.wrapper- {
 		@include container;
@@ -639,12 +646,14 @@ body {
 	
 	.container- {
 		@include span-columns(12, 12);
+		padding: gutter(12)/2;
+
 		font-size: 96%;
 	}
 	
-	.content- {
-		@include span-columns(12, 12);
-	}
+	.widgets-primary-active .container- {
+		border: none;
+	}	
 	
 	.widgets-primary- {
 		@include span-columns(12 omega, 12);
@@ -725,6 +734,7 @@ body {
 	}		
 }
 
+/* Layout - Phone Screen Portrait breakpoint is  */
 @include at-breakpoint( 0em 8 28em ) {
 	.wrapper- {
 		@include container;
@@ -735,11 +745,14 @@ body {
 	
 	.container- {
 		@include span-columns(8, 8);
+		padding: gutter(8)/2;
+
+		border: none;
 		font-size: 96%;
 	}
 	
-	.content- {
-		@include span-columns(8, 8);
+	.widgets-primary-active .container- {
+		border: none;
 	}
 	
 	.widgets-primary- {

@@ -132,6 +132,7 @@ h6 {
 
 .content- {
 	width: auto;
+	padding: 0 .2em;
 }
 
 .entry-content img,
@@ -212,7 +213,7 @@ img.size-full {
 
 /* END Multi-purpose Elements */
 
-/* START Widget Group Styles */
+/* START Widget Styles */
 
 .widgets- {
 	margin: 0;
@@ -226,24 +227,23 @@ img.size-full {
 	padding: 0;
 }
 
-.widgets- h3, .widgets- h4 {
-	font-size: 130%;
+.widgets- .widget {
+	margin: .8em 0;
 }
 
 .widgets- .widgettitle {
 	padding: 0 0 .4em 0;
-	margin: 0 0 0.6em 0;
+	margin: 0 0 .6em 0;
+	font-size: 120%;
+	font-weight: bold;	
+	border-bottom: 1px solid #9F9F9F;	
 }
 
-.widgets-primary- li.widget {
-	margin: 1em 0 1em 0;
-}
-
-.widgets-primary- li.widget ul {
+.widget ul {
 	margin: 0 0 0 .5em;
 }
 
-.widgets-primary- li.widget li {
+.widget li {
 	margin: .5em 0 .5em .5em;
 }
 
@@ -251,7 +251,43 @@ img.size-full {
 	padding: .2em;
 }
 
-/* END Widget Group Styles */
+.widgets- .widget_pages, .widgets- .menu {
+	line-height: 1.2em;
+}
+
+.widgets- .widget_pages ul {
+	margin-left: .5em;
+}
+
+.widgets- .widget_nav_menu li, 
+.widgets- .widget_pages li {
+	text-indent: -0.9em;
+	margin: .4em 0;
+}
+
+.widgets- .widget_nav_menu li:before, 
+.widgets- .widget_pages li:before {
+	content: "\00BB \0020";
+}
+
+.widgets- .menu li ul, .widgets- .widget_pages li ul {
+	display: none;
+}
+
+.widgets- .widget_pages .current_page_item ul, .widgets- .widget_pages .current_page_ancestor ul, .widgets- .menu .current-menu-item ul, .widgets- .menu .current-menu-ancestor ul {
+	display: block;
+}
+
+.widgets- .widget_pages a, .widgets- .widget_pages a:link, .widgets- .widget_pages a:active, .widgets- .widget_pages a:visited, 
+.widgets- .menu a, .widgets- .menu a:link, .widgets- .menu a:active, .widgets- .menu a:visited {
+	text-decoration: none;
+}
+
+.widgets- .widget_pages a:hover, .widgets- .menu a:hover {
+	text-decoration: underline;
+}
+
+/* END Widget Styles */
 
 /* START Post Navigation Styles */
 
@@ -547,23 +583,6 @@ div.wpcf7 {
 	background: #fff;
 }
 
-/* START Widget Group Styles */
-
-.widgets- h3, .widgets- h4 {
-	font-size: 120%;
-	font-weight: 400;
-	padding: .4em 0;
-	margin: .4em 0;
-	border-bottom: 1px solid #afafaf;
-}
-
-.widgets- .widgettitle {
-	padding: 0 0 .4em 0;
-	border-bottom: 1px solid #9F9F9F;
-	margin: 0 0 0.6em 0;
-}
-
-/* END Widget Group Styles */
 
 /* START - Custom Layout Classes */
 
@@ -649,40 +668,6 @@ div.wpcf7 {
 }
 
 /* END - Custom Classes */
-
-/* START Widget Styles */
-
-.widgets- .widget_pages, .widgets- .menu {
-	line-height: 1.2em;
-}
-
-li.widget_nav_menu li, 
-li.widget_pages li {
-	text-indent: -0.9em;
-}
-
-li.widget_nav_menu li:before, 
-li.widget_pages li:before {
-	content: "\00BB \0020";
-}
-
-.widgets- .menu li ul, .widgets- .widget_pages li ul {
-	display: none;
-}
-
-.widgets- .widget_pages .current_page_item ul, .widgets- .widget_pages .current_page_ancestor ul, .widgets- .menu .current-menu-item ul, .widgets- .menu .current-menu-ancestor ul {
-	display: block;
-}
-
-.widgets- .widget_pages a, .widgets- .widget_pages a:link, .widgets- .widget_pages a:active, .widgets- .widget_pages a:visited, 
-.widgets- .menu a, .widgets- .menu a:link, .widgets- .menu a:active, .widgets- .menu a:visited {
-	text-decoration: none;
-}
-
-.widgets- .widget_pages a:hover, .widgets- .menu a:hover {
-	text-decoration: underline;
-}
-/* END Widget Styles */
 
 /* START Top Navigation and Search */
 
