@@ -201,18 +201,18 @@ body {
 	font-weight: 600;	
 	display: block;
 	font-size: 80%;
-	margin: 0 1.2em 0 0;
+	margin: 0 .6em 0 0;
 	line-height: 1.2em;
 	
 	border-left: 1px solid #ccc;
 	border-right: 1px solid #ccc;
 
-	width: 6em;
+	width: 6.8em;
 
 }
 
 .nicholls-menu-list- .nicholls-menu-item:first-child {
-	margin-left: 1.2em;
+	margin-left: .6em;
 }
 
 .nicholls-menu-item-link {
@@ -244,6 +244,12 @@ body {
 	display: none;
 	width: 38em;
 	height: 26em;
+
+	border-top: none;
+	border-left: 1px solid $nicholls-color-grey;
+	border-right: 1px solid $nicholls-color-grey;
+	border-bottom: 1px solid $nicholls-color-grey;
+
     @include single-box-shadow(#666, 2px, 2px, 6px, 0px);		
 }
 
@@ -270,6 +276,14 @@ body {
 	width: 16em; /*width of each menu column*/
 	margin: .4em .4em 0 .6em;
 	padding: 0;
+}
+
+.nicholls-menu-contents .column-2 {
+	float: right;
+}
+
+.nicholls-menu-contents .column-3 {
+	clear: left;
 }
 
 .nicholls-menu-contents .column- ul {
@@ -373,7 +387,7 @@ body {
 }
 
 .nicholls-menu-friends- .nicholls-menu-contents {
-	margin-left: -30em;
+	margin-left: -31.3em;
 }
 
 .nicholls-menu-administration- {
@@ -393,7 +407,7 @@ body {
 }
 
 .nicholls-menu-administration- .nicholls-menu-contents {
-	margin-left: -30em;
+	margin-left: -31.3em;
 }
 
 .nicholls-menu-search- {
@@ -499,11 +513,11 @@ body {
 	}
 	
 	.nicholls-menu-item {
-		margin: 0 3em 0 0;
+		margin: 0 2.4em 0 0;
 	}
 	
 	.nicholls-menu-list- .nicholls-menu-item:first-child {
-		margin-left: 3em;
+		margin-left: 2.4em;
 	}	
 	
 	/* Nicholls Footer */
@@ -589,29 +603,53 @@ body {
 		width: 100%;
 		height: auto;
 		
+		border-bottom: 1px solid #ccc;
+		
 	}
 
 	.logo-container-wrapper- {
 		float: left;
-		margin: .5em;
+		margin: .8em 1.2em;
 	}
 
 	.logo-container- {
 		padding: 0;
 		margin: 0;
+		border-bottom: none;
+	}
+	
+	.info-container- {
+		margin-top: 1em;
+		padding-bottom: .8em;
+		width: 24em;
+		float: right;
 	}
 	
 	/* Nichols Menu - Primary */
+	
+	.menu-primary- {
+		height: 7.5em;
+	}
+
+	.nicholls-menu-list- .nicholls-menu-item {
+		margin-right: 1.8em;
+	}
 
 	.nicholls-menu-list- .nicholls-menu-item:first-child {
 		margin-left: 0;
 	}
 	
-	.nicholls-menu-search- {
+	.nicholls-menu-list- .nicholls-menu-search- {
 		clear: left;
 		border: none;
-		width: 10em;
+		width: 50.7em;
 		margin: 0;
+		border-top: 1px solid #ccc;
+	}
+	
+	.nicholls-menu-search- .form-gs-container- {
+		margin: .8em 0 .8em 20em;
+		float: left;
 	}
 
 	/* Nicholls Footer */

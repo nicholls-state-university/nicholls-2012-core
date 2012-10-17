@@ -4,8 +4,10 @@
 		<div class="logo-container-wrapper-">
 			<h1 id="logo-container" class="logo-container-"><a class="link-logo-home" href="http://www.nicholls.edu"  tabindex="2">Nicholls State University</a></h1>
 		</div>
-		<div class="info-tagline">people creating possibilities</div>
-		<div class="info-contact">1-877-NICHOLLS <span class="type-normal"> - <a href="http://webmanager.nicholls.edu/nicholls_test//contact">Contact Us</a></span></div>
+		<div class="info-container-" id="info-container">		
+			<div class="info-tagline">people creating possibilities</div>
+			<div class="info-contact">1-877-NICHOLLS <span class="type-normal"> - <a href="http://webmanager.nicholls.edu/nicholls_test//contact">Contact Us</a></span></div>
+		</div>
 	</div>
 
 	<div id="menu-primary" class="menu-primary-">
@@ -16,7 +18,7 @@
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-current-contents">
 					<h2 class="nicholls-menu-title-">Current Students</h2>
-					<div class="column-">
+					<div class="column- column-1">
 						<h3>On-line</h3>
 						<ul>
 							<li><a title="Student E-mail" href="http://www.nicholls.edu/student-email/">Student E-mail</a></li>
@@ -26,9 +28,10 @@
 							<li><a title="Library" href="http://www.nicholls.edu/library/">Library</a></li>
 						</ul>
 					</div>
-					<div class="column-">
+					<div class="column- column-2">
 						<h3>Information</h3>
 						<ul>
+							<li><a href="http://www.nicholls.edu/directory/">Faculty & Staff Directory</a></li>
 							<li><a title="Registration/Schedule of Classes" href="http://www.nicholls.edu/register/">Registration/Schedule of Classes</a></li>
 							<li><a title="Catalog" href="http://www.nicholls.edu/catalog/">Catalog</a></li>
 							<li><a title="Majors, Degrees & Programs of Study" href="http://www.nicholls.edu/programs/">Majors, Degrees & Programs of Study</a></li>
@@ -37,7 +40,7 @@
 							<li><a title="Request Transcripts" href="http://www.nicholls.edu/records/transcripts/">Request Transcripts</a></li>
 						</ul>
 					</div>
-					<div class="column-">
+					<div class="column- column-3">
 						<h3>Services</h3>
 						<ul>
 							<li><a title="Housing & Meal Plans" href="http://www.nicholls.edu/housing/">Housing & Meal Plans</a></li>
@@ -53,7 +56,7 @@
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-future-contents">
 					<h2 class="nicholls-menu-title-">Future Students</h2>
-					<div class="column-">
+					<div class="column- column-1">
 						<h3>Applying to Nicholls</h3>						
 						<ul>
 							<li><a href="http://www.nicholls.edu/request_info/">Request Admission Information</a></li>
@@ -63,13 +66,7 @@
 							<li><a href="http://www.nicholls.edu/financial-aid/">Financial Aid & Scholarships</a></li>
 						</ul>
 					</div>
-					<div class="column-">
-						<h3>Services</h3>						
-						<ul>
-							<li><a href="http://www.nicholls.edu/housing/">Housing & Meal Plans</a></li>
-						</ul>
-					</div>
-					<div class="column-">
+					<div class="column- column-2">
 						<h3>More Information</h3>						
 						<ul>
 							<li><a href="http://www.nicholls.edu/admission/">Office of Admissions</a></li>
@@ -78,6 +75,12 @@
 							<li><a href="http://www.nicholls.edu/orientation/">Orientation</a></li>
 						</ul>
 					</div>
+					<div class="column- column-3">
+						<h3>Services</h3>						
+						<ul>
+							<li><a href="http://www.nicholls.edu/housing/">Housing & Meal Plans</a></li>
+						</ul>
+					</div>					
 				</div>			
 			</li>
 			<li class="nicholls-menu-item nicholls-menu-life-" id="nicholls-menu-life">
@@ -86,9 +89,10 @@
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-life-contents">
 					<h2 class="nicholls-menu-title-">Housing &amp; Campus Life</h2>
-					<div class="column-">
+					<div class="column- column-1">
 						<h3>Services</h3>
-						<ul>					
+						<ul>
+							<li><a title="Colonel Card (ID)" href="http://www.nicholls.edu/colonelcard/">Colonel Card (ID)</a></li>											
 							<li><a href="http://www.nicholls.edu/housing/">Housing / Meal Plans</a></li>
 							<li><a href="http://www.nicholls.edu/dining/">Dining Services</a></li>
 							<li><a href="http://www.nicholls.edu/parking/">Parking Services</a></li>
@@ -97,16 +101,17 @@
 							<li><a href="http://www.nicholls.edu/calendar/">Calendar</a></li>
 						</ul>
 					</div>
-					<div class="column-">
+					<div class="column- column-2">
 						<h3>Organizations &amp; Departments</h3>
-						<ul>							
+						<ul>
+							<li><a href="http://www.nicholls.edu/sga/">Student Government Association (SGA)</a></li>
 							<li><a href="http://www.nicholls.edu/services/">Student Services</a></li>
 							<li><a href="http://www.nicholls.edu/organizations/">Student Organizations</a></li>
 							<li><a href="http://www.nicholls.edu/greek/">Greek Life</a></li>
 							<li><a href="http://www.thenichollsworth.com/">The Nicholls Worth</a></li>
 						</ul>
 					</div>
-					<div class="column-">
+					<div class="column- column-3">
 						<h3>More Information</h3>
 						<ul>					
 							<li><a href="http://www.nicholls.edu/union/">Student Union</a></li>
@@ -126,14 +131,14 @@
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-friends-contents">
 					<h2 class="nicholls-menu-title-">Alumni &amp; Friends</h2>
-					<div class="column-">
+					<div class="column- column-1">
 						<h3>Alumni</h3>
 						<ul>
 							<li><a href="http://www.nichollsalumni.org/">Nicholls Alumni Federation</a></li>
 							<li><a href="http://www.geauxcolonels.com/sb_output.aspx?form=6&">Colonel Athletic Association</a></li>
 						</ul>
 					</div>
-					<div class="column-">
+					<div class="column- column-2">
 						<h3>Nicholls Publications</h3>
 						<ul>					
 							<li><a href="http://www.nichollsalumni.org/the-colonel/">The Colonel</a></li>
@@ -141,7 +146,7 @@
 							<li><a href="http://www.nicholls.edu/mosaic/">Mosaic</a></li>
 						</ul>
 					</div>
-					<div class="column-">
+					<div class="column- column-3">
 						<h3>Departments &amp; Services</h3>
 						<ul>					
 							<li><a href="http://nich.bkstore.com/">Bookstore</a></li>
@@ -158,7 +163,7 @@
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-administration-contents">
 					<h2 class="nicholls-menu-title-">Administration &amp; Faculty</h2>
-					<div class="column-">
+					<div class="column- column-1">
 						<h3>On-line Services</h3>
 						<ul>
 							<li><a href="https://www.google.com/a/nicholls.edu/#inbox">Faculty & Staff E-mail</a></li>
@@ -167,7 +172,7 @@
 							<li><a href="http://www.nicholls.edu/directory/">Faculty & Staff Directory</a></li>
 						</ul>
 					</div>
-					<div class="column-">
+					<div class="column- column-2">
 						<h3>Departments &amp; Resources</h3>
 						<ul>
 							<li><a href="http://www.nicholls.edu/faculty-senate/">Faculty Senate</a></li>
@@ -176,7 +181,7 @@
 							<li><a href="https://jobs.nicholls.edu">Employment Opportunities</a></li>
 						</ul>
 					</div>
-					<div class="column-">
+					<div class="column- column-3">
 						<h3>Information &amp; Policies</h3>
 						<ul>
 							<li><a href="http://www.nicholls.edu/administration/">University Administration</a></li>
