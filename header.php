@@ -18,7 +18,7 @@ do_action( 'fnbx_header_init'); // Typically used for doctype
 
 	<title><?php fnbx_document_title() ?></title>
 
-<link href='http://fonts.googleapis.com/css?family=Cabin:400,500,600,700,400italic,500italic,600italic,700italic|Crimson+Text:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,600italic,400,600,700,800,300,300italic|Crimson+Text:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 
 <?php do_action( 'fnbx_wp_head_before', 'wp_head' ) ?>
 <?php wp_head() // For plugins ?>

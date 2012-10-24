@@ -73,6 +73,7 @@
 							<li><a href="http://www.nicholls.edu/transfer/">Transfer Students</a></li>
 							<li><a href="http://www.nicholls.edu/academics/">Academics & Testing</a></li>
 							<li><a href="http://www.nicholls.edu/orientation/">Orientation</a></li>
+							<li><a href="http://www.nicholls.edu/nicholls-online/">Nicholls Online</a></li>
 						</ul>
 					</div>
 					<div class="column- column-3">
@@ -162,7 +163,7 @@
 					Faculty &amp; <br>Staff
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-administration-contents">
-					<h2 class="nicholls-menu-title-">Administration &amp; Faculty</h2>
+					<h2 class="nicholls-menu-title-">Faculty &amp; Staff</h2>
 					<div class="column- column-1">
 						<h3>On-line Services</h3>
 						<ul>

@@ -180,7 +180,7 @@ body {
 .menu-primary- {
 	float: left;
 	clear: right;
-	height: 4.5em;
+	height: 4.4em;
 	width: 45em;
     background: transparent url( 'library/images/backgrounds/bg-transparent-black-60.png' );      		
 }
@@ -200,14 +200,14 @@ body {
 	float: left;
 	font-weight: 600;	
 	display: block;
-	font-size: 80%;
+	font-size: 76%;
 	margin: 0 .6em 0 0;
 	line-height: 1.2em;
 	
 	border-left: 1px solid #ccc;
 	border-right: 1px solid #ccc;
 
-	width: 6.8em;
+	width: 7em;
 
 }
 
@@ -267,7 +267,7 @@ body {
 	border-bottom: 1px solid #ccc;
 	margin: 0;
 	padding: .2em .5em;
-	font-weight: 800;
+	font-weight: 600;
 	color: $nicholls-color-white;
 }
 
@@ -387,7 +387,7 @@ body {
 }
 
 .nicholls-menu-friends- .nicholls-menu-contents {
-	margin-left: -31.3em;
+	margin-left: -31.1em;
 }
 
 .nicholls-menu-administration- {
@@ -407,7 +407,7 @@ body {
 }
 
 .nicholls-menu-administration- .nicholls-menu-contents {
-	margin-left: -31.3em;
+	margin-left: -31.1em;
 }
 
 .nicholls-menu-search- {
@@ -632,17 +632,25 @@ body {
 	}
 
 	.nicholls-menu-list- .nicholls-menu-item {
-		margin-right: 1.8em;
+		margin-right: 2em;
 	}
 
 	.nicholls-menu-list- .nicholls-menu-item:first-child {
-		margin-left: 0;
+		margin-left: 0em;
 	}
+	
+	.nicholls-menu-list- .nicholls-menu-administration- {
+		margin-left: .2em;
+	}
+	
+	.nicholls-menu-list- .nicholls-menu-life- {
+		margin-left: .2em;
+	}	
 	
 	.nicholls-menu-list- .nicholls-menu-search- {
 		clear: left;
 		border: none;
-		width: 50.7em;
+		width: 53.4em;
 		margin: 0;
 		border-top: 1px solid #ccc;
 	}
@@ -686,7 +694,7 @@ body {
 		@include span-columns(12, 12);
 		padding: gutter(12)/2;
 
-		font-size: 96%;
+		font-size: 82%;
 	}
 	
 	.widgets-primary-active .container- {
@@ -736,20 +744,49 @@ body {
 
 	.logo-container- {
 		padding: 0;
-		margin: 0;
+		margin: .4em;
 	}
 	
+	.info-container- {
+		margin: .8em .8em 0 0;
+		padding: 0;
+		float: right;
+	}	
+	
 	/* Nichols Menu - Primary */
+	
+	.menu-primary- {
+		height: 12em;
+	}	
+
+	.nicholls-menu-list- .nicholls-menu-item {
+		margin-left: 6.8em;
+	}
 
 	.nicholls-menu-list- .nicholls-menu-item:first-child {
 		margin-left: 0;
 	}
 	
-	.nicholls-menu-search- {
+	.nicholls-menu-list- .nicholls-menu-athletics- {
+		clear: left;
+		margin-left: 0;		
+	}
+	
+	.nicholls-menu-list- .nicholls-menu-life-, .nicholls-menu-list- .nicholls-menu-administration- {
+		margin-left: 5.7em;
+	}
+		
+	.nicholls-menu-list- .nicholls-menu-search- {
 		clear: left;
 		border: none;
-		width: 10em;
+		width: 35.4em;
 		margin: 0;
+		border-top: 1px solid #ccc;
+	}
+	
+	.nicholls-menu-search- .form-gs-container- {
+		margin: .8em 0 .8em 13.6em;
+		float: left;
 	}	
 	
 	/* Nicholls Footer */
@@ -764,10 +801,11 @@ body {
 		clear: both;
 		
 		.column- {
-			float: left;
-			width: 20%;
+			float: none;
+			clear: both;
+			width: 100%;
 			margin: 0;
-			font-size: 80%;
+			font-size: 70%;
 		}
 	}		
 }
@@ -786,7 +824,7 @@ body {
 		padding: gutter(8)/2;
 
 		border: none;
-		font-size: 96%;
+		font-size: 82%;
 	}
 	
 	.widgets-primary-active .container- {
@@ -796,13 +834,13 @@ body {
 	.widgets-primary- {
 		@include span-columns(8, 8);
 				
-		font-size: 94%;
+		font-size: 90%;
 	}
 	
 	.widgets-secondary- {
 		@include span-columns(8, 8);
 				
-		font-size: 94%;	
+		font-size: 90%;	
 		clear: right;		
 	}
 		
@@ -815,6 +853,9 @@ body {
 		.header- {
 			@include container;
 			float: right;
+			
+			height: 8em;
+			margin: 22em 0 0 0;			
 		}
 	}
 	
@@ -832,25 +873,44 @@ body {
 
 	.logo-container-wrapper- {
 		float: none;
+		margin: 0;
 	}
 
 	.logo-container- {
 		padding: 0;
-		margin: 0;
+		margin: .4em auto .3em auto;
 	}
+	
+	.info-container- {
+		padding-bottom: .4em;
+	}	
 		
 	/* Nichols Menu - Primary */
+	
+	.menu-primary- {
+		height: 12em;
+	}
 
 	.nicholls-menu-list- .nicholls-menu-item:first-child {
 		margin-left: 0;
 	}
 	
-	.nicholls-menu-search- {
+	.nicholls-menu-athletics- {
+		clear: left;
+	}	
+	
+	.nicholls-menu-list- .nicholls-menu-search- {
 		clear: left;
 		border: none;
-		width: 10em;
+		width: 35.4em;
 		margin: 0;
+		border-top: 1px solid #ccc;
 	}
+	
+	.nicholls-menu-search- .form-gs-container- {
+		margin: .8em 0 .8em 8em;
+		float: left;
+	}	
 	
 	/* Nicholls Footer */
 
@@ -864,10 +924,11 @@ body {
 		clear: both;
 		
 		.column- {
-			float: left;
-			width: 20%;
+			float: none;
+			clear: both;
+			width: 100%;
 			margin: 0;
-			font-size: 80%;
+			font-size: 70%;
 		}
 	}	
 }
