@@ -122,7 +122,7 @@ function nicholls_core_theme_admin_section_emergency_reset() {
 
 	fnbx_html_tag( array(
 		'tag' => 'p',
-		'tag_content' => '<a href="/?emergency_reset=yes&_wpnonce=' . $reset_nonce . '">Reset Cache for Emergency Notices</a>'
+		'tag_content' => '<a href="' . site_url() . '/?emergency_reset=yes&_wpnonce=' . $reset_nonce . '">Reset Cache for Emergency Notices</a>'
 	) );
 	
 }

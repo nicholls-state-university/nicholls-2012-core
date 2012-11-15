@@ -23,9 +23,13 @@ $nicholls-color-red: #cc3333;
 $nicholls-color-white: #fff;
 $nicholls-color-black: #000;
 
-$nicholls-color-grey-light-a: #efefef;
-$nicholls-color-grey-dark-a: #666666;
+$nicholls-color-grey-light-1: #efefef;
+$nicholls-color-grey-light-2: #eaeaea;
+$nicholls-color-grey-light-3: #e2e2e2;
 
+$nicholls-color-grey-dark-1: #7f7f7f;
+$nicholls-color-grey-dark-2: #6d6d6d;
+$nicholls-color-grey-dark-3: #666666;
 
 /* Colors - Nicholls - Palette A */
 
@@ -52,7 +56,7 @@ $nicholls-color-yellowgreen: #e0e72d;
 /* Colors - Links & Text */
 
 $link-color: $nicholls-color-blue;
-$link-color-visited: $nicholls-color-grey-dark-a;
+$link-color-visited: $nicholls-color-grey-dark-3;
 $link-color-hover: $nicholls-color-blue;
 
 /* Colors - By Area */
@@ -63,5 +67,9 @@ $nicholls-color-life: $nicholls-color-orangelight;
 $nicholls-color-athletics: $nicholls-color-bluegreencool;
 $nicholls-color-friends: $nicholls-color-mustard;
 $nicholls-color-administration: $nicholls-color-greydarkcool;
+
+/* Colors - Layout Utilities */
+
+$nicholls-color-elements-widget-borders-primary: $nicholls-color-grey-light-3;
 
 

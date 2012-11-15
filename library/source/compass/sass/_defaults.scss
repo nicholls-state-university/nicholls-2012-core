@@ -232,11 +232,12 @@ img.size-full {
 }
 
 .widgets- .widgettitle {
-	padding: 0 0 .4em 0;
+	padding: .4em 0;
 	margin: 0 0 .6em 0;
 	font-size: 120%;
 	font-weight: bold;	
-	border-bottom: 1px solid #9F9F9F;	
+	border-top: 1px solid $nicholls-color-elements-widget-borders-primary;
+	border-bottom: 1px solid $nicholls-color-elements-widget-borders-primary;	
 }
 
 .widget ul {
@@ -297,12 +298,15 @@ img.size-full {
 	requries both "width: x" and "overflow: auto" to clear
 	interior elements for box creation!
 	*/
-	float: right;
-	width: 16em;
-	padding: .2em .2em .4em .2em;
-	font-size: 92%;
+	height: 1.6em;
+	clear: both;
+	padding: .2em;
+	margin: .3em;
+	font-size: 90%;
 	font-style: italic;
 	text-align: center;
+	border-top: 1px solid $nicholls-color-elements-widget-borders-primary;
+	border-bottom: 1px solid $nicholls-color-elements-widget-borders-primary;
 }
 
 .navigation .nav-previous {
@@ -310,7 +314,7 @@ img.size-full {
 }
 
 .navigation .nav-next {
-	padding: .8em 0 0 0;
+
 }
 
 .navigation .nav-meta {
@@ -582,7 +586,6 @@ div.wpcf7 {
 .wrapper- {
 	background: #fff;
 }
-
 
 /* START - Custom Layout Classes */
 
@@ -897,6 +900,23 @@ div.wpcf7 {
 
 /* END - Footer */
 
+/* START - Widgets */
+
+.widgets- .nicholls-department-widget .widgettitle {
+	color: $nicholls-color-red;
+}
+
+.nicholls-department-widget .nicholls-department-info- {
+	border: 1px solid $nicholls-color-grey-light-3;
+}
+
+.nicholls-department-widget .nicholls-department-info- div {
+	margin: 0 0 .5em 0;
+	padding: .4em;
+	background: $nicholls-color-grey-light-1;
+}
+
+/* END - Widgets */
 
 /* START - Special Usage */
 
@@ -1064,7 +1084,7 @@ div.wpcf7 {
 .widgets-primary-active .container- {
 	 border-left-width: 1px;
 	 border-left-style: solid;
-	 border-left-color: $nicholls-color-grey;	 
+	 border-left-color: $nicholls-color-elements-widget-borders-primary;	 
 }
 
 /* Widgets Inactive (Primary & Secondary) - Container goes full width */
