@@ -71,6 +71,7 @@
 						<ul>
 							<li><a href="http://www.nicholls.edu/admission/">Office of Admissions</a></li>
 							<li><a href="http://www.nicholls.edu/transfer/">Transfer Students</a></li>
+							<li><a href="http://www.nicholls.edu/veterans/">Veterans</a></li>
 							<li><a href="http://www.nicholls.edu/academics/">Academics & Testing</a></li>
 							<li><a href="http://www.nicholls.edu/orientation/">Orientation</a></li>
 							<li><a href="http://www.nicholls.edu/nicholls-online/">Nicholls Online</a></li>

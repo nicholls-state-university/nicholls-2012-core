@@ -34,6 +34,7 @@
 			<li><a href="http://www.nicholls.edu/financial-aid/">Financial Aid & Scholarships</a></li>
 			<li><a href="http://www.nicholls.edu/fees/">Fee Information</a></li>
 			<li><a href="http://www.nicholls.edu/request-info/">Request Information</a></li>
+			<li><a href="http://www.nicholls.edu/nicholls-online/">Nicholls Online</a></li>			
 		</ul>
 	</div>
 </div>
