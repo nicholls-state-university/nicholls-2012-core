@@ -139,32 +139,115 @@ body {
 
 }
 
+.info-container- {
+	.info-tagline {
+		font-size: 80%;
+		margin-top: .6em;
+		color: #fff;
+	}
+	
+	.info-contact {
+		font-size: 102%;
+		margin-top: .4em;
+		color: #fff;
+	}
+	
+	.info-contact a, .info-contact a:link, .info-contact a:active, .info-contact a:visited {
+		color: #fff;
+		text-decoration: none;
+	}
+	
+	.info-contact a:hover {
+		color: #fff;
+		text-decoration: underline;	
+	}
+}
+
 /* Nicholls Header */
+
+.header-nicholls-wrapper- {
+	width: 100%;
+	text-align: left;
+	clear: both;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;	
+}
 
 .header-nicholls- {
 	@include container;
 	
-	position: relative;
-	padding: 0;
 	height: 28em;
-	
-	.info-primary- {
-		@include span-columns(8, 26);
-
-		float: left;
-		
-		background-color: $nicholls-color-white;
-		
-	}
+	margin: 0 auto 0 auto;
+	overflow: hidden;	
+	position: relative;
+	padding: 0;	
 	
 	.header- {
 		height: 8em;
 		width: 100%;
 		padding: 0 .5em;
 		margin: 20em 0 0 0;
+
+		color: $nicholls-color-white;
+		background: transparent url( 'library/images/45pc_black.png' );
+
+		.blog-title-prefix- {
+			display: block;
+			margin: 0;
+			padding: .5em 0 0 .4em;
+		}
+				
+		.blog-title- {
+			font-family: 'Crimson Text', 'Times New Roman', times, Georgia, serif;
+			font-weight: 400;
+			font-size: 225%;	
+			margin: 0;
+			padding: .2em;	
+			color: $nicholls-color-white;
+			
+			@include text-shadow( $nicholls-color-black 1px 1px 1px );	
+		}
+		
+		.blog-title- a, .blog-title- a:link, .blog-title- a:active, .blog-title- a:visited {
+			text-decoration: none;
+			color: $nicholls-color-white;
+		}
+		
+		.blog-title- a:hover {
+			text-decoration: underline;
+		}	
+		
+		.blog-description- {
+			font-size: 92%;
+			padding: 0 0 .2em .5em;	
+		}
+		
+		// For Moved Title Template
+		.entry-title {
+			font-family: 'Crimson Text', 'Times New Roman', times, Georgia, serif;
+			font-weight: 400;
+			font-size: 225%;	
+			margin: 0;
+			padding: .2em;	
+			color: $nicholls-color-white;
+			
+			@include text-shadow( $nicholls-color-black 1px 1px 1px );	
+		}
+		
+		.entry-title a, .entry-title a:link, .entry-title a:active, .entry-title a:visited {
+			text-decoration: none;
+			color: $nicholls-color-white;
+		}
+		
+		.entry-title a:hover {
+			text-decoration: underline;
+		}			
+			
 	}
 
 }
+
 
 /* Nichols Menu - Primary */
 
@@ -759,21 +842,13 @@ body {
 		height: 12em;
 	}	
 
-	.nicholls-menu-list- .nicholls-menu-item {
-		margin-left: 6.8em;
-	}
-
 	.nicholls-menu-list- .nicholls-menu-item:first-child {
-		margin-left: 0;
+		margin-left: 6.8em;
 	}
 	
 	.nicholls-menu-list- .nicholls-menu-athletics- {
 		clear: left;
-		margin-left: 0;		
-	}
-	
-	.nicholls-menu-list- .nicholls-menu-life-, .nicholls-menu-list- .nicholls-menu-administration- {
-		margin-left: 5.7em;
+		margin-left: 6.8em;		
 	}
 		
 	.nicholls-menu-list- .nicholls-menu-search- {
@@ -855,7 +930,7 @@ body {
 			float: right;
 			
 			height: 8em;
-			margin: 22em 0 0 0;			
+			margin: 20.6em 0 0 0;			
 		}
 	}
 	

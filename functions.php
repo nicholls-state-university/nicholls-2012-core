@@ -55,6 +55,85 @@ function fnbx_theme_support_filter( $features ) {
 }
 add_filter( 'fnbx_theme_support', 'fnbx_theme_support_filter' );
 
+
+/*
+* Setup Nicholls Custom Headers.
+*
+* The first default is part of the filter, but we add other default headers here.
+*
+* @since 1.0
+*/
+function nicholls_custom_headers_setup() {
+	register_default_headers( array (
+			'nicholls_default_header_a' => array (
+				'url' => '%2$s/library/images/headers/h-beauregard-1.jpg',
+				'thumbnail_url' => '%2$s/library/images/headers/h-beauregard-1-thumbnail.jpg',
+				'description' => __( 'Beauregard Hall 1', 'fnbx_lang' )
+			),
+			'nicholls_default_header_c' => array (
+				'url' => '%2$s/library/images/headers/h-elkins-2.jpg',
+				'thumbnail_url' => '%2$s/library/images/headers/h-elkins-2-thumbnail.jpg',
+				'description' => __( 'Elkins Hall 2', 'fnbx_lang' )
+			),
+			'nicholls_default_header_d' => array (
+				'url' => '%2$s/library/images/headers/h-elkins-3.jpg',
+				'thumbnail_url' => '%2$s/library/images/headers/h-elkins-3-thumbnail.jpg',
+				'description' => __( 'Elkins Hall 3', 'fnbx_lang' )
+			),
+			'nicholls_default_header_e' => array (
+				'url' => '%2$s/library/images/headers/h-elkins-4.jpg',
+				'thumbnail_url' => '%2$s/library/images/headers/h-elkins-4-thumbnail.jpg',
+				'description' => __( 'Elkins Hall 4', 'fnbx_lang' )
+			),
+			'nicholls_default_header_f' => array (
+				'url' => '%2$s/library/images/headers/h-elkins-5.jpg',
+				'thumbnail_url' => '%2$s/library/images/headers/h-elkins-5-thumbnail.jpg',
+				'description' => __( 'Elkins Hall 5', 'fnbx_lang' )
+			),
+			'nicholls_default_header_g' => array (
+				'url' => '%2$s/library/images/headers/h-elkins-6.jpg',
+				'thumbnail_url' => '%2$s/library/images/headers/h-elkins-6-thumbnail.jpg',
+				'description' => __( 'Elkins Hall 6', 'fnbx_lang' )
+			),
+			'nicholls_default_header_h' => array (
+				'url' => '%2$s/library/images/headers/h-elkins-7.jpg',
+				'thumbnail_url' => '%2$s/library/images/headers/h-elkins-7-thumbnail.jpg',
+				'description' => __( 'Elkins Hall 7', 'fnbx_lang' )
+			),
+			'nicholls_default_header_i' => array (
+				'url' => '%2$s/library/images/headers/h-elkins-8.jpg',
+				'thumbnail_url' => '%2$s/library/images/headers/h-elkins-8-thumbnail.jpg',
+				'description' => __( 'Elkins Hall 8', 'fnbx_lang' )
+			),
+			'nicholls_default_header_j' => array (
+				'url' => '%2$s/library/images/headers/h-ellender-1.jpg',
+				'thumbnail_url' => '%2$s/library/images/headers/h-ellender-1-thumbnail.jpg',
+				'description' => __( 'Ellender Library 1', 'fnbx_lang' )
+			),
+			'nicholls_default_header_k' => array (
+				'url' => '%2$s/library/images/headers/h-lamps-1.jpg',
+				'thumbnail_url' => '%2$s/library/images/headers/h-lamps-1-thumbnail.jpg',
+				'description' => __( 'Lights', 'fnbx_lang' )
+			),
+			'nicholls_default_header_l' => array (
+				'url' => '%2$s/library/images/headers/h-quad-1.jpg',
+				'thumbnail_url' => '%2$s/library/images/headers/h-quad-1-thumbnail.jpg',
+				'description' => __( 'Quad 1', 'fnbx_lang' )
+			),
+			'nicholls_default_header_m' => array (
+				'url' => '%2$s/library/images/headers/h-student-hallway-1.jpg',
+				'thumbnail_url' => '%2$s/library/images/headers/h-student-hallway-1-thumbnail.jpg',
+				'description' => __( 'Student 1', 'fnbx_lang' )
+			),
+			'nicholls_default_header_n' => array (
+				'url' => '%2$s/library/images/headers/h-white-1.jpg',
+				'thumbnail_url' => '%2$s/library/images/headers/h-white-1-thumbnail.jpg',
+				'description' => __( 'White Hall 1', 'fnbx_lang' )
+			)
+	) );
+}
+add_action( 'after_setup_theme', 'nicholls_custom_headers_setup' );
+
 /*
 * Funbox Theme Custom Header Filter
 *
@@ -64,10 +143,12 @@ add_filter( 'fnbx_theme_support', 'fnbx_theme_support_filter' );
 */
 function fnbx_theme_custom_header_filter( $custom_header ) {
 	global $fnbx;
+	
 	// Set and filter WordPress theme support features
 	$custom_header['no_header_text'] = false;
 	$custom_header['css_name'] = '.header-nicholls-wrapper-';
-	$custom_header['header_image'] = FNBX_CORE_URL . '/library/images/backgrounds/bg-1.jpg';
+	$custom_header['header_image'] = FNBX_CORE_URL . '/library/images/headers/h-elkins-1.jpg';
+	$custom_header['header_image_thumbnail'] = FNBX_CORE_URL . '/library/images/headers/h-elkins-1-thumbnail.jpg';
 	$custom_header['header_image_width'] = 1134;
 	$custom_header['header_image_height'] = 449;
 	$custom_header['header_image_flex_width'] = true;

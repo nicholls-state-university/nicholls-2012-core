@@ -44,15 +44,6 @@ jQuery(document).ready( function() {
 		});
 	});	
 	
-	// Corners 
-	// jQuery('.info-primary-').corner('tl');
-	// jQuery('.header-nicholls-').corner('br');
-	// jQuery('.header-nicholls-').corner('tr');
-
-	// jQuery('.header-').corner('bl');
-	// jQuery('.header-').corner('br');
-	// jQuery('.header-').corner('tr');
-	
 });
 
 jQuery(function(){

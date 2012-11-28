@@ -106,12 +106,13 @@ function fnbx_javascript_enqueue_core() {
 
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'jquery-hoverintent' , FNBX_CORE_URL . '/library/js/jquery.hoverIntent.minified.js', array( 'jquery' ), 'r5' );
-	wp_enqueue_script( 'jquery-pngfix' , FNBX_CORE_URL . '/library/js/jquery.pngFix.js', array( 'jquery' ), '1.2' );	
-	wp_enqueue_script( 'jquery-corner' , FNBX_CORE_URL . '/library/js/jquery.corner.js', array( 'jquery' ), '2.01' );
+	wp_enqueue_script( 'jquery-pngfix' , FNBX_CORE_URL . '/library/js/jquery.pngFix.js', array( 'jquery' ), '1.2' );
 	wp_enqueue_script( 'jquery-responsenav' , FNBX_CORE_URL . '/library/js/jquery.responsinav.js', array( 'jquery' ), '1.0' );
-	// wp_enqueue_script( 'jquery-megamenu' , FNBX_CORE_URL . '/library/js/jquery.megamenu.js', array( 'jquery' ), '2.1a' );
-	wp_enqueue_script( 'jquery-anystretch' , FNBX_CORE_URL . '/library/js/jquery.anystretch.min.js', array( 'jquery' ), '1.1' );
-
 	wp_enqueue_script( 'core-js' , FNBX_CORE_URL . '/library/js/core.js', array( 'jquery' ), '1.0' );	
+		
+	//wp_enqueue_script( 'jquery-corner' , FNBX_CORE_URL . '/library/js/jquery.corner.js', array( 'jquery' ), '2.01' );
+	//wp_enqueue_script( 'jquery-megamenu' , FNBX_CORE_URL . '/library/js/jquery.megamenu.js', array( 'jquery' ), '2.1a' );
+	//wp_enqueue_script( 'jquery-anystretch' , FNBX_CORE_URL . '/library/js/jquery.anystretch.min.js', array( 'jquery' ), '1.1' );
+
 }
 

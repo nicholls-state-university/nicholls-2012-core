@@ -79,6 +79,30 @@ h6 {
     font-size: 110%;
 }
 
+.container- h1 {
+    font-size: 200%;
+}
+
+.container- h2 {
+    font-size: 180%;
+}
+
+.container- h3 {
+    font-size: 160%;
+}
+
+.container- h4 {
+    font-size: 140%;
+}
+
+.container- h5 {
+    font-size: 120%;
+}
+
+.container- h6 {
+    font-size: 110%;
+}
+
 /* Clearing Utility Elements */
 
 .box-0x0 {
@@ -155,37 +179,6 @@ img.size-full {
 
 .wrapper- {
   padding: 0;
-}
-
-/* Header */
-
-.header- .blog-title- {
-	margin: 0 auto;
-}
-
-.header- {
-	background: transparent;
-}
-
-.header- .blog-title- {
-	font-family: 'Crimson Text', Georgia, "TImes New Roman", times, serif;
-	font-weight: 400;
-    font-size: 225%;	
-	line-height: 1.1em;
-	margin: 0;
-	padding: .2em;	
-}
-
-.header- .blog-title- a, .header- .blog-title- a:link, .header- .blog-title- a:active, .header- .blog-title- a:visited {
-	text-decoration: none;
-}
-
-.header- .blog-title- a:hover {
-	text-decoration: underline;
-}
-
-.header- .blog-description- {
-	padding: 0 0 0 1em;	
 }
 
 /* Defaults - END */
@@ -727,142 +720,6 @@ div.wpcf7 {
 }
 
 /* END Top Navigation and Search */
-
-/* START - Nicholls Primary Menu */
-
-/* END - Nicholls Primary Menu */
-
-
-/* START - Nicholls Header */
-
-.header-nicholls-wrapper- {
-	width: 100%;
-	text-align: left;
-	clear: both;
-	background-size: cover;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;	
-}
-
-.header-nicholls- {
-	margin: 0 auto 0 auto;
-	overflow: hidden;
-}
-
-.info-primary- {
-    margin: 0;
-    padding: 0;
-    font-size: 80%;
-    @include single-box-shadow(#333, 3px, 3px, 3px, 0px);
-}
-
-.header-nicholls- .info-primary- .info-primary-content- {
-	background: $nicholls-color-white;
-	clear: both;
-	margin-top: .62em;
-	padding: .2em .2em .2em .6em;
-	border-top: 1px solid $nicholls-color-grey;
-	border-bottom: 1px solid $nicholls-color-grey;
-	
-}
-
-.header-nicholls- .info-primary-  ul {
-	list-style-type: none;
-	clear: both;
-	margin: 0;
-	padding: 0;
-}
-
-.header-nicholls- .info-primary- ul li {
-	margin: .4em 0;
-	font-size: 90%;
-	font-weight: 600;	
-	color: $nicholls-color-red;
-	display: block;
-}
-
-.header-nicholls- .info-primary- a, .header-nicholls- .info-primary- a:link, .header-nicholls- .info-primary- ul li a, .header-nicholls- .info-primary- ul li a:link, .header-nicholls- .info-primary- ul li a:active, .header-nicholls- .info-primary- ul li a:visited {
-	color: $nicholls-color-red;
-	text-decoration: none;
-}
-
-.header-nicholls- .info-primary- a:hover, .header-nicholls- .info-primary- ul li a:hover {
-	text-decoration: underline;
-}
-
-.info-tagline {
-	font-size: 80%;
-	margin-top: .6em;
-	color: #fff;
-}
-
-.info-contact {
-	font-size: 102%;
-	margin-top: .4em;
-	color: #fff;
-}
-
-.info-contact a, .info-contact a:link, .info-contact a:active, .info-contact a:visited {
-	color: #fff;
-	text-decoration: none;
-}
-
-.info-contact a:hover {
-	color: #fff;
-	text-decoration: underline;	
-}
-
-.header-nicholls- .info-primary- .info-programs {
-	padding-bottom: .3em;
-	padding-left: .4em;	
-}
-
-.header-nicholls- .info-primary- .info-request {
-	padding-bottom: .3em;
-	padding-left: .4em;	
-}
-
-/* END - Nicholls Header */
-
-/* START Header */
-
-.header- {
-	color: $nicholls-color-white;
-    background: transparent url( 'library/images/45pc_black.png' );
-}
-
-.header- .blog-title-prefix- {
-	display: block;
-	margin: 0;
-	padding: .5em 0 0 .4em;
-}
-
-.header- .blog-title- {
-	font-family: 'Crimson Text', 'Times New Roman', times, Georgia, serif;
-	font-weight: 400;
-    font-size: 225%;	
-	margin: 0;
-	padding: .2em;	
-	color: $nicholls-color-white;
-	
-	@include text-shadow( $nicholls-color-black 1px 1px 1px );
-}
-
-.header- .blog-title- a, .header- .blog-title- a:link, .header- .blog-title- a:active, .header- .blog-title- a:visited {
-	text-decoration: none;
-	color: $nicholls-color-white;		
-}
-
-.header- .blog-title- a:hover {
-	text-decoration: underline;
-}
-
-.header- .blog-description- {
-	font-size: 92%;
-	padding: 0 0 .2em .5em;	
-}
-
-/* END Header */
 
 /* START - footer */
 
