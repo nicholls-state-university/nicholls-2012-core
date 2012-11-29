@@ -19,7 +19,6 @@ $body-font-size: 100%;
 $nicholls-color-grey: #cccccc;
 $nicholls-color-red: #cc3333;
 
-
 $nicholls-color-white: #fff;
 $nicholls-color-black: #000;
 
@@ -72,4 +71,106 @@ $nicholls-color-administration: $nicholls-color-greydarkcool;
 
 $nicholls-color-elements-widget-borders-primary: $nicholls-color-grey-light-3;
 
+/* Utilities */
 
+/* Nicholls Colors - Basic */
+$nicholls-colors: ( 
+	'red',
+	'grey',
+	'white',
+	'black',
+	'graydark',
+	'crimson',
+	'mustard',
+	'greydarkcool',
+	'tanwarm',
+	'bluegreencool',
+	'tancool',
+	'greenblue',
+	'orangelight',
+	'orange',
+	'green',
+	'bluegreen',
+	'tan',
+	'blue',
+	'violet',
+	'yellowgreen'	
+);
+$nicholls-colors-values: ( 
+	$nicholls-color-red, 
+	$nicholls-color-grey,  
+	$nicholls-color-white, 
+	$nicholls-color-black,
+	$nicholls-color-graydark, 
+	$nicholls-color-crimson, 
+	$nicholls-color-mustard, 
+	$nicholls-color-greydarkcool, 
+	$nicholls-color-tanwarm, 
+	$nicholls-color-bluegreencool, 
+	$nicholls-color-tancool, 
+	$nicholls-color-greenblue,
+	$nicholls-color-orangelight, 
+	$nicholls-color-orange, 
+	$nicholls-color-green, 
+	$nicholls-color-bluegreen, 
+	$nicholls-color-tan, 
+	$nicholls-color-blue, 
+	$nicholls-color-violet, 
+	$nicholls-color-yellowgreen 
+);
+/* Color Util */
+@function nichollsColor($search) {
+	$n1: index($nicholls-colors, $search);
+	$n2: index($nicholls-colors-values, $search);
+	@if($n1) {
+	  @return nth($nicholls-colors-values, $n1);
+	} @else {
+	  @return nth($nicholls-colors, $n2);
+	}
+}
+
+/* Nicholls Colors - Greys */
+$nicholls-colors-grey: ( 
+	'grey-light-1',
+	'grey-light-2',
+	'grey-light-3',
+	'grey-dark-1',
+	'grey-dark-2',
+	'grey-dark-3'
+);
+$nicholls-colors-grey-values: ( 
+	$nicholls-color-grey-light-1,
+	$nicholls-color-grey-light-2,
+	$nicholls-color-grey-light-3,
+	$nicholls-color-grey-dark-1,
+	$nicholls-color-grey-dark-2,
+	$nicholls-color-grey-dark-3 
+);
+/* Color Util */
+@function nichollsColorGrey($search) {
+	$n1: index($nicholls-colors-grey, $search);
+	$n2: index($nicholls-colors-grey-values, $search);
+	@if($n1) {
+	  @return nth($nicholls-colors-grey-values, $n1);
+	} @else {
+	  @return nth($nicholls-colors-grey, $n2);
+	}
+}
+
+
+/* color classes */
+@mixin nicholls-color-classes() {
+	@each $color in $nicholls-colors {
+	  .nicholls-color-#{$color} { background-color: nichollsColor($color); color: nichollsColor('white'); }
+	}
+}
+
+/* Border Color Utility */
+@mixin nicholls-border-colors() {		
+	@each $color in $nicholls-colors {
+	  .border-color-#{$color} { border-color: nichollsColor($color); }
+	}
+	@each $grey-color in $nicholls-colors-grey {
+	  .border-color-#{$grey-color} { border-color: nichollsColorGrey($grey-color); }
+	}		
+}

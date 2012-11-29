@@ -622,7 +622,9 @@ div.wpcf7 {
 	margin-right: 1em;
 }
 
-/* Borders - border-location-color-size */
+/* START: Borders */
+
+/* OLD Borders [REMOVE-ASAP] - border-location-color-size */
 
 .border-right-cccccc-1 {
 	border-right: 1px solid #ccc;
@@ -631,6 +633,42 @@ div.wpcf7 {
 .border-left-cccccc-1 {
 	border-right: 1px solid #ccc;
 }
+
+/* Borders - width-location */
+
+@for $bw from 1 through 2 {
+	.border-#{$bw}-top {
+		border-top: #{$bw}px solid;
+	}
+	
+	.border-#{$bw}-right {
+		border-right: #{$bw}px solid;
+	}
+	
+	.border-#{$bw}-bottom {
+		border-bottom: #{$bw}px solid;
+	}
+	
+	.border-#{$bw}-left {
+		border-left: #{$bw}px solid;
+	}
+	
+	.border-#{$bw}-all {
+		border: #{$bw}px solid;
+	}
+}
+
+/* Borders - color */
+
+/* Old Border Colors */
+.border-red {
+	border-color: $nicholls-color-red;
+}
+
+/* New Border Colors - see _base.css for utility */
+@include nicholls-border-colors();
+
+/* END: Borders */
 
 /* END - Custom Layout Classes */
 
