@@ -898,9 +898,16 @@ body {
 	
 	/* Content */
 	
-	.entry-content .column- {
-		clear: both;
-		float: none;
+	.entry-content {
+	
+		.column- {
+			clear: both;
+			float: none;
+		}
+		
+		.width-50, .width-49, .width-47, .width-46, .width-right-default, .width-default {
+			width: auto;
+		}
 	}
 	
 	/* Nicholls Footer */
@@ -1044,9 +1051,16 @@ body {
 
 	/* Content */
 	
-	.entry-content .column- {
-		clear: both;
-		float: none;
+	.entry-content {
+	
+		.column- {
+			clear: both;
+			float: none;
+		}
+		
+		.width-50, .width-49, .width-47, .width-46, .width-right-default, .width-default {
+			width: auto;
+		}
 	}
 		
 	/* Nicholls Footer */
