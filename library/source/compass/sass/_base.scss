@@ -70,6 +70,7 @@ $nicholls-color-administration: $nicholls-color-greydarkcool;
 /* Colors - Layout Utilities */
 
 $nicholls-color-elements-widget-borders-primary: $nicholls-color-grey-light-3;
+$nicholls-color-border-color-default: $nicholls-color-grey-light-3;
 
 /* Utilities */
 
@@ -94,7 +95,8 @@ $nicholls-colors: (
 	'tan',
 	'blue',
 	'violet',
-	'yellowgreen'	
+	'yellowgreen',
+	'borer-default'
 );
 $nicholls-colors-values: ( 
 	$nicholls-color-red, 
@@ -116,7 +118,8 @@ $nicholls-colors-values: (
 	$nicholls-color-tan, 
 	$nicholls-color-blue, 
 	$nicholls-color-violet, 
-	$nicholls-color-yellowgreen 
+	$nicholls-color-yellowgreen,
+	$nicholls-color-border-color-default
 );
 /* Color Util */
 @function nichollsColor($search) {

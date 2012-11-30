@@ -586,7 +586,7 @@ body {
 			width: 100%;
 			padding: 0 .5em;
 			margin: 20em 0 0 0;
-			height: 8em;
+			height: 8em;					
 		}
 	}
 	
@@ -673,6 +673,22 @@ body {
 		.header- {
 			@include container;
 			float: right;
+
+			.blog-title-prefix- {
+				font-size: 96%;
+			}
+
+			.blog-title- {
+				font-size: 200%;
+			}
+
+			.blog-description- {
+				font-size: 90%;
+			}
+			
+			.entry-title {
+				font-size: 200%;
+			}		
 		}
 	}
 	
@@ -806,6 +822,22 @@ body {
 		.header- {
 			@include container;
 			float: right;
+			
+			.blog-title-prefix- {
+				font-size: 90%;
+			}
+
+			.blog-title- {
+				font-size: 168%;
+			}
+
+			.blog-description- {
+				font-size: 84%;
+			}
+			
+			.entry-title {
+				font-size: 168%;
+			}						
 		}
 	}
 
@@ -930,7 +962,23 @@ body {
 			float: right;
 			
 			height: 8em;
-			margin: 20.6em 0 0 0;			
+			margin: 20.6em 0 0 0;
+
+			.blog-title-prefix- {
+				font-size: 84%;
+			}
+
+			.blog-title- {
+				font-size: 140%;
+			}
+
+			.blog-description- {
+				font-size: 80%;
+			}
+			
+			.entry-title {
+				font-size: 140%;
+			}	
 		}
 	}
 	
