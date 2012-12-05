@@ -99,6 +99,13 @@
 <?php do_action( 'nicholls_footer_end', 'footer-nicholls' ) ?>
 <!-- END: nicholls-footer -->
 
+<div id="nicholls-nav-go-top-wrapper" class="nicholls-nav-go-wrapper- nicholls-nav-go-top-wrapper-">
+	<div id="nicholls-nav-go-top" class="nicholls-nav-go- nicholls-nav-go-top-">
+	<span>Go To &uarr;</span>
+	<span><a href="#access">Top</a></span>	
+	</div>
+</div>
+
 <?php do_action( 'fnbx_wp_footer_before', 'wp_footer' ) ?>
 <?php wp_footer() ?>
 <?php do_action( 'fnbx_wp_footer_after', 'wp_footer' ) ?>

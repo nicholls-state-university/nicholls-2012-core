@@ -172,3 +172,36 @@ function fnbx_theme_custom_header_width_filter( $h_width ) {
 	return false;
 }
 add_filter( 'fnbx_custom_header_css_background_width', 'fnbx_theme_custom_header_width_filter' );
+
+/*
+* Nicholls Jump To Links
+*
+* Add jump to links to help visitors move around page.
+*
+* @since 1.0
+*/
+function nicholls_html_go_to() {
+
+	if ( is_active_sidebar( 'primary' ) == false ) {
+		if ( is_active_sidebar( 'secondary' ) == false )
+			return false;
+		else
+			$go_link_info = '#widgets-secondary';
+	} else {
+		$go_link_info = '#widgets-primary';
+	}
+	
+?>
+<div id="nicholls-nav-go-to-wrapper" class="nicholls-nav-go-wrapper- nicholls-nav-go-to-wrapper-">
+	<div id="nicholls-nav-go-to" class="nicholls-nav-go- nicholls-nav-go-to-">
+	
+	<span>Go To &darr;</span>
+	<span><a href="<?php echo $go_link_info; ?>">Navigation &amp; Information</a></span>
+	<span><a href="#footer">Other Information</a></span>
+	
+	</div>
+</div>
+
+<?php
+}
+add_action( 'nicholls_header_end', 'nicholls_html_go_to', 99 );

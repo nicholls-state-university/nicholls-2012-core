@@ -3,6 +3,7 @@
 	<div class="nicholls-banner-">
 		<div class="logo-container-wrapper-">
 			<h1 id="logo-container" class="logo-container-"><a class="link-logo-home" href="http://www.nicholls.edu"  tabindex="2">Nicholls State University</a></h1>
+			<img id="logo-image" class="logo-image-" src="<?php echo FNBX_CORE_URL . '/library/images/logos/nicholls-logo-print.png' ?>" alt="Nicholls State University Logo" />
 		</div>
 		<div class="info-container-" id="info-container">		
 			<div class="info-tagline">people creating possibilities</div>
