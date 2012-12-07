@@ -65,6 +65,7 @@
 							<li><a href="http://www.nicholls.edu/tours/">Campus Tours</a></li>
 							<li><a href="http://www.nicholls.edu/fees/">Fee Payment / Fee Information</a></li>
 							<li><a href="http://www.nicholls.edu/financial-aid/">Financial Aid &amp; Scholarships</a></li>
+							<li><a href="http://www.nicholls.edu/international/">International Student Services</a></li>
 						</ul>
 					</div>
 					<div class="column- column-2">
