@@ -705,6 +705,7 @@ body {
 	.header-nicholls- {
 		@include container;
 		padding: 0;
+		overflow: visible;		
 
 		.header- {
 			@include container;
@@ -731,8 +732,16 @@ body {
 	.nicholls-banner- {
 		@include container;
 
-		background-color: #cc3333;
-		background-image: none;
+		// needs latest Compass, add '@import "compass"' to your scss
+		background-color: #cc3333; // Old browsers
+		@include filter-gradient(#7f2c1f, #7f2c1f, horizontal); // IE6-8
+		// IE9 SVG, needs conditional override of 'filter' to 'none'
+		$experimental-support-for-svg: true;
+		@include background-image(linear-gradient(left,  #7f2c1f 0%,#cc3333 17%,#cc3333 47%,#cc3333 80%,#7f2c1f 100%));
+		
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		
 		clear: both;
 		
 		width: 100%;
@@ -763,24 +772,26 @@ body {
 	/* Nichols Menu - Primary */
 	
 	.menu-primary- {
+		@include container;	
 		height: 7.5em;
 	}
 
 	.nicholls-menu-list- .nicholls-menu-item {
-		margin-right: 2em;
+		margin-right: 1.9em;
 	}
 
 	.nicholls-menu-list- .nicholls-menu-item:first-child {
 		margin-left: 0em;
 	}
-	
-	.nicholls-menu-list- .nicholls-menu-administration- {
-		margin-left: .2em;
-	}
-	
+
 	.nicholls-menu-list- .nicholls-menu-life- {
 		margin-left: .2em;
-	}	
+	}
+		
+	.nicholls-menu-list- .nicholls-menu-administration- {
+		margin-right: 0;
+		margin-left: .2em;		
+	}
 	
 	.nicholls-menu-list- .nicholls-menu-search- {
 		clear: left;
@@ -869,6 +880,7 @@ body {
 	.header-nicholls- {
 		@include container;
 		padding: 0;
+		overflow: visible;		
 
 		.header- {
 			@include container;
@@ -895,8 +907,16 @@ body {
 	.nicholls-banner- {
 		@include container;
 
-		background-color: #cc3333;
-		background-image: none;
+		// needs latest Compass, add '@import "compass"' to your scss
+		background-color: #cc3333; // Old browsers
+		@include filter-gradient(#7f2c1f, #7f2c1f, horizontal); // IE6-8
+		// IE9 SVG, needs conditional override of 'filter' to 'none'
+		$experimental-support-for-svg: true;
+		@include background-image(linear-gradient(left,  #7f2c1f 0%,#cc3333 17%,#cc3333 47%,#cc3333 80%,#7f2c1f 100%));
+		
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+
 		clear: both;
 		
 		width: 100%;
@@ -922,6 +942,7 @@ body {
 	/* Nichols Menu - Primary */
 	
 	.menu-primary- {
+		@include container;		
 		height: 12em;
 	}	
 
@@ -1036,6 +1057,7 @@ body {
 	.header-nicholls- {
 		@include container;
 		padding: 0;
+		overflow: visible;		
 
 		.header- {
 			@include container;
@@ -1065,14 +1087,24 @@ body {
 	.nicholls-banner- {
 		@include container;
 
-		background-color: #cc3333;
-		background-image: none;
+		// needs latest Compass, add '@import "compass"' to your scss
+		background-color: #cc3333; // Old browsers
+		@include filter-gradient(#7f2c1f, #7f2c1f, horizontal); // IE6-8
+		// IE9 SVG, needs conditional override of 'filter' to 'none'
+		$experimental-support-for-svg: true;
+		@include background-image(linear-gradient(left,  #7f2c1f 0%,#cc3333 17%,#cc3333 47%,#cc3333 80%,#7f2c1f 100%));
+		
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+
 		clear: both;
 		
 		width: 100%;
 		height: auto;
 		
 	}
+	
+
 
 	.logo-container-wrapper- {
 		float: none;
@@ -1091,11 +1123,20 @@ body {
 	/* Nichols Menu - Primary */
 	
 	.menu-primary- {
+		@include container;	
 		height: 12em;
+	}
+
+	.nicholls-menu-list- .nicholls-menu-item {
+		margin-right: .5em;
 	}
 
 	.nicholls-menu-list- .nicholls-menu-item:first-child {
 		margin-left: 0;
+	}
+	
+	.nicholls-menu-list- .nicholls-menu-life-, .nicholls-menu-list- .nicholls-menu-administration- {
+		margin-right: 0;
 	}
 	
 	.nicholls-menu-athletics- {
@@ -1105,7 +1146,7 @@ body {
 	.nicholls-menu-list- .nicholls-menu-search- {
 		clear: left;
 		border: none;
-		width: 35.4em;
+		width: 23.1em;
 		margin: 0;
 		border-top: 1px solid #ccc;
 	}
