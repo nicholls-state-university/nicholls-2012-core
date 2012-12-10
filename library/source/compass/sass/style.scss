@@ -742,14 +742,12 @@ body {
 		
 		border-left: 1px solid #ccc;
 		border-right: 1px solid #ccc;
-		
+		border-bottom: 1px solid #ccc;
+
 		clear: both;
 		
 		width: 100%;
 		height: auto;
-		
-		border-bottom: 1px solid #ccc;
-		
 	}
 
 	.logo-container-wrapper- {
@@ -782,16 +780,17 @@ body {
 	}
 
 	.nicholls-menu-list- .nicholls-menu-item:first-child {
-		margin-left: 0em;
+		margin-left: .2em;
 	}
 
-	.nicholls-menu-list- .nicholls-menu-life- {
-		margin-left: .2em;
+	.nicholls-menu-list- .nicholls-menu-current-,
+	.nicholls-menu-list- .nicholls-menu-life-,
+	.nicholls-menu-list- .nicholls-menu-friends- {
+		margin-left: .4em;
 	}
 		
 	.nicholls-menu-list- .nicholls-menu-administration- {
 		margin-right: 0;
-		margin-left: .2em;		
 	}
 	
 	.nicholls-menu-list- .nicholls-menu-search- {
@@ -917,12 +916,12 @@ body {
 		
 		border-left: 1px solid #ccc;
 		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
 
 		clear: both;
 		
 		width: 100%;
-		height: auto;
-		
+		height: auto;	
 	}
 
 	.logo-container-wrapper- {
@@ -932,6 +931,7 @@ body {
 	.logo-container- {
 		padding: 0;
 		margin: .4em;
+		border-bottom: none;		
 	}
 	
 	.info-container- {
@@ -1097,6 +1097,7 @@ body {
 		
 		border-left: 1px solid #ccc;
 		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
 
 		clear: both;
 		
@@ -1104,8 +1105,6 @@ body {
 		height: auto;
 		
 	}
-	
-
 
 	.logo-container-wrapper- {
 		float: none;
@@ -1129,12 +1128,16 @@ body {
 	}
 
 	.nicholls-menu-list- .nicholls-menu-item {
-		margin-right: .5em;
-	}
+		margin-right: .7em;
+	}	
 
 	.nicholls-menu-list- .nicholls-menu-item:first-child {
-		margin-left: 0;
+		margin-left: .2em;
 	}
+	
+	.nicholls-menu-list- .nicholls-menu-current-, .nicholls-menu-list- .nicholls-menu-athletics- {
+		margin-left: .2em;
+	}	
 	
 	.nicholls-menu-list- .nicholls-menu-life-, .nicholls-menu-list- .nicholls-menu-administration- {
 		margin-right: 0;
