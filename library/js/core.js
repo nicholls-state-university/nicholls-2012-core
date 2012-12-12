@@ -43,11 +43,19 @@ jQuery(document).ready( function() {
 			}
 		});
 	});	
-	
+
+	if ( jQuery('html').hasClass('lt-ie8') ) {
+		
+		jQuery(window).responsinav({ breakpoint: 977 });
+	}
+		
 });
 
 jQuery(function(){
     // Deactivate menus if touch device
     if (!Modernizr.touch) jQuery(window).responsinav({ breakpoint: 977 });
+    
+
+    
 });
 

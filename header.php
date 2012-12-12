@@ -13,7 +13,10 @@ do_action( 'fnbx_child_init'); // Child init override or enhance defaults
 do_action( 'fnbx_header_init'); // Typically used for doctype
 
 ?>
-<html <?php language_attributes('html'); ?>>
+<!--[if lt IE 7]>      <html <?php language_attributes('html'); ?> class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html <?php language_attributes('html'); ?> class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html <?php language_attributes('html'); ?> class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html <?php language_attributes('html'); ?> class="no-js"> <!--<![endif]-->
 <head>
 
 	<title><?php fnbx_document_title() ?></title>

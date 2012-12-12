@@ -508,6 +508,10 @@ body {
 	margin: 1.2em .5em 1.8em .5em;
 }
 
+.nicholls-menu-search- .form-gs-container- input {
+	float: left;
+}
+
 /* Nicholls Go To Navigation */
 
 .nicholls-nav-go-wrapper- {
@@ -1408,3 +1412,12 @@ body {
 
 }
 
+/* Compatibility - IE and other compatibility issues */
+
+.lt-ie8 .logo-container- {
+	background-position: 0 0;
+}
+
+.lt-ie8 .footer- .column- {
+	width: 19.6%;
+}
