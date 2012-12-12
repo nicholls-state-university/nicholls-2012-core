@@ -8,10 +8,10 @@ if ( is_child_theme() ) add_action( 'wp', 'fnbx_stylesheet_core_init' );
 // add_action( 'wp', 'fnbx_stylesheet_core_bp_init' );
 
 /*
-* Funbox Shut Up Theme Default Actions
+* FNBX Theme Default Actions
 *
-* Default actions for the Funbox Theme Framework are added by the fnbx_init
-* located in the funbox/header.php file
+* Default actions for the FNBX Theme Framework are added by the fnbx_init
+* located in the header.php file
 * This allows child themes to override the entire group of of actions or 
 * modify the actions individually.
 *
@@ -121,8 +121,8 @@ function fnbx_defaut_init_actions() {
 		For the image.php template fnbx_template_loop_content_image_start
 		
 		This will use specialized functions to pull the image or attachment to the top part of
-		the loop template. This can also be done by making a respective funbox-loop-image.php or
-		funbox-loop-attachment.php file in the child theme, yet using the action is very 
+		the loop template. This can also be done by making a respective fnbx-loop-image.php or
+		fnbx-loop-attachment.php file in the child theme, yet using the action is very 
 		interesting.
 		*/
 		
@@ -178,17 +178,17 @@ function fnbx_defaut_init_actions() {
 	// The default actions get... an action. 
 	do_action( 'fnbx_defaut_actions' );
 }
-// Default inits for funbox/header.php
+// Default inits for header.php
 add_action( 'fnbx_init', 'fnbx_defaut_init_actions' );
 
-// Default init for adding post thumbnail & nav menu support to funbox/functions.php
+// Default init for adding post thumbnail & nav menu support to functions.php
 add_action( 'fnbx_loaded', 'fnbx_post_thumbnails_default_setup' );
 add_action( 'fnbx_loaded', 'fnbx_nav_menus_default_setup' );
 
 /**
-* Funbox Theme Centric Filters
+* FNBX Theme Centric Filters
 *
-* Adds various filters for WordPress and Funbox Theme functions.
+* Adds various filters for WordPress and FNBX Theme functions.
 *
 * @since 1.0
 */
@@ -219,7 +219,7 @@ function fnbx_default_init_filters() {
 	// The default filters get... an action. 
 	do_action( 'fnbx_defaut_filters' );	
 }
-// Funbox Them Centric Default FIlters
+// FNBX Them Centric Default FIlters
 add_action( 'fnbx_init', 'fnbx_default_init_filters' );
 
 /*
