@@ -7,7 +7,7 @@
 		</div>
 		<div class="info-container-" id="info-container">		
 			<div class="info-tagline">people creating possibilities</div>
-			<div class="info-contact">1-877-NICHOLLS <span class="type-normal"> - <a href="http://webmanager.nicholls.edu/nicholls_test//contact">Contact Us</a></span></div>
+			<div class="info-contact">1-877-NICHOLLS <span class="type-normal"> - <a href="http://www.nicholls.edu/contact/">Contact Us</a></span></div>
 		</div>
 	</div>
 
@@ -18,7 +18,9 @@
 					Current <br>Students
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-current-contents">
-					<h2 class="nicholls-menu-title-">Current Students</h2>
+					<h2 class="nicholls-menu-title-">
+						<a class="nicholls-menu-item-link nicholls-menu-current-link-" href="http://www.nicholls.edu/current-students">Current Students</a>
+					</h2>
 					<div class="column- column-1">
 						<h3>Online Services</h3>
 						<ul>
@@ -33,7 +35,7 @@
 							<li><a href="http://www.nicholls.edu/housing/">Housing</a></li>
 							<li><a href="http://www.nicholls.edu/dining/">Meal Plans &amp; Dining</a></li>
 							<li><a href="http://www.nicholls.edu/colonelcard/">Colonel Card (ID)</a></li>
-							<li><a href="http://nich.bkstore.com/ ">Bookstore</a></li>
+							<li><a href="http://nich.bkstore.com/">Bookstore</a></li>
 							<li><a href="http://www.nicholls.edu/library/">Library</a></li>
 							<li><a href="http://www.nicholls.edu/health/">Health Services</a></li>
 						</ul>						
@@ -52,15 +54,17 @@
 				</div>				
 			</li>
 			<li class="nicholls-menu-item nicholls-menu-future-" id="nicholls-menu-future">
-				<a class="nicholls-menu-item-link nicholls-menu-future-link-" href="http://www.nicholls.edu/future-students" tabindex="4">
-					Future <br/>Students
+				<a class="nicholls-menu-item-link nicholls-menu-future-link-" href="http://www.nicholls.edu/welcome" tabindex="4">
+					Future <br />Students
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-future-contents">
-					<h2 class="nicholls-menu-title-">Future Students</h2>
+					<h2 class="nicholls-menu-title-">
+						<a class="nicholls-menu-item-link nicholls-menu-future-link-" href="http://www.nicholls.edu/welcome">Future Students</a>
+					</h2>
 					<div class="column- column-1">
 						<h3>Applying to Nicholls</h3>						
 						<ul>
-							<li><a href="http://www.nicholls.edu/request_info/">Request Admission Information</a></li>
+							<li><a href="http://www.nicholls.edu/request-info/">Request Admission Information</a></li>
 							<li><a href="http://www.nicholls.edu/programs/">Majors, Degrees &amp; Programs of Study</a></li>
 							<li><a href="http://www.nicholls.edu/tours/">Campus Tours</a></li>
 							<li><a href="http://www.nicholls.edu/fees/">Fee Payment / Fee Information</a></li>
@@ -91,7 +95,9 @@
 					Housing &amp; <br>Campus Life
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-life-contents">
-					<h2 class="nicholls-menu-title-">Housing &amp; Campus Life</h2>
+					<h2 class="nicholls-menu-title-">
+						<a class="nicholls-menu-item-link nicholls-menu-life-link-" href="http://www.nicholls.edu/campus-life">Housing &amp; Campus Life</a>
+					</h2>
 					<div class="column- column-1">
 						<h3>Online Services</h3>
 						<ul>
@@ -129,11 +135,13 @@
 				</a>
 			</li>
 			<li class="nicholls-menu-item nicholls-menu-friends-" id="nicholls-menu-friends">
-				<a class="nicholls-menu-item-link nicholls-menu-friends-link-" href="http://www.nicholls.edu/alumni-donors-friends">
+				<a class="nicholls-menu-item-link nicholls-menu-friends-link-" href="http://www.nicholls.edu/alumni-friends" tabindex="7">
 					Alumni &amp; <br>Friends
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-friends-contents">
-					<h2 class="nicholls-menu-title-">Alumni &amp; Friends</h2>
+					<h2 class="nicholls-menu-title-">
+						<a class="nicholls-menu-item-link nicholls-menu-friends-link-" href="http://www.nicholls.edu/alumni-friends">Alumni &amp; Friends</a>
+					</h2>
 					<div class="column- column-1">
 						<h3>Online Services</h3>
 						<ul>
@@ -164,11 +172,13 @@
 				</div>				
 			</li>
 			<li class="nicholls-menu-item nicholls-menu-administration-" id="nicholls-menu-administration">
-				<a class="nicholls-menu-item-link nicholls-menu-administration-link-" href="http://www.nicholls.edu/faculty-staff" tabindex="7">
+				<a class="nicholls-menu-item-link nicholls-menu-administration-link-" href="http://www.nicholls.edu/faculty-staff" tabindex="8">
 					Faculty &amp; <br>Staff
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-administration-contents">
-					<h2 class="nicholls-menu-title-">Faculty &amp; Staff</h2>
+					<h2 class="nicholls-menu-title-">
+						<a class="nicholls-menu-item-link nicholls-menu-administration-link-" href="http://www.nicholls.edu/faculty-staff">Faculty &amp; Staff</a>
+					</h2>
 					<div class="column- column-1">
 						<h3>Online Services</h3>
 						<ul>
