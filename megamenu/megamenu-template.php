@@ -19,7 +19,7 @@
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-current-contents">
 					<h2 class="nicholls-menu-title-">
-						<a class="nicholls-menu-item-link nicholls-menu-current-link-" href="http://www.nicholls.edu/current-students">Current Students</a>
+						<a class="nicholls-menu-title-link-" href="http://www.nicholls.edu/current-students">Current Students</a>
 					</h2>
 					<div class="column- column-1">
 						<h3>Online Services</h3>
@@ -59,7 +59,7 @@
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-future-contents">
 					<h2 class="nicholls-menu-title-">
-						<a class="nicholls-menu-item-link nicholls-menu-future-link-" href="http://www.nicholls.edu/welcome">Future Students</a>
+						<a class="nicholls-menu-title-link-" href="http://www.nicholls.edu/welcome">Future Students</a>
 					</h2>
 					<div class="column- column-1">
 						<h3>Applying to Nicholls</h3>						
@@ -96,7 +96,7 @@
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-life-contents">
 					<h2 class="nicholls-menu-title-">
-						<a class="nicholls-menu-item-link nicholls-menu-life-link-" href="http://www.nicholls.edu/campus-life">Housing &amp; Campus Life</a>
+						<a class="nicholls-menu-title-link-" href="http://www.nicholls.edu/campus-life">Housing &amp; Campus Life</a>
 					</h2>
 					<div class="column- column-1">
 						<h3>Online Services</h3>
@@ -140,7 +140,7 @@
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-friends-contents">
 					<h2 class="nicholls-menu-title-">
-						<a class="nicholls-menu-item-link nicholls-menu-friends-link-" href="http://www.nicholls.edu/alumni-friends">Alumni &amp; Friends</a>
+						<a class="nicholls-menu-title-link-" href="http://www.nicholls.edu/alumni-friends">Alumni &amp; Friends</a>
 					</h2>
 					<div class="column- column-1">
 						<h3>Online Services</h3>
@@ -177,7 +177,7 @@
 				</a>
 				<div class="nicholls-menu-contents" id="nicholls-menu-administration-contents">
 					<h2 class="nicholls-menu-title-">
-						<a class="nicholls-menu-item-link nicholls-menu-administration-link-" href="http://www.nicholls.edu/faculty-staff">Faculty &amp; Staff</a>
+						<a class="nicholls-menu-title-link-" href="http://www.nicholls.edu/faculty-staff">Faculty &amp; Staff</a>
 					</h2>
 					<div class="column- column-1">
 						<h3>Online Services</h3>

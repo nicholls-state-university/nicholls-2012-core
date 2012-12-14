@@ -359,6 +359,18 @@ body {
 	color: $nicholls-color-white;
 }
 
+.nicholls-menu-title- a,
+.nicholls-menu-title- a:link,
+.nicholls-menu-title- a:visited,
+.nicholls-menu-title- a:active { 
+	color: $nicholls-color-white;
+	text-decoration: none;
+}
+
+.nicholls-menu-title- a:hover { 
+	text-decoration: underline;
+}
+
 .nicholls-menu-contents .column- {
 	float: left;
 	width: 16em; /*width of each menu column*/
