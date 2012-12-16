@@ -40,7 +40,7 @@ if ( is_admin() ) {
 }
 
 /*
-* Funbox Theme Support Filter
+* FNBX Theme Support Filter
 *
 * Since this may be delpolyed on WordPress sites lacking some theme support features.
 *
@@ -135,7 +135,7 @@ function nicholls_custom_headers_setup() {
 add_action( 'after_setup_theme', 'nicholls_custom_headers_setup' );
 
 /*
-* Funbox Theme Custom Header Filter
+* FNBX Theme Custom Header Filter
 *
 * Modifies the output for custom header css.
 *
@@ -162,7 +162,7 @@ function fnbx_theme_custom_header_filter( $custom_header ) {
 add_filter( 'fnbx_custom_header', 'fnbx_theme_custom_header_filter' );
 
 /*
-* Funbox Theme Custom Header Width Filter
+* FNBX Theme Custom Header Width Filter
 *
 * Modifies the width for the header so it will zoom.
 *

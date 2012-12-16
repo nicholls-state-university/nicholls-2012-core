@@ -2,7 +2,7 @@
 /**
 * Core Theme Funtions
 *
-* Action hooks used by the Funbox Theme
+* Action hooks used by the FNBX Theme
 *
 * @package Theme Core
 * @subpackage Hooks

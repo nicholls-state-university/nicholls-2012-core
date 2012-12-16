@@ -16,14 +16,14 @@ add_action( 'fnbx_child_init', 'nicholls_template_core_full_page');
 			/* Run The Loop
 			 *
 			 * If you want to overload this in a child theme then include a file
-			 * called funbox-loop-page.php and that will be used instead.
+			 * called fnbx-loop-page.php and that will be used instead.
 			 * We also put the template part name 'page' into the global
 			 * $fnbx->template_part_name so you can use it.
 			 */
 
 			 // Filter to catch this loop template part name into gloabal $fnbx
-			 add_filter( 'get_template_part_funbox-loop', array(&$fnbx, 'get_template_part_filter'), 1, 2 );
-			 get_template_part( 'funbox-loop', 'page' );
+			 add_filter( 'get_template_part_fnbx-loop', array(&$fnbx, 'get_template_part_filter'), 1, 2 );
+			 get_template_part( 'fnbx-loop', 'page' );
 			 
 			?>
 
