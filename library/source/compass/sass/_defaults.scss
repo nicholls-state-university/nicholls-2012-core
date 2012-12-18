@@ -957,7 +957,44 @@ div.wpcf7 {
 	border: 1px solid #000;
 }
 
-/* START - Tables */
+/* END - Tables */
+
+/* START: List Posts */
+
+.list-posts-list {
+	list-style-type: none;
+}
+
+.list-posts-item {
+	margin-left: .2em;
+}
+
+.list-posts-item-title {
+	font-weight: bold;
+}
+
+.list-posts-item-date {
+	font-size: 90%;
+	color: #7f7f7f;
+}
+
+.list-posts-nicholls-news .thumbnail-container {
+	float: left;
+	padding: .2em;
+	margin: .2em;
+	border: 2px solid #ccc;
+}
+
+
+.list-posts-nicholls-news .list-posts-item-content {
+	clear: right;
+}
+
+.list-posts-nicholls-news .list-posts-item-title {
+	clear: both;
+}
+
+/* END: List Posts */
 
 /* END - Special Usage */
 
