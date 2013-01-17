@@ -36,3 +36,8 @@ function nicholls_main_title_prefix_filter( $title_array = array() ) {
 	return $title_array;
 }
 add_filter( 'fnbx_default_title', 'nicholls_main_title_prefix_filter' );
+
+function nicholls_posts_date_remove_filter( $html = array() ) {
+	return 0;
+}
+// add_filter( 'fnbx_entry_date', 'nicholls_posts_date_remove_filter' );
