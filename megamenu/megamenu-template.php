@@ -41,7 +41,7 @@
 						</ul>						
 					</div>
 					<div class="column- column-2">			
-						<h3>Information</h3>
+						<h3>More Information</h3>
 						<ul>
 							<li><a href="http://www.nicholls.edu/directory/">Faculty &amp; Staff Directory</a></li>
 							<li><a href="http://www.nicholls.edu/register/">Registration/Schedule of Classes</a></li>
@@ -49,6 +49,7 @@
 							<li><a href="http://www.nicholls.edu/programs/">Majors, Degrees &amp; Programs of Study</a></li>
 							<li><a href="http://www.nicholls.edu/fees/">Fee Payment / Fee Information</a></li>
 							<li><a href="http://www.nicholls.edu/financial-aid/">Financial Aid &amp; Scholarships</a></li>
+							<li><a href="http://www.nicholls.edu/nicholls-online/">Nicholls Online</a></li>							
 						</ul>
 					</div>
 				</div>				
@@ -200,6 +201,7 @@
 						<ul>
 							<li><a href="http://www.nicholls.edu/faculty-senate/">Faculty Senate</a></li>
 							<li><a href="http://www.nicholls.edu/cafe/">Center for Advancing Faculty Engagement (CAFE)</a></li>
+							<li><a href="http://www.nicholls.edu/orsp/">Office of Research &amp; Sponsored Programs</a></li>
 							<li><a href="http://www.nicholls.edu/human-resources/">Human Resources</a></li>
 							<li><a href="https://jobs.nicholls.edu">Employment Opportunities</a></li>
 						</ul>						
