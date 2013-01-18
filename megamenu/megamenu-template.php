@@ -26,7 +26,7 @@
 						<ul>
 							<li><a href="http://www.nicholls.edu/student-email/">Student E-mail</a></li>
 							<li><a href="http://www.nicholls.edu/banner/">Banner</a></li>
-							<li><a href="http://moodle.nicholls.edu/moodle/">Moodle</a></li>
+							<li><a href="http://moodle2.nicholls.edu/moodle/">Moodle</a></li>
 							<li><a href="http://www.nicholls.edu/calendar/">Calendar</a></li>
 							<li><a href="http://www.nicholls.edu/records/transcripts/">Request Transcripts</a></li>
 						</ul>
@@ -184,7 +184,7 @@
 						<h3>Online Services</h3>
 						<ul>
 							<li><a href="https://www.google.com/a/nicholls.edu/#inbox">Faculty &amp; Staff E-mail</a></li>
-							<li><a href="http://moodle.nicholls.edu/moodle/">Moodle</a></li>
+							<li><a href="http://moodle2.nicholls.edu/moodle/">Moodle</a></li>
 							<li><a href="https://talbot.nicholls.edu:4538/PROD/twbkwbis.P_GenMenu?name=homepage">Employee Self Service / Banner</a></li>
 							<li><a href="http://www.nicholls.edu/directory/">Faculty &amp; Staff Directory</a></li>
 							<li><a href="http://www.nicholls.edu/calendar/">Calendar</a></li>
