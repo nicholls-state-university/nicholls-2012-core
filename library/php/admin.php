@@ -31,22 +31,25 @@ function nicholls_common_admin_settings_register() {
 	// Register Nicholls Settings
 	register_setting( 'nicholls_core_theme_options', 'nicholls_core_theme_options', 'nicholls_core_theme_options_validate' );
 	
-	add_settings_section('nicholls_core_theme_admin_main', 'Department Contact Information', 'nicholls_core_theme_admin_section_text', 'nicholls_core_theme_admin');
-		
+	add_settings_section('nicholls_core_theme_admin_contact', 'Department Contact Information', 'nicholls_core_theme_admin_section_contact_text', 'nicholls_core_theme_admin');
+	add_settings_section('nicholls_core_theme_admin_advanced', 'Advanced Nicholls Theme Options', 'nicholls_core_theme_admin_section_advanced_text', 'nicholls_core_theme_admin');
+
+
 	$nicholls_core_fields = nicholls_core_admin_get_setting_config();
 	
 	foreach( $nicholls_core_fields as $nicholls_core_field ) {
 
 		$field_callback = 'nicholls_core_theme_admin_setting_string';
 		
-		if ( $nicholls_core_field['name'] == 'note' ) $field_callback = 'nicholls_core_theme_admin_setting_text';
+		if ( $nicholls_core_field['type'] == 'textarea' ) $field_callback = 'nicholls_core_theme_admin_setting_textarea';
+		if ( $nicholls_core_field['type'] == 'checkbox' ) $field_callback = 'nicholls_core_theme_admin_setting_checkbox';
 		
-		add_settings_field('nicholls_core_theme_admin_' . $nicholls_core_field['name'], $nicholls_core_field['description'], $field_callback, 'nicholls_core_theme_admin', 'nicholls_core_theme_admin_main', $nicholls_core_field['name'] );
+		add_settings_field('nicholls_core_theme_admin_' . $nicholls_core_field['name'], $nicholls_core_field['description'], $field_callback, 'nicholls_core_theme_admin', 'nicholls_core_theme_admin_' . $nicholls_core_field['section'], $nicholls_core_field['name'] );
 	
 	}
 
 	if ( is_super_admin() )
-		add_settings_field('nicholls_core_theme_admin_reset', 'Reset Front Page', 'nicholls_core_theme_admin_section_emergency_reset', 'nicholls_core_theme_admin', 'nicholls_core_theme_admin_main', $nicholls_core_field['name'] );
+		add_settings_field('nicholls_core_theme_admin_reset', 'Reset Front Page', 'nicholls_core_theme_admin_section_emergency_reset', 'nicholls_core_theme_admin', 'nicholls_core_theme_admin_advanced', $nicholls_core_field['name'] );
 }
 
 
@@ -60,10 +63,17 @@ function nicholls_core_theme_admin_section_emergency_reset() {
 	
 }
 
-function nicholls_core_theme_admin_section_text() {
+function nicholls_core_theme_admin_section_contact_text() {
 	fnbx_html_tag( array(
 		'tag' => 'p',
 		'tag_content' => 'Contact information will be shown only if you have the Nicholls information widget in your sidebar.'
+	) );
+}
+
+function nicholls_core_theme_admin_section_advanced_text() {
+	fnbx_html_tag( array(
+		'tag' => 'p',
+		'tag_content' => 'These are advanced options. If you do not understand these options, please contact the Website Manager before you make further changes.'
 	) );
 }
 
@@ -78,7 +88,7 @@ function nicholls_core_theme_admin_setting_string( $field_name ) {
 	) );
 }
 
-function nicholls_core_theme_admin_setting_text( $field_name ) {
+function nicholls_core_theme_admin_setting_textarea( $field_name ) {
 	$options = get_option('nicholls_core_theme_options');
 
 	fnbx_html_tag( array(
@@ -86,6 +96,25 @@ function nicholls_core_theme_admin_setting_text( $field_name ) {
 		'name' => 'nicholls_core_theme_options['. $field_name . ']',
 		'tag_content' => $options[ $field_name ]
 	) );
+}
+
+function nicholls_core_theme_admin_setting_checkbox( $field_name ) {
+	$options = get_option('nicholls_core_theme_options');
+			
+	$html_default = array(
+		'tag' => 'input',
+		'tag_type' => 'single',
+		'name' => 'nicholls_core_theme_options['. $field_name . ']',
+		'value' => 1,
+		'type' => 'checkbox'
+	);	
+	
+	if ( $options[ $field_name ] == 1 ) {
+		$html_default['checked'] = 'checked';
+	}
+	
+	fnbx_html_tag( $html_default );
+
 }
 
 function nicholls_core_theme_options_validate( $input ) {
@@ -186,3 +215,4 @@ function nicholls_common_admin() {
 		'tag_type' => 'close',
 	) );
 }
+

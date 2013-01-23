@@ -18,6 +18,8 @@ if ( is_child_theme() ) add_action( 'wp', 'fnbx_stylesheet_core_init' );
 * @since 1.0
 */
 function fnbx_defaut_init_actions() {
+
+	$n_options = get_option('nicholls_core_theme_options');
 	
 	// ISSUE: BuddyPress WPMU adminbar CSS needs to be loaded properly
 	if ( is_user_logged_in() ) wp_enqueue_style( 'bp-admin-bar' );
@@ -87,7 +89,10 @@ function fnbx_defaut_init_actions() {
 	
 	// Entry title
 	add_action( 'fnbx_template_loop_entry_title', 'fnbx_entry_title' );
-		
+	
+	// Entry date
+	if ( $n_options['site_remove_dates'] == false ) add_action( 'fnbx_template_loop_entry_title', 'fnbx_entry_date' );
+
 	// For all archives we put a page title, for author and categories we put desicription meta if available
 	if ( is_archive() ) {
 		// Loop template page title and description for some

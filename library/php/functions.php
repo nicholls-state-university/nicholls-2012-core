@@ -30,41 +30,65 @@ function nicholls_core_admin_get_setting_config() {
 
 	$setting[0] = array(
 		'name' => 'address_location',
-		'description' => 'Office Location and Building'
+		'description' => 'Office Location and Building',
+		'section' => 'contact',
+		'type' => 'input'
 	);
 	$setting[1] = array(
 		'name' => 'address_mailing',
-		'description' => 'Office Mailing Address'
+		'description' => 'Office Mailing Address',
+		'section' => 'contact',
+		'type' => 'input'
 	);
 	$setting[2] = array(
 		'name' => 'address_cityzip',
-		'description' => 'Office Mailing City, State, and Zip Code'
+		'description' => 'Office Mailing City, State, and Zip Code',
+		'section' => 'contact',
+		'type' => 'input'
 	);
 	$setting[3] = array(
 		'name' => 'phone',
-		'description' => 'Office Phone Number'
+		'description' => 'Office Phone Number',
+		'section' => 'contact',
+		'type' => 'input'
 	);
 	$setting[4] = array(
 		'name' => 'fax',
-		'description' => 'Office Fax Number'
+		'description' => 'Office Fax Number',
+		'section' => 'contact',
+		'type' => 'input'
 	);
 	$setting[5] = array(
 		'name' => 'email_name',
-		'description' => 'Office Contact Email Display Name'
+		'description' => 'Office Contact Email Display Name',
+		'section' => 'contact',
+		'type' => 'input'
 	);
 	$setting[6] = array(
 		'name' => 'email_address',
-		'description' => 'Office Contact Email Address'
+		'description' => 'Office Contact Email Address',
+		'section' => 'contact',
+		'type' => 'input'
 	);
 	$setting[7] = array(
 		'name' => 'note',
-		'description' => 'Office Hours or Short Note'
+		'description' => 'Office Hours or Short Note',
+		'section' => 'contact',
+		'type' => 'textarea'
 	);
 	$setting[8] = array(
 		'name' => 'title_prefix',
-		'description' => 'Website Title Prefix (leave blank for NONE)'
+		'description' => 'Website Title Prefix (leave blank for NONE)',
+		'section' => 'advanced',
+		'type' => 'input'
 	);	
-	
+	$setting[9] = array(
+		'name' => 'site_remove_dates',
+		'description' => 'Do not display date on post pages.',
+		'section' => 'advanced',
+		'type' => 'checkbox'
+	);
+		
 	return $setting;
 }
 
@@ -115,7 +139,7 @@ function nicholls_get_form_google_search() {
 		'onmouseout' => "this.className='button-search-'"	
 	) );
 	
-	return fnbx_form( 'gs', 'http://search.nicholls.edu/search', 'get', $form_google_search_content, true );
+	return fnbx_form( 'gs', 'http://www.nicholls.edu/search', 'get', $form_google_search_content, true );
 
 }
 
