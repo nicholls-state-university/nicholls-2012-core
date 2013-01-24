@@ -88,7 +88,13 @@ function nicholls_core_admin_get_setting_config() {
 		'section' => 'advanced',
 		'type' => 'checkbox'
 	);
-		
+	$setting[10] = array(
+		'name' => 'site_remove_post_meta',
+		'description' => 'Do not display meta-information on post pages.',
+		'section' => 'advanced',
+		'type' => 'checkbox'
+	);
+			
 	return $setting;
 }
 

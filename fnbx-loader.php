@@ -105,13 +105,16 @@ function fnbx_defaut_init_actions() {
 	// Home example adding a post thumbnail
 	if ( is_home() ) add_action( 'fnbx_template_loop_content_start', 'fnbx_the_post_thumbnail' );
 
-	// Content meta do we want brief or verbose, we could also filter or change with language files.
-	if ( is_home() || ( is_archive() || is_search() ) ) 
-		add_action( 'fnbx_template_loop_content_end', 'fnbx_post_meta_brief' );
-	// This should cover is_single, is_attachement, is_image
-	elseif ( !is_page() )
-		add_action( 'fnbx_template_loop_content_end', 'fnbx_post_meta_verbose' );		
-	
+	// Nicholls theme options can disable all meta display
+	if ( $n_options['site_remove_post_meta'] == false ) {
+		// Content meta do we want brief or verbose, we could also filter or change with language files.
+		if ( is_home() || ( is_archive() || is_search() ) ) 
+			add_action( 'fnbx_template_loop_content_end', 'fnbx_post_meta_brief' );
+		// This should cover is_single, is_attachement, is_image
+		elseif ( !is_page() )
+			add_action( 'fnbx_template_loop_content_end', 'fnbx_post_meta_verbose' );
+	}
+		
 	// Put an edit link for pages since we don't show meta
 	if ( is_page() ) add_action( 'fnbx_template_loop_content_end', 'fnbx_post_meta_edit' );		
 		
