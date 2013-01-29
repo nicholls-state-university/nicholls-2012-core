@@ -91,7 +91,9 @@ function fnbx_defaut_init_actions() {
 	add_action( 'fnbx_template_loop_entry_title', 'fnbx_entry_title' );
 	
 	// Entry date
-	if ( $n_options['site_remove_dates'] == false ) add_action( 'fnbx_template_loop_entry_title', 'fnbx_entry_date' );
+	if ( !is_page() ) {
+		if ( $n_options['site_remove_dates'] == false ) add_action( 'fnbx_template_loop_entry_title', 'fnbx_entry_date' );
+	}
 
 	// For all archives we put a page title, for author and categories we put desicription meta if available
 	if ( is_archive() ) {
