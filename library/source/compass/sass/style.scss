@@ -1032,7 +1032,23 @@ body {
 			margin: 0;
 			font-size: 70%;
 		}
-	}		
+	}
+
+	/* Nicholls Forms */
+	
+	.form-container .form-label, .form-container label {
+		clear: both;
+		float: none;
+		text-align: left;
+		width: auto;
+	}
+
+	.form-container .form-input, .form-container .form-element {
+		width: auto;
+		margin: 0;
+		padding-left: 1em;
+	}
+		
 }
 
 /* Layout - Phone Screen Portrait breakpoint is  */
@@ -1222,7 +1238,23 @@ body {
 			margin: 0;
 			font-size: 70%;
 		}
-	}	
+	}
+	
+	/* Nicholls Forms */
+	
+	.form-container .form-label, .form-container label {
+		clear: both;
+		float: none;
+		text-align: left;
+		width: auto;
+	}
+
+	.form-container .form-input, .form-container .form-element {
+		width: auto;
+		margin: 0;
+		padding-left: 1em;
+	}
+		
 }
 
 

@@ -496,7 +496,7 @@ input:focus, textarea:focus {
 
 .form-container {
 	position: relative;
-	width: 36em;
+	width: auto;
 	padding: .2em;
 }
 
@@ -505,13 +505,8 @@ input:focus, textarea:focus {
 	padding: 0;
 }
 
-.form-container .form-note {
-	padding: 2px;
-	clear: both;
-}
-
 .form-container .form-row {
-	width: 100%;
+	width: auto;
 	clear: both;
 }
 
@@ -542,7 +537,9 @@ input:focus, textarea:focus {
 /* START - Plugin Contact Form 7 - Form Controls */
 
 div.wpcf7 {
-	width: 36em;
+	position: relative;
+	width: auto;
+	padding: .2em;
 }
 
 .form-container .wpcf7-list-item {
