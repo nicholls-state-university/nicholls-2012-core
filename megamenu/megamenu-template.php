@@ -185,7 +185,7 @@
 						<ul>
 							<li><a href="https://www.google.com/a/nicholls.edu/#inbox">Faculty &amp; Staff E-mail</a></li>
 							<li><a href="http://moodle2.nicholls.edu/moodle/">Moodle</a></li>
-							<li><a href="https://talbot.nicholls.edu:4538/PROD/twbkwbis.P_GenMenu?name=homepage">Employee Self Service / Banner</a></li>
+							<li><a href="https://banner.nicholls.edu">Employee Self Service / Banner</a></li>
 							<li><a href="http://www.nicholls.edu/directory/">Faculty &amp; Staff Directory</a></li>
 							<li><a href="http://www.nicholls.edu/calendar/">Calendar</a></li>
 						</ul>
