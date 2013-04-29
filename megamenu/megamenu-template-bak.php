@@ -240,7 +240,7 @@
                     <a href="http://www.nicholls.edu/finaid/student-employment/">Student Employment</a>
 
                     <ul>
-                        <li><a href="https://talbot.nicholls.edu:4538/PROD/twbkwbis.P_GenMenu?name=homepage">Payroll Information – Employee Self Service</a></li>
+                        <li><a href="https://banner.nicholls.edu/PROD/twbkwbis.P_GenMenu?name=homepage">Payroll Information – Employee Self Service</a></li>
 					</ul>
                 </li>
             </ul>
@@ -281,8 +281,8 @@
 
             <ul>
                 <li><a href="http://blackboard.nicholls.edu/">Blackboard</a> </li>
-                <li><a href="https://talbot.nicholls.edu:4538/PROD/twbkwbis.P_GenMenu?name=homepage">Faculty and Advisors Self Service</a></li>
-                <li><a href="https://talbot.nicholls.edu:4538/PROD/twbkwbis.P_GenMenu?name=homepage">Employee Self Service</a></li>
+                <li><a href="https://banner.nicholls.edu/PROD/twbkwbis.P_GenMenu?name=homepage">Faculty and Advisors Self Service</a></li>
+                <li><a href="https://banner.nicholls.edu/PROD/twbkwbis.P_GenMenu?name=homepage">Employee Self Service</a></li>
                 <li><a href="https://mail.google.com/a/nicholls.edu/#inbox">Faculty/Staff E-mail (Google Apps)</a></li>
                 <li><a href="http://www.nicholls.edu/directory/">Faculty/Staff Directory</a></li>
                 <li><a href="http://acshelp.nicholls.edu">ITS Help Desk</a></li>
