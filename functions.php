@@ -205,3 +205,29 @@ function nicholls_html_go_to() {
 <?php
 }
 add_action( 'nicholls_header_end', 'nicholls_html_go_to', 99 );
+
+/**
+* Nicholls Google Anayltics Site JS
+*
+* Function to insert Google Analytics tracking javascript preferably in header
+*
+* @since 0.4
+*/
+function nicholls_js_google_analytics() {
+?>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23854260-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<?php
+}
+add_action( 'fnbx_wp_head_after', 'nicholls_js_google_analytics' );
