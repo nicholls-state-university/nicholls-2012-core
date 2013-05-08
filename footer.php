@@ -65,6 +65,7 @@
 			<li><a href="http://www.nicholls.edu/about/campus-map/">Campus Map</a></li>
 			<li><a href="http://www.nicholls.edu/site-map/">Site Map</a></li>
 			<li><a href="http://www.nicholls.edu/about/compliance/">Compliance & Policy Information</a></li>
+			<li><a href="http://www.nicholls.edu/ada/">ADA Information</a></li>
 		</ul>
 	</div>
 </div>
