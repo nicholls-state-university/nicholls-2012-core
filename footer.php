@@ -49,6 +49,7 @@
 			<li><a href="http://www.nicholls.edu/athletics/">Athletics</a></li>
 			<li><a href="http://www.nicholls.edu/calendar/">Events Calendar</a></li>
 			<li><a href="http://emergency.nicholls.edu/">Emergency Preparedness</a></li>
+			<li><a href="http://www.nicholls.edu/ada/">ADA Information</a></li>			
 		</ul>
 	</div>
 </div>
@@ -65,7 +66,6 @@
 			<li><a href="http://www.nicholls.edu/about/campus-map/">Campus Map</a></li>
 			<li><a href="http://www.nicholls.edu/site-map/">Site Map</a></li>
 			<li><a href="http://www.nicholls.edu/about/compliance/">Compliance & Policy Information</a></li>
-			<li><a href="http://www.nicholls.edu/ada/">ADA Information</a></li>
 		</ul>
 	</div>
 </div>
