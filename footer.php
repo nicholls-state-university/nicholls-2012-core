@@ -48,6 +48,7 @@
 			<li><a href="http://www.nicholls.edu/recreation/">Recreation</a></li>
 			<li><a href="http://www.nicholls.edu/athletics/">Athletics</a></li>
 			<li><a href="http://www.nicholls.edu/calendar/">Events Calendar</a></li>
+			<li><a href="http://www.nicholls.edu/police/">University Police</a></li>
 			<li><a href="http://emergency.nicholls.edu/">Emergency Preparedness</a></li>
 			<li><a href="http://www.nicholls.edu/ada/">ADA Information</a></li>			
 		</ul>
