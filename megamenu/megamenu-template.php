@@ -183,7 +183,7 @@
 					<div class="column- column-1">
 						<h3>Online Services</h3>
 						<ul>
-							<li><a href="https://www.google.com/a/nicholls.edu/#inbox">Faculty &amp; Staff E-mail</a></li>
+							<li><a href="https://mail.google.com/a/nicholls.edu">Faculty &amp; Staff E-mail</a></li>
 							<li><a href="http://moodle2.nicholls.edu/moodle/">Moodle</a></li>
 							<li><a href="https://banner.nicholls.edu">Employee Self Service / Banner</a></li>
 							<li><a href="http://www.nicholls.edu/directory/">Faculty &amp; Staff Directory</a></li>
@@ -199,6 +199,7 @@
 					<div class="column- column-2">
 						<h3>Resources</h3>
 						<ul>
+							<li><a href="http://www.nicholls.edu/library/">Library</a></li>
 							<li><a href="http://www.nicholls.edu/faculty-senate/">Faculty Senate</a></li>
 							<li><a href="http://www.nicholls.edu/cafe/">Center for Advancing Faculty Engagement (CAFE)</a></li>
 							<li><a href="http://www.nicholls.edu/orsp/">Office of Research &amp; Sponsored Programs</a></li>
