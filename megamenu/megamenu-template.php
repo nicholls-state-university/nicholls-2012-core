@@ -186,6 +186,7 @@
 							<li><a href="https://mail.google.com/a/nicholls.edu">Faculty &amp; Staff E-mail</a></li>
 							<li><a href="http://moodle2.nicholls.edu/moodle/">Moodle</a></li>
 							<li><a href="https://banner.nicholls.edu">Employee Self Service / Banner</a></li>
+							<li><a href="https://www.digitalmeasures.com/login/nicholls/admin/authentication/showLogin.do">Digital Measures</a></li>							
 							<li><a href="http://www.nicholls.edu/directory/">Faculty &amp; Staff Directory</a></li>
 							<li><a href="http://www.nicholls.edu/calendar/">Calendar</a></li>
 						</ul>
