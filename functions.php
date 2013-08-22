@@ -121,13 +121,28 @@ function nicholls_custom_headers_setup() {
 				'description' => __( 'Quad 1', 'fnbx_lang' )
 			),
 			'nicholls_default_header_m' => array (
-				'url' => FNBX_CORE_URL . '/library/images/headers/h-student-hallway-1.jpg',
-				'thumbnail_url' => FNBX_CORE_URL . '/library/images/headers/h-student-hallway-1-thumbnail.jpg',
+				'url' => FNBX_CORE_URL . '/library/images/headers/h-ceiling-1.jpg',
+				'thumbnail_url' => FNBX_CORE_URL . '/library/images/headers/h-ceiling-1-thumbnail.jpg',
 				'description' => __( 'Student 1', 'fnbx_lang' )
 			),
 			'nicholls_default_header_n' => array (
 				'url' => FNBX_CORE_URL . '/library/images/headers/h-white-1.jpg',
 				'thumbnail_url' => FNBX_CORE_URL . '/library/images/headers/h-white-1-thumbnail.jpg',
+				'description' => __( 'White Hall 1', 'fnbx_lang' )
+			),
+			'nicholls_default_header_o' => array (
+				'url' => FNBX_CORE_URL . '/library/images/headers/h-elkins-azaleas-1.jpg',
+				'thumbnail_url' => FNBX_CORE_URL . '/library/images/headers/h-elkins-azaleas-1-thumbnail.jpg',
+				'description' => __( 'White Hall 1', 'fnbx_lang' )
+			),
+			'nicholls_default_header_n' => array (
+				'url' => FNBX_CORE_URL . '/library/images/headers/h-fountain-1.jpg',
+				'thumbnail_url' => FNBX_CORE_URL . '/library/images/headers/h-fountain-1-thumbnail.jpg',
+				'description' => __( 'White Hall 1', 'fnbx_lang' )
+			),
+			'nicholls_default_header_n' => array (
+				'url' => FNBX_CORE_URL . '/library/images/headers/h-wall-1.jpg',
+				'thumbnail_url' => FNBX_CORE_URL . '/library/images/headers/h-wall-1-thumbnail.jpg',
 				'description' => __( 'White Hall 1', 'fnbx_lang' )
 			)
 	) );
