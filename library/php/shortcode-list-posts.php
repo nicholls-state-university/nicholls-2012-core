@@ -119,8 +119,9 @@ function custom_query_shortcode($atts) {
 				$this_content = preg_replace('/\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|$!:,.;]*[A-Z0-9+&@#\/%=~_|$]/i', '', $this_content);
 				$this_content = strip_tags( $this_content );
 				$this_content_length = intval( $the_query_arr['qs_content'] );
-				$this_content = substr( $this_content, 0 , $this_content_length );
-
+				// Trim to word length.
+				$this_content = wp_trim_words( $this_content, $this_content_length );
+				
 				$content = fnbx_html_tag( array(
 					'tag' => 'div',
 					'class' => 'list-posts-item-content',
