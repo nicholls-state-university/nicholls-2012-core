@@ -125,7 +125,7 @@
 							<li><a href="http://www.nicholls.edu/services/">Student Services</a></li>
 							<li><a href="http://www.nicholls.edu/health/">Health Services</a></li>
 							<li><a href="http://www.nicholls.edu/recreation/">Campus Recreation</a></li>
-							<li><a href="http://nich.bkstore.com/">Bookstore</a></li>							
+							<li><a href="http://www.nich.bncollege.com/">Bookstore</a></li>							
 						</ul>
 					</div>
 				</div>
