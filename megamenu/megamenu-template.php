@@ -35,7 +35,7 @@
 							<li><a href="http://www.nicholls.edu/housing/">Housing</a></li>
 							<li><a href="http://www.nicholls.edu/dining/">Meal Plans &amp; Dining</a></li>
 							<li><a href="http://www.nicholls.edu/colonelcard/">Colonel Card (ID)</a></li>
-							<li><a href="http://nich.bkstore.com/">Bookstore</a></li>
+							<li><a href="http://www.nich.bncollege.com/">Bookstore</a></li>
 							<li><a href="http://www.nicholls.edu/library/">Library</a></li>
 							<li><a href="http://www.nicholls.edu/health/">Health Services</a></li>
 						</ul>						
