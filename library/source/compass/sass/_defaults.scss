@@ -35,6 +35,10 @@ a.nofx:hover {
 	border: none;
 }
 
+.link-color-white, .link-color-white:link, .link-color-white:hover, .link-color-white:active, .link-color-white:visited {
+	color: #fff;
+}
+
 /* Content Common text blocks */	
 
 .content- code, .content- pre {
