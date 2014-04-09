@@ -109,7 +109,7 @@
 						<h3>Campus Life</h3>
 						<ul>
 							<li><a href="http://www.nicholls.edu/sga/">Student Government Association (SGA)</a></li>
-							<li><a href="http://www.nicholls.edu/spa/">Student Programming Association (SGA)</a></li>
+							<li><a href="http://www.nicholls.edu/spa/">Student Programming Association (SPA)</a></li>
 							<li><a href="http://www.nicholls.edu/organizations/">Student Organizations</a></li>
 							<li><a href="http://www.nicholls.edu/greek/">Greek Life</a></li>
 							<li><a href="http://www.thenichollsworth.com/">The Nicholls Worth</a></li>
