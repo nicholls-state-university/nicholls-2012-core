@@ -116,3 +116,12 @@ function fnbx_javascript_enqueue_core() {
 
 }
 
+/**
+* Bing verification meta
+*/
+function nicholls_head_meta_bing_verification() {
+	fnbx_write_meta_tag( array( 
+		'name' => 'msvalidate.01',
+		'content' => '9E2BA58BB8FA0D0735188A61068CA680'
+	) );
+}

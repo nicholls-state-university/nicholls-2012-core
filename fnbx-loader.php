@@ -40,6 +40,9 @@ function fnbx_defaut_init_actions() {
 	add_action( 'fnbx_wp_head_before', 'fnbx_head_meta_author' );
 	add_action( 'fnbx_wp_head_before', 'fnbx_head_meta_copyright' );
 	add_action( 'fnbx_wp_head_before', 'fnbx_head_meta_revised' );
+	// Bing verification meta
+	add_action( 'fnbx_wp_head_before', 'nicholls_head_meta_bing_verification' );
+
 	
 	// Viewport
 	add_action( 'fnbx_wp_head_before', 'fnbx_head_meta_viewport' );
