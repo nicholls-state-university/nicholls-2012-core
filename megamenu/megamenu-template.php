@@ -24,32 +24,33 @@
 					<div class="column- column-1">
 						<h3>Online Services</h3>
 						<ul>
-							<li><a href="http://www.nicholls.edu/student-email/">Student E-mail</a></li>
 							<li><a href="http://www.nicholls.edu/banner/">Banner</a></li>
-							<li><a href="http://moodle2.nicholls.edu/moodle/">Moodle</a></li>
 							<li><a href="http://www.nicholls.edu/calendar/">Calendar</a></li>
+							<li><a href="http://moodle2.nicholls.edu/moodle/">Moodle</a></li>
 							<li><a href="http://www.nicholls.edu/records/transcripts/">Request Transcripts</a></li>
+							<li><a href="http://www.nicholls.edu/student-email/">Student E-mail</a></li>
 						</ul>
 						<h3>Resources</h3>
 						<ul>
-							<li><a href="http://www.nicholls.edu/housing/">Housing</a></li>
-							<li><a href="http://www.nicholls.edu/dining/">Meal Plans &amp; Dining</a></li>
-							<li><a href="http://www.nicholls.edu/colonelcard/">Colonel Card (ID)</a></li>
 							<li><a href="http://www.nich.bncollege.com/">Bookstore</a></li>
-							<li><a href="http://www.nicholls.edu/library/">Library</a></li>
+							<li><a href="http://www.nicholls.edu/colonelcard/">Colonel Card (ID)</a></li>
 							<li><a href="http://www.nicholls.edu/health/">Health Services</a></li>
+							<li><a href="http://www.nicholls.edu/housing/">Housing</a></li>
+							<li><a href="http://www.nicholls.edu/library/">Library</a></li>
+							<li><a href="http://www.nicholls.edu/dining/">Meal Plans &amp; Dining</a></li>
 						</ul>						
 					</div>
 					<div class="column- column-2">			
 						<h3>More Information</h3>
 						<ul>
-							<li><a href="http://www.nicholls.edu/directory/">Faculty &amp; Staff Directory</a></li>
-							<li><a href="http://www.nicholls.edu/register/">Registration/Schedule of Classes</a></li>
+							<li><a href="http://www.nicholls.edu/academics/">Academics</a></li>
 							<li><a href="http://www.nicholls.edu/catalog/">Catalog</a></li>
-							<li><a href="http://www.nicholls.edu/programs/">Majors, Degrees &amp; Programs of Study</a></li>
+							<li><a href="http://www.nicholls.edu/directory/">Faculty &amp; Staff Directory</a></li>
 							<li><a href="http://www.nicholls.edu/fees/">Fee Payment / Fee Information</a></li>
 							<li><a href="http://www.nicholls.edu/financial-aid/">Financial Aid &amp; Scholarships</a></li>
+							<li><a href="http://www.nicholls.edu/programs/">Majors, Degrees &amp; Programs of Study</a></li>
 							<li><a href="http://www.nicholls.edu/nicholls-online/">Nicholls Online</a></li>							
+							<li><a href="http://www.nicholls.edu/register/">Registration/Schedule of Classes</a></li>
 						</ul>
 					</div>
 				</div>				
