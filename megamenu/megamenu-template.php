@@ -155,7 +155,7 @@
 						<ul>
 							<li><a href="http://www.nicholls.edu/development/giving-to-nicholls/">Nicholls Foundation</a></li>
 							<li><a href="http://www.nichollsalumni.org/">Nicholls Alumni Federation</a></li>
-							<li><a href="http://www.geauxcolonels.com/sb_output.aspx?form=6&">Colonel Athletic Association</a></li>
+							<li><a href="http://geauxcolonels.com/sports/2013/7/28/Colonel%20Athletic%20Association.aspx">Colonel Athletic Association</a></li>
 						</ul>							
 					</div>
 					<div class="column- column-2">
