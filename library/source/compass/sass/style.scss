@@ -29,9 +29,9 @@ with WordPress.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 /* Imports --------------------------------------------------------------*/
-
 @import 'nicholls-sprites';
-@import "base";
+@import 'base';
+@import 'breakpoint';
 @import 'defaults';
 
 /* Layouts */
@@ -42,16 +42,31 @@ Column Notes
 .25 width = .6565
 */
 
-$total-columns: 26; 
-$column-width: 1.423em;
-$gutter-width: .88em;
-$grid-padding: 0;
-$show-grid-backgrounds: $show_grids;
+/* Susy - Configuration */
 
+$susy: (
+  // the basics
+  columns: 26,
+  gutters: .88,
+  column-width: 1.423em,
+  // advanced
+  math: static
+);
+
+/* Susy - Configuration - Debug */
 /*
-Make Static or Magic
+$susy: (
+  //debug
+  debug: (
+    image: show,
+    color: blue,
+    output: overlay,
+    toggle: top right,
+  ),
+);
 */
-$container-style: static;
+
+/* Layout - Default breakpoint is 945 */
 
 body {
 	background-repeat: repeat-x;
@@ -61,28 +76,26 @@ body {
 /* Layout */
 
 .wrapper- {
-	@include container;
-	@include susy-grid-background;
+	@include container(26);
 }
 
 .container- {
-	@include span-columns(19 omega, 26);
+	@include span( last 20 of 26);
 	/* Container border - right inner div: */
-	margin-left: -gutter(19)/2;
-	padding-left: gutter(19)/2;
+	@include bleed-x( 1em 0 );
 	
 	font-size: 96%;
 }
 
 .widgets-primary- {
-	@include span-columns(7 omega, 26);
+	@include span(7 of 26);
 	
 	font-size: 94%;
 	float: left;
 }
 
 .widgets-secondary- {
-	@include span-columns(7 omega, 26);
+	@include span(7 of 26);
 	
 	font-size: 94%;
 	float: left;
@@ -180,7 +193,7 @@ body {
 }
 
 .header-nicholls- {
-	@include container;
+	@include container(26);
 	
 	height: 28em;
 	
@@ -257,7 +270,7 @@ body {
 /* Nichols Menu - Primary */
 
 .menu-primary-container- {
-	@include span-columns(26, 26);
+	@include span(26);
 	text-align: left;
 	clear: both;
 	position: relative;
@@ -338,7 +351,7 @@ body {
 	border-right: 1px solid $nicholls-color-grey;
 	border-bottom: 1px solid $nicholls-color-grey;
 
-    @include single-box-shadow(#666, 2px, 2px, 6px, 0px);		
+    @include single-box-shadow(2px, 2px, 6px, 0px, #666);		
 }
 
 .nicholls-menu-contents .mm-content-base {
@@ -348,7 +361,7 @@ body {
 	width: 100%;
 	height: 32em;
 	background: $nicholls-color-white;
-	@include single-box-shadow(#666, 2px, 2px, 6px, 0px);	  
+	@include single-box-shadow(2px, 2px, 6px, 0px, #666);	  
 }
 
 .nicholls-menu-title- { 
@@ -569,8 +582,7 @@ body {
 }
 
 .footer- {
-	@include container;
-	@include susy-grid-background;
+	@include container(26);
 
 	margin-top: 1em;
 	clear: both;
@@ -598,24 +610,23 @@ body {
 }
 
 /* Layout - Large Screen breakpoint is 1166 */
-@include at-breakpoint( 74em 32 ) {
+@include susy-breakpoint( 76em, 30 ) {
 
 	.wrapper- {
-		@include container;
-		@include susy-grid-background;	
+		@include container(30);
 	}
 	
 	.container- {
-		@include span-columns(23 omega, 32);
+		@include span( last 23 of 30);
 		/* Container border - right inner div: */
-		margin-left: -gutter(23)/2;
-		padding-left: gutter(23)/2;
+		@include bleed-x( 1em 0 );
+
 		
 		font-size: 96%;
 	}
 	
 	.widgets-primary- {
-		@include span-columns(9 omega, 32);
+		@include span( last 8 of 30);
 	
 		font-size: 94%;
 		float: left;
@@ -623,7 +634,7 @@ body {
 	}
 	
 	.widgets-secondary- {
-		@include span-columns(9 omega, 32);
+		@include span( last 8 of 30);
 	
 		font-size: 94%;
 		float: left;
@@ -632,7 +643,7 @@ body {
 	/* Nicholls Header */
 	
 	.header-nicholls- {
-		@include container;
+		@include container(30);
 		padding: 0;
 
 		.header- {
@@ -642,8 +653,13 @@ body {
 			height: 8em;					
 		}
 	}
-	
+
 	/* Nichols Menu - Primary */
+
+	.menu-primary-container- {
+		@include span(30);
+	}
+	
 	.menu-primary- {
 		width: 58.9em;
 	}
@@ -655,12 +671,11 @@ body {
 	.nicholls-menu-list- .nicholls-menu-item:first-child {
 		margin-left: 2.4em;
 	}	
-	
+
 	/* Nicholls Footer */
 
 	.footer- {
-		@include container;
-		@include susy-grid-background;
+		@include container(30);
 	
 		margin-top: 1em;
 		border-top: 1px solid #666;
@@ -679,20 +694,17 @@ body {
 }
 
 /* Layout - Tablet Screen breakpoint is  */
-@include at-breakpoint( 42em 18 62em ) {
+@include susy-breakpoint( 42em 62em, 18) {
 
 	.wrapper- {
-		@include container;
-		@include susy-grid-background;
+		@include container(18);
 	}
 		
 	/* Layout */
 	
 	.container- {
-		@include span-columns(18, 18);
-		padding: gutter(18)/2;
-		margin: 0;
-		
+		width: 100%;
+		float: none;
 		font-size: 96%;
 	}
 	
@@ -701,18 +713,14 @@ body {
 	}
 	
 	.widgets-primary- {
-		@include span-columns(6, 18);
-		
-		padding: 0 1.2em 0 0;
-		
+		width: 100%;
+		float: none;
 		font-size: 94%;
 	}
 	
 	.widgets-secondary- {
-		@include span-columns(6, 18);
-		
-		padding: 0 1.2em 0 0;
-		
+		width: 100%;
+		float: none;
 		font-size: 94%;	
 		clear: right;		
 	}
@@ -720,12 +728,13 @@ body {
 	/* Nicholls Header */
 	
 	.header-nicholls- {
-		@include container;
+		@include container(18);
 		padding: 0;
 		overflow: visible;		
 
 		.header- {
-			@include container;
+			width: 100%;
+			padding: 0;
 			float: right;
 
 			.blog-title-prefix- {
@@ -747,22 +756,18 @@ body {
 	}
 	
 	.nicholls-banner- {
-		@include container;
+		@include span(18);
 
 		// needs latest Compass, add '@import "compass"' to your scss
 		background-color: #cc3333; // Old browsers
 		@include filter-gradient(#7f2c1f, #7f2c1f, horizontal); // IE6-8
-		// IE9 SVG, needs conditional override of 'filter' to 'none'
-		$experimental-support-for-svg: true;
 		@include background-image(linear-gradient(left,  #7f2c1f 0%,#cc3333 17%,#cc3333 47%,#cc3333 80%,#7f2c1f 100%));
 		
 		border-left: 1px solid #ccc;
 		border-right: 1px solid #ccc;
 		border-bottom: 1px solid #ccc;
 
-		clear: both;
-		
-		width: 100%;
+		clear: both;		
 		height: auto;
 	}
 
@@ -785,10 +790,19 @@ body {
 	}
 	
 	/* Nichols Menu - Primary */
+
+	.menu-primary-container- {
+		@include container(18);	
+		text-align: center;
+	}	
 	
 	.menu-primary- {
 		@include container;	
 		height: 7.5em;
+	}
+	
+	.nicholls-menu-list- {
+		margin: 0 0 0 3.3em;
 	}
 
 	.nicholls-menu-list- .nicholls-menu-item {
@@ -841,7 +855,6 @@ body {
 
 	.footer- {
 		@include container;
-		@include susy-grid-background;
 	
 		margin-top: 1em;
 		border-top: 1px solid #666;
@@ -859,18 +872,18 @@ body {
 }
 
 /* Layout - Phone Screen Landscape breakpoint is  */
-@include at-breakpoint( 28em 12 42em ) {
+@include susy-breakpoint( 28em 42em, 12 ) {
 	.wrapper- {
-		@include container;
-		@include susy-grid-background;
+		@include container(12);
 	}
 		
 	/* Layout */
 	
 	.container- {
-		@include span-columns(12, 12);
-		padding: gutter(12)/2;
-
+		width: 100%;
+		float: none;
+		margin: 0;
+		padding: 0;
 		font-size: 82%;
 	}
 	
@@ -879,14 +892,14 @@ body {
 	}	
 	
 	.widgets-primary- {
-		@include span-columns(12 omega, 12);
-				
+		width: 100%;
+		float: none;	
 		font-size: 94%;
 	}
 	
 	.widgets-secondary- {
-		@include span-columns(12 omega, 12);
-				
+		width: 100%;
+		float: none;	
 		font-size: 94%;	
 		clear: right;		
 	}
@@ -894,12 +907,13 @@ body {
 	/* Nicholls Header */
 	
 	.header-nicholls- {
-		@include container;
+		@include container(12);
 		padding: 0;
 		overflow: visible;		
 
 		.header- {
-			@include container;
+			width: 100%;
+			padding: 0;
 			float: right;
 			
 			.blog-title-prefix- {
@@ -925,9 +939,8 @@ body {
 
 		// needs latest Compass, add '@import "compass"' to your scss
 		background-color: #cc3333; // Old browsers
+
 		@include filter-gradient(#7f2c1f, #7f2c1f, horizontal); // IE6-8
-		// IE9 SVG, needs conditional override of 'filter' to 'none'
-		$experimental-support-for-svg: true;
 		@include background-image(linear-gradient(left,  #7f2c1f 0%,#cc3333 17%,#cc3333 47%,#cc3333 80%,#7f2c1f 100%));
 		
 		border-left: 1px solid #ccc;
@@ -957,12 +970,20 @@ body {
 	}	
 	
 	/* Nichols Menu - Primary */
+
+	.menu-primary-container- {
+		@include container(12);		
+	}
 	
 	.menu-primary- {
-		@include container;		
+		@include container(12);		
 		height: 12em;
 	}	
 
+	.nicholls-menu-list- {
+		margin: 0 0 0 2em;
+	}
+	
 	.nicholls-menu-list- .nicholls-menu-item:first-child {
 		margin-left: 6.8em;
 	}
@@ -1018,7 +1039,6 @@ body {
 
 	.footer- {
 		@include container;
-		@include susy-grid-background;
 	
 		margin-top: 1em;
 		border-top: 1px solid #666;
@@ -1052,19 +1072,17 @@ body {
 }
 
 /* Layout - Phone Screen Portrait breakpoint is  */
-@include at-breakpoint( 0em 8 28em ) {
+@include susy-breakpoint( 0em 28em, 8 ) {
 	.wrapper- {
-		@include container;
-		@include susy-grid-background;
+		@include container(8);
 	}
 		
 	/* Layout */
 	
 	.container- {
-		@include span-columns(8, 8);
-		padding: gutter(8)/2;
-
-		border: none;
+		width: 100%;
+		float: none;
+		
 		font-size: 82%;
 	}
 	
@@ -1073,13 +1091,13 @@ body {
 	}
 	
 	.widgets-primary- {
-		@include span-columns(8, 8);
+		@include span(8);
 				
 		font-size: 90%;
 	}
 	
 	.widgets-secondary- {
-		@include span-columns(8, 8);
+		@include span(8);
 				
 		font-size: 90%;	
 		clear: right;		
@@ -1088,16 +1106,17 @@ body {
 	/* Nicholls Header */
 	
 	.header-nicholls- {
-		@include container;
+		@include container(8);
 		padding: 0;
 		overflow: visible;		
 
 		.header- {
-			@include container;
+			width: 100%;
 			float: right;
 			
 			height: 8em;
 			margin: 20.6em 0 0 0;
+			padding: 0;
 
 			.blog-title-prefix- {
 				font-size: 84%;
@@ -1122,9 +1141,8 @@ body {
 
 		// needs latest Compass, add '@import "compass"' to your scss
 		background-color: #cc3333; // Old browsers
+
 		@include filter-gradient(#7f2c1f, #7f2c1f, horizontal); // IE6-8
-		// IE9 SVG, needs conditional override of 'filter' to 'none'
-		$experimental-support-for-svg: true;
 		@include background-image(linear-gradient(left,  #7f2c1f 0%,#cc3333 17%,#cc3333 47%,#cc3333 80%,#7f2c1f 100%));
 		
 		border-left: 1px solid #ccc;
@@ -1153,12 +1171,20 @@ body {
 	}	
 		
 	/* Nichols Menu - Primary */
-	
+
+	.menu-primary-container- {
+		@include container(8);		
+	}
+		
 	.menu-primary- {
-		@include container;	
+		@include container(8);	
 		height: 12em;
 	}
 
+	.nicholls-menu-list- {
+		margin: 0 0 0 1.3em;
+	}
+	
 	.nicholls-menu-list- .nicholls-menu-item {
 		margin-right: .5em;
 	}	
@@ -1224,7 +1250,6 @@ body {
 
 	.footer- {
 		@include container;
-		@include susy-grid-background;
 	
 		margin-top: 1em;
 		border-top: 1px solid #666;

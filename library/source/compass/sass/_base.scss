@@ -4,7 +4,7 @@
 @import "normalize";
 @import "compass/css3/images";
 
-/* IE9 - Gradient support */
+/* IE9 - Gradient support IE9 SVG, needs conditional override of 'filter' to 'none' */
 $experimental-support-for-svg: true;
 
 /* Settings */
