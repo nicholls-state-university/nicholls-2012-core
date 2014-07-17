@@ -210,13 +210,13 @@ body {
 		color: $nicholls-color-white;
 		background: transparent url( 'library/images/45pc_black.png' );
 
-		.blog-title-prefix- {
+		.site-title-prefix- {
 			display: block;
 			margin: 0;
 			padding: .5em 0 0 .4em;
 		}
 				
-		.blog-title- {
+		.site-title- {
 			font-family: 'Crimson Text', 'Times New Roman', times, Georgia, serif;
 			font-weight: 400;
 			font-size: 225%;	
@@ -227,12 +227,12 @@ body {
 			@include text-shadow( $nicholls-color-black 1px 1px 1px );	
 		}
 		
-		.blog-title- a, .blog-title- a:link, .blog-title- a:active, .blog-title- a:visited {
+		.site-title- a, .site-title- a:link, .site-title- a:active, .site-title- a:visited {
 			text-decoration: none;
 			color: $nicholls-color-white;
 		}
 		
-		.blog-title- a:hover {
+		.site-title- a:hover {
 			text-decoration: underline;
 		}	
 		
@@ -737,11 +737,11 @@ body {
 			padding: 0;
 			float: right;
 
-			.blog-title-prefix- {
+			.site-title-prefix- {
 				font-size: 96%;
 			}
 
-			.blog-title- {
+			.site-title- {
 				font-size: 200%;
 			}
 
@@ -916,11 +916,11 @@ body {
 			padding: 0;
 			float: right;
 			
-			.blog-title-prefix- {
+			.site-title-prefix- {
 				font-size: 90%;
 			}
 
-			.blog-title- {
+			.site-title- {
 				font-size: 168%;
 			}
 
@@ -1118,11 +1118,11 @@ body {
 			margin: 20.6em 0 0 0;
 			padding: 0;
 
-			.blog-title-prefix- {
+			.site-title-prefix- {
 				font-size: 84%;
 			}
 
-			.blog-title- {
+			.site-title- {
 				font-size: 140%;
 			}
 
@@ -1447,13 +1447,13 @@ body {
 		float: none;
 	}	
 	
-	.header-nicholls- .header- .blog-title-prefix-,
-	.header-nicholls- .header- .blog-title-,
+	.header-nicholls- .header- .site-title-prefix-,
+	.header-nicholls- .header- .site-title-,
 	.header-nicholls- .header- .blog-description-,
-	.header-nicholls- .header- .blog-title- a,
-	.header-nicholls- .header- .blog-title- a:link,
-	.header-nicholls- .header- .blog-title- a:visited,
-	.header-nicholls- .header- .blog-title- a:active {
+	.header-nicholls- .header- .site-title- a,
+	.header-nicholls- .header- .site-title- a:link,
+	.header-nicholls- .header- .site-title- a:visited,
+	.header-nicholls- .header- .site-title- a:active {
 		color: #000;
 		text-shadow: none;
 	}

@@ -31,7 +31,7 @@ function nicholls_main_title_prefix_filter( $title_array = array() ) {
 	$nicholls_options = get_option( 'nicholls_core_theme_options' );
 	
 	if ( !empty( $nicholls_options[ 'title_prefix' ] ) ) 
-		$title_array[ 'tag_content_before' ] = '<span class="blog-title-prefix-">' . $nicholls_options[ 'title_prefix' ] . '</span>';
+		$title_array[ 'tag_content_before' ] = '<span class="site-title-prefix-">' . $nicholls_options[ 'title_prefix' ] . '</span>';
 		
 	return $title_array;
 }
