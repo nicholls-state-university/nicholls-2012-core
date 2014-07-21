@@ -1,5 +1,6 @@
 <?php
 // Load Stylesheet CSS as soon as possible;
+// add_action( 'wp', 'fnbx_stylesheet_init' );
 // If a child theme is active we run the core init first.
 if ( is_child_theme() ) add_action( 'wp', 'fnbx_stylesheet_core_init' );
 // Don't load sheet twice for core theme - uncomment for sub-core themes.
@@ -31,7 +32,7 @@ function fnbx_defaut_init_actions() {
 	add_action( 'fnbx_header_init', 'fnbx_doctype' );
 	
 	// Favicon
-	add_action( 'fnbx_wp_head_before', 'fnbx_favicon_core' );
+	add_action( 'fnbx_wp_head_before', 'fnbx_head_link_favicon' );
 
 	// Head Meta
 	add_action( 'fnbx_wp_head_before', 'fnbx_head_meta_content_type' );
@@ -52,8 +53,10 @@ function fnbx_defaut_init_actions() {
 	add_action( 'fnbx_wp_head_before', 'fnbx_head_link_breadcrumb' );
 
 	// Layout - Main
+	// wrapper - not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->';
 	add_action( 'fnbx_wrapper_start', 'fnbx_layout_element_open' );
-	add_action( 'fnbx_wrapper_end', 'fnbx_layout_element_close' );	
+	add_action( 'fnbx_wrapper_end', 'fnbx_layout_element_close' );
+	
 	add_action( 'fnbx_header_start', 'fnbx_layout_element_open' );
 	add_action( 'fnbx_header_end', 'fnbx_layout_element_close' );
 	add_action( 'fnbx_container_start', 'fnbx_layout_element_open' );
@@ -75,9 +78,6 @@ function fnbx_defaut_init_actions() {
 	// Website Description
 	add_action( 'fnbx_header', 'fnbx_default_description' );
 	
-	// Add Accessiblity and Menu before nicholls-header if not home
-	add_action( 'nicholls_header_start', 'fnbx_access_menu' );	
-	
 	// Nicholls Header - custom header.php - Layout
 	add_action( 'nicholls_header_start', 'nicholls_layout_wrapper_element_open' );	
 	add_action( 'nicholls_header_end', 'nicholls_layout_wrapper_element_close' );
@@ -85,6 +85,8 @@ function fnbx_defaut_init_actions() {
 	add_action( 'nicholls_header_end', 'fnbx_layout_element_close' );
 	
 	// Nicholls Primary Menu
+	// Accessibility first
+	add_action( 'nicholls_header_start', 'fnbx_nav_accessiblity' );			
 	add_action( 'nicholls_header_start', 'nicholls_megamenu_load' );	
 
 	// Widget Sidebar Group
