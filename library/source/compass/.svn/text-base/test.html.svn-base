@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<title>Funroe Theme Test</title>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="template" content="Funbox Core Theme 1.0"/>
+<meta name="robots" content="index,follow"/>
+<meta name="copyright" content="Copyright (c) 2012"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="pingback" href="http://work.funroe.net/wordpress/current-ms/funroe/xmlrpc.php"/>
+<link rel="alternate" type="application/rss+xml" title="Funroe Theme Test &raquo; Feed" href="http://work.funroe.net/wordpress/current-ms/funroe/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Funroe Theme Test &raquo; Comments Feed" href="http://work.funroe.net/wordpress/current-ms/funroe/comments/feed/" />
+<link rel='stylesheet' id='admin-bar-css'  href='http://work.funroe.net/wordpress/current-ms/funroe/wp-includes/css/admin-bar.css?ver=20111209' type='text/css' media='all' />
+<link rel='stylesheet' id='bp-admin-bar-css'  href='http://work.funroe.net/wordpress/current-ms/funroe/wp-content/plugins/buddypress/bp-core/css/admin-bar.css?ver=20110723' type='text/css' media='all' />
+<link rel='stylesheet' id='style-current-css'  href='http://work.funroe.net/wordpress/current-ms/funroe/wp-content/themes/funbox-core/style.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='style-bp-css'  href='http://work.funroe.net/wordpress/current-ms/funroe/wp-content/themes/funbox-core/library/css/bp.css?ver=1.0' type='text/css' media='all' />
+<script type='text/javascript' src='http://work.funroe.net/wordpress/current-ms/funroe/wp-includes/js/jquery/jquery.js?ver=1.7.1'></script>
+<script type='text/javascript' src='http://work.funroe.net/wordpress/current-ms/funroe/wp-content/themes/funbox-core/library/js/modernizr.mostly-all.js?ver=2.0.6'></script>
+<script type='text/javascript' src='http://work.funroe.net/wordpress/current-ms/funroe/wp-content/themes/funbox-core/library/js/jquery.hoverIntent.minified.js?ver=r5'></script>
+<script type='text/javascript' src='http://work.funroe.net/wordpress/current-ms/funroe/wp-content/themes/funbox-core/library/js/core.js?ver=1.0'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://work.funroe.net/wordpress/current-ms/funroe/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://work.funroe.net/wordpress/current-ms/funroe/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.3.1" />
+
+	<script type="text/javascript">var ajaxurl = "http://work.funroe.net/wordpress/current-ms/funroe/wp-load.php";</script>
+
+<style type="text/css">
+		.header- {
+			background: transparent;
+		}
+	</style>	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+
+</head>
+
+<body class="home-page home blog wordpress y2012 m02 d24 h18 widgets-primary-active widgets-secondary-inactive">
+<!-- START: body -->
+
+<!-- START: wrapper -->
+
+<div id="wrapper" class="wrapper-">
+
+<div style="height: 40em;"> </div>
+
+</div>
+<!-- END: wrapper -->
+
+
+<!-- Generated in 0.899 seconds. (51 q) -->
+
+	
+<!-- END: body -->
+</body>
+</html>

@@ -1,0 +1,179 @@
+/* Imports */
+@import "compass";
+@import "susy";
+@import "normalize";
+@import "compass/css3/images";
+
+/* IE9 - Gradient support */
+$experimental-support-for-svg: true;
+
+/* Settings */
+
+$show_grids: false;
+
+$body-width: 100%;
+$body-font-size: 100%;
+
+/* Colors - Nicholls */
+
+$nicholls-color-grey: #cccccc;
+$nicholls-color-red: #cc3333;
+
+$nicholls-color-white: #fff;
+$nicholls-color-black: #000;
+
+$nicholls-color-grey-light-1: #efefef;
+$nicholls-color-grey-light-2: #eaeaea;
+$nicholls-color-grey-light-3: #e2e2e2;
+
+$nicholls-color-grey-dark-1: #7f7f7f;
+$nicholls-color-grey-dark-2: #6d6d6d;
+$nicholls-color-grey-dark-3: #666666;
+
+/* Colors - Nicholls - Palette A */
+
+$nicholls-color-graydark: #374149;
+$nicholls-color-crimson: #7a2224;
+$nicholls-color-mustard: #a45c0b;
+$nicholls-color-greydarkcool: #52616e;
+$nicholls-color-tanwarm: #dbab6c;
+$nicholls-color-bluegreencool: #467d80;
+$nicholls-color-tancool: #aaae87;
+$nicholls-color-greenblue: #149a8a;
+
+/* Colors - Nicholls - Palette B */
+
+$nicholls-color-orangelight: #f3ae2f;
+$nicholls-color-orange: #e57100;
+$nicholls-color-green: #aab200;
+$nicholls-color-bluegreen: #008897;
+$nicholls-color-tan: #b7975c;
+$nicholls-color-blue: #003d73;
+$nicholls-color-violet: #960049;
+$nicholls-color-yellowgreen: #e0e72d;
+
+/* Colors - Links & Text */
+
+$link-color: $nicholls-color-blue;
+$link-color-visited: $nicholls-color-grey-dark-3;
+$link-color-hover: $nicholls-color-blue;
+
+/* Colors - By Area */
+
+$nicholls-color-current: $nicholls-color-tancool;
+$nicholls-color-future: $nicholls-color-crimson;
+$nicholls-color-life: $nicholls-color-orangelight;
+$nicholls-color-athletics: $nicholls-color-bluegreencool;
+$nicholls-color-friends: $nicholls-color-mustard;
+$nicholls-color-administration: $nicholls-color-greydarkcool;
+
+/* Colors - Layout Utilities */
+
+$nicholls-color-elements-widget-borders-primary: $nicholls-color-grey-light-3;
+$nicholls-color-border-color-default: $nicholls-color-grey-light-3;
+
+/* Utilities */
+
+/* Nicholls Colors - Basic */
+$nicholls-colors: ( 
+	'red',
+	'grey',
+	'white',
+	'black',
+	'graydark',
+	'crimson',
+	'mustard',
+	'greydarkcool',
+	'tanwarm',
+	'bluegreencool',
+	'tancool',
+	'greenblue',
+	'orangelight',
+	'orange',
+	'green',
+	'bluegreen',
+	'tan',
+	'blue',
+	'violet',
+	'yellowgreen',
+	'borer-default'
+);
+$nicholls-colors-values: ( 
+	$nicholls-color-red, 
+	$nicholls-color-grey,  
+	$nicholls-color-white, 
+	$nicholls-color-black,
+	$nicholls-color-graydark, 
+	$nicholls-color-crimson, 
+	$nicholls-color-mustard, 
+	$nicholls-color-greydarkcool, 
+	$nicholls-color-tanwarm, 
+	$nicholls-color-bluegreencool, 
+	$nicholls-color-tancool, 
+	$nicholls-color-greenblue,
+	$nicholls-color-orangelight, 
+	$nicholls-color-orange, 
+	$nicholls-color-green, 
+	$nicholls-color-bluegreen, 
+	$nicholls-color-tan, 
+	$nicholls-color-blue, 
+	$nicholls-color-violet, 
+	$nicholls-color-yellowgreen,
+	$nicholls-color-border-color-default
+);
+/* Color Util */
+@function nichollsColor($search) {
+	$n1: index($nicholls-colors, $search);
+	$n2: index($nicholls-colors-values, $search);
+	@if($n1) {
+	  @return nth($nicholls-colors-values, $n1);
+	} @else {
+	  @return nth($nicholls-colors, $n2);
+	}
+}
+
+/* Nicholls Colors - Greys */
+$nicholls-colors-grey: ( 
+	'grey-light-1',
+	'grey-light-2',
+	'grey-light-3',
+	'grey-dark-1',
+	'grey-dark-2',
+	'grey-dark-3'
+);
+$nicholls-colors-grey-values: ( 
+	$nicholls-color-grey-light-1,
+	$nicholls-color-grey-light-2,
+	$nicholls-color-grey-light-3,
+	$nicholls-color-grey-dark-1,
+	$nicholls-color-grey-dark-2,
+	$nicholls-color-grey-dark-3 
+);
+/* Color Util */
+@function nichollsColorGrey($search) {
+	$n1: index($nicholls-colors-grey, $search);
+	$n2: index($nicholls-colors-grey-values, $search);
+	@if($n1) {
+	  @return nth($nicholls-colors-grey-values, $n1);
+	} @else {
+	  @return nth($nicholls-colors-grey, $n2);
+	}
+}
+
+
+/* color classes */
+@mixin nicholls-color-classes() {
+	@each $color in $nicholls-colors {
+	  .nicholls-color-#{$color} { background-color: nichollsColor($color); color: nichollsColor('white'); }
+	}
+}
+
+/* Border Color Utility */
+@mixin nicholls-border-colors() {		
+	@each $color in $nicholls-colors {
+	  .border-color-#{$color} { border-color: nichollsColor($color); }
+	}
+	@each $grey-color in $nicholls-colors-grey {
+	  .border-color-#{$grey-color} { border-color: nichollsColorGrey($grey-color); }
+	}		
+}

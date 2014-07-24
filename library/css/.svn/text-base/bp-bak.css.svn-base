@@ -1,0 +1,540 @@
+
+/**
+ * The following are basic CSS styles to give BuddyPress pages their absolute basic formatting.
+ * You should extend/override these styles in your standard theme CSS to match your theme.
+ */
+
+/***
+ * Navigation tabs
+ */
+div.item-list-tabs {
+	margin: 15px 0;
+	padding: 5px 0;
+	border-bottom: 1px solid #ddd;
+	overflow: hidden;
+	clear: both;
+}
+
+div.item-list-tabs ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 200%;
+}
+	div.item-list-tabs ul li {
+		float: left;
+		margin-right: 5px;
+	}
+		div.item-list-tabs#subnav ul li a {
+			border: none;
+			padding: 0;
+		}
+
+	div.item-list-tabs ul li.last { float: right; }
+
+/***
+ * Object Lists (groups/members/forums/blogs)
+ */
+
+ul.item-list {
+	margin: 20px 0;
+	padding: 0;
+	list-style: none;
+}
+	ul.item-list li { position: relative; }
+	ul.item-list div.item-avatar {
+		float: left;
+	}
+
+	ul.item-list div.item {
+		margin-left: 65px;
+	}
+
+	ul.item-list div.action {
+		position: absolute;
+		top: 0;
+		right: 15px;
+		text-align: right;
+	}
+
+
+/***
+ * Content Object Headers
+ */
+
+div#item-header {
+	padding-bottom: 15px;
+	overflow: hidden;
+}
+	div#item-header div#item-header-avatar {
+		float: left;
+		margin-right: 15px;
+	}
+
+	div#item-header div#item-header-content {
+		float: left;
+	}
+
+/***
+ * Activity Stream Post Form
+ */
+
+form#whats-new-form {
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+	form#whats-new-form #whats-new-avatar {
+		float: left;
+	}
+
+	form#whats-new-form h5 {
+		clear: none;
+		margin-left: 76px;
+	}
+
+	form#whats-new-form #whats-new-content {
+		margin-left: 54px;
+		padding-left: 22px;
+	}
+
+	form#whats-new-form #whats-new-textarea {
+		padding: 8px;
+		border: 1px inset #ccc;
+		margin-bottom: 10px;
+	}
+	form#whats-new-form textarea {
+		width: 100%;
+		height: 60px;
+		font-size: 14px;
+		font-family: inherit;
+		color: #555;
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	form#whats-new-form #whats-new-submit {
+		float: right;
+		margin: 0;
+	}
+
+/***
+ * Activity Stream Post Form
+ */
+
+ul.activity-list {
+	margin: 0;
+	padding: 0;
+}
+
+ul.activity-list li {
+	overflow: hidden;
+	padding: 20px 0;
+}
+	ul.activity-list li img.avatar {
+		float: left;
+		width: 60px;
+		height: 60px;
+	}
+
+	ul.activity-list li div.activity-content {
+		margin-left: 75px;
+	}
+
+	ul.activity-list li div.activity-comments {
+		margin: 15px 0 0 38px;
+	}
+		ul.activity-list li div.activity-comments ul li {
+			padding: 5px 0;
+		}
+
+		ul.activity-list li div.activity-comments img.avatar {
+			width: 25px;
+			height: 25px;
+		}
+
+		ul.activity-list li div.acomment-content, ul.activity-list li div.acomment-meta {
+			margin-left: 35px;
+		}
+
+	ul.activity-list li div.activity-inreplyto {
+		margin: 15px 0 0 75px;
+		font-size: 11px;
+	}
+
+/***
+ * Input Forms
+ */
+
+/* Activity comment forms */
+
+form.ac-form { display: none; } /* JS will show this */
+
+div.activity-comments form {
+	display: none;
+	margin: 10px 0 10px 33px;
+	padding: 8px;
+}
+
+	div.activity-comments div#message {
+		margin-top: 15px;
+		margin-bottom: 0;
+	}
+
+	div.activity-comments form.loading {
+		background-image: url( ../images/ajax-loader.gif );
+		background-position: 2% 95%;
+		background-repeat: no-repeat;
+	}
+
+	div.activity-comments form .ac-textarea {
+		padding: 8px;
+		border: 1px inset #ccc;
+		margin-bottom: 10px;
+	}
+		div.activity-comments form textarea {
+			width: 100%;
+			height: 60px;
+			border: none;
+			padding: 0;
+		}
+			div.activity-comments form input {
+				margin-top: 5px;
+			}
+
+	div.activity-comments form div.ac-reply-avatar {
+		float: left;
+	}
+
+	div.activity-comments form div.ac-reply-content {
+		margin-left: 25px;
+		padding-left: 15px;
+	}
+
+/* Standard Input Forms */
+
+form.standard-form label, form.standard-form span.label {
+	display: block;
+	margin: 15px 0 5px 0;
+}
+	form.standard-form div.checkbox label,
+	form.standard-form div.radio label {
+		font-weight: normal;
+		margin: 5px 0 0 0;
+	}
+
+	form.standard-form textarea {
+		width: 75%;
+		height: 120px;
+	}
+
+/* Send Invites Form */
+form#send-invite-form {
+	margin-top: 20px;
+}
+	div#invite-list {
+		height: 400px;
+		overflow: scroll;
+		padding: 5px;
+		width: 160px;
+		margin: 10px 0;
+	}
+
+/* Directory search forms */
+
+form.dir-form div.dir-search {
+	float: right;
+	width: 45%;
+	margin: 0 0 25px 0;
+}
+
+/* Custom */
+
+/* Page - /register */
+
+div#register-page #basic-details-section label {
+	display: block;
+	clear: both;
+}
+
+div#item-header div#item-actions ul {
+	list-style: none;
+}
+
+div#item-header div#item-actions {
+	float: right;
+	width: 20%;
+	margin: 0 0 15px 15px;
+	text-align: right;
+}
+
+div#item-header div#item-actions h3 {
+	font-size: 12px;
+	margin: 0 0 5px 0;
+}
+
+table tr td.label {
+	border-right: 1px solid #eaeaea;
+	font-weight: bold;
+	width: 25%;
+}
+
+.profile table tr td, .profile table tr th {
+    padding: .4em;
+    vertical-align: middle;
+}
+
+ul.button-nav {
+	list-style: none;
+}
+
+/* > Buttons
+-------------------------------------------------------------- */
+
+a.button,
+input[type=submit],
+input[type=button],
+input[type=reset],
+ul.button-nav li a,
+div.generic-button a {
+	background: url( ../images/white-grad.png ) top left repeat-x;
+	border: 1px solid #ddd;
+	margin: .1em;
+	padding: 3px 10px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	text-decoration: none;
+	color: #888;
+	font-size: 12px;
+	font-weight: normal;
+	vertical-align: bottom;
+	cursor: pointer;
+}
+
+a.button:hover,
+a.button:focus,
+input[type=submit]:hover,
+input[type=button]:hover,
+input[type=reset]:hover,
+ul.button-nav li a:hover,
+ul.button-nav li.current a,
+div.generic-button a:hover {
+	border-color: #aaa;
+	color: #555;
+	outline: none;
+}
+
+/* Buttons that are disabled */
+div.pending a, a.disabled {
+	border-color: #eee;
+	color: #bbb;
+	cursor: default;
+}
+
+div.pending a:hover,
+a.disabled:hover {
+	border-color: #eee;
+	color: #bbb;
+}
+
+div.accept,
+div.reject {
+	float: left;
+	margin-left: 10px;
+}
+
+ul.button-nav li {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+ul.button-nav li.current a {
+	font-weight: bold;
+}
+
+/* > Data Tables
+-------------------------------------------------------------- */
+
+table {
+	width: 100%;
+}
+
+table thead tr {
+	background: #eaeaea;
+}
+
+table#message-threads {
+	margin: 0 -20px;
+	width: auto;
+}
+
+table.profile-fields {
+	margin-bottom: 20px;
+}
+
+div#sidebar table {
+	margin: 0 -16px;
+	width: 117%;
+}
+
+table tr td, table tr th {
+	padding: 8px;
+	vertical-align: middle;
+}
+
+table tr td.label {
+	border-right: 1px solid #eaeaea;
+	font-weight: bold;
+	width: 25%;
+}
+
+table tr td.thread-info p {
+	margin: 0;
+}
+
+table tr td.thread-info p.thread-excerpt {
+	color: #888;
+	font-size: 11px;
+	margin-top: 3px;
+}
+
+div#sidebar table td,
+table.forum td {
+	text-align: center;
+}
+
+table tr.alt {
+	background: #f4f4f4;
+}
+
+table.notification-settings {
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+table.notification-settings th.icon,
+table.notification-settings td:first-child {
+	display: none;
+}
+
+table.notification-settings th.title {
+	width: 80%;
+}
+
+table.notification-settings .yes,
+table.notification-settings .no {
+	width: 40px;
+	text-align: center;
+}
+
+table.forum {
+	margin: -9px -20px 20px -20px;
+	width: auto;
+}
+
+table.forum tr.sticky td {
+	background: #fff9db;
+	border-top: 1px solid #ffe8C4;
+	border-bottom: 1px solid #ffe8c4;
+}
+
+table.forum tr.closed td.td-title {
+	padding-left: 35px;
+	background-image: url( ../images/closed.png );
+	background-position: 15px 50%;
+	background-repeat: no-repeat;
+}
+
+table.forum td p.topic-text {
+	color: #888;
+	font-size: 11px;
+}
+
+table.forum tr > td:first-child,
+table.forum tr > th:first-child {
+	padding-left: 15px;
+}
+
+table.forum tr > td:last-child,
+table.forum tr > th:last-child {
+	padding-right: 15px;
+}
+
+table.forum tr th#th-title,
+table.forum tr th#th-poster,
+table.forum tr th#th-group,
+table.forum td.td-poster,
+table.forum td.td-group,
+table.forum td.td-title {
+	text-align: left;
+}
+
+table.forum td.td-freshness {
+	font-size: 11px;
+	color: #888;
+}
+
+table.forum td img.avatar {
+	margin-right: 5px;
+}
+
+table.forum td.td-poster, table.forum td.td-group  {
+	min-width: 130px;
+}
+
+table.forum th#th-title {
+	width: 40%;
+}
+
+table.forum th#th-postcount {
+	width: 1%;
+}
+
+/* > Error / Success Messages
+-------------------------------------------------------------- */
+
+div#message {
+	margin: 15px 0;
+}
+
+div#message.updated {
+	clear: both;
+}
+
+div#message p {
+	padding: 10px 15px;
+	font-size: 12px;
+	display:block;
+}
+
+div#message.error p {
+	background: #e41717;
+	color: #fff;
+	border-color: #a71a1a;
+	clear: left;
+}
+
+div#message.updated p {
+	background: #dffcd9;
+	color: #1a9b00;
+	border-color: #c4e9bd;
+}
+
+.standard-form#signup_form div div.error {
+	color: #fff;
+	background: #e41717;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 6px;
+	width: 90%;
+	margin: 0 0 10px 0;
+}
+
+/* START: Custom CSS */
+
+ul.item-list li.vcard {
+	clear: both;
+}
+/* END: Custom CSS */

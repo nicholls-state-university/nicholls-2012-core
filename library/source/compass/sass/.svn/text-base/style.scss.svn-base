@@ -1,0 +1,1467 @@
+/*!
+THEME NAME: Nicholls 2012 Core Theme
+THEME URI: http://www.nicholls.edu
+DESCRIPTION: Nicholls Core Theme to start development 
+VERSION: 1.0
+AUTHOR: Jess Planck
+AUTHOR URI: http://www.nicholls.edu
+TEMPLATE: fnbx
+*/
+
+/*! 
+Copyright (c) Jess Planck (http://funroe.net)
+
+The FNBX Theme is released under the GNU General Public License.
+
+This is a WordPress Theme (http://wordpress.org). WordPress is free
+software: you can redistribute it and/or modify it under the terms of
+the GNU General Public License as published by the Free Software
+Foundation, either version 2 of the License, or (at your option) any
+later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with WordPress.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/* Imports --------------------------------------------------------------*/
+
+@import 'nicholls-sprites';
+@import "base";
+@import 'defaults';
+
+/* Layouts */
+
+/* 
+Column Notes
+.5 width = 1.313
+.25 width = .6565
+*/
+
+$total-columns: 26; 
+$column-width: 1.423em;
+$gutter-width: .88em;
+$grid-padding: 0;
+$show-grid-backgrounds: $show_grids;
+
+/*
+Make Static or Magic
+*/
+$container-style: static;
+
+body {
+	background-repeat: repeat-x;
+	background-position: top left; 
+}
+
+/* Layout */
+
+.wrapper- {
+	@include container;
+	@include susy-grid-background;
+}
+
+.container- {
+	@include span-columns(19 omega, 26);
+	/* Container border - right inner div: */
+	margin-left: -gutter(19)/2;
+	padding-left: gutter(19)/2;
+	
+	font-size: 96%;
+}
+
+.widgets-primary- {
+	@include span-columns(7 omega, 26);
+	
+	font-size: 94%;
+	float: left;
+}
+
+.widgets-secondary- {
+	@include span-columns(7 omega, 26);
+	
+	font-size: 94%;
+	float: left;
+	clear: right;		
+}
+
+
+.nicholls-banner- {
+	background-image: url( 'library/images/backgrounds/bg-logo-banner.png' );	
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: top left;
+		
+	float: left;
+	width: 221px;
+	height: 172px;
+	
+	text-align: center;
+
+}
+
+.logo-container- {
+
+	// Evil Hard Coded Junk
+	background-image: url( 'library/images/logos/logo-nicholls-white-188x52.png' );	
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: top center;
+	
+	border-bottom: 1px solid #fff;
+
+	margin: .5em 0 0 .5em;
+	padding: 0;
+	width: 188px;
+	height: 58px;
+	
+	display: block;
+	clear: both;
+	
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+		
+	a {
+		display: block;
+		width: 188px;
+		height: 52px;
+		margin: auto auto;
+	}
+		
+	img {
+		display: none;
+	}
+
+}
+
+.logo-image- {
+	display: none;
+}
+
+.info-container- {
+	.info-tagline {
+		font-size: 80%;
+		margin-top: .6em;
+		color: #fff;
+	}
+	
+	.info-contact {
+		font-size: 102%;
+		margin-top: .4em;
+		color: #fff;
+	}
+	
+	.info-contact a, .info-contact a:link, .info-contact a:active, .info-contact a:visited {
+		color: #fff;
+		text-decoration: none;
+	}
+	
+	.info-contact a:hover {
+		color: #fff;
+		text-decoration: underline;	
+	}
+}
+
+/* Nicholls Header */
+
+.header-nicholls-wrapper- {
+	width: 100%;
+	text-align: left;
+	clear: both;
+	background-size: cover;
+	position: relative;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;	
+}
+
+.header-nicholls- {
+	@include container;
+	
+	height: 28em;
+	
+	overflow: hidden;	
+	position: relative;
+	padding: 0;	
+	
+	.header- {
+		height: 8em;
+		width: 100%;
+		padding: 0 .5em;
+		margin: 20em 0 0 0;
+
+		color: $nicholls-color-white;
+		background: transparent url( 'library/images/45pc_black.png' );
+
+		.blog-title-prefix- {
+			display: block;
+			margin: 0;
+			padding: .5em 0 0 .4em;
+		}
+				
+		.blog-title- {
+			font-family: 'Crimson Text', 'Times New Roman', times, Georgia, serif;
+			font-weight: 400;
+			font-size: 225%;	
+			margin: 0;
+			padding: .2em;	
+			color: $nicholls-color-white;
+			
+			@include text-shadow( $nicholls-color-black 1px 1px 1px );	
+		}
+		
+		.blog-title- a, .blog-title- a:link, .blog-title- a:active, .blog-title- a:visited {
+			text-decoration: none;
+			color: $nicholls-color-white;
+		}
+		
+		.blog-title- a:hover {
+			text-decoration: underline;
+		}	
+		
+		.blog-description- {
+			font-size: 92%;
+			padding: 0 0 .2em .5em;	
+		}
+		
+		// For Moved Title Template
+		.entry-title {
+			font-family: 'Crimson Text', 'Times New Roman', times, Georgia, serif;
+			font-weight: 400;
+			font-size: 225%;	
+			margin: 0;
+			padding: .2em;	
+			color: $nicholls-color-white;
+			
+			@include text-shadow( $nicholls-color-black 1px 1px 1px );	
+		}
+		
+		.entry-title a, .entry-title a:link, .entry-title a:active, .entry-title a:visited {
+			text-decoration: none;
+			color: $nicholls-color-white;
+		}
+		
+		.entry-title a:hover {
+			text-decoration: underline;
+		}			
+			
+	}
+
+}
+
+
+/* Nichols Menu - Primary */
+
+.menu-primary-container- {
+	@include span-columns(26, 26);
+	text-align: left;
+	clear: both;
+	position: relative;
+	z-index: 1001;
+	height: 0;
+}
+
+.menu-primary- {
+	float: left;
+	clear: right;
+	height: 4.4em;
+	width: 45em;
+    background: transparent url( 'library/images/backgrounds/bg-transparent-black-60.png' );      		
+}
+
+.nicholls-menu-list- {
+	list-style-type: none;
+	list-style-position: inside;	
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.nicholls-menu-item {		
+	list-style-type: none;
+	list-style-position: inside;
+	padding: 0;
+	float: left;
+	font-weight: 600;	
+	display: block;
+	font-size: 76%;
+	margin: 0 .6em 0 0;
+	line-height: 1.2em;
+	
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+
+	width: 7em;
+
+}
+
+.nicholls-menu-list- .nicholls-menu-item:first-child {
+	margin-left: .6em;
+}
+
+.nicholls-menu-item-link {
+	margin: 0;
+	display: block;
+	height: 2.4em;
+	padding: 0 .2em .3em .2em;
+}
+
+.nicholls-menu-item-link, .nicholls-menu-item-link:link, .nicholls-menu-item-link:active, .nicholls-menu-item-link:visited {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+}
+
+.nicholls-menu-item-link:hover {
+	text-decoration: none;
+	background-color: $nicholls-color-red;
+	color: $nicholls-color-white;
+}
+
+.nicholls-menu-selected, .nicholls-menu-selected a, .nicholls-menu-selected a:link, .nicholls-menu-selected a:active, .nicholls-menu-selected a:visited {
+	background: $nicholls-color-red;
+	color: $nicholls-color-white;
+}
+
+.nicholls-menu-contents {
+	background: $nicholls-color-white;
+	display: none;
+	width: 38em;
+	height: 26em;
+
+	border-top: none;
+	border-left: 1px solid $nicholls-color-grey;
+	border-right: 1px solid $nicholls-color-grey;
+	border-bottom: 1px solid $nicholls-color-grey;
+
+    @include single-box-shadow(#666, 2px, 2px, 6px, 0px);		
+}
+
+.nicholls-menu-contents .mm-content-base {
+	position: relative;
+	z-index: 1003;
+	top: .4em;
+	width: 100%;
+	height: 32em;
+	background: $nicholls-color-white;
+	@include single-box-shadow(#666, 2px, 2px, 6px, 0px);	  
+}
+
+.nicholls-menu-title- { 
+	border-bottom: 1px solid #ccc;
+	margin: 0;
+	padding: .2em .5em;
+	font-weight: 600;
+	color: $nicholls-color-white;
+}
+
+.nicholls-menu-title- a,
+.nicholls-menu-title- a:link,
+.nicholls-menu-title- a:visited,
+.nicholls-menu-title- a:active { 
+	color: $nicholls-color-white;
+	text-decoration: none;
+}
+
+.nicholls-menu-title- a:hover { 
+	text-decoration: underline;
+}
+
+.nicholls-menu-contents .column- {
+	float: left;
+	width: 16em; /*width of each menu column*/
+	margin: .4em .4em 0 .6em;
+	padding: 0;
+}
+
+.nicholls-menu-contents .column-2 {
+	float: right;
+}
+
+.nicholls-menu-contents .column-3 {
+	clear: left;
+}
+
+.nicholls-menu-contents .column- ul {
+	margin: 0 0 0 .5em;
+	padding: 0;
+	list-style-type: none;
+}
+
+.nicholls-menu-contents .column- ul li {
+	padding-bottom: .4em;
+}
+
+.nicholls-menu-contents .column- h2, .nicholls-menu-contents .column- h3, .nicholls-menu-contents .column- h4 {
+	color: $nicholls-color-red;
+	margin: .2em 0 .4em 0;
+}
+
+.nicholls-menu-contents .column- ul li a {
+	text-decoration: none;
+}
+
+.nicholls-menu-contents .column- ul li a:hover {
+	color: $nicholls-color-red;
+}
+
+.nicholls-menu-current- {
+	@include nicholls_menu_icon('white-current-students');
+
+	background-color: $nicholls-color-current;
+}
+
+.nicholls-menu-current- .nicholls-menu-item-link {
+	background-color: $nicholls-color-current; // Old browsers
+	@include filter-gradient(#aaae87, #666850, vertical); // IE6-9
+	@include background-image(linear-gradient(top,  #aaae87 0%,#666850 100%));
+}
+
+
+.nicholls-menu-current- .nicholls-menu-title- {
+	background-color: $nicholls-color-current;
+}
+
+.nicholls-menu-future- {
+	@include nicholls_menu_icon('white-future-students');
+
+	background-color: $nicholls-color-future;
+}
+
+.nicholls-menu-future- .nicholls-menu-item-link {
+	background-color:$nicholls-color-future; // Old browsers
+	@include filter-gradient(#7a2224, #491415, vertical); // IE6-9
+	@include background-image(linear-gradient(top,  #7a2224 0%,#491415 100%));
+}
+
+.nicholls-menu-future- .nicholls-menu-title- {
+	background-color: $nicholls-color-future;
+}
+
+.nicholls-menu-life- {
+	@include nicholls_menu_icon('white-housing-life');
+
+	background-color: $nicholls-color-life;
+}
+
+.nicholls-menu-life- .nicholls-menu-item-link {
+	background-color: $nicholls-color-life; // Old browsers
+	@include filter-gradient(#f3ae2f, #92681c, vertical); // IE6-9
+	@include background-image(linear-gradient(top,  #f3ae2f 0%,#92681c 100%));
+}
+
+.nicholls-menu-life- .nicholls-menu-title- {
+	background-color: $nicholls-color-life;
+}
+
+.nicholls-menu-athletics- {
+	@include nicholls_menu_icon('white-athletics');
+
+	background-color: $nicholls-color-athletics;
+}
+
+.nicholls-menu-athletics- .nicholls-menu-item-link {
+	background-color: $nicholls-color-athletics;
+	@include filter-gradient(#467d80, #2a4a4d, vertical); // IE6-9
+	@include background-image(linear-gradient(top,  #467d80 0%,#2a4a4d 100%));
+}
+
+.nicholls-menu-friends- {
+	@include nicholls_menu_icon('white-alumni-friends');
+
+	background-color: $nicholls-color-friends;
+}
+
+.nicholls-menu-friends- .nicholls-menu-item-link {
+	background-color: $nicholls-color-friends;
+	@include filter-gradient(#a45c0b, #623706, vertical); // IE6-9
+	@include background-image(linear-gradient(top,  #a45c0b 0%,#623706 100%));
+}
+
+.nicholls-menu-friends- .nicholls-menu-title- {
+	background-color: $nicholls-color-friends;
+}
+
+.nicholls-menu-friends- .nicholls-menu-contents {
+	margin-left: -31.1em;
+}
+
+.nicholls-menu-administration- {
+	@include nicholls_menu_icon('white-faculty-staff');
+
+	background-color: $nicholls-color-administration;
+}
+
+.nicholls-menu-administration- .nicholls-menu-item-link {
+	background-color:$nicholls-color-administration;
+	@include filter-gradient(#52616e, #313a41, vertical); // IE6-9
+	@include background-image(linear-gradient(top,  #52616e 0%,#313a41 100%));
+}
+
+.nicholls-menu-administration- .nicholls-menu-title- {
+	background-color: $nicholls-color-administration;
+}
+
+.nicholls-menu-administration- .nicholls-menu-contents {
+	margin-left: -31.1em;
+}
+
+.nicholls-menu-search- {
+	border: none;
+	width: 10em;
+	margin: 0;
+}
+
+.nicholls-menu-search- .form-gs-container- {
+	margin: 1.2em .5em 1.8em .5em;
+}
+
+.nicholls-menu-search- .form-gs-container- input {
+	float: left;
+}
+
+/* Nicholls Go To Navigation */
+
+.nicholls-nav-go-wrapper- {
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nicholls-nav-go- {
+	display: none;
+	background-color: $nicholls-color-red;
+	padding: 0 0 .3em;
+}
+
+.nicholls-nav-go-,
+.nicholls-nav-go- a,
+.nicholls-nav-go- a:link,
+.nicholls-nav-go- a:active,
+.nicholls-nav-go- a:visited {
+	color: $nicholls-color-white;
+}
+
+.nicholls-nav-go- span {
+		font-size: 90%;
+		font-weight: bold;
+		margin: 0 0 0 .4em;
+}
+
+.nicholls-nav-go-top-wrapper- {
+	background-color: $nicholls-color-red;
+}
+
+/* Nicholls Footer */
+
+.footer-nicholls-wrapper- {
+	width: 100%;
+	text-align: left;
+	clear: both;
+	
+	background: $nicholls-color-grey-light-2;
+	background-image: url( 'library/images/backgrounds/bg-footer-pattern.png' );
+
+}
+
+.footer- {
+	@include container;
+	@include susy-grid-background;
+
+	margin-top: 1em;
+	clear: both;
+
+	background-color: $nicholls-color-grey-light-2;
+	background-image: url( 'library/images/backgrounds/bg-footer-top-red-5x30.png' );
+	background-repeat: repeat-x;
+	
+	
+	a, a:link, a:visited, a:active {
+		text-decoration: none;
+	}
+	
+	a:hover {
+		text-decoration: underline;
+	}
+	
+	.column- {
+		float: left;	
+		width: 20%;
+		margin: 0;
+		padding: 0;
+		font-size: 80%;
+	}
+}
+
+/* Layout - Large Screen breakpoint is 1166 */
+@include at-breakpoint( 74em 32 ) {
+
+	.wrapper- {
+		@include container;
+		@include susy-grid-background;	
+	}
+	
+	.container- {
+		@include span-columns(23 omega, 32);
+		/* Container border - right inner div: */
+		margin-left: -gutter(23)/2;
+		padding-left: gutter(23)/2;
+		
+		font-size: 96%;
+	}
+	
+	.widgets-primary- {
+		@include span-columns(9 omega, 32);
+	
+		font-size: 94%;
+		float: left;
+		
+	}
+	
+	.widgets-secondary- {
+		@include span-columns(9 omega, 32);
+	
+		font-size: 94%;
+		float: left;
+	}
+	
+	/* Nicholls Header */
+	
+	.header-nicholls- {
+		@include container;
+		padding: 0;
+
+		.header- {
+			width: 100%;
+			padding: 0 .5em;
+			margin: 20em 0 0 0;
+			height: 8em;					
+		}
+	}
+	
+	/* Nichols Menu - Primary */
+	.menu-primary- {
+		width: 58.9em;
+	}
+	
+	.nicholls-menu-item {
+		margin: 0 2.4em 0 0;
+	}
+	
+	.nicholls-menu-list- .nicholls-menu-item:first-child {
+		margin-left: 2.4em;
+	}	
+	
+	/* Nicholls Footer */
+
+	.footer- {
+		@include container;
+		@include susy-grid-background;
+	
+		margin-top: 1em;
+		border-top: 1px solid #666;
+		background-color: $nicholls-color-grey-light-2;
+		clear: both;
+		
+		.column- {
+			float: left;
+			width: 20%;
+			margin: 0;
+			padding: 0;
+			font-size: 80%;
+		}
+	}
+	
+}
+
+/* Layout - Tablet Screen breakpoint is  */
+@include at-breakpoint( 42em 18 62em ) {
+
+	.wrapper- {
+		@include container;
+		@include susy-grid-background;
+	}
+		
+	/* Layout */
+	
+	.container- {
+		@include span-columns(18, 18);
+		padding: gutter(18)/2;
+		margin: 0;
+		
+		font-size: 96%;
+	}
+	
+	.widgets-primary-active .container- {
+		border: none;
+	}
+	
+	.widgets-primary- {
+		@include span-columns(6, 18);
+		
+		padding: 0 1.2em 0 0;
+		
+		font-size: 94%;
+	}
+	
+	.widgets-secondary- {
+		@include span-columns(6, 18);
+		
+		padding: 0 1.2em 0 0;
+		
+		font-size: 94%;	
+		clear: right;		
+	}
+	
+	/* Nicholls Header */
+	
+	.header-nicholls- {
+		@include container;
+		padding: 0;
+		overflow: visible;		
+
+		.header- {
+			@include container;
+			float: right;
+
+			.blog-title-prefix- {
+				font-size: 96%;
+			}
+
+			.blog-title- {
+				font-size: 200%;
+			}
+
+			.blog-description- {
+				font-size: 90%;
+			}
+			
+			.entry-title {
+				font-size: 200%;
+			}		
+		}
+	}
+	
+	.nicholls-banner- {
+		@include container;
+
+		// needs latest Compass, add '@import "compass"' to your scss
+		background-color: #cc3333; // Old browsers
+		@include filter-gradient(#7f2c1f, #7f2c1f, horizontal); // IE6-8
+		// IE9 SVG, needs conditional override of 'filter' to 'none'
+		$experimental-support-for-svg: true;
+		@include background-image(linear-gradient(left,  #7f2c1f 0%,#cc3333 17%,#cc3333 47%,#cc3333 80%,#7f2c1f 100%));
+		
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+
+		clear: both;
+		
+		width: 100%;
+		height: auto;
+	}
+
+	.logo-container-wrapper- {
+		float: left;
+		margin: .8em 1.2em;
+	}
+
+	.logo-container- {
+		padding: 0;
+		margin: 0;
+		border-bottom: none;
+	}
+	
+	.info-container- {
+		margin-top: 1em;
+		padding-bottom: .8em;
+		width: 24em;
+		float: right;
+	}
+	
+	/* Nichols Menu - Primary */
+	
+	.menu-primary- {
+		@include container;	
+		height: 7.5em;
+	}
+
+	.nicholls-menu-list- .nicholls-menu-item {
+		margin-right: 1.8em;
+	}
+
+	.nicholls-menu-list- .nicholls-menu-item:first-child {
+		margin-left: .3em;
+	}
+
+	.nicholls-menu-list- .nicholls-menu-current-,
+	.nicholls-menu-list- .nicholls-menu-life-,
+	.nicholls-menu-list- .nicholls-menu-friends- {
+		margin-left: .4em;
+	}
+		
+	.nicholls-menu-list- .nicholls-menu-administration- {
+		margin-right: 0;
+	}
+	
+	.nicholls-menu-list- .nicholls-menu-search- {
+		clear: left;
+		border: none;
+		width: 53.4em;
+		margin: 0;
+		border-top: 1px solid #ccc;
+	}
+	
+	.nicholls-menu-search- .form-gs-container- {
+		margin: .8em 0 .8em 20em;
+		float: left;
+	}
+
+	/* Nicholls go To Navigation */
+	
+	.nicholls-nav-go-wrapper- {
+		display: block;
+	}
+	
+	.nicholls-nav-go- {
+		display: block;	
+		@include container;
+	}
+	
+	.nicholls-nav-go- span {
+			font-size: 74%;
+	}
+			
+	/* Nicholls Footer */
+
+	.footer- {
+		@include container;
+		@include susy-grid-background;
+	
+		margin-top: 1em;
+		border-top: 1px solid #666;
+		background-color: $nicholls-color-grey-light-2;
+		clear: both;
+		
+		.column- {
+			float: left;
+			width: 20%;
+			margin: 0;
+			font-size: 80%;
+		}
+	}	
+		
+}
+
+/* Layout - Phone Screen Landscape breakpoint is  */
+@include at-breakpoint( 28em 12 42em ) {
+	.wrapper- {
+		@include container;
+		@include susy-grid-background;
+	}
+		
+	/* Layout */
+	
+	.container- {
+		@include span-columns(12, 12);
+		padding: gutter(12)/2;
+
+		font-size: 82%;
+	}
+	
+	.widgets-primary-active .container- {
+		border: none;
+	}	
+	
+	.widgets-primary- {
+		@include span-columns(12 omega, 12);
+				
+		font-size: 94%;
+	}
+	
+	.widgets-secondary- {
+		@include span-columns(12 omega, 12);
+				
+		font-size: 94%;	
+		clear: right;		
+	}
+	
+	/* Nicholls Header */
+	
+	.header-nicholls- {
+		@include container;
+		padding: 0;
+		overflow: visible;		
+
+		.header- {
+			@include container;
+			float: right;
+			
+			.blog-title-prefix- {
+				font-size: 90%;
+			}
+
+			.blog-title- {
+				font-size: 168%;
+			}
+
+			.blog-description- {
+				font-size: 84%;
+			}
+			
+			.entry-title {
+				font-size: 168%;
+			}						
+		}
+	}
+
+	.nicholls-banner- {
+		@include container;
+
+		// needs latest Compass, add '@import "compass"' to your scss
+		background-color: #cc3333; // Old browsers
+		@include filter-gradient(#7f2c1f, #7f2c1f, horizontal); // IE6-8
+		// IE9 SVG, needs conditional override of 'filter' to 'none'
+		$experimental-support-for-svg: true;
+		@include background-image(linear-gradient(left,  #7f2c1f 0%,#cc3333 17%,#cc3333 47%,#cc3333 80%,#7f2c1f 100%));
+		
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+
+		clear: both;
+		
+		width: 100%;
+		height: auto;	
+	}
+
+	.logo-container-wrapper- {
+		float: left;
+	}
+
+	.logo-container- {
+		padding: 0;
+		margin: .4em;
+		border-bottom: none;		
+	}
+	
+	.info-container- {
+		margin: .8em .8em 0 0;
+		padding: 0;
+		float: right;
+	}	
+	
+	/* Nichols Menu - Primary */
+	
+	.menu-primary- {
+		@include container;		
+		height: 12em;
+	}	
+
+	.nicholls-menu-list- .nicholls-menu-item:first-child {
+		margin-left: 6.8em;
+	}
+	
+	.nicholls-menu-list- .nicholls-menu-athletics- {
+		clear: left;
+		margin-left: 6.8em;		
+	}
+		
+	.nicholls-menu-list- .nicholls-menu-search- {
+		clear: left;
+		border: none;
+		width: 35.4em;
+		margin: 0;
+		border-top: 1px solid #ccc;
+	}
+	
+	.nicholls-menu-search- .form-gs-container- {
+		margin: .8em 0 .8em 13.6em;
+		float: left;
+	}	
+	
+	/* Content */
+	
+	.entry-content {
+	
+		.column- {
+			clear: both;
+			float: none;
+		}
+		
+		.width-50, .width-49, .width-47, .width-46, .width-right-default, .width-default {
+			width: auto;
+		}
+	}
+
+	/* Nicholls go To Navigation */
+	
+	.nicholls-nav-go-wrapper- {
+		display: block;
+	}
+	
+	.nicholls-nav-go- {
+		display: block;	
+		@include container;
+	}
+	
+	.nicholls-nav-go- span {
+			font-size: 68%;
+	}
+		
+	/* Nicholls Footer */
+
+	.footer- {
+		@include container;
+		@include susy-grid-background;
+	
+		margin-top: 1em;
+		border-top: 1px solid #666;
+		background-color: $nicholls-color-grey-light-2;
+		clear: both;
+		
+		.column- {
+			float: none;
+			clear: both;
+			width: 100%;
+			margin: 0;
+			font-size: 70%;
+		}
+	}
+
+	/* Nicholls Forms */
+	
+	.form-container .form-label, .form-container label {
+		clear: both;
+		float: none;
+		text-align: left;
+		width: auto;
+	}
+
+	.form-container .form-input, .form-container .form-element {
+		width: auto;
+		margin: 0;
+		padding-left: 1em;
+	}
+		
+}
+
+/* Layout - Phone Screen Portrait breakpoint is  */
+@include at-breakpoint( 0em 8 28em ) {
+	.wrapper- {
+		@include container;
+		@include susy-grid-background;
+	}
+		
+	/* Layout */
+	
+	.container- {
+		@include span-columns(8, 8);
+		padding: gutter(8)/2;
+
+		border: none;
+		font-size: 82%;
+	}
+	
+	.widgets-primary-active .container- {
+		border: none;
+	}
+	
+	.widgets-primary- {
+		@include span-columns(8, 8);
+				
+		font-size: 90%;
+	}
+	
+	.widgets-secondary- {
+		@include span-columns(8, 8);
+				
+		font-size: 90%;	
+		clear: right;		
+	}
+		
+	/* Nicholls Header */
+	
+	.header-nicholls- {
+		@include container;
+		padding: 0;
+		overflow: visible;		
+
+		.header- {
+			@include container;
+			float: right;
+			
+			height: 8em;
+			margin: 20.6em 0 0 0;
+
+			.blog-title-prefix- {
+				font-size: 84%;
+			}
+
+			.blog-title- {
+				font-size: 140%;
+			}
+
+			.blog-description- {
+				font-size: 80%;
+			}
+			
+			.entry-title {
+				font-size: 140%;
+			}	
+		}
+	}
+	
+	.nicholls-banner- {
+		@include container;
+
+		// needs latest Compass, add '@import "compass"' to your scss
+		background-color: #cc3333; // Old browsers
+		@include filter-gradient(#7f2c1f, #7f2c1f, horizontal); // IE6-8
+		// IE9 SVG, needs conditional override of 'filter' to 'none'
+		$experimental-support-for-svg: true;
+		@include background-image(linear-gradient(left,  #7f2c1f 0%,#cc3333 17%,#cc3333 47%,#cc3333 80%,#7f2c1f 100%));
+		
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+
+		clear: both;
+		
+		width: 100%;
+		height: auto;
+		
+	}
+
+	.logo-container-wrapper- {
+		float: none;
+		margin: 0;
+	}
+
+	.logo-container- {
+		padding: 0;
+		margin: .4em auto .3em auto;
+	}
+	
+	.info-container- {
+		padding-bottom: .4em;
+	}	
+		
+	/* Nichols Menu - Primary */
+	
+	.menu-primary- {
+		@include container;	
+		height: 12em;
+	}
+
+	.nicholls-menu-list- .nicholls-menu-item {
+		margin-right: .5em;
+	}	
+
+	.nicholls-menu-list- .nicholls-menu-item:first-child {
+		margin-left: .3em;
+	}
+	
+	.nicholls-menu-list- .nicholls-menu-current-, .nicholls-menu-list- .nicholls-menu-athletics- {
+		margin-left: .3em;
+	}	
+	
+	.nicholls-menu-list- .nicholls-menu-life-, .nicholls-menu-list- .nicholls-menu-administration- {
+		margin-right: 0;
+	}
+	
+	.nicholls-menu-athletics- {
+		clear: left;
+	}	
+	
+	.nicholls-menu-list- .nicholls-menu-search- {
+		clear: left;
+		border: none;
+		width: 23.1em;
+		margin: 0;
+		border-top: 1px solid #ccc;
+	}
+	
+	.nicholls-menu-search- .form-gs-container- {
+		margin: .8em 0 .8em 8em;
+		float: left;
+	}	
+
+	/* Content */
+	
+	.entry-content {
+	
+		.column- {
+			clear: both;
+			float: none;
+		}
+		
+		.width-50, .width-49, .width-47, .width-46, .width-right-default, .width-default {
+			width: auto;
+		}
+	}
+	/* Nicholls go To Navigation */
+	
+	.nicholls-nav-go-wrapper- {
+		display: block;
+	}
+	
+	.nicholls-nav-go- {
+		display: block;	
+		@include container;
+	}
+	
+	.nicholls-nav-go- span {
+			font-size: 60%;
+	}
+			
+	/* Nicholls Footer */
+
+	.footer- {
+		@include container;
+		@include susy-grid-background;
+	
+		margin-top: 1em;
+		border-top: 1px solid #666;
+		background-color: $nicholls-color-grey-light-2;
+		clear: both;
+		
+		.column- {
+			float: none;
+			clear: both;
+			width: 100%;
+			margin: 0;
+			font-size: 70%;
+		}
+	}
+	
+	/* Nicholls Forms */
+	
+	.form-container .form-label, .form-container label {
+		clear: both;
+		float: none;
+		text-align: left;
+		width: auto;
+	}
+
+	.form-container .form-input, .form-container .form-element {
+		width: auto;
+		margin: 0;
+		padding-left: 1em;
+	}
+		
+}
+
+
+/* 480px */
+@media only screen and (min-width: 1px) and (max-width: 480px), only screen and (max-device-width: 480px) {
+/*  @import 'media/6-column'; */
+}
+
+/* 768px */
+@media only screen and (min-width: 481px) and (max-width: 809px) {
+/*  @import 'media/9-column'; */
+}
+
+/* 768px */
+@media only screen and (min-width: 810px) and (max-width: 1009px) {
+/*  @import 'media/14-column'; */
+}
+
+/* 992px */
+@media only screen and (min-width: 1010px) and (max-width: 1381px) {
+/*  @import 'media/19-column'; */
+}
+
+/* 1382px */
+@media only screen and (min-width: 1382px) {
+/*  @import 'media/22-column'; */
+}
+
+/* 2x */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+/*  @import 'media/high-rez'; */
+}
+
+/* Print */
+@media print {
+	
+	/* START Layout */
+	body {
+		background: #fff;
+		color: #000;
+		width: 100%;
+	}
+	
+	a:link,
+	a,
+	a:active,
+	a:visited {
+		background: transparent;
+		color: #000;
+	}
+	
+	.wrapper-,
+	.container-,
+	.header-nicholls-wrapper-,
+	.header-nicholls- {
+		width: 100%; 	
+		text-align: left;
+		border: none;
+		background: transparent;
+		margin: 0;
+		padding: 0;
+	}	
+	
+	.wrapper- {
+		margin: 1em auto 0 auto;
+	}
+	
+	body.widgets-primary-active .container-, body.widgets-secondary-active .container-, .container-, .content- {
+		width: 100%; 
+		margin: 0;
+		padding: 0;	
+		text-align: left;
+		border: none;
+		background: transparent;
+		float: none;
+	}
+	
+	/* END Layout */
+	
+	/* Nicholls Header */
+
+	.header-nicholls-wrapper- {
+		background: transparent !important;
+		color: #000;
+		height: auto !important;
+	}
+	
+	.header-nicholls- {
+		background: transparent;
+		color: #000;
+		height: auto !important;
+	}
+	
+	.menu-primary-container- {
+		float: none;
+		clear: both;
+		width: auto;
+	}	
+	
+	.menu-primary-, .menu-primary- * {
+		display: none !important;
+	}
+	
+	.logo-container- {
+		display: none;
+	}
+	
+	.logo-image- {
+		display: inline;
+		float: left;
+	}
+		
+	.info-container- {
+		text-align: right;
+	}
+	
+	.nicholls-banner- {
+		background: transparent;
+		float: none;
+		clear: both;
+		height: 6em;
+		width: 100%;
+		border-bottom: 1px solid black;		
+	}
+	
+	.info-container-,
+	.info-container- a,
+	.info-container- a:link,
+	.info-container- a:active,
+	.info-container- a:visited,
+	.info-container- .info-tagline,
+	.info-container- .info-contact {
+		color: #000;
+	} 
+
+	.widgets- {
+		clear: both !important;
+		float: none !important;
+		width: 100% !important;
+	}	
+	
+	.widgets- .widget {
+		clear: both;
+		display: none;
+		float: none;
+		width: 100%;
+	}
+	
+	.widgets- .nicholls-department-widget, .widgets- .nicholls-department-widget div {
+		display: block !important;	
+	}
+
+	/* START Header */
+
+	.header-nicholls- .header- {
+		margin: 0 !important;
+		background: transparent;
+		width: 100% !important;
+	}	
+	
+	.header- {
+		width: 100%;
+		border-bottom: 2px solid #635442;
+		clear: both;
+		float: none;
+	}	
+	
+	.header-nicholls- .header- .blog-title-prefix-,
+	.header-nicholls- .header- .blog-title-,
+	.header-nicholls- .header- .blog-description-,
+	.header-nicholls- .header- .blog-title- a,
+	.header-nicholls- .header- .blog-title- a:link,
+	.header-nicholls- .header- .blog-title- a:visited,
+	.header-nicholls- .header- .blog-title- a:active {
+		color: #000;
+		text-shadow: none;
+	}
+	
+	.transparent-black-50 {
+		background: transparent;
+	}
+	
+	/* END Header */
+	
+	/* START Navigation */
+	
+	.navigation- {
+		display: none;
+	}
+	
+	/* End Navigation */
+	.footer-nicholls-wrapper-, .footer- {
+		width: 100%;
+	}
+	
+	.footer- .column- {
+		display: none;
+	}
+
+}
+
+/* Compatibility - IE and other compatibility issues */
+
+.lt-ie8 .logo-container- {
+	background-position: 0 0;
+}
+
+.lt-ie8 .footer- .column- {
+	width: 19.6%;
+}

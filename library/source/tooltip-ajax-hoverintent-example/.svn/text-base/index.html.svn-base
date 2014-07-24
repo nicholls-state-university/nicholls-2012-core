@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Tooltip - Ajax Hoverintent Example</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" language="JavaScript"></script>
+	<script src="jquery.hoverIntent.minified.js" language="JavaScript"></script>
+	
+	<script language="JavaScript">
+	// <![CDATA[
+	
+	$(function()
+	{
+		var hideDelay = 500;
+		var currentID;
+		var hideTimer = null;
+		var ajax = null;
+		var hideFunction = function()
+		{
+			if (hideTimer)
+				clearTimeout(hideTimer);
+			hideTimer = setTimeout(function()
+			{
+				currentPosition = { left: '0px', top: '0px' };
+				container.css('display', 'none');
+			}, hideDelay);
+		};
+	
+		var currentPosition = { left: '0px', top: '0px' };
+	
+		// One instance that's reused to show info for the current person
+		var container = $('<div id="personPopupContainer">'
+			+ '<table width="" border="0" cellspacing="0" cellpadding="0" align="center" class="personPopupPopup">'
+			+ '<tr>'
+			+ '   <td class="corner topLeft"></td>'
+			+ '   <td class="top"></td>'
+			+ '   <td class="corner topRight"></td>'
+			+ '</tr>'
+			+ '<tr>'
+			+ '   <td class="left">&nbsp;</td>'
+			+ '   <td><div id="personPopupContent"></div></td>'
+			+ '   <td class="right">&nbsp;</td>'
+			+ '</tr>'
+			+ '<tr>'
+			+ '   <td class="corner bottomLeft">&nbsp;</td>'
+			+ '   <td class="bottom">&nbsp;</td>'
+			+ '   <td class="corner bottomRight"></td>'
+			+ '</tr>'
+			+ '</table>'
+			+ '</div>');
+	
+		$('body').append(container);
+	
+		$('.personPopupTrigger').live('mouseover', function()
+		{
+			if (!$(this).data('hoverIntentAttached'))
+			{
+				$(this).data('hoverIntentAttached', true);
+				$(this).hoverIntent
+				(
+					// hoverIntent mouseOver
+					function()
+					{
+						if (hideTimer)
+							clearTimeout(hideTimer);
+	
+						// format of 'rel' tag: pageid,personguid
+						var settings = $(this).attr('rel').split(',');
+						var pageID = settings[0];
+						currentID = settings[1];
+	
+						// If no guid in url rel tag, don't popup blank
+						if (currentID == '')
+							return;
+	
+						var pos = $(this).offset();
+						var width = $(this).width();
+						var reposition = { left: (pos.left + width) + 'px', top: pos.top - 5 + 'px' };
+	
+						// If the same popup is already shown, then don't requery
+						if (currentPosition.left == reposition.left &&
+							currentPosition.top == reposition.top)
+							return;
+	
+						container.css({
+							left: reposition.left,
+							top: reposition.top
+						});
+	
+						currentPosition = reposition;
+	
+						$('#personPopupContent').html('&nbsp;');
+	
+						if (ajax)
+						{
+							ajax.abort();
+							ajax = null;
+						}
+	
+						ajax = $.ajax({
+							type: 'GET',
+							url: 'ajaxhelper.aspx',
+							data: 'page=' + pageID + '&guid=' + currentID,
+							success: function(data)
+							{
+								// Verify that we're pointed to a page that returned the expected results.
+								if (data.indexOf('personPopupResult') < 0)
+								{
+									$('#personPopupContent').html('<span style="color:red" class="smallText">Page ' + pageID + ' did not return a valid result for person ' + currentID + '. Please have your administrator check the error log.</span>');
+								}
+	
+								// Verify requested person is this person since we could have multiple ajax
+								// requests out if the server is taking a while.
+								if (data.indexOf(currentID) > 0)
+								{
+									var text = $(data).find('.personPopupResult').html();
+									$('#personPopupContent').html(text);
+								}
+							}
+						});
+	
+						container.css('display', 'block');
+					},
+					// hoverIntent mouseOut
+					hideFunction
+				);
+				// Fire mouseover so hoverIntent can start doing its magic
+				$(this).trigger('mouseover');
+			}
+		});
+	
+		// Allow mouse over of details without hiding details
+		$('#personPopupContainer').mouseover(function()
+		{
+			if (hideTimer)
+				clearTimeout(hideTimer);
+		});
+	
+		// Hide after mouseout
+		$('#personPopupContainer').mouseout(hideFunction);
+	});
+
+	// ]]>
+	</script>
+	
+	<style type="text/css" title="text/css">
+	/* <![CDATA[ */
+	
+	#personPopupContainer
+	{
+		position:absolute;
+		left:0;
+		top:0;
+		display:none;
+		z-index: 20000;
+	}
+	
+	.personPopupPopup
+	{
+	}
+	
+	#personPopupContent
+	{
+		background-color: #FFF;
+		min-width: 175px;
+		min-height: 50px;
+	}
+	
+	.personPopupPopup .personPopupImage
+	{
+		margin: 5px;
+		margin-right: 15px;
+	}
+	
+	.personPopupPopup .corner 
+	{
+		width: 19px;
+		height: 15px;
+	}
+		
+	.personPopupPopup .topLeft 
+	{
+		background: url(images/balloon_topLeft.png) no-repeat;
+	}
+		
+	.personPopupPopup .bottomLeft 
+	{
+		background: url(images/balloon_bottomLeft.png) no-repeat;
+	}
+		
+	.personPopupPopup .left 
+	{
+		background: url(images/balloon_left.png) repeat-y;
+	}
+		
+	.personPopupPopup .right 
+	{
+		background: url(images/balloon_right.png) repeat-y;
+	}
+		
+	.personPopupPopup .topRight 
+	{
+		background: url(images/balloon_topRight.png) no-repeat;
+	}
+		
+	.personPopupPopup .bottomRight 
+	{
+		background: url(images/balloon_bottomRight.png) no-repeat;
+	}
+		
+	.personPopupPopup .top 
+	{
+		background: url(images/balloon_top.png) repeat-x;
+	}
+		
+	.personPopupPopup .bottom 
+	{
+		background: url(images/balloon_bottom.png) repeat-x;
+		text-align: center;
+	}
+
+	/* ]]> */
+	</style>
+
+</head>
+<body>
+
+<a class="personPopupTrigger" href="<link to person>" rel="4218,a17bee64-8593-436e-a2f8-599a626370df">House, Devon</a>
+<a class="personPopupTrigger" href="<link to person>" rel="4218,f6434101-15bf-4c06-bbb2-fbe8c111b948">House, Gregory</a>
+
+</body>
+</html>

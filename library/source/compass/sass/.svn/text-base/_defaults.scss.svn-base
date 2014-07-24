@@ -1,0 +1,1038 @@
+/* Defaults - START */
+
+body {
+	font-family: 'Open Sans', Arial, sans serif;
+	font-size: $body-font-size;	
+	color: $nicholls-color-black;
+	padding: 0;
+	margin: 0;
+	width: $body-width;
+}
+
+/* Interactive HTML Styles */
+
+a, a:link {
+	color: $link-color;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: $link-color-visited;
+}
+
+a:hover {
+	color: $link-color-hover;
+	text-decoration: none;
+}
+
+a.nofx {
+	background: none;
+	border: none;
+}
+
+a.nofx:hover {
+	background: none;
+	border: none;
+}
+
+/* Content Common text blocks */	
+
+.content- code, .content- pre {
+	font-family: "courier new", courier, monospace;
+}
+
+input.text {
+	padding: .2em;
+	border: 1px solid #999999;	
+}
+
+/* Heading Styles */
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	line-height: 1.1em;
+    color: #1f1f1f;
+    margin: .4em 0;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 180%;
+}
+
+h3 {
+    font-size: 160%;
+}
+
+h4 {
+    font-size: 140%;
+}
+
+h5 {
+    font-size: 120%;
+}
+
+h6 {
+    font-size: 110%;
+}
+
+.container- h1 {
+    font-size: 200%;
+}
+
+.container- h2 {
+    font-size: 180%;
+}
+
+.container- h3 {
+    font-size: 160%;
+}
+
+.container- h4 {
+    font-size: 140%;
+}
+
+.container- h5 {
+    font-size: 120%;
+}
+
+.container- h6 {
+    font-size: 110%;
+}
+
+/* Clearing Utility Elements */
+
+.box-0x0 {
+	width: 0;
+	height: 0;
+	line-height: 0;
+}
+
+.clear, .clearer, .clear-both {
+	clear: both;
+}
+
+.clear-right {
+	clear: right;
+}
+
+.clear-left {
+	clear: left;
+}
+
+/* Alignment */
+
+.left, .alignleft {
+	display: inline;
+	float: left;
+	margin-right: .8em;
+}
+
+.right, .alignright {
+	display: inline;
+	float: right;
+	margin-left: .8em;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Responsive Defaults */
+
+.content- {
+	width: auto;
+	padding: 0 .2em;
+}
+
+.entry-content img,
+.comment-content img,
+.widget img {
+	max-width: 97.5%; /* Fluid images for posts, comments, and widgets */
+}
+
+img[class*="align"],
+img[class*="wp-image-"] {
+	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+
+img.size-full {
+	max-width: 97.5%;
+	width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
+}
+
+/* Layout */
+
+.wrapper- {
+  padding: 0;
+}
+
+/* Defaults - END */
+
+/* START ----OLD---- */
+
+
+
+
+/* END defaults */
+
+/* START Multi-purpose Elements */
+
+.nav-previous {
+	float: left;
+}
+
+.nav-next {
+	float: right;
+}
+
+.link-wrapper-edit {
+	clear: both;
+}
+
+/* END Multi-purpose Elements */
+
+/* START Widget Styles */
+
+.widgets- {
+	margin: 0;
+	padding: 0;
+}
+
+.widgets- ul, .widgets- ul li  {
+	list-style-type: none;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+.widgets- .widget {
+	margin: .8em 0;
+}
+
+.widgets- .widgettitle {
+	padding: .4em 0;
+	margin: 0 0 .6em 0;
+	font-size: 120%;
+	font-weight: bold;	
+	border-top: 1px solid $nicholls-color-elements-widget-borders-primary;
+	border-bottom: 1px solid $nicholls-color-elements-widget-borders-primary;	
+}
+
+.widget ul {
+	margin: 0 0 0 .5em;
+}
+
+.widget li {
+	margin: .5em 0 .5em .5em;
+}
+
+.widget_search {
+	padding: .2em;
+}
+
+.widgets- .widget_pages, .widgets- .menu {
+	line-height: 1.2em;
+}
+
+.widgets- .widget_pages ul {
+	margin-left: .5em;
+}
+
+.widgets- .widget_nav_menu li, 
+.widgets- .widget_pages li {
+	text-indent: -0.9em;
+	margin: .4em 0;
+}
+
+.widgets- .widget_nav_menu li:before, 
+.widgets- .widget_pages li:before {
+	content: "\00BB \0020";
+}
+
+.widgets- .menu li ul, .widgets- .widget_pages li ul {
+	display: none;
+}
+
+.widgets- .widget_pages .current_page_item ul, .widgets- .widget_pages .current_page_ancestor ul, .widgets- .menu .current-menu-item ul, .widgets- .menu .current-menu-ancestor ul {
+	display: block;
+}
+
+.widgets- .widget_pages a, .widgets- .widget_pages a:link, .widgets- .widget_pages a:active, .widgets- .widget_pages a:visited, 
+.widgets- .menu a, .widgets- .menu a:link, .widgets- .menu a:active, .widgets- .menu a:visited {
+	text-decoration: none;
+}
+
+.widgets- .widget_pages a:hover, .widgets- .menu a:hover {
+	text-decoration: underline;
+}
+
+/* END Widget Styles */
+
+/* START Post Navigation Styles */
+
+.navigation {
+	/* 
+	This one is tricky since we have two floats in a div
+	requries both "width: x" and "overflow: auto" to clear
+	interior elements for box creation!
+	*/
+	height: 1.6em;
+	clear: both;
+	padding: .2em;
+	margin: .3em;
+	font-size: 90%;
+	font-style: italic;
+	text-align: center;
+	border-top: 1px solid $nicholls-color-elements-widget-borders-primary;
+	border-bottom: 1px solid $nicholls-color-elements-widget-borders-primary;
+}
+
+.navigation .nav-previous {
+	
+}
+
+.navigation .nav-next {
+
+}
+
+.navigation .nav-meta {
+	font-weight: bold;
+	color: #ddd;
+}
+
+/* END Post Navigation Styles */
+
+/* START Post styles */
+
+.post {
+    padding-top: .2em;
+}
+
+.entry-title, .entry-title a, .entry-title a:visited {
+    text-decoration: none;
+}
+
+.entry-title a:hover {
+    text-decoration: underline;
+}
+
+.entry-date {
+	font-size: 90%;
+	color: #9f9f9f;
+}
+
+.entry-date abbr.published {
+	display: block;
+	cursor: default;
+	margin: .2em 0 .2em .2em;
+	padding: .2em;
+	color: #9f9f9f;	
+}
+
+.entry-content {
+    line-height: 1.4em;
+    clear: both;
+}
+
+.entry-content p {
+    line-height: 1.4em;
+}
+
+.entry-meta {
+	clear: both;
+	padding: .4em;
+	font-size: 90%;
+	border-top: 1px solid #AFAFAF;
+	color: #222;
+	background: #efefef;
+	text-align: center;
+}
+
+/* END Post styles */
+
+/* START WordPress Image / Gallery Styles */
+
+.gallery .gallery-item {
+	float: left;
+	width: 48%;
+}
+
+.wp-caption {
+	margin: .4em;
+	padding: .2em;
+	text-align: center;
+	border: 1px solid #ccc;
+}
+
+.wp-caption .wp-caption-text {
+	margin: .2em 0 .1em 0;
+	padding: .2em .4em .1em .4em;
+	font-size: 76%;
+	text-align: center;
+	line-height: 1.2em;
+	border-top: 1px solid #efefef;
+}
+
+/* END WordPress Image / Gallery Styles */
+
+/* START Comment Styles */
+
+.comments- {
+	margin: 0 .5em 0 .5em;
+	font-size: 96%;
+}
+
+.comment-author {
+	padding: .4em;
+}
+
+.comment-author .avatar {
+	float: left;
+	margin: 0 .5em .5em 0;
+}
+
+.bypostauthor .comment-body .comment-author {
+	color: $nicholls-color-white;
+	background: $nicholls-color-black;
+}
+
+.bypostauthor-no .comment-body .comment-author {
+	color: $nicholls-color-black;
+	background: transparent;
+}
+
+.comment-meta {
+	clear: right;
+	margin: 0 0 .5em 0;
+	padding: .2em 0 .2em .5em;
+	font-size: 90%;
+	color: #222;
+}
+
+.commentlist {
+	list-style-type: none;
+	margin: 0 .2em .5em .4em;
+}
+
+.commentlist .comment, .commentlist .pingback {
+	list-style-type: none;
+	margin: 0 0 2em 0;
+	padding: .2em 0 0 0;
+	border-top: 1px solid #e0e0e0;
+}
+
+.comments- label { 
+	clear: both;
+	display: block;
+	margin: .4em 0;
+}
+
+/* END Comment Styles */
+
+/* Start Forms and Controls */
+
+legend {
+	font-weight: 400;
+}
+
+label {
+	display: block;
+}
+
+input, textarea {
+	margin: .2em;
+	padding: .2em;
+	border: 1px solid #666;
+}
+
+textarea {
+	clear: both;
+}
+
+input:hover, textarea:hover {
+  border: 1px solid #333;
+}
+ 
+input:focus, textarea:focus {
+  border: 1px solid #d1d1d1;
+}
+
+.fnbx_form_row {
+	margin: .2em 0;
+	clear: both;
+}
+
+.fnbx_form_row label {
+	width: 12em;
+	float: left;
+	padding: 2px;
+	font-weight: bold;
+	text-align: right;
+}
+
+.fnbx_textarea label {
+	width: 100%;
+	float: none;
+}
+
+.fnbx_form_row .fnbx_form_element {
+	padding: 2px;
+}
+
+.form-container {
+	position: relative;
+	width: auto;
+	padding: .2em;
+}
+
+.form-container form {
+	margin: 0;
+	padding: 0;
+}
+
+.form-container .form-row {
+	width: auto;
+	clear: both;
+}
+
+.form-container .form-note {
+	padding: .2em;
+	clear: both;
+}
+
+.form-container .form-label, .form-container label {
+	display: block;
+	float: left;
+	padding: .6em .4em .2em .2em;
+	width: 39%;
+	text-align: right;
+	font-weight: bold;
+}
+
+.form-container .form-input, .form-container .form-element {
+	display: block;
+	position: relative;
+	width: 59%;
+	margin: 0 0 0 15.4em;
+	padding: .4em 0 .4em 0;
+}
+
+/* START - Plugin Styles */
+
+/* START - Plugin Contact Form 7 - Form Controls */
+
+div.wpcf7 {
+	position: relative;
+	width: auto;
+	padding: .2em;
+}
+
+.form-container .wpcf7-list-item {
+	display: block;
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.wpcf7-checkbox input {
+	display: block;
+	float: left;
+}
+
+.wpcf7-checkbox .wpcf7-list-item-label {
+	display: block;
+	margin: .2em 0 .2em .2em;
+	float: left;
+	width: 18em;
+}
+
+.form-input .your-message textarea {
+	width: 20em;
+}
+
+/* END - Plugin Contact Form 7 - Form Controls */
+
+/* END - Plugin Styles */
+
+/* START - Custom Site */
+
+/* Layout Changes */
+
+.wrapper- {
+	background: #fff;
+}
+
+/* START - Custom Layout Classes */
+
+/* Columns - column-float-width */
+
+.column- {
+	padding: 0 .3em;
+	margin: 0 .3em;
+}
+
+.width-50 {
+	width: 50%;
+}
+
+.width-49 {
+	width: 49%;
+}
+
+.width-47 {
+	width: 47%;
+}
+
+.width-46 {
+	width: 47%;
+}
+
+.width-right-default, .width-default {
+	width: 40.5%;
+}
+
+/* ??? */
+.column-left-16 {
+	float: left;
+	width: 16em;
+	margin-right: 1em;
+}
+/* ??? */
+.column-left-20 {
+	float: left;
+	width: 16em;
+	margin-right: 1em;
+}
+
+/* START: Borders */
+
+/* OLD Borders [REMOVE-ASAP] - border-location-color-size */
+
+.border-right-cccccc-1 {
+	border-right: 1px solid #ccc;
+}
+
+.border-left-cccccc-1 {
+	border-right: 1px solid #ccc;
+}
+
+/* Borders - width-location */
+
+@for $bw from 1 through 2 {
+	.border-#{$bw}-top {
+		border-top: #{$bw}px solid;
+	}
+	
+	.border-#{$bw}-right {
+		border-right: #{$bw}px solid;
+	}
+	
+	.border-#{$bw}-bottom {
+		border-bottom: #{$bw}px solid;
+	}
+	
+	.border-#{$bw}-left {
+		border-left: #{$bw}px solid;
+	}
+	
+	.border-#{$bw}-all {
+		border: #{$bw}px solid;
+	}
+}
+
+/* Borders - color */
+
+/* Old Border Colors */
+.border-red {
+	border-color: $nicholls-color-red;
+}
+
+/* New Border Colors - see _base.css for utility */
+@include nicholls-border-colors();
+
+/* END: Borders */
+
+/* END - Custom Layout Classes */
+
+/* START - Custom Classes */
+
+.type-serif {
+	font-family: 'Crimson Text', 'Georgia','Times New Roman', times, serif;
+}
+
+.type-normal {
+	font-size: 72%;
+}
+
+.transparent-black-50 {
+    background: transparent url( 'library/images/backgrounds/bg-transparent-black-50.png' );
+}
+
+.color-black-transparent-50 {
+	/* Fallback for web browsers that doesn't support RGBa */
+	background: rgb(0, 0, 0);
+	/* RGBa with 0.5 opacity */
+	background: rgba(0, 0, 0, 0.5);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000, endColorstr=#7f000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000, endColorstr=#7f000000)";
+}
+
+.transparent-white-50 {
+    background: transparent url( 'library/images/backgrounds/bg-transparent-white-50.png' );
+}
+
+/* END - Custom Classes */
+
+/* START Top Navigation and Search */
+
+.form-gs-container- {
+	@include border-radius(10px, 10px);
+	background-color: #fff;
+
+	margin: .2em;
+	float: right;
+	clear: right;
+}
+
+.form-gs-container- fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.form-gs-container- label {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.input-q- {
+	border: none;
+	margin: 0 0 0 .7em;
+	padding: .4em .2em .2em 0;
+}
+
+.form-gs-container- input {
+	font-size: 86%;
+	width: 7em;
+}
+
+.form-gs-container- input:hover, .form-gs-container- input:focus {
+	border: none;
+}
+
+.form-gs-container- form input[type=submit] {
+	@include border-radius(10px, 10px);
+
+	background : url("library/images/icons/icon-white-search.png") no-repeat center center;
+	background-color: #000;
+	width : 22px;
+	height :22px;
+	border : 1px solid #ccc;
+	color : transparent;
+	font-size : 0
+}
+
+.form-gs-container- form input[type=submit]:hover {
+	background-color: $nicholls-color-red;
+}
+
+/* END Top Navigation and Search */
+
+/* START - footer */
+
+
+.footer- .column-title- {
+	font-size: 118%;
+	margin: 0;
+	padding: .4em .4em;
+	background: #cc3333;
+	color: #fff;
+}
+
+.footer- .column-content- {
+	margin: .4em .4em .4em .2em;
+}
+
+
+.footer- .column- ul {
+	margin: 0 0 0 .5em;
+	padding: 0;
+	list-style-type: none;
+}
+
+.footer- .column- ul li {
+	padding-bottom: .4em;
+}
+
+.footer- .column- ul li a {
+
+}
+
+.footer- .column- ul li a:hover {
+
+}
+
+/* END - Footer */
+
+/* START - Widgets */
+
+.widgets- .nicholls-department-widget .widgettitle {
+	color: $nicholls-color-red;
+}
+
+.nicholls-department-widget .nicholls-department-info- {
+	border: 1px solid $nicholls-color-grey-light-3;
+}
+
+.nicholls-department-widget .nicholls-department-info- div {
+	margin: 0 0 .5em 0;
+	padding: .4em;
+	background: $nicholls-color-grey-light-1;
+}
+
+/* END - Widgets */
+
+/* START - Special Usage */
+
+/* START - Tables */
+
+.table-defaults  td, .table-defaults th {
+	padding: .3em .5em;
+	vertical-align: top;
+}
+
+.table-style-a {
+	width:100%;
+	border-collapse:collapse;
+}
+
+.table-style-a  td, .table-style-a   th {
+	padding: .3em .5em;
+	border-right: 1px solid #000;
+	vertical-align: top;
+}
+
+.table-style-a  td:last-child, .table-style-a  th:last-child {
+	border-right: none;
+}
+
+.table-style-a  th {
+	font-size: 105%;
+	text-align: left;
+	background-color: #666;
+	color: #fff;
+}
+
+.table-style-b {
+	width:100%;
+	border-collapse:collapse;
+}
+
+.table-style-b  td, .table-style-b  th {
+	padding: .3em .5em;
+	vertical-align: top;
+}
+
+.table-style-b  td, .table-style-b  th {
+	padding: .3em .5em;
+	vertical-align: top;
+}
+
+.table-style-b  tr td {
+	border-top: 1px solid #000;
+}
+
+.table-style-b  th {
+	font-size: 105%;
+	text-align: left;
+}
+
+.table-header-red th {
+	background: #cc3333;
+	color: #fff;
+}
+
+.table-cells-even-down-grey tr:nth-child(even) td {
+	background-color: #e2e2e2;
+}
+
+.table-cells-even-across-grey tr td:nth-child(even) {
+	background-color: #e2e2e2;
+}
+
+.table-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.table-lines-vertical {
+	border-collapse:collapse;
+}
+
+.table-lines-vertical  td, .table-lines-vertical   th {
+	padding: .3em .5em;
+	border-right: 1px solid #000;
+	vertical-align: top;
+}
+
+.table-lines-vertical  td:last-child, .table-lines-vertical  th:last-child {
+	border-right: none;
+}
+
+.table-lines-horizontal {
+	border-collapse:collapse;
+}
+
+.table-lines-horizontal  td, .table-lines-horizontal  th {
+	padding: .3em .5em;
+	vertical-align: top;
+}
+
+.table-lines-horizontal  td, .table-lines-horizontal  th {
+	padding: .3em .5em;
+	vertical-align: top;
+}
+
+.table-lines-horizontal  tr td {
+	border-top: 1px solid #000;
+}
+
+.table-lines-horizontal  th {
+	font-size: 105%;
+	text-align: left;
+}
+
+.table-cells-even-down-grey tr:nth-child(even) td {
+	background-color: #e2e2e2;
+}
+
+.table-cells-even-across-grey tr td:nth-child(even) {
+	background-color: #e2e2e2;
+}
+
+.table-header-bg-red th {
+	background: #cc3333;
+	color: #fff;
+}
+
+.table-header-bg-dark-grey  th {
+	font-size: 105%;
+	text-align: left;
+	background-color: #666;
+	color: #fff;
+}
+
+.table-caption-bg-red caption {
+	background: #cc3333;
+	color: #fff;
+}
+
+.table-caption-bg-dark-grey caption {
+	background: #666;
+	color: #fff;
+}
+
+.table-border-black {
+	border: 1px solid #000;
+}
+
+/* END - Tables */
+
+/* START: List Posts */
+
+.list-posts-list {
+	list-style-type: none;
+}
+
+.list-posts-item {
+	margin-left: .2em;
+}
+
+.list-posts-item-title {
+	font-weight: bold;
+}
+
+.list-posts-item-date {
+	font-size: 90%;
+	color: #7f7f7f;
+}
+
+.list-posts-nicholls-news .thumbnail-container {
+	float: left;
+	padding: .2em;
+	margin: .2em;
+	border: 2px solid #ccc;
+}
+
+
+.list-posts-nicholls-news .list-posts-item-content {
+	clear: right;
+}
+
+.list-posts-nicholls-news .list-posts-item-title {
+	clear: both;
+}
+
+.list-posts-nicholls-list .list-posts-list {
+	list-style-type: disc;
+}
+
+/* END: List Posts */
+
+/* END - Special Usage */
+
+
+/* END - Custom Site */
+
+/* START Hidden Elements */
+
+.hide, .access- {
+	position: absolute !important;
+	top: -9999px !important;
+	left: -9999px !important;
+}
+
+/* END Hidden Elements */
+
+/* START Conditional Elements */
+
+.widgets-primary-active .container- {
+	 border-left-width: 1px;
+	 border-left-style: solid;
+	 border-left-color: $nicholls-color-elements-widget-borders-primary;	 
+}
+
+/* Widgets Inactive (Primary & Secondary) - Container goes full width */
+body.widgets-primary-inactive.widgets-secondary-inactive .container- {
+	float: none;
+	width: auto;
+	border-left: none;
+}
+
+/* END Conditional Elements */
+
+/* START Compatiblity Elements */
+
+/* END Compatiblity Elements */
+
+/* START Debug */
+
+/* END Debug */
