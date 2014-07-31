@@ -98,7 +98,7 @@
 </div>
 
 <div id="nicholls-info-copyright" class="nicholls-info-copyright-">
-	<small>&copy; <?php echo date("Y") ?> Nicholls State University</small>
+	<small>All content and images &copy; <?php echo date("Y") ?> Nicholls State University</small>
 </div>
 		
 	<?php do_action( 'fnbx_footer_end', 'footer' ) ?>
