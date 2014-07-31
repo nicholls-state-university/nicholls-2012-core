@@ -407,6 +407,9 @@ body {
 
 .nicholls-menu-contents .column- ul li {
 	padding-bottom: .4em;
+	padding-left: .5em;
+	list-style-type: none;
+	text-indent: -.5em;	
 }
 
 .nicholls-menu-contents .column- h2, .nicholls-menu-contents .column- h3, .nicholls-menu-contents .column- h4 {
@@ -420,6 +423,7 @@ body {
 
 .nicholls-menu-contents .column- ul li a:hover {
 	color: $nicholls-color-red;
+	text-decoration: underline;
 }
 
 .nicholls-menu-current- {
