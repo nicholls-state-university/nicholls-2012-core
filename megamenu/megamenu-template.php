@@ -51,6 +51,7 @@
 							<li><a href="http://www.nicholls.edu/programs/">Majors, Degrees &amp; Programs of Study</a></li>
 							<li><a href="http://www.nicholls.edu/nicholls-online/">Nicholls Online</a></li>							
 							<li><a href="http://www.nicholls.edu/register/">Registration/Schedule of Classes</a></li>
+							<li><a href="http://www.nicholls.edu/abroad/">Study Abroad Opportunities</a></li>
 						</ul>
 					</div>
 				</div>				

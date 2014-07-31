@@ -35,7 +35,8 @@
 			<li><a href="http://www.nicholls.edu/honors/">Honors Program</a></li>
 			<li><a href="http://www.nicholls.edu/library/">Library</a></li>
 			<li><a href="http://www.nicholls.edu/request-info/">Request Information</a></li>
-			<li><a href="http://www.nicholls.edu/nicholls-online/">Nicholls Online</a></li>			
+			<li><a href="http://www.nicholls.edu/nicholls-online/">Nicholls Online</a></li>
+			<li><a href="http://www.nicholls.edu/abroad/">Study Abroad Opportunities</a></li>							
 		</ul>
 	</div>
 </div>
