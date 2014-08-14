@@ -134,7 +134,7 @@
 				</div>
 			</li>
 			<li class="nicholls-menu-item nicholls-menu-athletics-" id="nicholls-menu-athletics">
-				<a class="nicholls-menu-item-link nicholls-menu-athletics-link-" href="http://www.nicholls.edu/athletics" tabindex="6">
+				<a class="nicholls-menu-item-link nicholls-menu-athletics-link-" href="http://geauxcolonels.com/" tabindex="6">
 					Athletics
 				</a>
 			</li>

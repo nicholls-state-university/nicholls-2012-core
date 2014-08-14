@@ -131,7 +131,7 @@ do_action( 'fnbx_header_init'); // Typically used for doctype
 				<li><a href="http://www.nicholls.edu/housing/">Housing & Meal Plans</a></li>
 				<li><a href="http://www.nicholls.edu/organizations/">Student Organizations</a></li>
 				<li><a href="http://www.nicholls.edu/recreation/">Recreation</a></li>
-				<li><a href="http://www.nicholls.edu/athletics/">Athletics</a></li>
+				<li><a href="http://geauxcolonels.com/">Athletics</a></li>
 				<li><a href="http://www.nicholls.edu/calendar/">Events Calendar</a></li>
 				<li><a href="http://www.nicholls.edu/police/">University Police</a></li>
 				<li><a href="http://emergency.nicholls.edu/">Emergency Preparedness</a></li>
