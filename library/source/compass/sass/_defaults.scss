@@ -127,6 +127,21 @@ h6 {
 	clear: left;
 }
 
+.clear-group:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+
+.clear-group { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clear-group { height: 1%; }
+.clear-group { display: block; }
+/* close commented backslash hack */
+
 /* Alignment */
 
 .left, .alignleft {
@@ -1021,6 +1036,15 @@ div.wpcf7 {
 }
 
 /* END: List Posts */
+
+/* START: Nicholls Faculty Staff plugin */
+
+.nicholls-fs-photo {
+	float: left;
+	margin-right: 1em;
+}
+
+/* END: Nicholls Faculty Staff plugin */
 
 /* END - Special Usage */
 
