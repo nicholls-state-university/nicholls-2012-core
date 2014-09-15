@@ -111,7 +111,7 @@ function custom_query_shortcode($atts) {
 				
 			// Content
 			$content = '';
-			if ( $the_query_arr['qs_content'] != 0 ) {
+			if ( !empty( $the_query_arr['qs_content'] ) || $the_query_arr['qs_content'] != 0 ) {
 				
 				$this_content = get_the_content();
 				$this_content = strip_shortcodes( $this_content );
@@ -129,7 +129,25 @@ function custom_query_shortcode($atts) {
 					'return' => true
 				) );
 	
+			} else {
+
+				$more = 0;
+				
+				$this_content = get_the_content( 'Read more &raquo;' );
+				
+				$content = fnbx_html_tag( array(
+					'tag' => 'div',
+					'class' => 'list-posts-item-content',
+					'tag_content' => $this_content,
+					'return' => true
+				) );
+	
 			}
+
+			
+			
+			
+			
 			
 			// Title
 			$temp_title = get_the_title( $the_query_custom->post->ID );
