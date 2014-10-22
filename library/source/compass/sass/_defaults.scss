@@ -1039,6 +1039,39 @@ div.wpcf7 {
 
 /* START: Nicholls Faculty Staff plugin */
 
+.nicholls-fs-departments {
+	clear: both;
+	padding-bottom: .4em;
+	margin-bottom: .4em;
+	border-bottom: 1px solid #ccc;
+}
+
+.nicholls-fs-departments .nicholls-fs-department-links, .nicholls-fs-departments .nicholls-fs-department-link {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nicholls-fs-departments .nicholls-fs-department-link {
+	float: left;
+}
+
+.nicholls-fs-departments .nicholls-fs-department-link:before {
+	content: '/';
+	display: inline-block;
+	float: left;
+	margin: 0 1em;
+}
+
+.nicholls-fs-departments .nicholls-fs-department-link:first-child:before {
+	content: '';
+	margin: 0;
+}
+
+.nicholls-fs-departments .nicholls-fs-department-link:last-child {
+	float: none;
+}
+
 .nicholls-fs-photo {
 	float: left;
 	margin-right: 1em;
