@@ -996,6 +996,100 @@ div.wpcf7 {
 
 /* END - Tables */
 
+/* START - Button Styles */
+
+
+.button-default {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	border: 1px solid #ccc;
+}
+
+.button-default:hover {
+	text-decoration: none;
+}
+
+.button-default:active {
+	position: relative;
+	top: 1px;
+}
+
+
+a.button-red {
+  
+  /* Fallback (could use .jpg/.png alternatively) */
+  background-color: #cc3333;
+
+  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+  background-image:
+    -webkit-gradient(linear, top, bottom, from(#cc3333), to(#841A1A));
+  
+  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+  background-image:
+    -webkit-linear-gradient(top, #cc3333, #841A1A);
+
+  /* Firefox 3.6 - 15 */
+  background-image:
+    -moz-linear-gradient(top, #cc3333, #841A1A);
+
+  /* Opera 11.1 - 12 */
+  background-image:
+    -o-linear-gradient(top, #cc3333, #841A1A);
+
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+  background-image:
+    linear-gradient(to bottom, #cc3333, #841A1A);
+    
+	text-decoration: none;
+    
+}
+
+a.button-red {
+	color: #fff;
+}
+
+a.button-red:link {
+	color: #fff;
+}
+
+a.button-red:hover {
+	text-decoration: underline;	
+}
+
+a.button-shadow-large {
+    -webkit-box-shadow: 0px 9px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 9px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 9px 25px rgba(0,0,0,.7);
+}
+
+a.button-shadow-large:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;	
+}
+
+a.button-space-block-2 {
+	margin: 2em;
+}
+
+a.button-width-auto {
+	white-space: nowrap;
+}
+
+/* END - Button Styles */
+
+
 /* START: List Posts */
 
 .list-posts-list {
