@@ -1116,7 +1116,6 @@ a.button-width-auto {
 	border: 2px solid #ccc;
 }
 
-
 .list-posts-nicholls-news .list-posts-item-content {
 	clear: right;
 }
@@ -1130,6 +1129,20 @@ a.button-width-auto {
 }
 
 /* END: List Posts */
+
+/* START: Plugin - wp-socializer */
+
+.wp-socializer ul, .wp-socializer li{
+	list-style: none;
+}
+
+.wp-socializer li{
+	float: left;
+	padding: .2em;
+	margin: .2em;
+}
+
+/* END: Plugin - wp-socializer */
 
 /* START: Nicholls Faculty Staff plugin */
 
