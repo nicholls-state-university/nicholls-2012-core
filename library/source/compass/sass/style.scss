@@ -50,7 +50,11 @@ $susy: (
   gutters: .88,
   column-width: 1.423em,
   // advanced
-  math: static
+  math: static,
+  // Due to errors: https://github.com/ericam/susy/issues/425
+  use-custom: (
+    box-sizing: false,
+  ),  
 );
 
 /* Susy - Configuration - Debug */

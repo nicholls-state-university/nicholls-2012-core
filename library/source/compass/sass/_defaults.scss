@@ -194,6 +194,36 @@ img.size-full {
 	width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
 }
 
+/* Responsive utilities */
+
+/* Google embed utilities - see: https://profromgo.com/blog/google-calendar-responsive/ */
+.container-responsive-iframe {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+ 
+.container-responsive-iframe iframe,   
+.container-responsive-iframe object,  
+.container-responsive-iframe embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container-responsive-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* Layout */
 
 .wrapper- {
@@ -1176,7 +1206,11 @@ a.button-width-auto {
 }
 
 .nicholls-fs-departments .nicholls-fs-department-link:last-child {
-	float: none;
+	
+}
+
+.nicholls-fs-departments .nicholls-fs-department-link:last-child:after {
+	clear: right;	
 }
 
 .nicholls-fs-photo {
