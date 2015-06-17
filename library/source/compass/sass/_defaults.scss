@@ -1205,16 +1205,19 @@ a.button-width-auto {
 	margin: 0 1em;
 }
 
-.nicholls-fs-departments .nicholls-fs-department-link:first-child:before {
+.nicholls-fs-departments .nicholls-fs-department-link:first-child:before,
+.nicholls-org-types .nicholls-org-type-link:first-child:before {
 	content: '';
 	margin: 0;
 }
 
-.nicholls-fs-departments .nicholls-fs-department-link:last-child {
+.nicholls-fs-departments .nicholls-fs-department-link:last-child,
+.nicholls-org-types .nicholls-org-type-link:last-child {
 	
 }
 
-.nicholls-fs-departments .nicholls-fs-department-link:last-child:after {
+.nicholls-fs-departments .nicholls-fs-department-link:last-child:after,
+.nicholls-org-types .nicholls-org-type-link:last-child:after {
 	clear: right;	
 }
 
