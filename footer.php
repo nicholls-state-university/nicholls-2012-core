@@ -91,7 +91,7 @@
 		<ul>
 			<li><a href="http://www.nicholls.edu/news/">Nicholls News</a></li>
 			<li><a href="http://www.nicholls.edu/magazine/">The Colonel Magazine</a></li>
-			<li><a href="http://www.nicholls.edu/university-relations/">Office of University Relations</a></li>
+			<li><a href="http://www.nicholls.edu/university-relations/">Office of University Marketing &amp; Communications</a></li>
 			<li><a href="http://www.thenichollsworth.com/">The Nicholls Worth</a></li>
 		</ul>
 	</div>
