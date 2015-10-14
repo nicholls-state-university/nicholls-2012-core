@@ -90,7 +90,7 @@
 	<div class="column-content-">	
 		<ul>
 			<li><a href="http://www.nicholls.edu/news/">Nicholls News</a></li>
-			<li><a href="http://www.nicholls.edu/voila/">Voil&agrave;! Magazine</a></li>
+			<li><a href="http://www.nicholls.edu/magazine/">The Colonel Magazine</a></li>
 			<li><a href="http://www.nicholls.edu/university-relations/">Office of University Relations</a></li>
 			<li><a href="http://www.thenichollsworth.com/">The Nicholls Worth</a></li>
 		</ul>
