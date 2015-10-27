@@ -41,3 +41,12 @@ function nicholls_posts_date_remove_filter( $html = array() ) {
 	return 0;
 }
 // add_filter( 'fnbx_entry_date', 'nicholls_posts_date_remove_filter' );
+
+function nicholls_filter_media_comment_status( $open, $post_id ) {
+	$post = get_post( $post_id );
+	if( $post->post_type == 'attachment' ) {
+		return false;
+	}
+	return $open;
+}
+add_filter( 'comments_open', 'nicholls_filter_media_comment_status', 10 , 2 );
